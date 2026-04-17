@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fire_meta",
+    "name": "화염속성 파티",
+    "styles": ["yuki_fire_ss"]
+  },
+  {
+    "id": "light_meta",
+    "name": "광속성 파티",
+    "styles": ["ruka_light_res"]
+  }
+]

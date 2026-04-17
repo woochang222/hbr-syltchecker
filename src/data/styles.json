@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ruka_light_res",
+    "character_name": "카야모리 루카",
+    "style_name": "광휘의 메시아",
+    "isResonance": true,
+    "isLimited": true,
+    "isUniform": false,
+    "unit": "31A",
+    "element": "광",
+    "tier": 0,
+    "metaTags": ["광속성 파티", "범용 버퍼"]
+  },
+  {
+    "id": "yuki_fire_ss",
+    "character_name": "이즈미 유키",
+    "style_name": "격돌!! 전광석화",
+    "isResonance": false,
+    "isLimited": false,
+    "isUniform": true,
+    "unit": "31A",
+    "element": "화염",
+    "tier": 1,
+    "metaTags": ["화염속성 파티", "디버퍼"]
+  },
+  {
+    "id": "megumi_ice_ss",
+    "character_name": "아이카와 메구미",
+    "style_name": "일기당천의 기세",
+    "isResonance": false,
+    "isLimited": true,
+    "isUniform": false,
+    "unit": "31A",
+    "element": "빙결",
+    "tier": 1,
+    "metaTags": ["빙결속성 파티"]
+  },
+  {
+    "id": "tama_thunder_ss",
+    "character_name": "쿠니미 타마",
+    "style_name": "기적의 작전",
+    "isResonance": false,
+    "isLimited": false,
+    "isUniform": false,
+    "unit": "31A",
+    "element": "뇌전",
+    "tier": 0,
+    "metaTags": ["뇌전속성 파티", "힐러"]
+  }
+]
