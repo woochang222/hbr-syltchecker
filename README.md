@@ -1,16 +1,38 @@
-# React + Vite
+# HBR Style Checker (헤븐번즈 레드 스타일 체커)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+헤븐번즈 레드의 스타일 체커 웹 페이지 입니다.
 
-Currently, two official plugins are available:
+이 프로젝트는 헤븐번즈 레드(HBR)의 캐릭터 스타일을 체크하기 위해 만들었습니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 주요 기능
 
-## React Compiler
+- **SS/레조넌스 집중**: 활용도가 높은 주요 스타일 위주로 관리합니다.
+- **다중 필터링**: 원소(화염, 빙결, 뇌전 등) 및 부대(31A, 31B 등)별로 스타일을 필터링할 수 있습니다.
+- **보유 현황 저장**: 브라우저의 `LocalStorage`를 사용하여 사용자의 보유 체크 현황과 필터 설정(Dim/Hide)을 자동으로 저장합니다.
+- **시각적 효과**:
+  - **교복 스타일**: 보유 시 다이아몬드 그라데이션 테두리와 애니메이션 효과가 적용됩니다.
+  - **배지 표시**: 한정(Limited) 및 레조넌스(Resonance) 스타일에 대한 배지를 제공합니다.
+- **반응형 디자인**: 데스크톱과 모바일 환경 모두 최적화된 그리드 뷰를 제공합니다.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 실행 방법
 
-## Expanding the ESLint configuration
+프로젝트 디렉토리에서 아래 명령어를 실행하세요.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```powershell
+# 의존성 설치 (최초 1회)
+npm install
+
+# 개발 서버 실행
+npm run dev
+
+# 프로덕션 빌드
+npm run build
+
+# 코드 스타일 검사 (Lint)
+npm run lint
+```
+
+## 📂 데이터 구조
+
+- `src/data/styles.json`: 캐릭터 및 스타일의 상세 정보 (원소, 부대, 티어 등)
+- `src/data/meta_teams.json`: 현재 유행하는 메타 조합 정보
