@@ -11,13 +11,15 @@ const StyleCard = ({ style, ownedCount, onToggleOwned, isDimmed, isHidden, isMet
     image_url
   } = style;
 
+  const isOwned = ownedCount !== undefined;
+
   return (
     <div 
-      className={`style-card count-${ownedCount} ${isDimmed ? 'dimmed' : ''} ${isUniform ? 'uniform' : ''} ${isMeta ? 'meta-highlight' : ''}`}
+      className={`style-card ${isOwned ? `count-${ownedCount} owned` : 'not-owned'} ${isDimmed ? 'dimmed' : ''} ${isUniform ? 'uniform' : ''} ${isMeta ? 'meta-highlight' : ''}`}
       onClick={() => onToggleOwned(id)}
     >
       <div className="card-inner">
-        {ownedCount > 0 && <span className="limit-break-badge">{ownedCount}</span>}
+        {isOwned && <span className="limit-break-badge">{ownedCount}</span>}
         
         <div className="style-image-container">
           {image_url ? (

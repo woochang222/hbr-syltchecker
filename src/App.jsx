@@ -37,14 +37,17 @@ function App() {
 
   const handleToggleOwned = (id) => {
     setOwnedStyles(prev => {
-      const currentCount = prev[id] || 0
-      const nextCount = (currentCount + 1) % 5 // 0 -> 1 -> 2 -> 3 -> 4 -> 0
       const next = { ...prev }
-      if (nextCount === 0) {
-        delete next[id]
+      const current = prev[id]
+      
+      if (current === undefined) {
+        next[id] = 0 // Not owned -> 0-break
+      } else if (current === 4) {
+        delete next[id] // 4-break -> Not owned
       } else {
-        next[id] = nextCount
+        next[id] = current + 1 // 0->1, 1->2, 2->3, 3->4
       }
+      
       return next
     })
   }
@@ -87,7 +90,7 @@ function App() {
       isDimmed: isFilteredOut && viewMode === 'dim',
       isHidden: isFilteredOut && viewMode === 'hide',
       isMetaHighlight: selectedTeamStyles.includes(style.id),
-      ownedCount: ownedStyles[style.id] || 0
+      ownedCount: ownedStyles[style.id] // Now can be undefined, 0, 1, 2, 3, or 4
     }
   })
 
@@ -97,7 +100,7 @@ function App() {
 
   const elementStats = ['화염', '빙결', '뇌전', '광', '암', '무속성'].map(el => {
     const totalByEl = styles.filter(s => s.element === el).length
-    const ownedByEl = styles.filter(s => s.element === el && ownedStyles[s.id]).length
+    const ownedByEl = styles.filter(s => s.element === el && ownedStyles[s.id] !== undefined).length
     return { element: el, total: totalByEl, owned: ownedByEl }
   })
 
