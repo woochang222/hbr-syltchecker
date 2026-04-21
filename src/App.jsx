@@ -1,20 +1,26 @@
 import { useState, useEffect } from 'react'
 import stylesData from './data/styles.json'
+import metaTeamsData from './data/meta_teams.json'
 import FilterPanel from './components/FilterPanel'
 import StyleCard from './components/StyleCard'
 
 function App() {
   const [styles] = useState(stylesData)
+  const [metaTeams] = useState(metaTeamsData)
   
   const [ownedStyles, setOwnedStyles] = useState(() => {
     const saved = localStorage.getItem('hbr_owned_styles')
-    return saved ? JSON.parse(saved) : []
+    return saved ? JSON.parse(saved) : {}
   })
   
   const [filters, setFilters] = useState({
     elements: [],
-    units: []
+    units: [],
+    tiers: []
   })
+
+  const [searchTerm, setSearchTerm] = useState('')
+  const [activeMetaTeam, setActiveMetaTeam] = useState(null)
   
   const [viewMode, setViewMode] = useState(() => {
     const saved = localStorage.getItem('hbr_view_mode')
@@ -30,9 +36,17 @@ function App() {
   }, [viewMode])
 
   const handleToggleOwned = (id) => {
-    setOwnedStyles(prev => 
-      prev.includes(id) ? prev.filter(sid => sid !== id) : [...prev, id]
-    )
+    setOwnedStyles(prev => {
+      const currentCount = prev[id] || 0
+      const nextCount = (currentCount + 1) % 5 // 0 -> 1 -> 2 -> 3 -> 4 -> 0
+      const next = { ...prev }
+      if (nextCount === 0) {
+        delete next[id]
+      } else {
+        next[id] = nextCount
+      }
+      return next
+    })
   }
 
   const handleFilterChange = (type, value) => {
@@ -45,33 +59,92 @@ function App() {
     })
   }
 
+  const handleMetaTeamChange = (teamId) => {
+    setActiveMetaTeam(prev => prev === teamId ? null : teamId)
+  }
+
   const handleToggleViewMode = () => {
     setViewMode(prev => prev === 'dim' ? 'hide' : 'dim')
   }
 
+  const selectedTeamStyles = activeMetaTeam 
+    ? metaTeams.find(t => t.id === activeMetaTeam)?.styles || []
+    : []
+
   const filteredStyles = styles.map(style => {
     const matchElement = filters.elements.length === 0 || filters.elements.includes(style.element)
     const matchUnit = filters.units.length === 0 || filters.units.includes(style.unit)
-    const isFilteredOut = !matchElement || !matchUnit
+    const matchTier = filters.tiers.length === 0 || filters.tiers.includes(style.tier)
+    const matchSearch = searchTerm === '' || 
+      style.character_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      style.style_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      (style.nicknames && style.nicknames.some(n => n.toLowerCase().includes(searchTerm.toLowerCase())))
+    
+    const isFilteredOut = !matchElement || !matchUnit || !matchTier || !matchSearch
 
     return {
       ...style,
       isDimmed: isFilteredOut && viewMode === 'dim',
-      isHidden: isFilteredOut && viewMode === 'hide'
+      isHidden: isFilteredOut && viewMode === 'hide',
+      isMetaHighlight: selectedTeamStyles.includes(style.id),
+      ownedCount: ownedStyles[style.id] || 0
     }
+  })
+
+  const totalStyles = styles.length
+  const totalOwned = Object.keys(ownedStyles).length
+  const ownershipRate = totalStyles > 0 ? Math.round((totalOwned / totalStyles) * 100) : 0
+
+  const elementStats = ['화염', '빙결', '뇌전', '광', '암', '무속성'].map(el => {
+    const totalByEl = styles.filter(s => s.element === el).length
+    const ownedByEl = styles.filter(s => s.element === el && ownedStyles[s.id]).length
+    return { element: el, total: totalByEl, owned: ownedByEl }
   })
 
   return (
     <div className="app-container">
       <header>
-        <h1>HBR Style Checker</h1>
+        <h1>헤번레 스타일 체커</h1>
+        <div className="search-bar">
+          <input 
+            type="text" 
+            placeholder="캐릭터 또는 스타일 이름 검색..." 
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          {searchTerm && <button className="clear-search" onClick={() => setSearchTerm('')}>&times;</button>}
+        </div>
       </header>
+
+      <section className="stats-dashboard">
+        <div className="main-stats">
+          <div className="stat-item total">
+            <span className="label">전체 보유율</span>
+            <span className="value">{ownershipRate}%</span>
+            <div className="progress-bar">
+              <div className="progress-fill" style={{ width: `${ownershipRate}%` }}></div>
+            </div>
+            <span className="count">{totalOwned} / {totalStyles}</span>
+          </div>
+        </div>
+        <div className="element-stats">
+          {elementStats.map(stat => (
+            <div key={stat.element} className="el-stat-item">
+              <span className="el-label">{stat.element}</span>
+              <span className="el-count">{stat.owned}/{stat.total}</span>
+            </div>
+          ))}
+        </div>
+      </section>
       
       <FilterPanel 
         filters={filters} 
         onFilterChange={handleFilterChange}
         viewMode={viewMode}
         onToggleViewMode={handleToggleViewMode}
+        metaTeams={metaTeams}
+        activeMetaTeam={activeMetaTeam}
+        onMetaTeamChange={handleMetaTeamChange}
       />
 
       <main className="style-list">
@@ -79,10 +152,11 @@ function App() {
           <StyleCard 
             key={style.id}
             style={style}
-            isOwned={ownedStyles.includes(style.id)}
+            ownedCount={style.ownedCount}
             onToggleOwned={handleToggleOwned}
             isDimmed={style.isDimmed}
             isHidden={style.isHidden}
+            isMeta={style.isMetaHighlight}
           />
         ))}
       </main>

@@ -1,37 +1,32 @@
 import React from 'react';
 
-const StyleCard = ({ style, isOwned, onToggleOwned, isDimmed, isHidden }) => {
+const StyleCard = ({ style, ownedCount, onToggleOwned, isDimmed, isHidden, isMeta }) => {
   if (isHidden) return null;
 
   const {
     id,
     character_name,
-    style_name,
-    isResonance,
-    isLimited,
     isUniform,
     element,
-    tier
+    image_url
   } = style;
 
   return (
     <div 
-      className={`style-card ${isOwned ? 'owned' : ''} ${isDimmed ? 'dimmed' : ''} ${isUniform ? 'uniform' : ''}`}
+      className={`style-card count-${ownedCount} ${isDimmed ? 'dimmed' : ''} ${isUniform ? 'uniform' : ''} ${isMeta ? 'meta-highlight' : ''}`}
       onClick={() => onToggleOwned(id)}
     >
       <div className="card-inner">
-        {isResonance && <span className="badge resonance">R</span>}
-        {isLimited && <span className="badge limited">L</span>}
+        {ownedCount > 0 && <span className="limit-break-badge">{ownedCount}</span>}
         
-        <div className="style-icon-placeholder">
-          {/* 실제 이미지가 없으므로 원소/캐릭터명으로 대체 */}
-          <span className="element-icon">{element}</span>
-          <div className="char-name">{character_name}</div>
-        </div>
-        
-        <div className="style-info">
-          <div className="style-name">{style_name}</div>
-          <div className="tier-tag">T{tier}</div>
+        <div className="style-image-container">
+          {image_url ? (
+            <img src={image_url} alt={character_name} className="style-image" />
+          ) : (
+            <div className="style-icon-placeholder">
+              <span className="element-icon">{element}</span>
+            </div>
+          )}
         </div>
       </div>
     </div>
