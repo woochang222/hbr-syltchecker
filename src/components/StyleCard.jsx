@@ -21,7 +21,11 @@ const StyleCard = ({ style, ownedCount, onToggleOwned, isDimmed, isHidden, isMet
         
         <div className="style-image-container">
           {image_url ? (
-            <img src={image_url} alt={character_name} className="style-image" />
+            <img 
+              src={`${import.meta.env.BASE_URL}${image_url.startsWith('/') ? image_url.slice(1) : image_url}`} 
+              alt={character_name} 
+              className="style-image" 
+            />
           ) : (
             <div className="style-icon-placeholder">
               <span className="element-icon">{element}</span>
