@@ -11,6 +11,9 @@ const FilterPanel = ({
   activeMetaTeam,
   onMetaTeamChange,
   onOwnershipRangeChange,
+  highlightLatest,
+  onToggleHighlightLatest,
+  onResetFilters,
   onClose
 }) => {
   const units = ['31A', '31B', '31C', '30G', '31D', '31E', '31F', '31X', 'AB']
@@ -33,9 +36,14 @@ const FilterPanel = ({
           <h2>필터</h2>
           <p>프리셋을 먼저 고르고 필요한 조건만 좁히세요.</p>
         </div>
-        <button type="button" className="filter-close-button" onClick={onClose}>
-          닫기
-        </button>
+        <div className="filter-panel-actions">
+          <button type="button" className="filter-reset-button" onClick={onResetFilters}>
+            초기화
+          </button>
+          <button type="button" className="filter-close-button" onClick={onClose}>
+            닫기
+          </button>
+        </div>
       </div>
 
       <div className="filter-group preset-group">
@@ -150,6 +158,17 @@ const FilterPanel = ({
             onChange={onToggleViewMode}
           />
           필터 제외 대상 숨기기
+        </label>
+      </div>
+
+      <div className="view-mode-toggle">
+        <label>
+          <input
+            type="checkbox"
+            checked={highlightLatest}
+            onChange={onToggleHighlightLatest}
+          />
+          최신 발매 스타일 돋보이기
         </label>
       </div>
     </aside>

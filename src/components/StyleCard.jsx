@@ -1,23 +1,26 @@
 import React from 'react';
 
-const StyleCard = ({ style, ownedCount, onToggleOwned, isDimmed, isMeta }) => {
+const StyleCard = ({ style, ownedCount, onToggleOwned, isDimmed, isMeta, highlightLatest }) => {
   const {
     id,
     character_name,
     isUniform,
     element,
+    isLatest,
     image_url
   } = style;
 
   const isOwned = ownedCount !== undefined;
+  const isLatestHighlighted = Boolean(highlightLatest && isLatest);
 
   return (
     <div 
-      className={`style-card ${isOwned ? `count-${ownedCount} owned` : 'not-owned'} ${isDimmed ? 'dimmed' : ''} ${isUniform ? 'uniform' : ''} ${isMeta ? 'meta-highlight' : ''}`}
+      className={`style-card ${isOwned ? `count-${ownedCount} owned` : 'not-owned'} ${isDimmed ? 'dimmed' : ''} ${isUniform ? 'uniform' : ''} ${isMeta ? 'meta-highlight' : ''} ${isLatestHighlighted ? 'latest-highlight' : ''}`}
       onClick={() => onToggleOwned(id)}
     >
       <div className="card-inner">
         {isOwned && <span className="limit-break-badge">{ownedCount}</span>}
+        {isLatestHighlighted && <span className="latest-badge">최신</span>}
         
         <div className="style-image-container">
           {image_url ? (

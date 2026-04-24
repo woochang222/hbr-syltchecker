@@ -301,6 +301,22 @@ header h1 {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.latest-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 4;
+  background: #00d4ff;
+  color: #081014;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: 0 2px 8px rgba(0, 212, 255, 0.35);
+}
+
 .badge.resonance { background: linear-gradient(45deg, #f1c40f, #f39c12); color: #000; }
 .badge.limited { background: linear-gradient(45deg, #ff4081, #c2185b); color: #fff; }
 
@@ -394,6 +410,27 @@ header h1 {
   font-size: 12px;
   color: #888;
   line-height: 1.4;
+}
+
+.filter-panel-actions {
+  display: flex;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.filter-reset-button {
+  border: 1px solid #555;
+  background: transparent;
+  color: #ddd;
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.filter-reset-button:hover {
+  background: #2a2a2a;
+  color: #fff;
 }
 
 .filter-close-button {
@@ -591,6 +628,20 @@ header h1 {
   font-weight: bold;
   padding: 0 4px;
   border-top-left-radius: 4px;
+}
+
+.style-card.latest-highlight {
+  border-color: #00d4ff;
+  box-shadow: 0 0 22px rgba(0, 212, 255, 0.35);
+}
+
+.style-card.latest-highlight::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  pointer-events: none;
+  z-index: 2;
 }
 
 .view-mode-toggle {

@@ -6,7 +6,12 @@ import FilterSummary from './components/FilterSummary'
 import StyleCard from './components/StyleCard'
 import { ELEMENTS } from './data/elements'
 import { buildFilterSummary, countMatchingStyles, getRenderableStyles } from './utils/filterSummary'
-import { DEFAULT_OWNERSHIP_RANGE, matchesOwnershipRange, normalizeOwnershipRange } from './utils/ownershipRange'
+import {
+  DEFAULT_HIGHLIGHT_LATEST,
+  createDefaultFilters,
+  resetFilterState
+} from './utils/filterState'
+import { matchesOwnershipRange, normalizeOwnershipRange } from './utils/ownershipRange'
 import { sortStylesByOfficialOrder } from './utils/styleOrder'
 
 function App() {
@@ -18,12 +23,7 @@ function App() {
     return saved ? JSON.parse(saved) : {}
   })
   
-  const [filters, setFilters] = useState({
-    elements: [],
-    units: [],
-    tiers: [],
-    ownershipRange: DEFAULT_OWNERSHIP_RANGE
-  })
+  const [filters, setFilters] = useState(() => createDefaultFilters())
 
   const [searchTerm, setSearchTerm] = useState('')
   const [activeMetaTeam, setActiveMetaTeam] = useState(null)
@@ -31,6 +31,10 @@ function App() {
   const [viewMode, setViewMode] = useState(() => {
     const saved = localStorage.getItem('hbr_view_mode')
     return saved || 'dim'
+  })
+  const [highlightLatest, setHighlightLatest] = useState(() => {
+    const saved = localStorage.getItem('hbr_highlight_latest')
+    return saved ? JSON.parse(saved) : DEFAULT_HIGHLIGHT_LATEST
   })
   const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false)
 
@@ -41,6 +45,10 @@ function App() {
   useEffect(() => {
     localStorage.setItem('hbr_view_mode', viewMode)
   }, [viewMode])
+
+  useEffect(() => {
+    localStorage.setItem('hbr_highlight_latest', JSON.stringify(highlightLatest))
+  }, [highlightLatest])
 
   useEffect(() => {
     if (!isFilterDrawerOpen) return
@@ -95,6 +103,17 @@ function App() {
 
   const handleToggleViewMode = () => {
     setViewMode(prev => prev === 'dim' ? 'hide' : 'dim')
+  }
+
+  const handleToggleHighlightLatest = () => {
+    setHighlightLatest(prev => !prev)
+  }
+
+  const handleResetFilters = () => {
+    const nextState = resetFilterState()
+    setFilters(nextState.filters)
+    setSearchTerm(nextState.searchTerm)
+    setActiveMetaTeam(nextState.activeMetaTeam)
   }
 
   const selectedTeamStyles = activeMetaTeam 
@@ -220,6 +239,9 @@ function App() {
               activeMetaTeam={activeMetaTeam}
               onMetaTeamChange={handleMetaTeamChange}
               onOwnershipRangeChange={handleOwnershipRangeChange}
+              highlightLatest={highlightLatest}
+              onToggleHighlightLatest={handleToggleHighlightLatest}
+              onResetFilters={handleResetFilters}
               onClose={() => setIsFilterDrawerOpen(false)}
             />
           </div>
@@ -235,6 +257,7 @@ function App() {
             onToggleOwned={handleToggleOwned}
             isDimmed={style.isDimmed}
             isMeta={style.isMetaHighlight}
+            highlightLatest={highlightLatest}
           />
         ))}
       </main>
