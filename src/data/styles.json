@@ -9,7 +9,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
+    "element": "암",
     "metaTags": []
   },
   {
@@ -22,7 +22,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
+    "element": "빛",
     "metaTags": []
   },
   {
@@ -35,7 +35,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "기타",
-    "element": "미정",
+    "element": "화",
     "metaTags": []
   },
   {
@@ -48,7 +48,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
+    "element": "빙",
     "metaTags": []
   },
   {
@@ -61,7 +61,7 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "사령부",
-    "element": "미정",
+    "element": "뇌",
     "metaTags": []
   },
   {
@@ -74,7 +74,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "사령부",
-    "element": "미정",
+    "element": "뇌",
     "metaTags": []
   },
   {
@@ -87,7 +87,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
+    "element": "빙",
     "metaTags": []
   },
   {
@@ -100,7 +100,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
+    "element": "화",
     "metaTags": []
   },
   {
@@ -113,7 +113,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
+    "element": "빙",
     "metaTags": []
   },
   {
@@ -126,7 +126,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
+    "element": "암",
     "metaTags": []
   },
   {
@@ -139,7 +139,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
+    "element": "뇌",
     "metaTags": []
   },
   {
@@ -152,7 +152,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
+    "element": "무",
     "metaTags": []
   },
   {
@@ -178,7 +178,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
+    "element": "빙",
     "metaTags": []
   },
   {
@@ -191,7 +191,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
+    "element": "빛",
     "metaTags": []
   },
   {
@@ -230,7 +230,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
+    "element": "뇌",
     "metaTags": []
   },
   {
@@ -243,7 +243,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
+    "element": "무",
     "metaTags": []
   },
   {
@@ -282,7 +282,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
+    "element": "암",
     "metaTags": []
   },
   {
@@ -295,7 +295,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
+    "element": "빛",
     "metaTags": []
   },
   {
@@ -308,7 +308,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
+    "element": "무",
     "metaTags": []
   },
   {
@@ -321,7 +321,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31D",
-    "element": "미정",
+    "element": "빛",
     "metaTags": []
   },
   {
@@ -360,7 +360,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
+    "element": "빛",
     "metaTags": []
   },
   {
@@ -373,7 +373,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
+    "element": "화",
     "metaTags": []
   },
   {
@@ -386,7 +386,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
+    "element": "화",
     "metaTags": []
   },
   {
@@ -412,7 +412,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
+    "element": "화",
     "metaTags": []
   },
   {
@@ -529,7 +529,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
+    "element": "무",
     "metaTags": []
   },
   {
@@ -568,7 +568,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
+    "element": "화",
     "metaTags": []
   },
   {
@@ -646,7 +646,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
+    "element": "무",
     "metaTags": []
   },
   {
@@ -659,7 +659,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "기타",
-    "element": "미정",
+    "element": "무",
     "metaTags": []
   },
   {
@@ -737,7 +737,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
+    "element": "빙",
     "metaTags": []
   },
   {
@@ -1127,7 +1127,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
+    "element": "암",
     "metaTags": []
   },
   {
@@ -1179,7 +1179,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
+    "element": "암",
     "metaTags": []
   },
   {
@@ -1257,7 +1257,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "기타",
-    "element": "미정",
+    "element": "빙",
     "metaTags": []
   },
   {

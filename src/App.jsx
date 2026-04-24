@@ -4,6 +4,7 @@ import metaTeamsData from './data/meta_teams.json'
 import FilterPanel from './components/FilterPanel'
 import FilterSummary from './components/FilterSummary'
 import StyleCard from './components/StyleCard'
+import { ELEMENTS } from './data/elements'
 import { buildFilterSummary, countMatchingStyles } from './utils/filterSummary'
 
 function App() {
@@ -124,7 +125,7 @@ function App() {
   const totalOwned = Object.keys(ownedStyles).length
   const ownershipRate = totalStyles > 0 ? Math.round((totalOwned / totalStyles) * 100) : 0
 
-  const elementStats = ['화염', '빙결', '뇌전', '광', '암', '무속성'].map(el => {
+  const elementStats = ELEMENTS.map(el => {
     const totalByEl = styles.filter(s => s.element === el).length
     const ownedByEl = styles.filter(s => s.element === el && ownedStyles[s.id] !== undefined).length
     return { element: el, total: totalByEl, owned: ownedByEl }

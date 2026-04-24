@@ -4,8 +4,8 @@ import { buildFilterSummary, countMatchingStyles } from './filterSummary.js'
 
 describe('buildFilterSummary', () => {
   const metaTeams = [
-    { id: 'light_meta', name: '광속성 파티', styles: ['ruka_light_res'] },
-    { id: 'fire_meta', name: '화염속성 파티', styles: ['yuki_fire_ss'] }
+    { id: 'light_meta', name: '빛 최고 조합', styles: ['shirakawa_yuina_white_suit_res'] },
+    { id: 'fire_meta', name: '화 최고 조합', styles: ['kayamori_ruka_unison_res'] }
   ]
 
   it('shows the default all-styles summary when no filters are active', () => {
@@ -22,14 +22,14 @@ describe('buildFilterSummary', () => {
 
   it('puts the active preset first and summarizes selected filters', () => {
     const result = buildFilterSummary({
-      filters: { elements: ['광'], units: ['31A', '31B'], tiers: [0] },
+      filters: { elements: ['빛'], units: ['31A', '31B'], tiers: [0] },
       activeMetaTeam: 'light_meta',
       metaTeams,
       viewMode: 'hide',
       visibleCount: 18
     })
 
-    assert.deepEqual(result, ['광속성 파티', '광', '부대 2개', 'T0', '숨김 모드', '결과 18개'])
+    assert.deepEqual(result, ['빛 최고 조합', '빛', '부대 2개', 'T0', '숨김 모드', '결과 18개'])
   })
 
   it('falls back to a stable label for an unknown preset id', () => {

@@ -1,4 +1,5 @@
 import React from 'react'
+import { ELEMENTS } from '../data/elements'
 
 const FilterPanel = ({
   filters,
@@ -10,7 +11,6 @@ const FilterPanel = ({
   onMetaTeamChange,
   onClose
 }) => {
-  const elements = ['화염', '빙결', '뇌전', '광', '암', '무속성']
   const units = ['31A', '31B', '31C', '30G', '31D', '31E', '31F', '31X']
   const tiers = [0, 1, 2, 3]
 
@@ -49,7 +49,7 @@ const FilterPanel = ({
       <div className="filter-group">
         <h3>원소</h3>
         <div className="filter-buttons">
-          {elements.map(el => (
+          {ELEMENTS.map(el => (
             <button
               type="button"
               key={el}
