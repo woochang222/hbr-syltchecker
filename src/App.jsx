@@ -13,6 +13,7 @@ import {
 } from './utils/filterState'
 import { matchesOwnershipRange, normalizeOwnershipRange } from './utils/ownershipRange'
 import { sortStylesByOfficialOrder } from './utils/styleOrder'
+import { getStyleElements, hasStyleElement } from './utils/styleElements'
 
 function App() {
   const [styles] = useState(() => sortStylesByOfficialOrder(stylesData))
@@ -121,7 +122,7 @@ function App() {
     : []
 
   const filteredStyles = styles.map(style => {
-    const matchElement = filters.elements.length === 0 || filters.elements.includes(style.element)
+    const matchElement = hasStyleElement(style, filters.elements)
     const matchUnit = filters.units.length === 0 || filters.units.includes(style.unit)
     const matchTier = filters.tiers.length === 0 || filters.tiers.includes(style.tier)
     const matchOwnership = matchesOwnershipRange(ownedStyles[style.id], filters.ownershipRange)
@@ -157,8 +158,8 @@ function App() {
   const ownershipRate = totalStyles > 0 ? Math.round((totalOwned / totalStyles) * 100) : 0
 
   const elementStats = ELEMENTS.map(el => {
-    const totalByEl = styles.filter(s => s.element === el).length
-    const ownedByEl = styles.filter(s => s.element === el && ownedStyles[s.id] !== undefined).length
+    const totalByEl = styles.filter(s => getStyleElements(s).includes(el)).length
+    const ownedByEl = styles.filter(s => getStyleElements(s).includes(el) && ownedStyles[s.id] !== undefined).length
     return { element: el, total: totalByEl, owned: ownedByEl }
   })
 

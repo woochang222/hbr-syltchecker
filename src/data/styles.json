@@ -10,7 +10,10 @@
     "isUniform": false,
     "unit": "AB",
     "element": "빙",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "natsume_inori_hanakage_res",
@@ -24,7 +27,10 @@
     "isUniform": false,
     "unit": "31F",
     "element": "빙",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "kurosawa_maki_empress_res",
@@ -38,7 +44,10 @@
     "isUniform": false,
     "unit": "31F",
     "element": "뇌",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "nikaido_misato_admiral_res",
@@ -51,7 +60,10 @@
     "isUniform": false,
     "unit": "31D",
     "element": "암",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "date_akari_sports_day_res",
@@ -64,7 +76,10 @@
     "isUniform": false,
     "unit": "31D",
     "element": "광",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "ogasawara_hisame_bunny_res",
@@ -77,7 +92,10 @@
     "isUniform": false,
     "unit": "30G",
     "element": "화",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "aikawa_megumi_unison_res",
@@ -90,7 +108,10 @@
     "isUniform": false,
     "unit": "31A",
     "element": "빙",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "tezuka_saki_base_res",
@@ -103,7 +124,10 @@
     "isUniform": true,
     "unit": "사령부",
     "element": "뇌",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "nanase_nanami_admiral_res",
@@ -116,7 +140,10 @@
     "isUniform": false,
     "unit": "사령부",
     "element": "뇌",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "aoi_erika_white_suit_res",
@@ -129,7 +156,10 @@
     "isUniform": false,
     "unit": "31B",
     "element": "빙",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "shirakawa_yuina_admiral_res",
@@ -142,7 +172,10 @@
     "isUniform": false,
     "unit": "30G",
     "element": "화",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "kayamori_ruka_admiral_res",
@@ -155,7 +188,10 @@
     "isUniform": false,
     "unit": "31A",
     "element": "빙",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "kanzaki_adelheid_servant_res",
@@ -168,7 +204,10 @@
     "isUniform": false,
     "unit": "31C",
     "element": "암",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "maruyama_kanata_regalia_res",
@@ -181,7 +220,10 @@
     "isUniform": false,
     "unit": "31F",
     "element": "뇌",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "yamawaki_unison_res",
@@ -194,7 +236,10 @@
     "isUniform": false,
     "unit": "31C",
     "element": "무",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "oshima_minori_midnight_res",
@@ -206,8 +251,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "kunimi_tama_halloween_res",
@@ -220,7 +268,10 @@
     "isUniform": false,
     "unit": "31A",
     "element": "빙",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "minase_ichigo_pawapuro_res",
@@ -233,7 +284,10 @@
     "isUniform": false,
     "unit": "31B",
     "element": "광",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "kayamori_ruka_pawapuro_res",
@@ -245,8 +299,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "carol_reaper_white_suit_res",
@@ -258,8 +315,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "mizuhara_aina_swimsuit_res",
@@ -272,7 +332,10 @@
     "isUniform": false,
     "unit": "31D",
     "element": "뇌",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "asakura_karen_unison_res",
@@ -285,7 +348,10 @@
     "isUniform": false,
     "unit": "31A",
     "element": "무",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "kiryu_miya_swimsuit_res",
@@ -297,8 +363,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "kura_satomi_swimsuit_res",
@@ -310,8 +379,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "aoi_erika_swimsuit_res",
@@ -324,7 +396,10 @@
     "isUniform": false,
     "unit": "31B",
     "element": "암",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "yanagi_mion_admiral_res",
@@ -337,7 +412,10 @@
     "isUniform": false,
     "unit": "31F",
     "element": "광",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "bungo_yayoi_unison_res",
@@ -350,7 +428,10 @@
     "isUniform": false,
     "unit": "31C",
     "element": "무",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "oshima_ichiko_white_suit_res",
@@ -363,7 +444,10 @@
     "isUniform": false,
     "unit": "31E",
     "element": "광",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "yamawaki_white_suit_res",
@@ -375,8 +459,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "nanase_nanami_base_res",
@@ -388,8 +475,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "사령부",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "shirakawa_yuina_white_suit_res",
@@ -402,7 +492,10 @@
     "isUniform": false,
     "unit": "30G",
     "element": "광",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "nikaido_misato_white_suit_res",
@@ -415,7 +508,10 @@
     "isUniform": false,
     "unit": "31D",
     "element": "화",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "izumi_yuki_unison_res",
@@ -428,7 +524,10 @@
     "isUniform": false,
     "unit": "31A",
     "element": "화",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "shirakawa_yuina_unison_res",
@@ -440,8 +539,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "kayamori_ruka_unison_res",
@@ -454,7 +556,10 @@
     "isUniform": false,
     "unit": "31A",
     "element": "화",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "maria_de_angelis_chef",
@@ -466,8 +571,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "carol_reaper_chef",
@@ -479,8 +587,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "yamawaki_loneliness",
@@ -492,8 +603,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "eileen_redmain_foggy_city",
@@ -505,8 +619,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "oshima_isuzu_night_talk",
@@ -518,8 +635,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "minase_sumomo_halloween",
@@ -531,8 +651,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "charlotta_chef",
@@ -544,8 +667,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "vritika_balakrishnan_chef",
@@ -557,8 +683,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "satsuki_mari_servant",
@@ -571,7 +700,10 @@
     "isUniform": false,
     "unit": "31C",
     "element": "무",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "oshima_muua_summer_clothes",
@@ -583,8 +715,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "oshima_niina_summer_clothes",
@@ -596,8 +731,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "higuchi_seika_swimsuit",
@@ -610,7 +748,10 @@
     "isUniform": false,
     "unit": "31B",
     "element": "화",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "hiiragi_kozue_swimsuit",
@@ -622,8 +763,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "ri_yunfa_bride",
@@ -635,8 +779,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "ishii_iroha_bride",
@@ -648,8 +795,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "matsuoka_chiroru_heroic",
@@ -661,8 +811,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "oshima_yotsuba_yukata",
@@ -674,8 +827,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "sakuraba_seira_servant",
@@ -688,7 +844,10 @@
     "isUniform": false,
     "unit": "31C",
     "element": "무",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "amane_miko_servant",
@@ -701,7 +860,10 @@
     "isUniform": false,
     "unit": "31C",
     "element": "무",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "eileen_redmain_breeze",
@@ -713,8 +875,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "maria_de_angelis_elegante",
@@ -726,8 +891,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "tsukishiro_monaka_spring_blizzard",
@@ -739,8 +907,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "sugawara_chie_ferity",
@@ -752,8 +923,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "asakura_karen_free",
@@ -765,8 +939,12 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙",
+      "화"
+    ]
   },
   {
     "id": "tojo_tsukasa_sorrow",
@@ -779,7 +957,10 @@
     "isUniform": false,
     "unit": "31A",
     "element": "빙",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "date_akari_new_year",
@@ -791,8 +972,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "murofushi_risa_new_year",
@@ -804,8 +988,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "yoshioka_yui_base",
@@ -817,8 +1004,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "AB",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "iwasawa_masami_base",
@@ -830,8 +1020,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "AB",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "kayamori_ruka_diva",
@@ -843,8 +1036,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "hanamura_shiki_resplendent",
@@ -856,8 +1052,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "mikoto_fubuki_santa",
@@ -869,8 +1068,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "ishii_iroha_overflow",
@@ -882,8 +1084,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "mizuhara_aina_deep_sea",
@@ -895,8 +1100,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "aoi_erika_admiral",
@@ -908,8 +1116,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "higuchi_seika_catharsis",
@@ -921,8 +1132,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "minase_sumomo_compassion",
@@ -934,8 +1148,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "minase_ichigo_cold_beauty",
@@ -947,8 +1164,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "carol_reaper_carnival",
@@ -960,8 +1180,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "oshima_isuzu_magician",
@@ -973,8 +1196,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "oshima_minori_yukata",
@@ -986,8 +1212,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "ogasawara_hisame_garnet",
@@ -999,8 +1228,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "natsume_inori_lapis_lazuli",
@@ -1012,8 +1244,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "matsuoka_chiroru_secret",
@@ -1025,8 +1260,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "kurosawa_maki_soushisouai",
@@ -1038,8 +1276,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "asakura_karen_swimsuit",
@@ -1051,8 +1292,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "aikawa_megumi_swimsuit",
@@ -1064,8 +1308,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "satsuki_mari_swimsuit",
@@ -1077,8 +1324,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "kanzaki_adelheid_swimsuit",
@@ -1090,8 +1340,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "charlotta_bride",
@@ -1103,8 +1356,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "sakuraba_seira_bride",
@@ -1116,8 +1372,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "vritika_balakrishnan_dancer",
@@ -1129,8 +1388,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "eileen_redmain_moonlight",
@@ -1142,8 +1404,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "maruyama_kanata_bloom",
@@ -1155,8 +1420,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "mizuhara_aina_pirate",
@@ -1169,7 +1437,10 @@
     "isUniform": false,
     "unit": "31D",
     "element": "암",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "kiryu_miya_dream_fire",
@@ -1181,8 +1452,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "sugawara_chie_stoic",
@@ -1194,8 +1468,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "ri_yunfa_spring_evening",
@@ -1207,8 +1484,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "tojo_tsukasa_bunny",
@@ -1221,7 +1501,10 @@
     "isUniform": false,
     "unit": "31A",
     "element": "암",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "hiiragi_kozue_waitress",
@@ -1233,8 +1516,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "amane_miko_supreme",
@@ -1246,8 +1532,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "bungo_yayoi_hanami",
@@ -1259,8 +1548,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "yamawaki_one_piece",
@@ -1272,8 +1564,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "izumi_yuki_ruby",
@@ -1285,8 +1580,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "tachibana_kanade_earth_angel",
@@ -1299,7 +1597,10 @@
     "isUniform": false,
     "unit": "AB",
     "element": "광",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "tachibana_kanade_soaring_sword",
@@ -1312,7 +1613,10 @@
     "isUniform": false,
     "unit": "AB",
     "element": "빙",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "nakamura_yuri_extraordinary",
@@ -1324,8 +1628,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "AB",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "oshima_muua_new_year",
@@ -1337,8 +1644,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "oshima_yotsuba_new_year",
@@ -1350,8 +1660,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "minase_ichigo_style_383264004",
@@ -1363,8 +1676,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "aoi_erika_style_383264004",
@@ -1376,8 +1692,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "aikawa_megumi_suit",
@@ -1389,8 +1708,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "kunimi_tama_suit",
@@ -1402,8 +1724,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "nikaido_misato_santa",
@@ -1415,8 +1740,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "date_akari_santa",
@@ -1428,8 +1756,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "maria_de_angelis_style_689546",
@@ -1441,8 +1772,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "charlotta_style_381454588",
@@ -1454,8 +1788,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "tsukishiro_monaka_style_825012",
@@ -1467,8 +1804,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "nakamura_yuri_rain_fire",
@@ -1480,8 +1820,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "AB",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "ri_yunfa_celestial_nymph",
@@ -1493,8 +1836,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "kanzaki_adelheid_girl",
@@ -1506,8 +1852,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "oshima_isuzu_yukata",
@@ -1519,8 +1868,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "oshima_niina_yukata",
@@ -1532,8 +1884,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "izumi_yuki_dress",
@@ -1545,8 +1900,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "kiryu_miya_houraku",
@@ -1558,8 +1916,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "yanagi_mion_night_breeze",
@@ -1571,8 +1932,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "natsume_inori_butterfly",
@@ -1584,8 +1948,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "asakura_karen_suit",
@@ -1597,8 +1964,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "tojo_tsukasa_suit",
@@ -1610,8 +1980,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "shirakawa_yuina_swimsuit",
@@ -1623,8 +1996,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "kunimi_tama_swimsuit",
@@ -1636,8 +2012,12 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광",
+      "무"
+    ]
   },
   {
     "id": "date_akari_base",
@@ -1649,8 +2029,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "amane_miko_style_385069754",
@@ -1662,8 +2045,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "murofushi_risa_style_1015651",
@@ -1675,8 +2061,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "oshima_ichiko_bride",
@@ -1688,8 +2077,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "satsuki_mari_bride",
@@ -1701,8 +2093,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "vritika_balakrishnan_base",
@@ -1714,8 +2109,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "charlotta_base",
@@ -1727,8 +2125,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "mizuhara_aina_base",
@@ -1740,8 +2141,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "ogasawara_hisame_maid",
@@ -1753,8 +2157,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "aoi_erika_maid",
@@ -1766,8 +2173,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "byakko_queen",
@@ -1779,8 +2189,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "kura_satomi_young_landlady",
@@ -1792,8 +2205,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "aikawa_megumi_miko",
@@ -1805,8 +2221,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "satsuki_mari_assassin",
@@ -1818,8 +2237,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "kanzaki_adelheid_ice_flower",
@@ -1831,8 +2253,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "mikoto_fubuki_base",
@@ -1844,8 +2269,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "sugawara_chie_pure_heart",
@@ -1857,8 +2285,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "oshima_yotsuba_base",
@@ -1870,8 +2301,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "oshima_muua_base",
@@ -1883,8 +2317,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "ogasawara_hisame_cat_ears",
@@ -1900,7 +2337,10 @@
     "isUniform": false,
     "unit": "30G",
     "element": "뇌",
-    "metaTags": []
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "ogasawara_hisame_initial",
@@ -1914,8 +2354,12 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙",
+      "무"
+    ]
   },
   {
     "id": "izumi_yuki_suit",
@@ -1927,8 +2371,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "kayamori_ruka_suit",
@@ -1940,8 +2387,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "maria_de_angelis_base",
@@ -1953,8 +2403,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "ri_yunfa_base",
@@ -1966,8 +2419,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "sakuraba_seira_new_year",
@@ -1979,8 +2435,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "kunimi_tama_new_year",
@@ -1992,8 +2451,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "bungo_yayoi_style_989629927",
@@ -2005,8 +2467,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "yamawaki_style_989629927",
@@ -2018,8 +2483,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "kurosawa_maki_base",
@@ -2031,8 +2499,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "natsume_inori_base",
@@ -2044,8 +2515,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "oshima_minori_base",
@@ -2057,8 +2531,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "oshima_niina_base",
@@ -2070,8 +2547,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "higuchi_seika_exploration",
@@ -2083,8 +2563,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "hiiragi_kozue_finale",
@@ -2096,8 +2579,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "murofushi_risa_base",
@@ -2109,8 +2595,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "ishii_iroha_base",
@@ -2122,8 +2611,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "shirakawa_yuina_infernal",
@@ -2135,8 +2627,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "kiryu_miya_base",
@@ -2148,8 +2643,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "matsuoka_chiroru_base",
@@ -2161,8 +2659,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "hanamura_shiki_base",
@@ -2174,8 +2675,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "eileen_redmain_base",
@@ -2187,8 +2691,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "carol_reaper_base",
@@ -2200,8 +2707,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31X",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "minase_sumomo_swimsuit",
@@ -2213,8 +2723,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "tojo_tsukasa_swimsuit",
@@ -2226,8 +2739,12 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화",
+      "무"
+    ]
   },
   {
     "id": "izumi_yuki_yukata",
@@ -2239,8 +2756,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "aoi_erika_base",
@@ -2252,8 +2772,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "oshima_isuzu_base",
@@ -2265,8 +2788,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "kanzaki_adelheid_base",
@@ -2278,8 +2804,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "oshima_ichiko_base",
@@ -2291,8 +2820,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31E",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "hiiragi_kozue_base",
@@ -2304,8 +2836,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "asakura_karen_style_383624729",
@@ -2317,8 +2852,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "yanagi_mion_base",
@@ -2330,8 +2868,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "maruyama_kanata_base",
@@ -2343,8 +2884,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31F",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "kura_satomi_base",
@@ -2356,8 +2900,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "kayamori_ruka_style_892372",
@@ -2369,8 +2916,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "shirakawa_yuina_base",
@@ -2382,8 +2932,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "nikaido_misato_base",
@@ -2395,8 +2948,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31D",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "kunimi_tama_style_1260545",
@@ -2408,8 +2964,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "minase_sumomo_base",
@@ -2421,8 +2980,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "minase_ichigo_base",
@@ -2434,8 +2996,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "tsukishiro_monaka_base",
@@ -2447,8 +3012,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
   },
   {
     "id": "aikawa_megumi_style_641820",
@@ -2460,8 +3028,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ]
   },
   {
     "id": "yamawaki_base",
@@ -2473,8 +3044,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "satsuki_mari_base",
@@ -2486,8 +3060,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "kayamori_ruka_style_1207334",
@@ -2499,8 +3076,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "kayamori_ruka_base",
@@ -2512,8 +3092,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "izumi_yuki_base",
@@ -2525,8 +3108,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "aikawa_megumi_base",
@@ -2538,8 +3124,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "tojo_tsukasa_base",
@@ -2551,8 +3140,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ]
   },
   {
     "id": "asakura_karen_base",
@@ -2564,8 +3156,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "kunimi_tama_base",
@@ -2577,8 +3172,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31A",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "higuchi_seika_base",
@@ -2590,8 +3188,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "뇌",
+    "metaTags": [],
+    "elements": [
+      "뇌"
+    ]
   },
   {
     "id": "byakko_base",
@@ -2603,8 +3204,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31B",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "sakuraba_seira_base",
@@ -2616,8 +3220,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "amane_miko_base",
@@ -2629,8 +3236,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   },
   {
     "id": "bungo_yayoi_base",
@@ -2642,8 +3252,11 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "31C",
-    "element": "미정",
-    "metaTags": []
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ]
   },
   {
     "id": "sugawara_chie_base",
@@ -2655,7 +3268,10 @@
     "isLimited": false,
     "isUniform": true,
     "unit": "30G",
-    "element": "미정",
-    "metaTags": []
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
   }
 ]

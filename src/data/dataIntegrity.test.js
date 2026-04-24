@@ -233,6 +233,14 @@ describe('style data integrity', () => {
     assert.deepEqual({ mismatches, missingCharacters }, { mismatches: [], missingCharacters: [] })
   })
 
+  it('uses a concrete element for every style', () => {
+    const unknownElements = styles
+      .filter(style => style.element === '미정')
+      .map(style => style.id)
+
+    assert.deepEqual(unknownElements, [])
+  })
+
   it('adds one Irie Miyuki AB style with a local image', () => {
     const miyukiStyles = styles.filter(style => style.character_name === '이리에 미유키')
 
