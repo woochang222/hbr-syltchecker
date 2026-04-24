@@ -45,3 +45,8 @@ export const buildFilterSummary = ({
 export const countMatchingStyles = (styles) => {
   return styles.filter(style => style.matchesFilters !== false).length
 }
+
+export const getRenderableStyles = (styles, viewMode) => {
+  if (viewMode !== 'hide') return styles
+  return styles.filter(style => style.matchesFilters !== false)
+}

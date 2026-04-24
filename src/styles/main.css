@@ -28,7 +28,7 @@ header h1 {
 
 .control-toolbar {
   display: grid;
-  grid-template-columns: auto minmax(0, 500px);
+  grid-template-columns: 132px minmax(0, 360px);
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -36,14 +36,15 @@ header h1 {
 }
 
 .filter-drawer-button {
-  border: 1px solid #f1c40f;
-  background: #f1c40f;
+  border: 2px solid #ffe27a;
+  background: linear-gradient(180deg, #ffe27a 0%, #f1c40f 100%);
   color: #111;
   border-radius: 6px;
-  padding: 11px 14px;
-  font-size: 13px;
+  padding: 13px 18px;
+  font-size: 15px;
   font-weight: 900;
   cursor: pointer;
+  box-shadow: 0 8px 22px rgba(241, 196, 15, 0.28);
 }
 
 .filter-drawer-button:hover {
@@ -57,12 +58,12 @@ header h1 {
 
 .search-bar input {
   width: 100%;
-  padding: 12px 40px 12px 16px;
+  padding: 10px 36px 10px 12px;
   background: #1e1e1e;
   border: 1px solid #333;
   border-radius: 8px;
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   transition: all 0.2s;
   box-sizing: border-box;
 }

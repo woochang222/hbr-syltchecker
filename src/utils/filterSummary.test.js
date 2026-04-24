@@ -1,10 +1,10 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
-import { buildFilterSummary, countMatchingStyles } from './filterSummary.js'
+import { buildFilterSummary, countMatchingStyles, getRenderableStyles } from './filterSummary.js'
 
 describe('buildFilterSummary', () => {
   const metaTeams = [
-    { id: 'light_meta', name: '빛 최고 조합', styles: ['shirakawa_yuina_white_suit_res'] },
+    { id: 'light_meta', name: '광 최고 조합', styles: ['shirakawa_yuina_white_suit_res'] },
     { id: 'fire_meta', name: '화 최고 조합', styles: ['kayamori_ruka_unison_res'] }
   ]
 
@@ -22,14 +22,14 @@ describe('buildFilterSummary', () => {
 
   it('puts the active preset first and summarizes selected filters', () => {
     const result = buildFilterSummary({
-      filters: { elements: ['빛'], units: ['31A', '31B'], tiers: [0] },
+      filters: { elements: ['광'], units: ['31A', '31B'], tiers: [0] },
       activeMetaTeam: 'light_meta',
       metaTeams,
       viewMode: 'hide',
       visibleCount: 18
     })
 
-    assert.deepEqual(result, ['빛 최고 조합', '빛', '부대 2개', 'T0', '숨김 모드', '결과 18개'])
+    assert.deepEqual(result, ['광 최고 조합', '광', '부대 2개', 'T0', '숨김 모드', '결과 18개'])
   })
 
   it('falls back to a stable label for an unknown preset id', () => {
@@ -60,5 +60,20 @@ describe('countMatchingStyles', () => {
     const styles = [{ id: 'a' }, { id: 'b', matchesFilters: true }]
 
     assert.equal(countMatchingStyles(styles), 2)
+  })
+})
+
+describe('getRenderableStyles', () => {
+  const styles = [
+    { id: 'matching', matchesFilters: true },
+    { id: 'excluded', matchesFilters: false }
+  ]
+
+  it('keeps every style in dim mode so excluded cards can be dimmed', () => {
+    assert.deepEqual(getRenderableStyles(styles, 'dim').map(style => style.id), ['matching', 'excluded'])
+  })
+
+  it('removes filter-excluded styles before rendering in hide mode', () => {
+    assert.deepEqual(getRenderableStyles(styles, 'hide').map(style => style.id), ['matching'])
   })
 })

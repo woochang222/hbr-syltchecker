@@ -11,7 +11,7 @@ const stylesById = new Map(styles.map(style => [style.id, style]))
 
 describe('element labels', () => {
   it('uses one-character element labels in filter order', () => {
-    assert.deepEqual(ELEMENTS, ['무', '화', '빙', '뇌', '빛', '암'])
+    assert.deepEqual(ELEMENTS, ['무', '화', '빙', '뇌', '광', '암'])
   })
 })
 
@@ -24,7 +24,7 @@ describe('meta teams', () => {
         ['fire_meta', '화 최고 조합'],
         ['ice_meta', '빙 최고 조합'],
         ['thunder_meta', '뇌 최고 조합'],
-        ['light_meta', '빛 최고 조합'],
+        ['light_meta', '광 최고 조합'],
         ['dark_meta', '암 최고 조합']
       ]
     )

@@ -1,5 +1,31 @@
 [
   {
+    "id": "natsume_inori_hanakage_res",
+    "character_name": "나츠메 이노리",
+    "style_name": "화영 (레조넌스)",
+    "nicknames": [],
+    "image_url": "/images/styles/natsume_inori_hanakage_res.webp",
+    "isResonance": true,
+    "isLimited": false,
+    "isUniform": false,
+    "unit": "31F",
+    "element": "빙",
+    "metaTags": []
+  },
+  {
+    "id": "kurosawa_maki_empress_res",
+    "character_name": "쿠로사와 마키",
+    "style_name": "여제 (레조넌스)",
+    "nicknames": [],
+    "image_url": "/images/styles/kurosawa_maki_empress_res.webp",
+    "isResonance": true,
+    "isLimited": false,
+    "isUniform": false,
+    "unit": "31E",
+    "element": "뇌",
+    "metaTags": []
+  },
+  {
     "id": "nikaido_misato_admiral_res",
     "character_name": "니카이도 미사토",
     "style_name": "어드미럴 (레조넌스)",
@@ -22,7 +48,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "빛",
+    "element": "광",
     "metaTags": []
   },
   {
@@ -191,7 +217,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "빛",
+    "element": "광",
     "metaTags": []
   },
   {
@@ -295,7 +321,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "빛",
+    "element": "광",
     "metaTags": []
   },
   {
@@ -321,7 +347,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31D",
-    "element": "빛",
+    "element": "광",
     "metaTags": []
   },
   {
@@ -360,7 +386,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "빛",
+    "element": "광",
     "metaTags": []
   },
   {

@@ -1,8 +1,6 @@
 import React from 'react';
 
-const StyleCard = ({ style, ownedCount, onToggleOwned, isDimmed, isHidden, isMeta }) => {
-  if (isHidden) return null;
-
+const StyleCard = ({ style, ownedCount, onToggleOwned, isDimmed, isMeta }) => {
   const {
     id,
     character_name,

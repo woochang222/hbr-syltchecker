@@ -5,7 +5,7 @@ import FilterPanel from './components/FilterPanel'
 import FilterSummary from './components/FilterSummary'
 import StyleCard from './components/StyleCard'
 import { ELEMENTS } from './data/elements'
-import { buildFilterSummary, countMatchingStyles } from './utils/filterSummary'
+import { buildFilterSummary, countMatchingStyles, getRenderableStyles } from './utils/filterSummary'
 
 function App() {
   const [styles] = useState(stylesData)
@@ -120,6 +120,7 @@ function App() {
     viewMode,
     visibleCount: visibleStyleCount
   })
+  const renderableStyles = getRenderableStyles(filteredStyles, viewMode)
 
   const totalStyles = styles.length
   const totalOwned = Object.keys(ownedStyles).length
@@ -214,14 +215,13 @@ function App() {
       )}
 
       <main className="style-list">
-        {filteredStyles.map(style => (
+        {renderableStyles.map(style => (
           <StyleCard 
             key={style.id}
             style={style}
             ownedCount={style.ownedCount}
             onToggleOwned={handleToggleOwned}
             isDimmed={style.isDimmed}
-            isHidden={style.isHidden}
             isMeta={style.isMetaHighlight}
           />
         ))}
