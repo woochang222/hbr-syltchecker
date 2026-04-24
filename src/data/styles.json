@@ -1872,28 +1872,33 @@
     "metaTags": []
   },
   {
-    "id": "tezuka_saki_base",
-    "character_name": "테즈카 사키",
-    "style_name": "기본",
-    "nicknames": [],
-    "image_url": "/images/styles/tezuka_saki_base.webp",
+    "id": "ogasawara_hisame_cat_ears",
+    "character_name": "오가사와라 히사메",
+    "style_name": "희구와 갈앙",
+    "nicknames": [
+      "고양이귀",
+      "네코미미"
+    ],
+    "image_url": "/images/styles/ogasawara_hisame_cat_ears.webp",
     "isResonance": false,
     "isLimited": false,
-    "isUniform": true,
-    "unit": "사령부",
-    "element": "미정",
+    "isUniform": false,
+    "unit": "30G",
+    "element": "뇌",
     "metaTags": []
   },
   {
-    "id": "tezuka_saki_base",
-    "character_name": "테즈카 사키",
-    "style_name": "기본",
-    "nicknames": [],
-    "image_url": "/images/styles/tezuka_saki_base.webp",
+    "id": "ogasawara_hisame_initial",
+    "character_name": "오가사와라 히사메",
+    "style_name": "몽롱한 달밤의 불릿",
+    "nicknames": [
+      "초기"
+    ],
+    "image_url": "/images/styles/ogasawara_hisame_initial.webp",
     "isResonance": false,
     "isLimited": false,
-    "isUniform": true,
-    "unit": "사령부",
+    "isUniform": false,
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
@@ -2327,15 +2332,17 @@
     "metaTags": []
   },
   {
-    "id": "tezuka_saki_base",
-    "character_name": "테즈카 사키",
+    "id": "ogasawara_hisame_base",
+    "character_name": "오가사와라 히사메",
     "style_name": "기본",
-    "nicknames": [],
-    "image_url": "/images/styles/tezuka_saki_base.webp",
+    "nicknames": [
+      "교복"
+    ],
+    "image_url": "/images/styles/ogasawara_hisame_base.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "사령부",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
