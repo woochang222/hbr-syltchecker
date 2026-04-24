@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react'
 import stylesData from './data/styles.json'
 import metaTeamsData from './data/meta_teams.json'
 import FilterPanel from './components/FilterPanel'
+import FilterSummary from './components/FilterSummary'
 import StyleCard from './components/StyleCard'
+import { buildFilterSummary, countVisibleStyles } from './utils/filterSummary'
 
 function App() {
   const [styles] = useState(stylesData)
@@ -26,6 +28,7 @@ function App() {
     const saved = localStorage.getItem('hbr_view_mode')
     return saved || 'dim'
   })
+  const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false)
 
   useEffect(() => {
     localStorage.setItem('hbr_owned_styles', JSON.stringify(ownedStyles))
@@ -34,6 +37,19 @@ function App() {
   useEffect(() => {
     localStorage.setItem('hbr_view_mode', viewMode)
   }, [viewMode])
+
+  useEffect(() => {
+    if (!isFilterDrawerOpen) return
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setIsFilterDrawerOpen(false)
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [isFilterDrawerOpen])
 
   const handleToggleOwned = (id) => {
     setOwnedStyles(prev => {
@@ -94,6 +110,15 @@ function App() {
     }
   })
 
+  const visibleStyleCount = countVisibleStyles(filteredStyles)
+  const filterSummaryLabels = buildFilterSummary({
+    filters,
+    activeMetaTeam,
+    metaTeams,
+    viewMode,
+    visibleCount: visibleStyleCount
+  })
+
   const totalStyles = styles.length
   const totalOwned = Object.keys(ownedStyles).length
   const ownershipRate = totalStyles > 0 ? Math.round((totalOwned / totalStyles) * 100) : 0
@@ -108,15 +133,38 @@ function App() {
     <div className="app-container">
       <header>
         <h1>헤번레 스타일 체커</h1>
-        <div className="search-bar">
-          <input 
-            type="text" 
-            placeholder="캐릭터 또는 스타일 이름 검색..." 
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-          {searchTerm && <button className="clear-search" onClick={() => setSearchTerm('')}>&times;</button>}
+        <div className="control-toolbar">
+          <button
+            type="button"
+            className="filter-drawer-button"
+            onClick={() => setIsFilterDrawerOpen(true)}
+            aria-expanded={isFilterDrawerOpen}
+            aria-controls="filter-drawer"
+          >
+            필터
+          </button>
+
+          <div className="search-bar">
+            <input
+              type="text"
+              placeholder="캐릭터 또는 스타일 이름 검색..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            {searchTerm && (
+              <button
+                type="button"
+                className="clear-search"
+                onClick={() => setSearchTerm('')}
+                aria-label="검색어 지우기"
+              >
+                &times;
+              </button>
+            )}
+          </div>
         </div>
+
+        <FilterSummary labels={filterSummaryLabels} />
       </header>
 
       <section className="stats-dashboard">
@@ -139,16 +187,29 @@ function App() {
           ))}
         </div>
       </section>
-      
-      <FilterPanel 
-        filters={filters} 
-        onFilterChange={handleFilterChange}
-        viewMode={viewMode}
-        onToggleViewMode={handleToggleViewMode}
-        metaTeams={metaTeams}
-        activeMetaTeam={activeMetaTeam}
-        onMetaTeamChange={handleMetaTeamChange}
-      />
+
+      {isFilterDrawerOpen && (
+        <div
+          className="filter-drawer-overlay"
+          onClick={() => setIsFilterDrawerOpen(false)}
+        >
+          <div
+            id="filter-drawer"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <FilterPanel
+              filters={filters}
+              onFilterChange={handleFilterChange}
+              viewMode={viewMode}
+              onToggleViewMode={handleToggleViewMode}
+              metaTeams={metaTeams}
+              activeMetaTeam={activeMetaTeam}
+              onMetaTeamChange={handleMetaTeamChange}
+              onClose={() => setIsFilterDrawerOpen(false)}
+            />
+          </div>
+        </div>
+      )}
 
       <main className="style-list">
         {filteredStyles.map(style => (
