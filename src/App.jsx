@@ -7,9 +7,10 @@ import StyleCard from './components/StyleCard'
 import { ELEMENTS } from './data/elements'
 import { buildFilterSummary, countMatchingStyles, getRenderableStyles } from './utils/filterSummary'
 import { DEFAULT_OWNERSHIP_RANGE, matchesOwnershipRange, normalizeOwnershipRange } from './utils/ownershipRange'
+import { sortStylesByOfficialOrder } from './utils/styleOrder'
 
 function App() {
-  const [styles] = useState(stylesData)
+  const [styles] = useState(() => sortStylesByOfficialOrder(stylesData))
   const [metaTeams] = useState(metaTeamsData)
   
   const [ownedStyles, setOwnedStyles] = useState(() => {
