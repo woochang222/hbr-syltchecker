@@ -22,14 +22,14 @@ describe('buildFilterSummary', () => {
 
   it('puts the active preset first and summarizes selected filters', () => {
     const result = buildFilterSummary({
-      filters: { elements: ['광'], units: ['31A', '31B'], tiers: [0] },
+      filters: { elements: ['광'], units: ['31A', '31B'], tiers: [0], ownershipRange: [2, 4] },
       activeMetaTeam: 'light_meta',
       metaTeams,
       viewMode: 'hide',
       visibleCount: 18
     })
 
-    assert.deepEqual(result, ['광 최고 조합', '광', '부대 2개', 'T0', '숨김 모드', '결과 18개'])
+    assert.deepEqual(result, ['광 최고 조합', '광', '부대 2개', 'T0', '돌파 2개 이상', '숨김 모드', '결과 18개'])
   })
 
   it('falls back to a stable label for an unknown preset id', () => {

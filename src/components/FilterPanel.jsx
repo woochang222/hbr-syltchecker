@@ -1,5 +1,6 @@
 import React from 'react'
 import { ELEMENTS } from '../data/elements'
+import { OWNERSHIP_RANGE_LABELS } from '../utils/ownershipRange'
 
 const FilterPanel = ({
   filters,
@@ -9,10 +10,17 @@ const FilterPanel = ({
   metaTeams,
   activeMetaTeam,
   onMetaTeamChange,
+  onOwnershipRangeChange,
   onClose
 }) => {
   const units = ['31A', '31B', '31C', '30G', '31D', '31E', '31F', '31X']
   const tiers = [0, 1, 2, 3]
+  const ownershipRange = filters.ownershipRange || [-1, 4]
+  const ownershipMin = ownershipRange[0]
+  const ownershipMax = ownershipRange[1]
+  const ownershipMinPercent = ((ownershipMin + 1) / 5) * 100
+  const ownershipMaxPercent = ((ownershipMax + 1) / 5) * 100
+  const formatOwnershipValue = (value) => value === -1 ? '미보유' : `${value}`
 
   return (
     <aside
@@ -90,6 +98,46 @@ const FilterPanel = ({
             >
               T{tier}
             </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="filter-group ownership-range-group">
+        <h3>보유/돌파 수</h3>
+        <div className="ownership-range-values" aria-live="polite">
+          <span>{formatOwnershipValue(ownershipMin)}</span>
+          <span>~</span>
+          <span>{formatOwnershipValue(ownershipMax)}</span>
+        </div>
+        <div
+          className="ownership-range-slider"
+          style={{
+            '--range-start': `${ownershipMinPercent}%`,
+            '--range-end': `${ownershipMaxPercent}%`
+          }}
+        >
+          <input
+            type="range"
+            min="-1"
+            max="4"
+            step="1"
+            value={ownershipMin}
+            aria-label="보유/돌파 최소값"
+            onChange={(event) => onOwnershipRangeChange([Number(event.target.value), ownershipMax])}
+          />
+          <input
+            type="range"
+            min="-1"
+            max="4"
+            step="1"
+            value={ownershipMax}
+            aria-label="보유/돌파 최대값"
+            onChange={(event) => onOwnershipRangeChange([ownershipMin, Number(event.target.value)])}
+          />
+        </div>
+        <div className="ownership-range-scale" aria-hidden="true">
+          {OWNERSHIP_RANGE_LABELS.map(label => (
+            <span key={label}>{label}</span>
           ))}
         </div>
       </div>

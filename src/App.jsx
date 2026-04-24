@@ -6,6 +6,7 @@ import FilterSummary from './components/FilterSummary'
 import StyleCard from './components/StyleCard'
 import { ELEMENTS } from './data/elements'
 import { buildFilterSummary, countMatchingStyles, getRenderableStyles } from './utils/filterSummary'
+import { DEFAULT_OWNERSHIP_RANGE, matchesOwnershipRange, normalizeOwnershipRange } from './utils/ownershipRange'
 
 function App() {
   const [styles] = useState(stylesData)
@@ -19,7 +20,8 @@ function App() {
   const [filters, setFilters] = useState({
     elements: [],
     units: [],
-    tiers: []
+    tiers: [],
+    ownershipRange: DEFAULT_OWNERSHIP_RANGE
   })
 
   const [searchTerm, setSearchTerm] = useState('')
@@ -83,6 +85,13 @@ function App() {
     setActiveMetaTeam(prev => prev === teamId ? null : teamId)
   }
 
+  const handleOwnershipRangeChange = (range) => {
+    setFilters(prev => ({
+      ...prev,
+      ownershipRange: normalizeOwnershipRange(range)
+    }))
+  }
+
   const handleToggleViewMode = () => {
     setViewMode(prev => prev === 'dim' ? 'hide' : 'dim')
   }
@@ -95,12 +104,13 @@ function App() {
     const matchElement = filters.elements.length === 0 || filters.elements.includes(style.element)
     const matchUnit = filters.units.length === 0 || filters.units.includes(style.unit)
     const matchTier = filters.tiers.length === 0 || filters.tiers.includes(style.tier)
+    const matchOwnership = matchesOwnershipRange(ownedStyles[style.id], filters.ownershipRange)
     const matchSearch = searchTerm === '' || 
       style.character_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       style.style_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (style.nicknames && style.nicknames.some(n => n.toLowerCase().includes(searchTerm.toLowerCase())))
     
-    const isFilteredOut = !matchElement || !matchUnit || !matchTier || !matchSearch
+    const isFilteredOut = !matchElement || !matchUnit || !matchTier || !matchOwnership || !matchSearch
 
     return {
       ...style,
@@ -208,6 +218,7 @@ function App() {
               metaTeams={metaTeams}
               activeMetaTeam={activeMetaTeam}
               onMetaTeamChange={handleMetaTeamChange}
+              onOwnershipRangeChange={handleOwnershipRangeChange}
               onClose={() => setIsFilterDrawerOpen(false)}
             />
           </div>

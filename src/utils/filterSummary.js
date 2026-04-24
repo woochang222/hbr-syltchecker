@@ -1,3 +1,5 @@
+import { buildOwnershipRangeLabel } from './ownershipRange.js'
+
 const formatSelection = (items, singularLabel) => {
   if (items.length === 0) return null
   if (items.length === 1) return String(items[0])
@@ -27,10 +29,12 @@ export const buildFilterSummary = ({
   const elementLabel = formatSelection(filters.elements, '원소')
   const unitLabel = formatSelection(filters.units, '부대')
   const tierLabel = formatTierSelection(filters.tiers)
+  const ownershipLabel = buildOwnershipRangeLabel(filters.ownershipRange)
 
   if (elementLabel) labels.push(elementLabel)
   if (unitLabel) labels.push(unitLabel)
   if (tierLabel) labels.push(tierLabel)
+  if (ownershipLabel) labels.push(ownershipLabel)
 
   if (labels.length === 0) {
     labels.push('전체 스타일')
