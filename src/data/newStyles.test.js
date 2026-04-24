@@ -23,7 +23,7 @@ describe('new resonance styles', () => {
 
     assert.equal(style?.character_name, '쿠로사와 마키')
     assert.equal(style?.style_name, '여제 (레조넌스)')
-    assert.equal(style?.unit, '31E')
+    assert.equal(style?.unit, '31F')
     assert.equal(style?.element, '뇌')
     assert.equal(style?.isResonance, true)
     assert.equal(style?.image_url, '/images/styles/kurosawa_maki_empress_res.webp')

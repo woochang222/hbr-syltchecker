@@ -13,7 +13,7 @@ const FilterPanel = ({
   onOwnershipRangeChange,
   onClose
 }) => {
-  const units = ['31A', '31B', '31C', '30G', '31D', '31E', '31F', '31X']
+  const units = ['31A', '31B', '31C', '30G', '31D', '31E', '31F', '31X', 'AB']
   const tiers = [0, 1, 2, 3]
   const ownershipRange = filters.ownershipRange || [-1, 4]
   const ownershipMin = ownershipRange[0]

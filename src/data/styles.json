@@ -1,5 +1,18 @@
 [
   {
+    "id": "irie_miyuki_faraway_eden",
+    "character_name": "이리에 미유키",
+    "style_name": "Faraway Eden",
+    "nicknames": [],
+    "image_url": "/images/styles/irie_miyuki_faraway_eden.png",
+    "isResonance": false,
+    "isLimited": false,
+    "isUniform": false,
+    "unit": "AB",
+    "element": "빙",
+    "metaTags": []
+  },
+  {
     "id": "natsume_inori_hanakage_res",
     "character_name": "나츠메 이노리",
     "style_name": "화영 (레조넌스)",
@@ -21,7 +34,7 @@
     "isResonance": true,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31E",
+    "unit": "31F",
     "element": "뇌",
     "metaTags": []
   },
@@ -34,7 +47,7 @@
     "isResonance": true,
     "isLimited": false,
     "isUniform": false,
-    "unit": "30G",
+    "unit": "31D",
     "element": "암",
     "metaTags": []
   },
@@ -47,7 +60,7 @@
     "isResonance": true,
     "isLimited": false,
     "isUniform": false,
-    "unit": "30G",
+    "unit": "31D",
     "element": "광",
     "metaTags": []
   },
@@ -60,7 +73,7 @@
     "isResonance": true,
     "isLimited": false,
     "isUniform": false,
-    "unit": "기타",
+    "unit": "30G",
     "element": "화",
     "metaTags": []
   },
@@ -164,7 +177,7 @@
     "isResonance": true,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31E",
+    "unit": "31F",
     "element": "뇌",
     "metaTags": []
   },
@@ -190,7 +203,7 @@
     "isResonance": true,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -242,7 +255,7 @@
     "isResonance": true,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -255,7 +268,7 @@
     "isResonance": true,
     "isLimited": false,
     "isUniform": false,
-    "unit": "30G",
+    "unit": "31D",
     "element": "뇌",
     "metaTags": []
   },
@@ -281,7 +294,7 @@
     "isResonance": true,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31C",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
@@ -320,7 +333,7 @@
     "isResonance": true,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31E",
+    "unit": "31F",
     "element": "광",
     "metaTags": []
   },
@@ -346,7 +359,7 @@
     "isResonance": true,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31D",
+    "unit": "31E",
     "element": "광",
     "metaTags": []
   },
@@ -398,7 +411,7 @@
     "isResonance": true,
     "isLimited": false,
     "isUniform": false,
-    "unit": "30G",
+    "unit": "31D",
     "element": "화",
     "metaTags": []
   },
@@ -450,7 +463,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -463,7 +476,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -489,7 +502,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -502,7 +515,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -528,7 +541,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -541,7 +554,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -567,7 +580,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -580,7 +593,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -632,7 +645,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31X",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -645,20 +658,20 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31E",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
   {
     "id": "oshima_yotsuba_yukata",
-    "character_name": "오오시마 요츠바",
+    "character_name": "오오시마 요츠하",
     "style_name": "유카타",
     "nicknames": [],
     "image_url": "/images/styles/oshima_yotsuba_yukata.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -671,20 +684,20 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "30G",
+    "unit": "31C",
     "element": "무",
     "metaTags": []
   },
   {
     "id": "amane_miko_servant",
-    "character_name": "아마네 미코",
+    "character_name": "텐네 미코",
     "style_name": "servant",
     "nicknames": [],
-    "image_url": "/images/styles/amane_miko_servant.webp",
+    "image_url": "/images/styles/tenne_miko_servant.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "기타",
+    "unit": "31C",
     "element": "무",
     "metaTags": []
   },
@@ -697,7 +710,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -710,7 +723,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -723,7 +736,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "기타",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
@@ -736,7 +749,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31C",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
@@ -775,7 +788,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "30G",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -788,7 +801,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "기타",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -801,7 +814,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "기타",
+    "unit": "AB",
     "element": "미정",
     "metaTags": []
   },
@@ -814,7 +827,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "기타",
+    "unit": "AB",
     "element": "미정",
     "metaTags": []
   },
@@ -840,7 +853,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31E",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
@@ -853,7 +866,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -866,7 +879,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31X",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -879,7 +892,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "30G",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -944,7 +957,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -957,7 +970,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -970,7 +983,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -983,7 +996,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "기타",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
@@ -996,7 +1009,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31E",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
@@ -1009,7 +1022,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31E",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
@@ -1022,7 +1035,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31E",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
@@ -1087,7 +1100,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -1100,7 +1113,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "30G",
+    "unit": "31C",
     "element": "미정",
     "metaTags": []
   },
@@ -1113,7 +1126,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -1126,7 +1139,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -1139,7 +1152,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31E",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
@@ -1152,7 +1165,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "30G",
+    "unit": "31D",
     "element": "암",
     "metaTags": []
   },
@@ -1165,7 +1178,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31C",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
@@ -1178,7 +1191,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31C",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
@@ -1223,14 +1236,14 @@
   },
   {
     "id": "amane_miko_supreme",
-    "character_name": "아마네 미코",
+    "character_name": "텐네 미코",
     "style_name": "지고",
     "nicknames": [],
-    "image_url": "/images/styles/amane_miko_supreme.webp",
+    "image_url": "/images/styles/tenne_miko_supreme.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "기타",
+    "unit": "31C",
     "element": "미정",
     "metaTags": []
   },
@@ -1274,6 +1287,19 @@
     "metaTags": []
   },
   {
+    "id": "tachibana_kanade_earth_angel",
+    "character_name": "타치바나 카나데",
+    "style_name": "Earth Angel",
+    "nicknames": [],
+    "image_url": "/images/styles/tachibana_kanade_earth_angel.png",
+    "isResonance": false,
+    "isLimited": false,
+    "isUniform": false,
+    "unit": "AB",
+    "element": "광",
+    "metaTags": []
+  },
+  {
     "id": "tachibana_kanade_soaring_sword",
     "character_name": "타치바나 카나데",
     "style_name": "천상의 검",
@@ -1282,7 +1308,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "기타",
+    "unit": "AB",
     "element": "빙",
     "metaTags": []
   },
@@ -1295,20 +1321,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "기타",
-    "element": "미정",
-    "metaTags": []
-  },
-  {
-    "id": "tezuka_saki_base",
-    "character_name": "테즈카 사키",
-    "style_name": "기본",
-    "nicknames": [],
-    "image_url": "/images/styles/tezuka_saki_base.webp",
-    "isResonance": false,
-    "isLimited": false,
-    "isUniform": true,
-    "unit": "사령부",
+    "unit": "AB",
     "element": "미정",
     "metaTags": []
   },
@@ -1321,20 +1334,20 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
   {
     "id": "oshima_yotsuba_new_year",
-    "character_name": "오오시마 요츠바",
+    "character_name": "오오시마 요츠하",
     "style_name": "신년",
     "nicknames": [],
     "image_url": "/images/styles/oshima_yotsuba_new_year.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -1399,7 +1412,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "30G",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -1412,7 +1425,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "30G",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -1425,7 +1438,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -1438,7 +1451,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -1451,7 +1464,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "기타",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
@@ -1464,7 +1477,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "기타",
+    "unit": "AB",
     "element": "미정",
     "metaTags": []
   },
@@ -1503,7 +1516,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -1516,7 +1529,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -1542,7 +1555,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31C",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
@@ -1555,7 +1568,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31E",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
@@ -1568,7 +1581,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31E",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
@@ -1633,20 +1646,20 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "30G",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
   {
     "id": "amane_miko_style_385069754",
-    "character_name": "아마네 미코",
-    "style_name": "style_385069754",
+    "character_name": "텐네 미코",
+    "style_name": "매지컬냥",
     "nicknames": [],
-    "image_url": "/images/styles/amane_miko_style_385069754.webp",
+    "image_url": "/images/styles/tenne_miko_magical_cat.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "기타",
+    "unit": "31C",
     "element": "미정",
     "metaTags": []
   },
@@ -1659,7 +1672,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "기타",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -1672,7 +1685,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -1698,7 +1711,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -1711,7 +1724,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -1724,7 +1737,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "30G",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -1737,7 +1750,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "기타",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
@@ -1828,7 +1841,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31F",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -1841,20 +1854,20 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "31C",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
   {
     "id": "oshima_yotsuba_base",
-    "character_name": "오오시마 요츠바",
+    "character_name": "오오시마 요츠하",
     "style_name": "기본",
     "nicknames": [],
     "image_url": "/images/styles/oshima_yotsuba_base.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -1867,7 +1880,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -1937,7 +1950,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -1963,7 +1976,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
-    "unit": "30G",
+    "unit": "31C",
     "element": "미정",
     "metaTags": []
   },
@@ -2015,7 +2028,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31E",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
@@ -2028,7 +2041,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31E",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
@@ -2041,7 +2054,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -2054,7 +2067,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -2093,7 +2106,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "기타",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -2106,7 +2119,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31X",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -2132,7 +2145,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31C",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
@@ -2145,7 +2158,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31E",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
@@ -2158,7 +2171,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31E",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
@@ -2171,7 +2184,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -2184,7 +2197,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31F",
+    "unit": "31X",
     "element": "미정",
     "metaTags": []
   },
@@ -2249,7 +2262,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -2275,7 +2288,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31D",
+    "unit": "31E",
     "element": "미정",
     "metaTags": []
   },
@@ -2314,7 +2327,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31E",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
@@ -2327,22 +2340,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31E",
-    "element": "미정",
-    "metaTags": []
-  },
-  {
-    "id": "ogasawara_hisame_base",
-    "character_name": "오가사와라 히사메",
-    "style_name": "기본",
-    "nicknames": [
-      "교복"
-    ],
-    "image_url": "/images/styles/ogasawara_hisame_base.webp",
-    "isResonance": false,
-    "isLimited": false,
-    "isUniform": true,
-    "unit": "30G",
+    "unit": "31F",
     "element": "미정",
     "metaTags": []
   },
@@ -2394,7 +2392,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "30G",
+    "unit": "31D",
     "element": "미정",
     "metaTags": []
   },
@@ -2446,7 +2444,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "기타",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   },
@@ -2615,20 +2613,20 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "30G",
+    "unit": "31C",
     "element": "미정",
     "metaTags": []
   },
   {
     "id": "amane_miko_base",
-    "character_name": "아마네 미코",
+    "character_name": "텐네 미코",
     "style_name": "기본",
     "nicknames": [],
-    "image_url": "/images/styles/amane_miko_base.webp",
+    "image_url": "/images/styles/tenne_miko_base.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "기타",
+    "unit": "31C",
     "element": "미정",
     "metaTags": []
   },
@@ -2654,7 +2652,7 @@
     "isResonance": false,
     "isLimited": false,
     "isUniform": true,
-    "unit": "31C",
+    "unit": "30G",
     "element": "미정",
     "metaTags": []
   }

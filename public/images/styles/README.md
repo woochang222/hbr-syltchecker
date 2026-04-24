@@ -62,6 +62,7 @@
 - kayamori_ruka_unison_res: /images/styles/kayamori_ruka_unison_res.webp
 
 ### SS
+- irie_miyuki_faraway_eden: /images/styles/irie_miyuki_faraway_eden.png
 - maria_de_angelis_chef: /images/styles/maria_de_angelis_chef.webp
 - carol_reaper_chef: /images/styles/carol_reaper_chef.webp
 - yamawaki_loneliness: /images/styles/yamawaki_loneliness.webp
@@ -80,7 +81,7 @@
 - matsuoka_chiroru_heroic: /images/styles/matsuoka_chiroru_heroic.webp
 - oshima_yotsuba_yukata: /images/styles/oshima_yotsuba_yukata.webp
 - sakuraba_seira_servant: /images/styles/sakuraba_seira_servant.webp
-- amane_miko_servant: /images/styles/amane_miko_servant.webp
+- amane_miko_servant: /images/styles/tenne_miko_servant.webp
 - eileen_redmain_breeze: /images/styles/eileen_redmain_breeze.webp
 - maria_de_angelis_elegante: /images/styles/maria_de_angelis_elegante.webp
 - tsukishiro_monaka_spring_blizzard: /images/styles/tsukishiro_monaka_spring_blizzard.webp
@@ -122,13 +123,13 @@
 - ri_yunfa_spring_evening: /images/styles/ri_yunfa_spring_evening.webp
 - tojo_tsukasa_bunny: /images/styles/tojo_tsukasa_bunny.webp
 - hiiragi_kozue_waitress: /images/styles/hiiragi_kozue_waitress.webp
-- amane_miko_supreme: /images/styles/amane_miko_supreme.webp
+- amane_miko_supreme: /images/styles/tenne_miko_supreme.webp
 - bungo_yayoi_hanami: /images/styles/bungo_yayoi_hanami.webp
 - yamawaki_one_piece: /images/styles/yamawaki_one_piece.webp
 - izumi_yuki_ruby: /images/styles/izumi_yuki_ruby.webp
+- tachibana_kanade_earth_angel: /images/styles/tachibana_kanade_earth_angel.png
 - tachibana_kanade_soaring_sword: /images/styles/tachibana_kanade_soaring_sword.webp
 - nakamura_yuri_extraordinary: /images/styles/nakamura_yuri_extraordinary.webp
-- tezuka_saki_base: /images/styles/tezuka_saki_base.webp
 - oshima_muua_new_year: /images/styles/oshima_muua_new_year.webp
 - oshima_yotsuba_new_year: /images/styles/oshima_yotsuba_new_year.webp
 - minase_ichigo_style_383264004: /images/styles/minase_ichigo_style_383264004.webp
@@ -154,7 +155,7 @@
 - shirakawa_yuina_swimsuit: /images/styles/shirakawa_yuina_swimsuit.webp
 - kunimi_tama_swimsuit: /images/styles/kunimi_tama_swimsuit.webp
 - date_akari_base: /images/styles/date_akari_base.webp
-- amane_miko_style_385069754: /images/styles/amane_miko_style_385069754.webp
+- amane_miko_style_385069754: /images/styles/tenne_miko_magical_cat.webp
 - murofushi_risa_style_1015651: /images/styles/murofushi_risa_style_1015651.webp
 - oshima_ichiko_bride: /images/styles/oshima_ichiko_bride.webp
 - satsuki_mari_bride: /images/styles/satsuki_mari_bride.webp
@@ -172,8 +173,6 @@
 - sugawara_chie_pure_heart: /images/styles/sugawara_chie_pure_heart.webp
 - oshima_yotsuba_base: /images/styles/oshima_yotsuba_base.webp
 - oshima_muua_base: /images/styles/oshima_muua_base.webp
-- tezuka_saki_base: /images/styles/tezuka_saki_base.webp
-- tezuka_saki_base: /images/styles/tezuka_saki_base.webp
 - izumi_yuki_suit: /images/styles/izumi_yuki_suit.webp
 - kayamori_ruka_suit: /images/styles/kayamori_ruka_suit.webp
 - maria_de_angelis_base: /images/styles/maria_de_angelis_base.webp
@@ -207,7 +206,6 @@
 - asakura_karen_style_383624729: /images/styles/asakura_karen_style_383624729.webp
 - yanagi_mion_base: /images/styles/yanagi_mion_base.webp
 - maruyama_kanata_base: /images/styles/maruyama_kanata_base.webp
-- tezuka_saki_base: /images/styles/tezuka_saki_base.webp
 - kura_satomi_base: /images/styles/kura_satomi_base.webp
 - kayamori_ruka_style_892372: /images/styles/kayamori_ruka_style_892372.webp
 - shirakawa_yuina_base: /images/styles/shirakawa_yuina_base.webp
@@ -229,6 +227,6 @@
 - higuchi_seika_base: /images/styles/higuchi_seika_base.webp
 - byakko_base: /images/styles/byakko_base.webp
 - sakuraba_seira_base: /images/styles/sakuraba_seira_base.webp
-- amane_miko_base: /images/styles/amane_miko_base.webp
+- amane_miko_base: /images/styles/tenne_miko_base.webp
 - bungo_yayoi_base: /images/styles/bungo_yayoi_base.webp
 - sugawara_chie_base: /images/styles/sugawara_chie_base.webp
