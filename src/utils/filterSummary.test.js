@@ -1,6 +1,6 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
-import { buildFilterSummary, countVisibleStyles } from './filterSummary.js'
+import { buildFilterSummary, countMatchingStyles } from './filterSummary.js'
 
 describe('buildFilterSummary', () => {
   const metaTeams = [
@@ -45,14 +45,20 @@ describe('buildFilterSummary', () => {
   })
 })
 
-describe('countVisibleStyles', () => {
-  it('excludes hidden cards from the visible count', () => {
+describe('countMatchingStyles', () => {
+  it('excludes cards that failed the active filters even when they are dimmed instead of hidden', () => {
     const styles = [
-      { id: 'a', isHidden: false },
-      { id: 'b', isHidden: true },
-      { id: 'c', isHidden: false }
+      { id: 'a', matchesFilters: true, isHidden: false, isDimmed: false },
+      { id: 'b', matchesFilters: false, isHidden: false, isDimmed: true },
+      { id: 'c', matchesFilters: false, isHidden: true, isDimmed: false }
     ]
 
-    assert.equal(countVisibleStyles(styles), 2)
+    assert.equal(countMatchingStyles(styles), 1)
+  })
+
+  it('treats legacy style objects without a match flag as matching', () => {
+    const styles = [{ id: 'a' }, { id: 'b', matchesFilters: true }]
+
+    assert.equal(countMatchingStyles(styles), 2)
   })
 })

@@ -4,7 +4,7 @@ import metaTeamsData from './data/meta_teams.json'
 import FilterPanel from './components/FilterPanel'
 import FilterSummary from './components/FilterSummary'
 import StyleCard from './components/StyleCard'
-import { buildFilterSummary, countVisibleStyles } from './utils/filterSummary'
+import { buildFilterSummary, countMatchingStyles } from './utils/filterSummary'
 
 function App() {
   const [styles] = useState(stylesData)
@@ -103,6 +103,7 @@ function App() {
 
     return {
       ...style,
+      matchesFilters: !isFilteredOut,
       isDimmed: isFilteredOut && viewMode === 'dim',
       isHidden: isFilteredOut && viewMode === 'hide',
       isMetaHighlight: selectedTeamStyles.includes(style.id),
@@ -110,7 +111,7 @@ function App() {
     }
   })
 
-  const visibleStyleCount = countVisibleStyles(filteredStyles)
+  const visibleStyleCount = countMatchingStyles(filteredStyles)
   const filterSummaryLabels = buildFilterSummary({
     filters,
     activeMetaTeam,

@@ -42,6 +42,6 @@ export const buildFilterSummary = ({
   return labels
 }
 
-export const countVisibleStyles = (styles) => {
-  return styles.filter(style => !style.isHidden).length
+export const countMatchingStyles = (styles) => {
+  return styles.filter(style => style.matchesFilters !== false).length
 }
