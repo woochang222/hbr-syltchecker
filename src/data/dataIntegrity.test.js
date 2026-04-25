@@ -141,7 +141,7 @@ describe('style data integrity', () => {
           unit: '31C'
         },
         {
-          id: 'amane_miko_style_385069754',
+          id: 'tenne_miko_magical_cat',
           character_name: '텐네 미코',
           style_name: '매지컬냥',
           image_url: '/images/styles/tenne_miko_magical_cat.webp',
@@ -336,6 +336,7 @@ describe('style data integrity', () => {
 
   it('keeps Kunimi Tama swimsuit on the light swimsuit image asset', () => {
     const swimsuit = styles.find(style => style.id === 'kunimi_tama_swimsuit')
+    const elemental = styles.find(style => style.id === 'kunimi_tama_magical_elemental')
 
     assert.deepEqual(
       {
@@ -352,8 +353,325 @@ describe('style data integrity', () => {
         image_url: '/images/styles/kunimi_tama_swimsuit.png',
         unit: '31A',
         element: '광',
-        elements: ['광', '무']
+        elements: ['광']
+      }
+    )
+    assert.deepEqual(
+      {
+        character_name: elemental?.character_name,
+        style_name: elemental?.style_name,
+        image_url: elemental?.image_url,
+        unit: elemental?.unit,
+        element: elemental?.element,
+        elements: elemental?.elements
+      },
+      {
+        character_name: '쿠니미 타마',
+        style_name: '마법의 나라의 엘리멘탈',
+        image_url: '/images/styles/kunimi_tama_magical_elemental.webp',
+        unit: '31A',
+        element: '화',
+        elements: ['화']
       }
     )
   })
+
+  it('keeps Minase Ichigo idol on the fire image asset', () => {
+    const idol = styles.find(style => style.id === 'minase_ichigo_idol')
+
+    assert.deepEqual(
+      {
+        character_name: idol?.character_name,
+        style_name: idol?.style_name,
+        image_url: idol?.image_url,
+        unit: idol?.unit,
+        element: idol?.element,
+        elements: idol?.elements
+      },
+      {
+        character_name: '미나세 이치고',
+        style_name: '아이돌',
+        image_url: '/images/styles/minase_ichigo_idol.webp',
+        unit: '31B',
+        element: '화',
+        elements: ['화']
+      }
+    )
+  })
+
+  it('keeps Aoi Erika idol on the fire image asset', () => {
+    const idol = styles.find(style => style.id === 'aoi_erika_idol')
+
+    assert.deepEqual(
+      {
+        character_name: idol?.character_name,
+        style_name: idol?.style_name,
+        image_url: idol?.image_url,
+        unit: idol?.unit,
+        element: idol?.element,
+        elements: idol?.elements
+      },
+      {
+        character_name: '아오이 에리카',
+        style_name: '아이돌',
+        image_url: '/images/styles/aoi_erika_idol.webp',
+        unit: '31B',
+        element: '화',
+        elements: ['화']
+      }
+    )
+  })
+
+  it('keeps Maria de Angelis fleeting encounter on the thunder image asset', () => {
+    const fleetingEncounter = styles.find(style => style.id === 'maria_de_angelis_fleeting_encounter')
+
+    assert.deepEqual(
+      {
+        character_name: fleetingEncounter?.character_name,
+        style_name: fleetingEncounter?.style_name,
+        image_url: fleetingEncounter?.image_url,
+        unit: fleetingEncounter?.unit,
+        element: fleetingEncounter?.element,
+        elements: fleetingEncounter?.elements
+      },
+      {
+        character_name: '마리아 데 안젤리스',
+        style_name: '찰나의 해후',
+        image_url: '/images/styles/maria_de_angelis_fleeting_encounter.webp',
+        unit: '31X',
+        element: '뇌',
+        elements: ['뇌']
+      }
+    )
+  })
+
+  it('keeps Charlotta eternal feelings on the thunder image asset', () => {
+    const eternalFeelings = styles.find(style => style.id === 'charlotta_eternal_feelings')
+
+    assert.deepEqual(
+      {
+        character_name: eternalFeelings?.character_name,
+        style_name: eternalFeelings?.style_name,
+        image_url: eternalFeelings?.image_url,
+        unit: eternalFeelings?.unit,
+        element: eternalFeelings?.element,
+        elements: eternalFeelings?.elements
+      },
+      {
+        character_name: '샬로타 스코폽스카야',
+        style_name: '영원한 마음',
+        image_url: '/images/styles/charlotta_eternal_feelings.webp',
+        unit: '31X',
+        element: '뇌',
+        elements: ['뇌']
+      }
+    )
+  })
+
+  it('keeps Tsukishiro Monaka cover on the light image asset', () => {
+    const cover = styles.find(style => style.id === 'tsukishiro_monaka_cover')
+
+    assert.deepEqual(
+      {
+        character_name: cover?.character_name,
+        style_name: cover?.style_name,
+        image_url: cover?.image_url,
+        unit: cover?.unit,
+        element: cover?.element,
+        elements: cover?.elements
+      },
+      {
+        character_name: '츠키시로 모나카',
+        style_name: '엄폐된 시간',
+        image_url: '/images/styles/tsukishiro_monaka_cover.webp',
+        unit: '30G',
+        element: '광',
+        elements: ['광']
+      }
+    )
+  })
+
+  it('keeps Murofushi Risa technical exchange on the neutral image asset', () => {
+    const technicalExchange = styles.find(style => style.id === 'murofushi_risa_smile_technical_exchange')
+
+    assert.deepEqual(
+      {
+        character_name: technicalExchange?.character_name,
+        style_name: technicalExchange?.style_name,
+        image_url: technicalExchange?.image_url,
+        unit: technicalExchange?.unit,
+        element: technicalExchange?.element,
+        elements: technicalExchange?.elements
+      },
+      {
+        character_name: '무로후시 리사',
+        style_name: '잠입, 미소로 기술 교류회',
+        image_url: '/images/styles/murofushi_risa_smile_technical_exchange.webp',
+        unit: '31D',
+        element: '무',
+        elements: ['무']
+      }
+    )
+  })
+
+  it('keeps Bungo Yayoi Happy Legion on the light image asset', () => {
+    const happyLegion = styles.find(style => style.id === 'bungo_yayoi_happy_legion')
+
+    assert.deepEqual(
+      {
+        character_name: happyLegion?.character_name,
+        style_name: happyLegion?.style_name,
+        image_url: happyLegion?.image_url,
+        unit: happyLegion?.unit,
+        element: happyLegion?.element,
+        elements: happyLegion?.elements
+      },
+      {
+        character_name: '분고 야요이',
+        style_name: 'Happy Legion',
+        image_url: '/images/styles/bungo_yayoi_happy_legion.webp',
+        unit: '31C',
+        element: '광',
+        elements: ['광']
+      }
+    )
+  })
+
+  it('keeps Yamawaki Holy Knight on the light image asset', () => {
+    const holyKnight = styles.find(style => style.id === 'yamawaki_holy_knight')
+
+    assert.deepEqual(
+      {
+        character_name: holyKnight?.character_name,
+        style_name: holyKnight?.style_name,
+        image_url: holyKnight?.image_url,
+        unit: holyKnight?.unit,
+        element: holyKnight?.element,
+        elements: holyKnight?.elements
+      },
+      {
+        character_name: '야마와키 본 이바르',
+        style_name: 'Holy Knight',
+        image_url: '/images/styles/yamawaki_holy_knight.webp',
+        unit: '31C',
+        element: '광',
+        elements: ['광']
+      }
+    )
+  })
+
+  it('keeps Asakura Karen scarlet rebellion on the fire image asset', () => {
+    const scarletRebellion = styles.find(style => style.id === 'asakura_karen_scarlet_rebellion')
+
+    assert.deepEqual(
+      {
+        character_name: scarletRebellion?.character_name,
+        style_name: scarletRebellion?.style_name,
+        image_url: scarletRebellion?.image_url,
+        unit: scarletRebellion?.unit,
+        element: scarletRebellion?.element,
+        elements: scarletRebellion?.elements
+      },
+      {
+        character_name: '아사쿠라 카렌',
+        style_name: '스칼렛 리벨리온',
+        image_url: '/images/styles/asakura_karen_scarlet_rebellion.webp',
+        unit: '31A',
+        element: '화',
+        elements: ['화']
+      }
+    )
+  })
+
+  it('keeps Kayamori Ruka cardinal echo on the light image asset', () => {
+    const cardinalEcho = styles.find(style => style.id === 'kayamori_ruka_cardinal_echo')
+
+    assert.deepEqual(
+      {
+        character_name: cardinalEcho?.character_name,
+        style_name: cardinalEcho?.style_name,
+        image_url: cardinalEcho?.image_url,
+        unit: cardinalEcho?.unit,
+        element: cardinalEcho?.element,
+        elements: cardinalEcho?.elements
+      },
+      {
+        character_name: '카야모리 루카',
+        style_name: '잔향의 카디널',
+        image_url: '/images/styles/kayamori_ruka_cardinal_echo.webp',
+        unit: '31A',
+        element: '광',
+        elements: ['광']
+      }
+    )
+  })
+
+  it('keeps Aikawa Megumi one night dream on the light image asset', () => {
+    const oneNightDream = styles.find(style => style.id === 'aikawa_megumi_one_night_dream')
+
+    assert.deepEqual(
+      {
+        character_name: oneNightDream?.character_name,
+        style_name: oneNightDream?.style_name,
+        image_url: oneNightDream?.image_url,
+        unit: oneNightDream?.unit,
+        element: oneNightDream?.element,
+        elements: oneNightDream?.elements
+      },
+      {
+        character_name: '아이카와 메구미',
+        style_name: '하룻밤의 꿈',
+        image_url: '/images/styles/aikawa_megumi_one_night_dream.webp',
+        unit: '31A',
+        element: '광',
+        elements: ['광']
+      }
+    )
+  })
+
+  it('keeps Kayamori Ruka circuit burst on the neutral image asset', () => {
+    const circuitBurst = styles.find(style => style.id === 'kayamori_ruka_circuit_burst')
+
+    assert.deepEqual(
+      {
+        character_name: circuitBurst?.character_name,
+        style_name: circuitBurst?.style_name,
+        image_url: circuitBurst?.image_url,
+        unit: circuitBurst?.unit,
+        element: circuitBurst?.element,
+        elements: circuitBurst?.elements
+      },
+      {
+        character_name: '카야모리 루카',
+        style_name: '섬광의 서킷 버스트',
+        image_url: '/images/styles/kayamori_ruka_circuit_burst.webp',
+        unit: '31A',
+        element: '무',
+        elements: ['무']
+      }
+    )
+  })
+
+  it('keeps manually inspected image elements aligned with card icons', () => {
+    const expectedElementsByStyle = new Map([
+      ['amane_miko_servant', { element: '암', elements: ['암'] }],
+      ['yanagi_mion_admiral_res', { element: '무', elements: ['무'] }],
+      ['yamawaki_unison_res', { element: '암', elements: ['암'] }],
+      ['asakura_karen_free', { element: '화', elements: ['화', '빙'] }],
+      ['aikawa_megumi_unison_res', { element: '빙', elements: ['빙', '뇌'] }],
+      ['izumi_yuki_unison_res', { element: '암', elements: ['암', '화'] }],
+      ['kayamori_ruka_unison_res', { element: '암', elements: ['암', '화'] }]
+    ])
+
+    const mismatches = [...expectedElementsByStyle].flatMap(([styleId, expected]) => {
+      const style = styles.find(candidate => candidate.id === styleId)
+
+      return JSON.stringify({ element: style?.element, elements: style?.elements }) === JSON.stringify(expected)
+        ? []
+        : [{ id: styleId, actual: { element: style?.element, elements: style?.elements }, expected }]
+    })
+
+    assert.deepEqual(mismatches, [])
+  })
+
 })

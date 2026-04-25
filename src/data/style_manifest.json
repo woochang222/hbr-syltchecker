@@ -43,9 +43,100 @@
   },
   "kunimi_tama_swimsuit": {
     "expectedUnit": "31A",
-    "expectedElements": ["광", "무"],
+    "expectedElements": ["광"],
     "expectedImageUrl": "/images/styles/kunimi_tama_swimsuit.png",
     "sourceUrl": "https://game8.jp/heavenburnsred/544117",
+    "imageStatus": "verified"
+  },
+  "kunimi_tama_magical_elemental": {
+    "expectedUnit": "31A",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/kunimi_tama_magical_elemental.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/444386",
+    "imageStatus": "verified"
+  },
+  "minase_ichigo_idol": {
+    "expectedUnit": "31B",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/minase_ichigo_idol.webp",
+    "sourceUrl": "",
+    "imageStatus": "needs-review"
+  },
+  "aoi_erika_idol": {
+    "expectedUnit": "31B",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/aoi_erika_idol.webp",
+    "sourceUrl": "",
+    "imageStatus": "needs-review"
+  },
+  "maria_de_angelis_fleeting_encounter": {
+    "expectedUnit": "31X",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/maria_de_angelis_fleeting_encounter.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/577126",
+    "imageStatus": "verified"
+  },
+  "charlotta_eternal_feelings": {
+    "expectedUnit": "31X",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/charlotta_eternal_feelings.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/577125",
+    "imageStatus": "verified"
+  },
+  "tsukishiro_monaka_cover": {
+    "expectedUnit": "30G",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/tsukishiro_monaka_cover.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/573802",
+    "imageStatus": "verified"
+  },
+  "murofushi_risa_smile_technical_exchange": {
+    "expectedUnit": "31D",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/murofushi_risa_smile_technical_exchange.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/539112",
+    "imageStatus": "verified"
+  },
+  "bungo_yayoi_happy_legion": {
+    "expectedUnit": "31C",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/bungo_yayoi_happy_legion.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/504597",
+    "imageStatus": "verified"
+  },
+  "yamawaki_holy_knight": {
+    "expectedUnit": "31C",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/yamawaki_holy_knight.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/504594",
+    "imageStatus": "verified"
+  },
+  "asakura_karen_scarlet_rebellion": {
+    "expectedUnit": "31A",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/asakura_karen_scarlet_rebellion.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/461169",
+    "imageStatus": "verified"
+  },
+  "kayamori_ruka_cardinal_echo": {
+    "expectedUnit": "31A",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/kayamori_ruka_cardinal_echo.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/453073",
+    "imageStatus": "verified"
+  },
+  "aikawa_megumi_one_night_dream": {
+    "expectedUnit": "31A",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/aikawa_megumi_one_night_dream.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/440931",
+    "imageStatus": "verified"
+  },
+  "kayamori_ruka_circuit_burst": {
+    "expectedUnit": "31A",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/kayamori_ruka_circuit_burst.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426188",
     "imageStatus": "verified"
   }
 }

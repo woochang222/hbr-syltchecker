@@ -12,7 +12,8 @@
     "element": "빙",
     "metaTags": [],
     "elements": [
-      "빙"
+      "빙",
+      "뇌"
     ]
   },
   {
@@ -110,7 +111,8 @@
     "element": "빙",
     "metaTags": [],
     "elements": [
-      "빙"
+      "빙",
+      "뇌"
     ]
   },
   {
@@ -235,10 +237,10 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "무",
+    "element": "암",
     "metaTags": [],
     "elements": [
-      "무"
+      "암"
     ]
   },
   {
@@ -251,10 +253,10 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31E",
-    "element": "광",
+    "element": "무",
     "metaTags": [],
     "elements": [
-      "광"
+      "무"
     ]
   },
   {
@@ -363,9 +365,10 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "30G",
-    "element": "화",
+    "element": "암",
     "metaTags": [],
     "elements": [
+      "암",
       "화"
     ]
   },
@@ -411,10 +414,10 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31F",
-    "element": "광",
+    "element": "무",
     "metaTags": [],
     "elements": [
-      "광"
+      "무"
     ]
   },
   {
@@ -507,9 +510,10 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31D",
-    "element": "화",
+    "element": "암",
     "metaTags": [],
     "elements": [
+      "암",
       "화"
     ]
   },
@@ -523,9 +527,10 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "화",
+    "element": "암",
     "metaTags": [],
     "elements": [
+      "암",
       "화"
     ]
   },
@@ -555,9 +560,10 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "화",
+    "element": "암",
     "metaTags": [],
     "elements": [
+      "암",
       "화"
     ]
   },
@@ -603,10 +609,10 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "무",
+    "element": "암",
     "metaTags": [],
     "elements": [
-      "무"
+      "암"
     ]
   },
   {
@@ -651,7 +657,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "빙",
+    "element": "화",
     "metaTags": [],
     "elements": [
       "빙"
@@ -859,10 +865,10 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "무",
+    "element": "암",
     "metaTags": [],
     "elements": [
-      "무"
+      "암"
     ]
   },
   {
@@ -939,11 +945,11 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "빙",
+    "element": "화",
     "metaTags": [],
     "elements": [
-      "빙",
-      "화"
+      "화",
+      "빙"
     ]
   },
   {
@@ -1667,35 +1673,35 @@
     ]
   },
   {
-    "id": "minase_ichigo_style_383264004",
+    "id": "minase_ichigo_idol",
     "character_name": "미나세 이치고",
-    "style_name": "style_383264004",
+    "style_name": "아이돌",
     "nicknames": [],
-    "image_url": "/images/styles/minase_ichigo_style_383264004.webp",
+    "image_url": "/images/styles/minase_ichigo_idol.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "무",
+    "element": "화",
     "metaTags": [],
     "elements": [
-      "무"
+      "화"
     ]
   },
   {
-    "id": "aoi_erika_style_383264004",
+    "id": "aoi_erika_idol",
     "character_name": "아오이 에리카",
-    "style_name": "style_383264004",
+    "style_name": "아이돌",
     "nicknames": [],
-    "image_url": "/images/styles/aoi_erika_style_383264004.webp",
+    "image_url": "/images/styles/aoi_erika_idol.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "무",
+    "element": "화",
     "metaTags": [],
     "elements": [
-      "무"
+      "화"
     ]
   },
   {
@@ -1763,11 +1769,11 @@
     ]
   },
   {
-    "id": "maria_de_angelis_style_689546",
+    "id": "maria_de_angelis_fleeting_encounter",
     "character_name": "마리아 데 안젤리스",
-    "style_name": "style_689546",
+    "style_name": "찰나의 해후",
     "nicknames": [],
-    "image_url": "/images/styles/maria_de_angelis_style_689546.webp",
+    "image_url": "/images/styles/maria_de_angelis_fleeting_encounter.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
@@ -1779,27 +1785,27 @@
     ]
   },
   {
-    "id": "charlotta_style_381454588",
+    "id": "charlotta_eternal_feelings",
     "character_name": "샬로타 스코폽스카야",
-    "style_name": "style_381454588",
+    "style_name": "영원한 마음",
     "nicknames": [],
-    "image_url": "/images/styles/charlotta_style_381454588.webp",
+    "image_url": "/images/styles/charlotta_eternal_feelings.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
     "unit": "31X",
-    "element": "암",
+    "element": "뇌",
     "metaTags": [],
     "elements": [
-      "암"
+      "뇌"
     ]
   },
   {
-    "id": "tsukishiro_monaka_style_825012",
+    "id": "tsukishiro_monaka_cover",
     "character_name": "츠키시로 모나카",
-    "style_name": "style_825012",
+    "style_name": "엄폐된 시간",
     "nicknames": [],
-    "image_url": "/images/styles/tsukishiro_monaka_style_825012.webp",
+    "image_url": "/images/styles/tsukishiro_monaka_cover.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
@@ -2015,8 +2021,7 @@
     "element": "광",
     "metaTags": [],
     "elements": [
-      "광",
-      "무"
+      "광"
     ]
   },
   {
@@ -2036,7 +2041,7 @@
     ]
   },
   {
-    "id": "amane_miko_style_385069754",
+    "id": "tenne_miko_magical_cat",
     "character_name": "텐네 미코",
     "style_name": "매지컬냥",
     "nicknames": [],
@@ -2052,11 +2057,11 @@
     ]
   },
   {
-    "id": "murofushi_risa_style_1015651",
+    "id": "murofushi_risa_smile_technical_exchange",
     "character_name": "무로후시 리사",
-    "style_name": "style_1015651",
+    "style_name": "잠입, 미소로 기술 교류회",
     "nicknames": [],
-    "image_url": "/images/styles/murofushi_risa_style_1015651.webp",
+    "image_url": "/images/styles/murofushi_risa_smile_technical_exchange.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
@@ -2458,35 +2463,35 @@
     ]
   },
   {
-    "id": "bungo_yayoi_style_989629927",
+    "id": "bungo_yayoi_happy_legion",
     "character_name": "분고 야요이",
-    "style_name": "style_989629927",
+    "style_name": "Happy Legion",
     "nicknames": [],
-    "image_url": "/images/styles/bungo_yayoi_style_989629927.webp",
+    "image_url": "/images/styles/bungo_yayoi_happy_legion.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "무",
+    "element": "광",
     "metaTags": [],
     "elements": [
-      "무"
+      "광"
     ]
   },
   {
-    "id": "yamawaki_style_989629927",
+    "id": "yamawaki_holy_knight",
     "character_name": "야마와키 본 이바르",
-    "style_name": "style_989629927",
+    "style_name": "Holy Knight",
     "nicknames": [],
-    "image_url": "/images/styles/yamawaki_style_989629927.webp",
+    "image_url": "/images/styles/yamawaki_holy_knight.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "무",
+    "element": "광",
     "metaTags": [],
     "elements": [
-      "무"
+      "광"
     ]
   },
   {
@@ -2843,11 +2848,11 @@
     ]
   },
   {
-    "id": "asakura_karen_style_383624729",
+    "id": "asakura_karen_scarlet_rebellion",
     "character_name": "아사쿠라 카렌",
-    "style_name": "style_383624729",
+    "style_name": "스칼렛 리벨리온",
     "nicknames": [],
-    "image_url": "/images/styles/asakura_karen_style_383624729.webp",
+    "image_url": "/images/styles/asakura_karen_scarlet_rebellion.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
@@ -2907,19 +2912,19 @@
     ]
   },
   {
-    "id": "kayamori_ruka_style_892372",
+    "id": "kayamori_ruka_cardinal_echo",
     "character_name": "카야모리 루카",
-    "style_name": "style_892372",
+    "style_name": "잔향의 카디널",
     "nicknames": [],
-    "image_url": "/images/styles/kayamori_ruka_style_892372.webp",
+    "image_url": "/images/styles/kayamori_ruka_cardinal_echo.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "무",
+    "element": "광",
     "metaTags": [],
     "elements": [
-      "무"
+      "광"
     ]
   },
   {
@@ -2955,19 +2960,19 @@
     ]
   },
   {
-    "id": "kunimi_tama_style_1260545",
+    "id": "kunimi_tama_magical_elemental",
     "character_name": "쿠니미 타마",
-    "style_name": "style_1260545",
+    "style_name": "마법의 나라의 엘리멘탈",
     "nicknames": [],
-    "image_url": "/images/styles/kunimi_tama_style_1260545.webp",
+    "image_url": "/images/styles/kunimi_tama_magical_elemental.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "무",
+    "element": "화",
     "metaTags": [],
     "elements": [
-      "무"
+      "화"
     ]
   },
   {
@@ -3019,11 +3024,11 @@
     ]
   },
   {
-    "id": "aikawa_megumi_style_641820",
+    "id": "aikawa_megumi_one_night_dream",
     "character_name": "아이카와 메구미",
-    "style_name": "style_641820",
+    "style_name": "하룻밤의 꿈",
     "nicknames": [],
-    "image_url": "/images/styles/aikawa_megumi_style_641820.webp",
+    "image_url": "/images/styles/aikawa_megumi_one_night_dream.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
@@ -3067,19 +3072,19 @@
     ]
   },
   {
-    "id": "kayamori_ruka_style_1207334",
+    "id": "kayamori_ruka_circuit_burst",
     "character_name": "카야모리 루카",
-    "style_name": "style_1207334",
+    "style_name": "섬광의 서킷 버스트",
     "nicknames": [],
-    "image_url": "/images/styles/kayamori_ruka_style_1207334.webp",
+    "image_url": "/images/styles/kayamori_ruka_circuit_burst.webp",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "화",
+    "element": "무",
     "metaTags": [],
     "elements": [
-      "화"
+      "무"
     ]
   },
   {
