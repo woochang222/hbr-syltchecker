@@ -11,35 +11,35 @@
     "expectedElements": ["뇌"],
     "expectedImageUrl": "/images/styles/tezuka_saki_base_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/755194",
-    "imageStatus": "needs-review"
+    "imageStatus": "verified"
   },
   "tachibana_kanade_earth_angel": {
     "expectedUnit": "AB",
     "expectedElements": ["광"],
     "expectedImageUrl": "/images/styles/tachibana_kanade_earth_angel.png",
-    "sourceUrl": "https://game8.jp/heavenburnsred/",
-    "imageStatus": "needs-review"
+    "sourceUrl": "https://game8.jp/heavenburnsred/511325",
+    "imageStatus": "verified"
   },
   "tachibana_kanade_soaring_sword": {
     "expectedUnit": "AB",
     "expectedElements": ["빙"],
     "expectedImageUrl": "/images/styles/tachibana_kanade_soaring_sword.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/",
-    "imageStatus": "needs-review"
+    "sourceUrl": "https://game8.jp/heavenburnsred/592870",
+    "imageStatus": "verified"
   },
   "natsume_inori_hanakage_res": {
     "expectedUnit": "31F",
     "expectedElements": ["빙"],
     "expectedImageUrl": "/images/styles/natsume_inori_hanakage_res.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/",
-    "imageStatus": "needs-review"
+    "sourceUrl": "https://game8.jp/heavenburnsred/781369",
+    "imageStatus": "verified"
   },
   "kurosawa_maki_empress_res": {
     "expectedUnit": "31F",
     "expectedElements": ["뇌"],
     "expectedImageUrl": "/images/styles/kurosawa_maki_empress_res.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/",
-    "imageStatus": "needs-review"
+    "sourceUrl": "https://game8.jp/heavenburnsred/781370",
+    "imageStatus": "verified"
   },
   "kunimi_tama_swimsuit": {
     "expectedUnit": "31A",
