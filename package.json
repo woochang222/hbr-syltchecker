@@ -8,6 +8,7 @@
     "build": "vite build",
     "test": "node --test \"src/**/*.test.js\"",
     "lint": "eslint .",
+    "validate:data-report": "node scripts/validate-data-report.js",
     "preview": "vite preview"
   },
   "dependencies": {
