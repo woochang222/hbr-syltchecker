@@ -153,7 +153,7 @@
 - asakura_karen_suit: /images/styles/asakura_karen_suit.webp
 - tojo_tsukasa_suit: /images/styles/tojo_tsukasa_suit.webp
 - shirakawa_yuina_swimsuit: /images/styles/shirakawa_yuina_swimsuit.webp
-- kunimi_tama_swimsuit: /images/styles/kunimi_tama_swimsuit.webp
+- kunimi_tama_swimsuit: /images/styles/kunimi_tama_swimsuit.png
 - date_akari_base: /images/styles/date_akari_base.webp
 - amane_miko_style_385069754: /images/styles/tenne_miko_magical_cat.webp
 - murofushi_risa_style_1015651: /images/styles/murofushi_risa_style_1015651.webp
@@ -210,7 +210,7 @@
 - kayamori_ruka_style_892372: /images/styles/kayamori_ruka_style_892372.webp
 - shirakawa_yuina_base: /images/styles/shirakawa_yuina_base.webp
 - nikaido_misato_base: /images/styles/nikaido_misato_base.webp
-- kunimi_tama_style_1260545: /images/styles/kunimi_tama_style_1260545.png
+- kunimi_tama_style_1260545: /images/styles/kunimi_tama_style_1260545.webp
 - minase_sumomo_base: /images/styles/minase_sumomo_base.webp
 - minase_ichigo_base: /images/styles/minase_ichigo_base.webp
 - tsukishiro_monaka_base: /images/styles/tsukishiro_monaka_base.webp

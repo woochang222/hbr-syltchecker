@@ -41,10 +41,10 @@
     "sourceUrl": "https://game8.jp/heavenburnsred/",
     "imageStatus": "needs-review"
   },
-  "kunimi_tama_style_1260545": {
+  "kunimi_tama_swimsuit": {
     "expectedUnit": "31A",
-    "expectedElements": ["광"],
-    "expectedImageUrl": "/images/styles/kunimi_tama_style_1260545.png",
+    "expectedElements": ["광", "무"],
+    "expectedImageUrl": "/images/styles/kunimi_tama_swimsuit.png",
     "sourceUrl": "https://game8.jp/heavenburnsred/544117",
     "imageStatus": "verified"
   }
