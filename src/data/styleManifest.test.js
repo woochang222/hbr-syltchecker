@@ -31,7 +31,26 @@ const manuallyReviewedStyleIds = [
   'nanase_nanami_admiral_res',
   'shirakawa_yuina_admiral_res',
   'kayamori_ruka_admiral_res',
-  'yanagi_mion_admiral_res'
+  'yanagi_mion_admiral_res',
+  'sakuraba_seira_servant',
+  'satsuki_mari_servant',
+  'tenne_miko_servant',
+  'nikaido_misato_white_suit_res',
+  'higuchi_seika_swimsuit',
+  'ogasawara_hisame_bunny_res',
+  'tojo_tsukasa_sorrow',
+  'kunimi_tama_halloween_res',
+  'aoi_erika_white_suit_res',
+  'mizuhara_aina_swimsuit_res',
+  'maruyama_kanata_regalia_res',
+  'shirakawa_yuina_white_suit_res',
+  'date_akari_sports_day_res',
+  'minase_ichigo_pawapuro_res',
+  'oshima_ichiko_white_suit_res',
+  'tojo_tsukasa_bunny',
+  'mizuhara_aina_pirate',
+  'kanzaki_adelheid_servant_res',
+  'aoi_erika_swimsuit_res'
 ]
 
 describe('style manifest', () => {

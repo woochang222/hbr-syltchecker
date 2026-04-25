@@ -222,5 +222,138 @@
     "expectedImageUrl": "/images/styles/yanagi_mion_admiral_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/692830",
     "imageStatus": "verified"
+  },
+  "sakuraba_seira_servant": {
+    "expectedUnit": "31C",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/sakuraba_seira_servant.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/686333",
+    "imageStatus": "verified"
+  },
+  "satsuki_mari_servant": {
+    "expectedUnit": "31C",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/satsuki_mari_servant.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/712353",
+    "imageStatus": "verified"
+  },
+  "tenne_miko_servant": {
+    "expectedUnit": "31C",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/tenne_miko_servant.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/686332",
+    "imageStatus": "verified"
+  },
+  "nikaido_misato_white_suit_res": {
+    "expectedUnit": "31D",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/nikaido_misato_white_suit_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/667355",
+    "imageStatus": "verified"
+  },
+  "higuchi_seika_swimsuit": {
+    "expectedUnit": "31B",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/higuchi_seika_swimsuit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/700752",
+    "imageStatus": "verified"
+  },
+  "ogasawara_hisame_bunny_res": {
+    "expectedUnit": "30G",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/ogasawara_hisame_bunny_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/775106",
+    "imageStatus": "verified"
+  },
+  "tojo_tsukasa_sorrow": {
+    "expectedUnit": "31A",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/tojo_tsukasa_sorrow.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/669859",
+    "imageStatus": "verified"
+  },
+  "kunimi_tama_halloween_res": {
+    "expectedUnit": "31A",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/kunimi_tama_halloween_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/730675",
+    "imageStatus": "verified"
+  },
+  "aoi_erika_white_suit_res": {
+    "expectedUnit": "31B",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/aoi_erika_white_suit_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/756804",
+    "imageStatus": "verified"
+  },
+  "mizuhara_aina_swimsuit_res": {
+    "expectedUnit": "31D",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/mizuhara_aina_swimsuit_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/712350",
+    "imageStatus": "verified"
+  },
+  "maruyama_kanata_regalia_res": {
+    "expectedUnit": "31F",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/maruyama_kanata_regalia_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/746396",
+    "imageStatus": "verified"
+  },
+  "shirakawa_yuina_white_suit_res": {
+    "expectedUnit": "30G",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/shirakawa_yuina_white_suit_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/667354",
+    "imageStatus": "verified"
+  },
+  "date_akari_sports_day_res": {
+    "expectedUnit": "31D",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/date_akari_sports_day_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/779180",
+    "imageStatus": "verified"
+  },
+  "minase_ichigo_pawapuro_res": {
+    "expectedUnit": "31B",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/minase_ichigo_pawapuro_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/724681",
+    "imageStatus": "verified"
+  },
+  "oshima_ichiko_white_suit_res": {
+    "expectedUnit": "31E",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/oshima_ichiko_white_suit_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/677349",
+    "imageStatus": "verified"
+  },
+  "tojo_tsukasa_bunny": {
+    "expectedUnit": "31A",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/tojo_tsukasa_bunny.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/603245",
+    "imageStatus": "verified"
+  },
+  "mizuhara_aina_pirate": {
+    "expectedUnit": "31D",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/mizuhara_aina_pirate.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/609589",
+    "imageStatus": "verified"
+  },
+  "kanzaki_adelheid_servant_res": {
+    "expectedUnit": "31C",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/kanzaki_adelheid_servant_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/749659",
+    "imageStatus": "verified"
+  },
+  "aoi_erika_swimsuit_res": {
+    "expectedUnit": "31B",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/aoi_erika_swimsuit_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/706660",
+    "imageStatus": "verified"
   }
 }
