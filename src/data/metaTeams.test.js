@@ -8,6 +8,14 @@ const metaTeams = JSON.parse(readFileSync(new URL('./meta_teams.json', import.me
 
 const styleIds = new Set(styles.map(style => style.id))
 const stylesById = new Map(styles.map(style => [style.id, style]))
+const expectedMetaTeams = [
+  { id: 'neutral_meta', name: '무 최고 조합', element: '무' },
+  { id: 'fire_meta', name: '화 최고 조합', element: '화' },
+  { id: 'ice_meta', name: '빙 최고 조합', element: '빙' },
+  { id: 'thunder_meta', name: '뇌 최고 조합', element: '뇌' },
+  { id: 'light_meta', name: '광 최고 조합', element: '광' },
+  { id: 'dark_meta', name: '암 최고 조합', element: '암' }
+]
 
 describe('element labels', () => {
   it('uses one-character element labels in filter order', () => {
@@ -19,14 +27,26 @@ describe('meta teams', () => {
   it('defines one best-team preset per supported element', () => {
     assert.deepEqual(
       metaTeams.map(team => [team.id, team.name]),
-      [
-        ['neutral_meta', '무 최고 조합'],
-        ['fire_meta', '화 최고 조합'],
-        ['ice_meta', '빙 최고 조합'],
-        ['thunder_meta', '뇌 최고 조합'],
-        ['light_meta', '광 최고 조합'],
-        ['dark_meta', '암 최고 조합']
-      ]
+      expectedMetaTeams.map(team => [team.id, team.name])
+    )
+  })
+
+  it('uses exactly six unique styles per best-team preset', () => {
+    const invalidTeams = metaTeams
+      .map(team => ({
+        id: team.id,
+        count: team.styles.length,
+        uniqueCount: new Set(team.styles).size
+      }))
+      .filter(team => team.count !== 6 || team.uniqueCount !== 6)
+
+    assert.deepEqual(invalidTeams, [])
+  })
+
+  it('matches supported element ids and names', () => {
+    assert.deepEqual(
+      metaTeams.map(team => ({ id: team.id, name: team.name })),
+      expectedMetaTeams.map(team => ({ id: team.id, name: team.name }))
     )
   })
 
@@ -46,5 +66,24 @@ describe('meta teams', () => {
       .map(style => [style.id, style.element])
 
     assert.deepEqual(invalidMetaStyleElements, [])
+  })
+
+  it('includes at least one style matching each preset element', () => {
+    const teamsWithoutElementStyle = metaTeams
+      .map(team => {
+        const expectedTeam = expectedMetaTeams.find(expected => expected.id === team.id)
+        const hasMatchingStyle = team.styles
+          .map(styleId => stylesById.get(styleId))
+          .some(style => style?.element === expectedTeam?.element || style?.elements?.includes(expectedTeam?.element))
+
+        return {
+          id: team.id,
+          element: expectedTeam?.element,
+          hasMatchingStyle
+        }
+      })
+      .filter(team => !team.hasMatchingStyle)
+
+    assert.deepEqual(teamsWithoutElementStyle, [])
   })
 })
