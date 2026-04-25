@@ -355,5 +355,61 @@
     "expectedImageUrl": "/images/styles/aoi_erika_swimsuit_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/706660",
     "imageStatus": "verified"
+  },
+  "oshima_minori_midnight_res": {
+    "expectedUnit": "31E",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/oshima_minori_midnight_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/735061",
+    "imageStatus": "verified"
+  },
+  "kayamori_ruka_pawapuro_res": {
+    "expectedUnit": "31A",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/kayamori_ruka_pawapuro_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/724680",
+    "imageStatus": "verified"
+  },
+  "carol_reaper_white_suit_res": {
+    "expectedUnit": "31X",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/carol_reaper_white_suit_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/714988",
+    "imageStatus": "verified"
+  },
+  "kiryu_miya_swimsuit_res": {
+    "expectedUnit": "30G",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/kiryu_miya_swimsuit_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/708962",
+    "imageStatus": "verified"
+  },
+  "kura_satomi_swimsuit_res": {
+    "expectedUnit": "30G",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/kura_satomi_swimsuit_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/708959",
+    "imageStatus": "verified"
+  },
+  "yamawaki_white_suit_res": {
+    "expectedUnit": "31C",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/yamawaki_white_suit_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/669858",
+    "imageStatus": "verified"
+  },
+  "nanase_nanami_base_res": {
+    "expectedUnit": "사령부",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/nanase_nanami_base_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/667359",
+    "imageStatus": "verified"
+  },
+  "shirakawa_yuina_unison_res": {
+    "expectedUnit": "30G",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/shirakawa_yuina_unison_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/621315",
+    "imageStatus": "verified"
   }
 }

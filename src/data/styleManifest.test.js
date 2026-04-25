@@ -50,7 +50,15 @@ const manuallyReviewedStyleIds = [
   'tojo_tsukasa_bunny',
   'mizuhara_aina_pirate',
   'kanzaki_adelheid_servant_res',
-  'aoi_erika_swimsuit_res'
+  'aoi_erika_swimsuit_res',
+  'oshima_minori_midnight_res',
+  'kayamori_ruka_pawapuro_res',
+  'carol_reaper_white_suit_res',
+  'kiryu_miya_swimsuit_res',
+  'kura_satomi_swimsuit_res',
+  'yamawaki_white_suit_res',
+  'nanase_nanami_base_res',
+  'shirakawa_yuina_unison_res'
 ]
 
 describe('style manifest', () => {
