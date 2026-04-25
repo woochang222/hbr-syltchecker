@@ -2,9 +2,13 @@ import { existsSync, readFileSync } from 'node:fs'
 
 const styles = JSON.parse(readFileSync(new URL('../src/data/styles.json', import.meta.url), 'utf8'))
 const manifest = JSON.parse(readFileSync(new URL('../src/data/style_manifest.json', import.meta.url), 'utf8'))
+const metaTeams = JSON.parse(readFileSync(new URL('../src/data/meta_teams.json', import.meta.url), 'utf8'))
+const metaTeamManifest = JSON.parse(readFileSync(new URL('../src/data/meta_team_manifest.json', import.meta.url), 'utf8'))
 
 const styleIds = new Set(styles.map(style => style.id))
 const manifestIds = new Set(Object.keys(manifest))
+const metaTeamIds = new Set(metaTeams.map(team => team.id))
+const metaTeamManifestIds = new Set(Object.keys(metaTeamManifest))
 
 const warnings = {
   missingManifest: styles
@@ -30,7 +34,30 @@ const warnings = {
     .filter(styleId => !styleIds.has(styleId)),
   missingManifestImages: Object.entries(manifest)
     .filter(([, entry]) => !existsSync(new URL(`../public${entry.expectedImageUrl}`, import.meta.url)))
-    .map(([styleId, entry]) => ({ id: styleId, image_url: entry.expectedImageUrl }))
+    .map(([styleId, entry]) => ({ id: styleId, image_url: entry.expectedImageUrl })),
+  missingMetaTeamManifest: metaTeams
+    .filter(team => !metaTeamManifestIds.has(team.id))
+    .map(team => team.id),
+  missingMetaTeamSourceUrl: Object.entries(metaTeamManifest)
+    .filter(([, entry]) => !entry.sourceUrl)
+    .map(([teamId]) => teamId),
+  missingMetaTeamReviewedAt: Object.entries(metaTeamManifest)
+    .filter(([, entry]) => !entry.reviewedAt)
+    .map(([teamId]) => teamId),
+  unverifiedMetaTeams: Object.entries(metaTeamManifest)
+    .filter(([, entry]) => entry.reviewStatus !== 'verified')
+    .map(([teamId, entry]) => ({ id: teamId, reviewStatus: entry.reviewStatus || 'missing' })),
+  metaTeamManifestMismatches: Object.entries(metaTeamManifest)
+    .flatMap(([teamId, entry]) => {
+      const team = metaTeams.find(metaTeam => metaTeam.id === teamId)
+      if (!team) return []
+
+      return JSON.stringify(team.styles) === JSON.stringify(entry.expectedStyles)
+        ? []
+        : [{ id: teamId, actual: team.styles, expected: entry.expectedStyles }]
+    }),
+  missingMetaTeamRows: Object.keys(metaTeamManifest)
+    .filter(teamId => !metaTeamIds.has(teamId))
 }
 
 const printSection = (title, items) => {
@@ -57,3 +84,9 @@ printSection('Image filename mismatches', warnings.filenameMismatches)
 printSection('Generated style id or name patterns', warnings.generatedStyleNames)
 printSection('Manifest entries missing styles.json rows', warnings.missingManifestStyles)
 printSection('Manifest entries missing local images', warnings.missingManifestImages)
+printSection('Meta teams missing manifest entries', warnings.missingMetaTeamManifest)
+printSection('Meta team manifest entries missing sourceUrl', warnings.missingMetaTeamSourceUrl)
+printSection('Meta team manifest entries missing reviewedAt', warnings.missingMetaTeamReviewedAt)
+printSection('Meta team manifests not verified', warnings.unverifiedMetaTeams)
+printSection('Meta team expectedStyles mismatches', warnings.metaTeamManifestMismatches)
+printSection('Meta team manifest entries missing meta_teams.json rows', warnings.missingMetaTeamRows)
