@@ -1,0 +1,80 @@
+{
+  "neutral_meta": {
+    "expectedStyles": [
+      "bungo_yayoi_unison_res",
+      "yamawaki_unison_res",
+      "sakuraba_seira_servant",
+      "satsuki_mari_servant",
+      "amane_miko_servant",
+      "asakura_karen_unison_res"
+    ],
+    "sourceUrl": "https://game8.jp/heavenburnsred/",
+    "reviewStatus": "needs-review",
+    "reviewedAt": null
+  },
+  "fire_meta": {
+    "expectedStyles": [
+      "kayamori_ruka_unison_res",
+      "nikaido_misato_white_suit_res",
+      "higuchi_seika_swimsuit",
+      "shirakawa_yuina_admiral_res",
+      "izumi_yuki_unison_res",
+      "ogasawara_hisame_bunny_res"
+    ],
+    "sourceUrl": "https://game8.jp/heavenburnsred/",
+    "reviewStatus": "needs-review",
+    "reviewedAt": null
+  },
+  "ice_meta": {
+    "expectedStyles": [
+      "tachibana_kanade_soaring_sword",
+      "aikawa_megumi_unison_res",
+      "tojo_tsukasa_sorrow",
+      "kayamori_ruka_admiral_res",
+      "kunimi_tama_halloween_res",
+      "aoi_erika_white_suit_res"
+    ],
+    "sourceUrl": "https://game8.jp/heavenburnsred/",
+    "reviewStatus": "needs-review",
+    "reviewedAt": null
+  },
+  "thunder_meta": {
+    "expectedStyles": [
+      "tezuka_saki_base_res",
+      "aikawa_megumi_unison_res",
+      "mizuhara_aina_swimsuit_res",
+      "maruyama_kanata_regalia_res",
+      "nanase_nanami_admiral_res",
+      "yamawaki_unison_res"
+    ],
+    "sourceUrl": "https://game8.jp/heavenburnsred/",
+    "reviewStatus": "needs-review",
+    "reviewedAt": null
+  },
+  "light_meta": {
+    "expectedStyles": [
+      "shirakawa_yuina_white_suit_res",
+      "date_akari_sports_day_res",
+      "minase_ichigo_pawapuro_res",
+      "yanagi_mion_admiral_res",
+      "asakura_karen_unison_res",
+      "oshima_ichiko_white_suit_res"
+    ],
+    "sourceUrl": "https://game8.jp/heavenburnsred/",
+    "reviewStatus": "needs-review",
+    "reviewedAt": null
+  },
+  "dark_meta": {
+    "expectedStyles": [
+      "yamawaki_unison_res",
+      "tojo_tsukasa_bunny",
+      "mizuhara_aina_pirate",
+      "nikaido_misato_admiral_res",
+      "kanzaki_adelheid_servant_res",
+      "aoi_erika_swimsuit_res"
+    ],
+    "sourceUrl": "https://game8.jp/heavenburnsred/",
+    "reviewStatus": "needs-review",
+    "reviewedAt": null
+  }
+}
