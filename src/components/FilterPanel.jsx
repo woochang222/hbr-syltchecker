@@ -1,5 +1,6 @@
 import React from 'react'
 import { ELEMENTS } from '../data/elements'
+import { FILTER_UNITS } from '../data/units'
 import { OWNERSHIP_RANGE_LABELS } from '../utils/ownershipRange'
 
 const FilterPanel = ({
@@ -16,7 +17,6 @@ const FilterPanel = ({
   onResetFilters,
   onClose
 }) => {
-  const units = ['31A', '31B', '31C', '30G', '31D', '31E', '31F', '31X', 'AB']
   const tiers = [0, 1, 2, 3]
   const ownershipRange = filters.ownershipRange || [-1, 4]
   const ownershipMin = ownershipRange[0]
@@ -81,7 +81,7 @@ const FilterPanel = ({
       <div className="filter-group">
         <h3>부대</h3>
         <div className="filter-buttons">
-          {units.map(unit => (
+          {FILTER_UNITS.map(unit => (
             <button
               type="button"
               key={unit}

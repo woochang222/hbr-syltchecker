@@ -310,4 +310,27 @@ describe('style data integrity', () => {
       }
     )
   })
+
+  it('keeps Nakamura Yuri Rain Fire on the fire image asset', () => {
+    const rainFire = styles.find(style => style.id === 'nakamura_yuri_rain_fire')
+
+    assert.deepEqual(
+      {
+        character_name: rainFire?.character_name,
+        style_name: rainFire?.style_name,
+        image_url: rainFire?.image_url,
+        unit: rainFire?.unit,
+        element: rainFire?.element,
+        elements: rainFire?.elements
+      },
+      {
+        character_name: '나카무라 유리',
+        style_name: 'rain_fire',
+        image_url: '/images/styles/nakamura_yuri_rain_fire.png',
+        unit: 'AB',
+        element: '화',
+        elements: ['화']
+      }
+    )
+  })
 })

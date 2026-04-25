@@ -141,7 +141,7 @@
 - maria_de_angelis_style_689546: /images/styles/maria_de_angelis_style_689546.webp
 - charlotta_style_381454588: /images/styles/charlotta_style_381454588.webp
 - tsukishiro_monaka_style_825012: /images/styles/tsukishiro_monaka_style_825012.webp
-- nakamura_yuri_rain_fire: /images/styles/nakamura_yuri_rain_fire.webp
+- nakamura_yuri_rain_fire: /images/styles/nakamura_yuri_rain_fire.png
 - ri_yunfa_celestial_nymph: /images/styles/ri_yunfa_celestial_nymph.webp
 - kanzaki_adelheid_girl: /images/styles/kanzaki_adelheid_girl.webp
 - oshima_isuzu_yukata: /images/styles/oshima_isuzu_yukata.webp
