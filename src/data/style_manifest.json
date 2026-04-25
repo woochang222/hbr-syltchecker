@@ -40,5 +40,12 @@
     "expectedImageUrl": "/images/styles/kurosawa_maki_empress_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/",
     "imageStatus": "needs-review"
+  },
+  "kunimi_tama_style_1260545": {
+    "expectedUnit": "31A",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/kunimi_tama_style_1260545.png",
+    "sourceUrl": "https://game8.jp/heavenburnsred/544117",
+    "imageStatus": "verified"
   }
 }

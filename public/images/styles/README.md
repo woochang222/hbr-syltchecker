@@ -210,7 +210,7 @@
 - kayamori_ruka_style_892372: /images/styles/kayamori_ruka_style_892372.webp
 - shirakawa_yuina_base: /images/styles/shirakawa_yuina_base.webp
 - nikaido_misato_base: /images/styles/nikaido_misato_base.webp
-- kunimi_tama_style_1260545: /images/styles/kunimi_tama_style_1260545.webp
+- kunimi_tama_style_1260545: /images/styles/kunimi_tama_style_1260545.png
 - minase_sumomo_base: /images/styles/minase_sumomo_base.webp
 - minase_ichigo_base: /images/styles/minase_ichigo_base.webp
 - tsukishiro_monaka_base: /images/styles/tsukishiro_monaka_base.webp

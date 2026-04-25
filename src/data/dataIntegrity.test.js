@@ -333,4 +333,27 @@ describe('style data integrity', () => {
       }
     )
   })
+
+  it('keeps Kunimi Tama Coral Reverie on the light swimsuit image asset', () => {
+    const coralReverie = styles.find(style => style.id === 'kunimi_tama_style_1260545')
+
+    assert.deepEqual(
+      {
+        character_name: coralReverie?.character_name,
+        style_name: coralReverie?.style_name,
+        image_url: coralReverie?.image_url,
+        unit: coralReverie?.unit,
+        element: coralReverie?.element,
+        elements: coralReverie?.elements
+      },
+      {
+        character_name: '쿠니미 타마',
+        style_name: '환상의 코랄',
+        image_url: '/images/styles/kunimi_tama_style_1260545.png',
+        unit: '31A',
+        element: '광',
+        elements: ['광']
+      }
+    )
+  })
 })

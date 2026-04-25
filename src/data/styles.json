@@ -2957,17 +2957,17 @@
   {
     "id": "kunimi_tama_style_1260545",
     "character_name": "쿠니미 타마",
-    "style_name": "style_1260545",
+    "style_name": "환상의 코랄",
     "nicknames": [],
-    "image_url": "/images/styles/kunimi_tama_style_1260545.webp",
+    "image_url": "/images/styles/kunimi_tama_style_1260545.png",
     "isResonance": false,
     "isLimited": false,
     "isUniform": false,
     "unit": "31A",
-    "element": "무",
+    "element": "광",
     "metaTags": [],
     "elements": [
-      "무"
+      "광"
     ]
   },
   {
