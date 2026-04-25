@@ -26,7 +26,7 @@ describe('style data integrity', () => {
 
     const referencedFileNames = new Set([...imageUrls].map(url => url.split('/').at(-1)))
     const imageFiles = readdirSync(new URL('../../public/images/styles', import.meta.url))
-      .filter(file => file.endsWith('.webp'))
+      .filter(file => file.endsWith('.webp') || file.endsWith('.png'))
     const unreferencedFiles = imageFiles.filter(file => !referencedFileNames.has(file))
 
     assert.deepEqual({ missingFiles, unreferencedFiles }, { missingFiles: [], unreferencedFiles: [] })
