@@ -1,0 +1,44 @@
+{
+  "nakamura_yuri_rain_fire": {
+    "expectedUnit": "AB",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/nakamura_yuri_rain_fire.png",
+    "sourceUrl": "https://game8.jp/heavenburnsred/511324",
+    "imageStatus": "verified"
+  },
+  "tezuka_saki_base_res": {
+    "expectedUnit": "사령부",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/tezuka_saki_base_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/755194",
+    "imageStatus": "needs-review"
+  },
+  "tachibana_kanade_earth_angel": {
+    "expectedUnit": "AB",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/tachibana_kanade_earth_angel.png",
+    "sourceUrl": "https://game8.jp/heavenburnsred/",
+    "imageStatus": "needs-review"
+  },
+  "tachibana_kanade_soaring_sword": {
+    "expectedUnit": "AB",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/tachibana_kanade_soaring_sword.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/",
+    "imageStatus": "needs-review"
+  },
+  "natsume_inori_hanakage_res": {
+    "expectedUnit": "31F",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/natsume_inori_hanakage_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/",
+    "imageStatus": "needs-review"
+  },
+  "kurosawa_maki_empress_res": {
+    "expectedUnit": "31F",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/kurosawa_maki_empress_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/",
+    "imageStatus": "needs-review"
+  }
+}
