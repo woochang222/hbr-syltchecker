@@ -59,15 +59,15 @@
     "expectedUnit": "31B",
     "expectedElements": ["화"],
     "expectedImageUrl": "/images/styles/minase_ichigo_idol.webp",
-    "sourceUrl": "",
-    "imageStatus": "needs-review"
+    "sourceUrl": "https://game8.jp/heavenburnsred/585103",
+    "imageStatus": "verified"
   },
   "aoi_erika_idol": {
     "expectedUnit": "31B",
     "expectedElements": ["화"],
     "expectedImageUrl": "/images/styles/aoi_erika_idol.webp",
-    "sourceUrl": "",
-    "imageStatus": "needs-review"
+    "sourceUrl": "https://game8.jp/heavenburnsred/585101",
+    "imageStatus": "verified"
   },
   "maria_de_angelis_fleeting_encounter": {
     "expectedUnit": "31X",
@@ -88,6 +88,13 @@
     "expectedElements": ["광"],
     "expectedImageUrl": "/images/styles/tsukishiro_monaka_cover.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/573802",
+    "imageStatus": "verified"
+  },
+  "tenne_miko_magical_cat": {
+    "expectedUnit": "31C",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/tenne_miko_magical_cat.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/539113",
     "imageStatus": "verified"
   },
   "murofushi_risa_smile_technical_exchange": {

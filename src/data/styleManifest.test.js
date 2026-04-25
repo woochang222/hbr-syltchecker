@@ -6,6 +6,22 @@ const styles = JSON.parse(readFileSync(new URL('./styles.json', import.meta.url)
 const manifest = JSON.parse(readFileSync(new URL('./style_manifest.json', import.meta.url), 'utf8'))
 
 const styleMap = new Map(styles.map(style => [style.id, style]))
+const manuallyReviewedStyleIds = [
+  'kunimi_tama_magical_elemental',
+  'minase_ichigo_idol',
+  'aoi_erika_idol',
+  'maria_de_angelis_fleeting_encounter',
+  'charlotta_eternal_feelings',
+  'tsukishiro_monaka_cover',
+  'tenne_miko_magical_cat',
+  'murofushi_risa_smile_technical_exchange',
+  'bungo_yayoi_happy_legion',
+  'yamawaki_holy_knight',
+  'asakura_karen_scarlet_rebellion',
+  'kayamori_ruka_cardinal_echo',
+  'aikawa_megumi_one_night_dream',
+  'kayamori_ruka_circuit_burst'
+]
 
 describe('style manifest', () => {
   it('references only styles that exist in styles.json', () => {
@@ -13,6 +29,13 @@ describe('style manifest', () => {
       .filter(styleId => !styleMap.has(styleId))
 
     assert.deepEqual(missingStyleIds, [])
+  })
+
+  it('covers manually reviewed renamed styles in the manifest', () => {
+    const missingManifestIds = manuallyReviewedStyleIds
+      .filter(styleId => !manifest[styleId])
+
+    assert.deepEqual(missingManifestIds, [])
   })
 
   it('matches manifest-backed units, elements, and image URLs', () => {
