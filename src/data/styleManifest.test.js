@@ -20,7 +20,13 @@ const manuallyReviewedStyleIds = [
   'asakura_karen_scarlet_rebellion',
   'kayamori_ruka_cardinal_echo',
   'aikawa_megumi_one_night_dream',
-  'kayamori_ruka_circuit_burst'
+  'kayamori_ruka_circuit_burst',
+  'aikawa_megumi_unison_res',
+  'asakura_karen_unison_res',
+  'izumi_yuki_unison_res',
+  'kayamori_ruka_unison_res',
+  'bungo_yayoi_unison_res',
+  'yamawaki_unison_res'
 ]
 
 describe('style manifest', () => {

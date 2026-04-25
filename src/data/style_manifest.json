@@ -145,5 +145,47 @@
     "expectedImageUrl": "/images/styles/kayamori_ruka_circuit_burst.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/426188",
     "imageStatus": "verified"
+  },
+  "aikawa_megumi_unison_res": {
+    "expectedUnit": "31A",
+    "expectedElements": ["빙", "뇌"],
+    "expectedImageUrl": "/images/styles/aikawa_megumi_unison_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/764339",
+    "imageStatus": "verified"
+  },
+  "asakura_karen_unison_res": {
+    "expectedUnit": "31A",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/asakura_karen_unison_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/708980",
+    "imageStatus": "verified"
+  },
+  "izumi_yuki_unison_res": {
+    "expectedUnit": "31A",
+    "expectedElements": ["암", "화"],
+    "expectedImageUrl": "/images/styles/izumi_yuki_unison_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/643121",
+    "imageStatus": "verified"
+  },
+  "kayamori_ruka_unison_res": {
+    "expectedUnit": "31A",
+    "expectedElements": ["암", "화"],
+    "expectedImageUrl": "/images/styles/kayamori_ruka_unison_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/595464",
+    "imageStatus": "verified"
+  },
+  "bungo_yayoi_unison_res": {
+    "expectedUnit": "31C",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/bungo_yayoi_unison_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/683118",
+    "imageStatus": "verified"
+  },
+  "yamawaki_unison_res": {
+    "expectedUnit": "31C",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/yamawaki_unison_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/738525",
+    "imageStatus": "verified"
   }
 }
