@@ -26,7 +26,12 @@ const manuallyReviewedStyleIds = [
   'izumi_yuki_unison_res',
   'kayamori_ruka_unison_res',
   'bungo_yayoi_unison_res',
-  'yamawaki_unison_res'
+  'yamawaki_unison_res',
+  'nikaido_misato_admiral_res',
+  'nanase_nanami_admiral_res',
+  'shirakawa_yuina_admiral_res',
+  'kayamori_ruka_admiral_res',
+  'yanagi_mion_admiral_res'
 ]
 
 describe('style manifest', () => {

@@ -187,5 +187,40 @@
     "expectedImageUrl": "/images/styles/yamawaki_unison_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/738525",
     "imageStatus": "verified"
+  },
+  "nikaido_misato_admiral_res": {
+    "expectedUnit": "31D",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/nikaido_misato_admiral_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425667",
+    "imageStatus": "verified"
+  },
+  "nanase_nanami_admiral_res": {
+    "expectedUnit": "사령부",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/nanase_nanami_admiral_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/759416",
+    "imageStatus": "verified"
+  },
+  "shirakawa_yuina_admiral_res": {
+    "expectedUnit": "30G",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/shirakawa_yuina_admiral_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/752169",
+    "imageStatus": "verified"
+  },
+  "kayamori_ruka_admiral_res": {
+    "expectedUnit": "31A",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/kayamori_ruka_admiral_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/752168",
+    "imageStatus": "verified"
+  },
+  "yanagi_mion_admiral_res": {
+    "expectedUnit": "31F",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/yanagi_mion_admiral_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/692830",
+    "imageStatus": "verified"
   }
 }
