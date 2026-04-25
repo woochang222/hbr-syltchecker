@@ -856,7 +856,7 @@
     ]
   },
   {
-    "id": "amane_miko_servant",
+    "id": "tenne_miko_servant",
     "character_name": "텐네 미코",
     "style_name": "servant",
     "nicknames": [],
@@ -1529,7 +1529,7 @@
     ]
   },
   {
-    "id": "amane_miko_supreme",
+    "id": "tenne_miko_supreme",
     "character_name": "텐네 미코",
     "style_name": "지고",
     "nicknames": [],
@@ -3232,7 +3232,7 @@
     ]
   },
   {
-    "id": "amane_miko_base",
+    "id": "tenne_miko_base",
     "character_name": "텐네 미코",
     "style_name": "기본",
     "nicknames": [],

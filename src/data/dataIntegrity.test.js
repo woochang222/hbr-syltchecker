@@ -127,14 +127,14 @@ describe('style data integrity', () => {
       })),
       [
         {
-          id: 'amane_miko_servant',
+          id: 'tenne_miko_servant',
           character_name: '텐네 미코',
           style_name: 'servant',
           image_url: '/images/styles/tenne_miko_servant.webp',
           unit: '31C'
         },
         {
-          id: 'amane_miko_supreme',
+          id: 'tenne_miko_supreme',
           character_name: '텐네 미코',
           style_name: '지고',
           image_url: '/images/styles/tenne_miko_supreme.webp',
@@ -148,7 +148,7 @@ describe('style data integrity', () => {
           unit: '31C'
         },
         {
-          id: 'amane_miko_base',
+          id: 'tenne_miko_base',
           character_name: '텐네 미코',
           style_name: '기본',
           image_url: '/images/styles/tenne_miko_base.webp',
@@ -654,7 +654,7 @@ describe('style data integrity', () => {
 
   it('keeps manually inspected image elements aligned with card icons', () => {
     const expectedElementsByStyle = new Map([
-      ['amane_miko_servant', { element: '암', elements: ['암'] }],
+      ['tenne_miko_servant', { element: '암', elements: ['암'] }],
       ['yanagi_mion_admiral_res', { element: '무', elements: ['무'] }],
       ['yamawaki_unison_res', { element: '암', elements: ['암'] }],
       ['asakura_karen_free', { element: '화', elements: ['화', '빙'] }],
