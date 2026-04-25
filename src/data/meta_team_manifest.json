@@ -8,9 +8,9 @@
       "amane_miko_servant",
       "asakura_karen_unison_res"
     ],
-    "sourceUrl": "https://game8.jp/heavenburnsred/",
-    "reviewStatus": "needs-review",
-    "reviewedAt": null
+    "sourceUrl": "https://game8.jp/heavenburnsred/425429",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-04-26"
   },
   "fire_meta": {
     "expectedStyles": [
@@ -21,9 +21,9 @@
       "izumi_yuki_unison_res",
       "ogasawara_hisame_bunny_res"
     ],
-    "sourceUrl": "https://game8.jp/heavenburnsred/",
-    "reviewStatus": "needs-review",
-    "reviewedAt": null
+    "sourceUrl": "https://game8.jp/heavenburnsred/534821",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-04-26"
   },
   "ice_meta": {
     "expectedStyles": [
@@ -34,9 +34,9 @@
       "kunimi_tama_halloween_res",
       "aoi_erika_white_suit_res"
     ],
-    "sourceUrl": "https://game8.jp/heavenburnsred/",
-    "reviewStatus": "needs-review",
-    "reviewedAt": null
+    "sourceUrl": "https://game8.jp/heavenburnsred/534939",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-04-26"
   },
   "thunder_meta": {
     "expectedStyles": [
@@ -47,9 +47,9 @@
       "nanase_nanami_admiral_res",
       "yamawaki_unison_res"
     ],
-    "sourceUrl": "https://game8.jp/heavenburnsred/",
-    "reviewStatus": "needs-review",
-    "reviewedAt": null
+    "sourceUrl": "https://game8.jp/heavenburnsred/534906",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-04-26"
   },
   "light_meta": {
     "expectedStyles": [
@@ -60,9 +60,9 @@
       "asakura_karen_unison_res",
       "oshima_ichiko_white_suit_res"
     ],
-    "sourceUrl": "https://game8.jp/heavenburnsred/",
-    "reviewStatus": "needs-review",
-    "reviewedAt": null
+    "sourceUrl": "https://game8.jp/heavenburnsred/535214",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-04-26"
   },
   "dark_meta": {
     "expectedStyles": [
@@ -73,8 +73,8 @@
       "kanzaki_adelheid_servant_res",
       "aoi_erika_swimsuit_res"
     ],
-    "sourceUrl": "https://game8.jp/heavenburnsred/",
-    "reviewStatus": "needs-review",
-    "reviewedAt": null
+    "sourceUrl": "https://game8.jp/heavenburnsred/535263",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-04-26"
   }
 }
