@@ -8,6 +8,8 @@
 
 **Tech Stack:** Node ESM, `node:test`, local JSON files, npm scripts, existing source URL validation helper.
 
+**Status:** Completed and pushed. The workflow now validates draft style data against the current app data shape, updates `styles.json` and `style_manifest.json` through safe paired writes, documents usage in README, and passes `npm test`, `npm run lint`, `npm run build`, `npm run validate:data-report`, and `npm run validate:source-urls`.
+
 ---
 
 ## File Structure
@@ -24,7 +26,7 @@
 **Files:**
 - Create: `scripts/styleDraftWorkflow.test.js`
 
-- [ ] **Step 1: Write the failing helper tests**
+- [x] **Step 1: Write the failing helper tests**
 
 Create `scripts/styleDraftWorkflow.test.js`:
 
@@ -201,7 +203,7 @@ describe('formatJson', () => {
 })
 ```
 
-- [ ] **Step 2: Run the tests to verify the helper module is missing**
+- [x] **Step 2: Run the tests to verify the helper module is missing**
 
 Run:
 
@@ -211,7 +213,7 @@ npm test
 
 Expected: FAIL with a module-not-found error for `./styleDraftWorkflow.js`.
 
-- [ ] **Step 3: Commit the failing tests**
+- [x] **Step 3: Commit the failing tests**
 
 Run:
 
@@ -225,7 +227,7 @@ git commit -m "test: add style draft workflow expectations"
 **Files:**
 - Create: `scripts/styleDraftWorkflow.js`
 
-- [ ] **Step 1: Implement the helper module**
+- [x] **Step 1: Implement the helper module**
 
 Create `scripts/styleDraftWorkflow.js`:
 
@@ -381,7 +383,7 @@ export const applyStyleDraft = ({ draft, styles, manifest }) => ({
 export const formatJson = data => `${JSON.stringify(data, null, 2)}\n`
 ```
 
-- [ ] **Step 2: Run tests to verify the helper behavior passes**
+- [x] **Step 2: Run tests to verify the helper behavior passes**
 
 Run:
 
@@ -391,7 +393,7 @@ npm test
 
 Expected: PASS, including `styleDraftWorkflow.test.js`.
 
-- [ ] **Step 3: Run lint**
+- [x] **Step 3: Run lint**
 
 Run:
 
@@ -401,7 +403,7 @@ npm run lint
 
 Expected: PASS.
 
-- [ ] **Step 4: Commit the helper implementation**
+- [x] **Step 4: Commit the helper implementation**
 
 Run:
 
@@ -417,7 +419,7 @@ git commit -m "feat: add style draft workflow helpers"
 - Create: `scripts/style-draft.example.json`
 - Modify: `package.json`
 
-- [ ] **Step 1: Create the CLI wrapper**
+- [x] **Step 1: Create the CLI wrapper**
 
 Create `scripts/add-style.js`:
 
@@ -482,7 +484,7 @@ if (!draftPath) {
 }
 ```
 
-- [ ] **Step 2: Add the example draft**
+- [x] **Step 2: Add the example draft**
 
 Create `scripts/style-draft.example.json`:
 
@@ -512,7 +514,7 @@ Create `scripts/style-draft.example.json`:
 }
 ```
 
-- [ ] **Step 3: Add the npm scripts**
+- [x] **Step 3: Add the npm scripts**
 
 Modify the `scripts` block in `package.json` so it contains:
 
@@ -523,7 +525,7 @@ Modify the `scripts` block in `package.json` so it contains:
 
 Keep the existing scripts unchanged except for expanding `test` to include script tests.
 
-- [ ] **Step 4: Run the CLI without arguments to verify usage failure**
+- [x] **Step 4: Run the CLI without arguments to verify usage failure**
 
 Run:
 
@@ -537,7 +539,7 @@ Expected: FAIL with exit code `1` and this message:
 Usage: npm run add:style -- path/to/style-draft.json
 ```
 
-- [ ] **Step 5: Run tests and lint**
+- [x] **Step 5: Run tests and lint**
 
 Run:
 
@@ -548,7 +550,7 @@ npm run lint
 
 Expected: both commands pass.
 
-- [ ] **Step 6: Commit the CLI and example**
+- [x] **Step 6: Commit the CLI and example**
 
 Run:
 
@@ -562,7 +564,7 @@ git commit -m "feat: add style draft cli"
 **Files:**
 - Modify: `README.md`
 
-- [ ] **Step 1: Add README usage notes**
+- [x] **Step 1: Add README usage notes**
 
 In `README.md`, after the command block in `실행 방법`, add:
 
@@ -588,7 +590,7 @@ npm run validate:data-report
 `npm run add:style`은 이미지 파일 존재 여부, 스타일/manifest 필드 일치, Game8 출처 URL 형식, `imageStatus: "verified"`를 확인한 뒤에만 파일을 수정합니다.
 ````
 
-- [ ] **Step 2: Run markdown diff check**
+- [x] **Step 2: Run markdown diff check**
 
 Run:
 
@@ -598,7 +600,7 @@ git diff --check
 
 Expected: exit code `0`.
 
-- [ ] **Step 3: Commit the docs update**
+- [x] **Step 3: Commit the docs update**
 
 Run:
 
@@ -612,7 +614,7 @@ git commit -m "docs: document style add workflow"
 **Files:**
 - Modify only files from Tasks 1-4 if verification finds a concrete issue.
 
-- [ ] **Step 1: Run full deterministic verification**
+- [x] **Step 1: Run full deterministic verification**
 
 Run:
 
@@ -631,7 +633,7 @@ Expected:
 - `npm run validate:data-report`: exits `0` with no warning sections.
 - `git diff --check`: exits `0`.
 
-- [ ] **Step 2: Check source URL validation when network is available**
+- [x] **Step 2: Check source URL validation when network is available**
 
 Run:
 
@@ -643,7 +645,7 @@ Expected when network access is available: exit code `0`, no invalid shapes, and
 
 If this fails with only `fetch failed` for every URL in the sandbox, rerun with approved network access before treating it as a data issue.
 
-- [ ] **Step 3: Check git status**
+- [x] **Step 3: Check git status**
 
 Run:
 
@@ -653,7 +655,7 @@ git status --short --branch
 
 Expected: branch may be ahead of `origin/main`; no unstaged source changes.
 
-- [ ] **Step 4: Commit any verification fixes**
+- [x] **Step 4: Commit any verification fixes**
 
 If Step 1 or Step 2 required fixes, commit only those fixes:
 
