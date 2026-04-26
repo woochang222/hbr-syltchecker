@@ -367,77 +367,77 @@
     "expectedUnit": "31A",
     "expectedElements": ["암"],
     "expectedImageUrl": "/images/styles/asakura_karen_swimsuit.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/628643",
+    "sourceUrl": "https://game8.jp/heavenburnsred/628231",
     "imageStatus": "verified"
   },
   "aikawa_megumi_swimsuit": {
     "expectedUnit": "31A",
     "expectedElements": ["뇌"],
     "expectedImageUrl": "/images/styles/aikawa_megumi_swimsuit.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/628644",
+    "sourceUrl": "https://game8.jp/heavenburnsred/628230",
     "imageStatus": "verified"
   },
   "satsuki_mari_swimsuit": {
     "expectedUnit": "31C",
     "expectedElements": ["화"],
     "expectedImageUrl": "/images/styles/satsuki_mari_swimsuit.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/627817",
+    "sourceUrl": "https://game8.jp/heavenburnsred/622824",
     "imageStatus": "verified"
   },
   "kanzaki_adelheid_swimsuit": {
     "expectedUnit": "31C",
     "expectedElements": ["화"],
     "expectedImageUrl": "/images/styles/kanzaki_adelheid_swimsuit.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/627818",
+    "sourceUrl": "https://game8.jp/heavenburnsred/622825",
     "imageStatus": "verified"
   },
   "charlotta_bride": {
     "expectedUnit": "31X",
     "expectedElements": ["암"],
     "expectedImageUrl": "/images/styles/charlotta_bride.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/624231",
+    "sourceUrl": "https://game8.jp/heavenburnsred/615278",
     "imageStatus": "verified"
   },
   "sakuraba_seira_bride": {
     "expectedUnit": "31C",
     "expectedElements": ["화"],
     "expectedImageUrl": "/images/styles/sakuraba_seira_bride.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/624233",
+    "sourceUrl": "https://game8.jp/heavenburnsred/615280",
     "imageStatus": "verified"
   },
   "vritika_balakrishnan_dancer": {
     "expectedUnit": "31X",
     "expectedElements": ["무"],
     "expectedImageUrl": "/images/styles/vritika_balakrishnan_dancer.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/622314",
+    "sourceUrl": "https://game8.jp/heavenburnsred/612874",
     "imageStatus": "verified"
   },
   "eileen_redmain_moonlight": {
     "expectedUnit": "31X",
     "expectedElements": ["무"],
     "expectedImageUrl": "/images/styles/eileen_redmain_moonlight.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/622313",
+    "sourceUrl": "https://game8.jp/heavenburnsred/612873",
     "imageStatus": "verified"
   },
   "maruyama_kanata_bloom": {
     "expectedUnit": "31F",
     "expectedElements": ["광"],
     "expectedImageUrl": "/images/styles/maruyama_kanata_bloom.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/617203",
+    "sourceUrl": "https://game8.jp/heavenburnsred/609590",
     "imageStatus": "verified"
   },
   "kiryu_miya_dream_fire": {
     "expectedUnit": "30G",
     "expectedElements": ["빙"],
     "expectedImageUrl": "/images/styles/kiryu_miya_dream_fire.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/617202",
+    "sourceUrl": "https://game8.jp/heavenburnsred/606153",
     "imageStatus": "verified"
   },
   "sugawara_chie_stoic": {
     "expectedUnit": "30G",
     "expectedElements": ["빙"],
     "expectedImageUrl": "/images/styles/sugawara_chie_stoic.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/615438",
+    "sourceUrl": "https://game8.jp/heavenburnsred/606152",
     "imageStatus": "verified"
   },
   "ri_yunfa_spring_evening": {
@@ -717,7 +717,7 @@
     "expectedUnit": "31E",
     "expectedElements": ["화"],
     "expectedImageUrl": "/images/styles/oshima_yotsuba_base.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/517814",
+    "sourceUrl": "https://game8.jp/heavenburnsred/517816",
     "imageStatus": "verified"
   },
   "oshima_muua_base": {
@@ -899,7 +899,7 @@
     "expectedUnit": "31A",
     "expectedElements": ["화"],
     "expectedImageUrl": "/images/styles/izumi_yuki_yukata.webp",
-    "sourceUrl": "https://game8.jp/heavenburnsred/466844",
+    "sourceUrl": "https://game8.jp/heavenburnsred/468108",
     "imageStatus": "verified"
   },
   "aoi_erika_base": {
