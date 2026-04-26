@@ -1,4 +1,5 @@
 import { existsSync, readFileSync } from 'node:fs'
+import { hasValidationWarnings } from '../src/utils/dataValidationReport.js'
 
 const styles = JSON.parse(readFileSync(new URL('../src/data/styles.json', import.meta.url), 'utf8'))
 const manifest = JSON.parse(readFileSync(new URL('../src/data/style_manifest.json', import.meta.url), 'utf8'))
@@ -75,7 +76,7 @@ const printSection = (title, items) => {
 }
 
 console.log('Data validation warning report')
-console.log('This report is advisory. Warnings do not fail the command.')
+console.log('This report fails when any warning section has entries.')
 
 printSection('Styles missing manifest entries', warnings.missingManifest)
 printSection('Manifest entries missing sourceUrl', warnings.missingSourceUrl)
@@ -90,3 +91,7 @@ printSection('Meta team manifest entries missing reviewedAt', warnings.missingMe
 printSection('Meta team manifests not verified', warnings.unverifiedMetaTeams)
 printSection('Meta team expectedStyles mismatches', warnings.metaTeamManifestMismatches)
 printSection('Meta team manifest entries missing meta_teams.json rows', warnings.missingMetaTeamRows)
+
+if (hasValidationWarnings(warnings)) {
+  process.exitCode = 1
+}
