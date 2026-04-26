@@ -16,7 +16,7 @@
 - Create `scripts/styleDraftWorkflow.test.js`: focused unit tests for helper behavior.
 - Create `scripts/add-style.js`: CLI entry point for `npm run add:style -- path/to/draft.json`.
 - Create `scripts/style-draft.example.json`: copyable draft input.
-- Modify `package.json`: add the `add:style` script.
+- Modify `package.json`: add the `add:style` script and include `scripts/**/*.test.js` in the test script.
 - Modify `README.md`: document the add workflow.
 
 ### Task 1: Add Style Draft Helper Tests
@@ -499,15 +499,16 @@ Create `scripts/style-draft.example.json`:
 }
 ```
 
-- [ ] **Step 3: Add the npm script**
+- [ ] **Step 3: Add the npm scripts**
 
 Modify the `scripts` block in `package.json` so it contains:
 
 ```json
+"test": "node --test \"src/**/*.test.js\" \"scripts/**/*.test.js\"",
 "add:style": "node scripts/add-style.js"
 ```
 
-Keep the existing scripts unchanged.
+Keep the existing scripts unchanged except for expanding `test` to include script tests.
 
 - [ ] **Step 4: Run the CLI without arguments to verify usage failure**
 
