@@ -61,9 +61,9 @@ export const validateStyleDraft = ({
   addRequiredStringError(errors, style, 'unit', 'style')
   addRequiredStringError(errors, style, 'element', 'style')
   addRequiredStringError(errors, style, 'image_url', 'style')
-  addRequiredBooleanError(errors, style, 'is_limited', 'style')
-  addRequiredBooleanError(errors, style, 'is_resonance', 'style')
-  addRequiredBooleanError(errors, style, 'is_latest', 'style')
+  addRequiredBooleanError(errors, style, 'isLimited', 'style')
+  addRequiredBooleanError(errors, style, 'isResonance', 'style')
+  addRequiredBooleanError(errors, style, 'isLatest', 'style')
 
   if (!Number.isInteger(style.tier)) {
     errors.push('style.tier must be an integer')

@@ -46,9 +46,9 @@ const validStyle = {
   elements: ['화'],
   tier: 0,
   image_url: '/images/styles/sample_character_new_style.webp',
-  is_limited: false,
-  is_resonance: false,
-  is_latest: false,
+  isLimited: false,
+  isResonance: false,
+  isLatest: false,
   nicknames: []
 }
 
@@ -293,9 +293,9 @@ export const validateStyleDraft = ({
   addRequiredStringError(errors, style, 'unit', 'style')
   addRequiredStringError(errors, style, 'element', 'style')
   addRequiredStringError(errors, style, 'image_url', 'style')
-  addRequiredBooleanError(errors, style, 'is_limited', 'style')
-  addRequiredBooleanError(errors, style, 'is_resonance', 'style')
-  addRequiredBooleanError(errors, style, 'is_latest', 'style')
+  addRequiredBooleanError(errors, style, 'isLimited', 'style')
+  addRequiredBooleanError(errors, style, 'isResonance', 'style')
+  addRequiredBooleanError(errors, style, 'isLatest', 'style')
 
   if (!Number.isInteger(style.tier)) {
     errors.push('style.tier must be an integer')
@@ -484,9 +484,9 @@ Create `scripts/style-draft.example.json`:
     "elements": ["화"],
     "tier": 0,
     "image_url": "/images/styles/sample_character_new_style.webp",
-    "is_limited": false,
-    "is_resonance": false,
-    "is_latest": false,
+    "isLimited": false,
+    "isResonance": false,
+    "isLatest": false,
     "nicknames": []
   },
   "manifest": {

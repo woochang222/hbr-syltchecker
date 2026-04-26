@@ -60,9 +60,9 @@ The draft file contains one `style` object and one `manifest` object:
     "elements": ["화"],
     "tier": 0,
     "image_url": "/images/styles/sample_character_new_style.webp",
-    "is_limited": false,
-    "is_resonance": false,
-    "is_latest": false,
+    "isLimited": false,
+    "isResonance": false,
+    "isLatest": false,
     "nicknames": []
   },
   "manifest": {
