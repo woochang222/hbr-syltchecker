@@ -8,7 +8,7 @@
 
 **Tech Stack:** React 19, Vite, vanilla CSS, local JSON data, `node:test` for helper tests, existing `npm run lint` and `npm run build`.
 
-**Status:** Implementation and automated verification steps are completed and pushed. Browser verification remains as a manual follow-up because it was not re-run during the documentation cleanup pass.
+**Status:** Completed and pushed. Implementation, automated verification, and browser verification have all passed.
 
 ---
 
@@ -807,7 +807,7 @@ git commit -m "style: add filter drawer layout"
 **Files:**
 - Modify only files touched in earlier tasks if verification reveals a concrete issue.
 
-- [ ] **Step 1: Start the app**
+- [x] **Step 1: Start the app**
 
 Run:
 
@@ -817,7 +817,7 @@ npm run dev
 
 Expected: Vite prints a local URL, usually `http://localhost:5173/`.
 
-- [ ] **Step 2: Verify desktop behavior**
+- [x] **Step 2: Verify desktop behavior**
 
 Open the local URL and verify:
 
@@ -832,7 +832,7 @@ Open the local URL and verify:
 - Element/unit/tier filters still dim or hide cards according to `viewMode`.
 - The summary bar updates after each filter or preset change.
 
-- [ ] **Step 3: Verify mobile behavior**
+- [x] **Step 3: Verify mobile behavior**
 
 Use browser responsive mode around `390px` width and verify:
 
@@ -841,7 +841,7 @@ Use browser responsive mode around `390px` width and verify:
 - The summary chips wrap without covering the card grid.
 - The card grid still uses compact cards.
 
-- [ ] **Step 4: Run final checks and commit any polish**
+- [x] **Step 4: Run final checks and commit any polish**
 
 Run:
 
