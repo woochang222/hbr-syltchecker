@@ -6,6 +6,13 @@
     "sourceUrl": "https://game8.jp/heavenburnsred/511324",
     "imageStatus": "verified"
   },
+  "irie_miyuki_faraway_eden": {
+    "expectedUnit": "AB",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/irie_miyuki_faraway_eden.png",
+    "sourceUrl": "https://game8.jp/heavenburnsred/588276",
+    "imageStatus": "verified"
+  },
   "tezuka_saki_base_res": {
     "expectedUnit": "사령부",
     "expectedElements": ["뇌"],
@@ -74,6 +81,923 @@
     "expectedElements": ["뇌"],
     "expectedImageUrl": "/images/styles/maria_de_angelis_fleeting_encounter.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/577126",
+    "imageStatus": "verified"
+  },
+  "maria_de_angelis_chef": {
+    "expectedUnit": "31X",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/maria_de_angelis_chef.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/769411",
+    "imageStatus": "verified"
+  },
+  "carol_reaper_chef": {
+    "expectedUnit": "31X",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/carol_reaper_chef.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/769410",
+    "imageStatus": "verified"
+  },
+  "yamawaki_loneliness": {
+    "expectedUnit": "31C",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/yamawaki_loneliness.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/764362",
+    "imageStatus": "verified"
+  },
+  "eileen_redmain_foggy_city": {
+    "expectedUnit": "31X",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/eileen_redmain_foggy_city.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/746397",
+    "imageStatus": "verified"
+  },
+  "oshima_isuzu_night_talk": {
+    "expectedUnit": "31E",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/oshima_isuzu_night_talk.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/735062",
+    "imageStatus": "verified"
+  },
+  "minase_sumomo_halloween": {
+    "expectedUnit": "31B",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/minase_sumomo_halloween.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/730690",
+    "imageStatus": "verified"
+  },
+  "charlotta_chef": {
+    "expectedUnit": "31X",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/charlotta_chef.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/721625",
+    "imageStatus": "verified"
+  },
+  "vritika_balakrishnan_chef": {
+    "expectedUnit": "31X",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/vritika_balakrishnan_chef.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/714989",
+    "imageStatus": "verified"
+  },
+  "oshima_muua_summer_clothes": {
+    "expectedUnit": "31E",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/oshima_muua_summer_clothes.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/705732",
+    "imageStatus": "verified"
+  },
+  "oshima_niina_summer_clothes": {
+    "expectedUnit": "31E",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/oshima_niina_summer_clothes.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/705728",
+    "imageStatus": "verified"
+  },
+  "hiiragi_kozue_swimsuit": {
+    "expectedUnit": "31B",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/hiiragi_kozue_swimsuit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/700751",
+    "imageStatus": "verified"
+  },
+  "ri_yunfa_bride": {
+    "expectedUnit": "31X",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/ri_yunfa_bride.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/697859",
+    "imageStatus": "verified"
+  },
+  "ishii_iroha_bride": {
+    "expectedUnit": "31D",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/ishii_iroha_bride.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/697860",
+    "imageStatus": "verified"
+  },
+  "matsuoka_chiroru_heroic": {
+    "expectedUnit": "31F",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/matsuoka_chiroru_heroic.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/692832",
+    "imageStatus": "verified"
+  },
+  "oshima_yotsuba_yukata": {
+    "expectedUnit": "31E",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/oshima_yotsuba_yukata.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/687800",
+    "imageStatus": "verified"
+  },
+  "eileen_redmain_breeze": {
+    "expectedUnit": "31X",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/eileen_redmain_breeze.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/680864",
+    "imageStatus": "verified"
+  },
+  "maria_de_angelis_elegante": {
+    "expectedUnit": "31X",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/maria_de_angelis_elegante.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/680863",
+    "imageStatus": "verified"
+  },
+  "tsukishiro_monaka_spring_blizzard": {
+    "expectedUnit": "30G",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/tsukishiro_monaka_spring_blizzard.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/675271",
+    "imageStatus": "verified"
+  },
+  "sugawara_chie_ferity": {
+    "expectedUnit": "30G",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/sugawara_chie_ferity.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/675267",
+    "imageStatus": "verified"
+  },
+  "asakura_karen_free": {
+    "expectedUnit": "31A",
+    "expectedElements": ["화", "빙"],
+    "expectedImageUrl": "/images/styles/asakura_karen_free.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/757482",
+    "imageStatus": "verified"
+  },
+  "date_akari_new_year": {
+    "expectedUnit": "31D",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/date_akari_new_year.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/663246",
+    "imageStatus": "verified"
+  },
+  "murofushi_risa_new_year": {
+    "expectedUnit": "31D",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/murofushi_risa_new_year.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/663244",
+    "imageStatus": "verified"
+  },
+  "yoshioka_yui_base": {
+    "expectedUnit": "AB",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/yoshioka_yui_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/659767",
+    "imageStatus": "verified"
+  },
+  "iwasawa_masami_base": {
+    "expectedUnit": "AB",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/iwasawa_masami_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/659771",
+    "imageStatus": "verified"
+  },
+  "kayamori_ruka_diva": {
+    "expectedUnit": "31A",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/kayamori_ruka_diva.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/657138",
+    "imageStatus": "verified"
+  },
+  "hanamura_shiki_resplendent": {
+    "expectedUnit": "31F",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/hanamura_shiki_resplendent.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/656747",
+    "imageStatus": "verified"
+  },
+  "mikoto_fubuki_santa": {
+    "expectedUnit": "31D",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/mikoto_fubuki_santa.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/656748",
+    "imageStatus": "verified"
+  },
+  "ishii_iroha_overflow": {
+    "expectedUnit": "31D",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/ishii_iroha_overflow.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/654826",
+    "imageStatus": "verified"
+  },
+  "mizuhara_aina_deep_sea": {
+    "expectedUnit": "31D",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/mizuhara_aina_deep_sea.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/654825",
+    "imageStatus": "verified"
+  },
+  "aoi_erika_admiral": {
+    "expectedUnit": "31B",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/aoi_erika_admiral.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/652684",
+    "imageStatus": "verified"
+  },
+  "higuchi_seika_catharsis": {
+    "expectedUnit": "31B",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/higuchi_seika_catharsis.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/652687",
+    "imageStatus": "verified"
+  },
+  "minase_sumomo_compassion": {
+    "expectedUnit": "31B",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/minase_sumomo_compassion.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/648704",
+    "imageStatus": "verified"
+  },
+  "minase_ichigo_cold_beauty": {
+    "expectedUnit": "31B",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/minase_ichigo_cold_beauty.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/648706",
+    "imageStatus": "verified"
+  },
+  "carol_reaper_carnival": {
+    "expectedUnit": "31X",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/carol_reaper_carnival.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/642066",
+    "imageStatus": "verified"
+  },
+  "oshima_isuzu_magician": {
+    "expectedUnit": "31E",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/oshima_isuzu_magician.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/640069",
+    "imageStatus": "verified"
+  },
+  "oshima_minori_yukata": {
+    "expectedUnit": "31E",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/oshima_minori_yukata.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/640070",
+    "imageStatus": "verified"
+  },
+  "ogasawara_hisame_garnet": {
+    "expectedUnit": "30G",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/ogasawara_hisame_garnet.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/638288",
+    "imageStatus": "verified"
+  },
+  "natsume_inori_lapis_lazuli": {
+    "expectedUnit": "31F",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/natsume_inori_lapis_lazuli.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/638289",
+    "imageStatus": "verified"
+  },
+  "matsuoka_chiroru_secret": {
+    "expectedUnit": "31F",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/matsuoka_chiroru_secret.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/634933",
+    "imageStatus": "verified"
+  },
+  "kurosawa_maki_soushisouai": {
+    "expectedUnit": "31F",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/kurosawa_maki_soushisouai.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/634932",
+    "imageStatus": "verified"
+  },
+  "asakura_karen_swimsuit": {
+    "expectedUnit": "31A",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/asakura_karen_swimsuit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/628643",
+    "imageStatus": "verified"
+  },
+  "aikawa_megumi_swimsuit": {
+    "expectedUnit": "31A",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/aikawa_megumi_swimsuit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/628644",
+    "imageStatus": "verified"
+  },
+  "satsuki_mari_swimsuit": {
+    "expectedUnit": "31C",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/satsuki_mari_swimsuit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/627817",
+    "imageStatus": "verified"
+  },
+  "kanzaki_adelheid_swimsuit": {
+    "expectedUnit": "31C",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/kanzaki_adelheid_swimsuit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/627818",
+    "imageStatus": "verified"
+  },
+  "charlotta_bride": {
+    "expectedUnit": "31X",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/charlotta_bride.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/624231",
+    "imageStatus": "verified"
+  },
+  "sakuraba_seira_bride": {
+    "expectedUnit": "31C",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/sakuraba_seira_bride.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/624233",
+    "imageStatus": "verified"
+  },
+  "vritika_balakrishnan_dancer": {
+    "expectedUnit": "31X",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/vritika_balakrishnan_dancer.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/622314",
+    "imageStatus": "verified"
+  },
+  "eileen_redmain_moonlight": {
+    "expectedUnit": "31X",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/eileen_redmain_moonlight.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/622313",
+    "imageStatus": "verified"
+  },
+  "maruyama_kanata_bloom": {
+    "expectedUnit": "31F",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/maruyama_kanata_bloom.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/617203",
+    "imageStatus": "verified"
+  },
+  "kiryu_miya_dream_fire": {
+    "expectedUnit": "30G",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/kiryu_miya_dream_fire.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/617202",
+    "imageStatus": "verified"
+  },
+  "sugawara_chie_stoic": {
+    "expectedUnit": "30G",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/sugawara_chie_stoic.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/615438",
+    "imageStatus": "verified"
+  },
+  "ri_yunfa_spring_evening": {
+    "expectedUnit": "31X",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/ri_yunfa_spring_evening.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/603246",
+    "imageStatus": "verified"
+  },
+  "hiiragi_kozue_waitress": {
+    "expectedUnit": "31B",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/hiiragi_kozue_waitress.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/600349",
+    "imageStatus": "verified"
+  },
+  "tenne_miko_supreme": {
+    "expectedUnit": "31C",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/tenne_miko_supreme.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/598332",
+    "imageStatus": "verified"
+  },
+  "bungo_yayoi_hanami": {
+    "expectedUnit": "31C",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/bungo_yayoi_hanami.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/598331",
+    "imageStatus": "verified"
+  },
+  "yamawaki_one_piece": {
+    "expectedUnit": "31C",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/yamawaki_one_piece.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/594735",
+    "imageStatus": "verified"
+  },
+  "izumi_yuki_ruby": {
+    "expectedUnit": "31A",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/izumi_yuki_ruby.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/594734",
+    "imageStatus": "verified"
+  },
+  "nakamura_yuri_extraordinary": {
+    "expectedUnit": "AB",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/nakamura_yuri_extraordinary.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/592869",
+    "imageStatus": "verified"
+  },
+  "oshima_muua_new_year": {
+    "expectedUnit": "31E",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/oshima_muua_new_year.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/585690",
+    "imageStatus": "verified"
+  },
+  "oshima_yotsuba_new_year": {
+    "expectedUnit": "31E",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/oshima_yotsuba_new_year.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/585689",
+    "imageStatus": "verified"
+  },
+  "aikawa_megumi_suit": {
+    "expectedUnit": "31A",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/aikawa_megumi_suit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/582608",
+    "imageStatus": "verified"
+  },
+  "kunimi_tama_suit": {
+    "expectedUnit": "31A",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/kunimi_tama_suit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/582607",
+    "imageStatus": "verified"
+  },
+  "nikaido_misato_santa": {
+    "expectedUnit": "31D",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/nikaido_misato_santa.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/579586",
+    "imageStatus": "verified"
+  },
+  "date_akari_santa": {
+    "expectedUnit": "31D",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/date_akari_santa.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/579583",
+    "imageStatus": "verified"
+  },
+  "ri_yunfa_celestial_nymph": {
+    "expectedUnit": "31X",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/ri_yunfa_celestial_nymph.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/563544",
+    "imageStatus": "verified"
+  },
+  "kanzaki_adelheid_girl": {
+    "expectedUnit": "31C",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/kanzaki_adelheid_girl.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/563543",
+    "imageStatus": "verified"
+  },
+  "oshima_isuzu_yukata": {
+    "expectedUnit": "31E",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/oshima_isuzu_yukata.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/558813",
+    "imageStatus": "verified"
+  },
+  "oshima_niina_yukata": {
+    "expectedUnit": "31E",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/oshima_niina_yukata.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/558812",
+    "imageStatus": "verified"
+  },
+  "izumi_yuki_dress": {
+    "expectedUnit": "31A",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/izumi_yuki_dress.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/555407",
+    "imageStatus": "verified"
+  },
+  "kiryu_miya_houraku": {
+    "expectedUnit": "30G",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/kiryu_miya_houraku.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/548994",
+    "imageStatus": "verified"
+  },
+  "yanagi_mion_night_breeze": {
+    "expectedUnit": "31F",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/yanagi_mion_night_breeze.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/548993",
+    "imageStatus": "verified"
+  },
+  "natsume_inori_butterfly": {
+    "expectedUnit": "31F",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/natsume_inori_butterfly.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/547011",
+    "imageStatus": "verified"
+  },
+  "asakura_karen_suit": {
+    "expectedUnit": "31A",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/asakura_karen_suit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/544800",
+    "imageStatus": "verified"
+  },
+  "tojo_tsukasa_suit": {
+    "expectedUnit": "31A",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/tojo_tsukasa_suit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/544799",
+    "imageStatus": "verified"
+  },
+  "shirakawa_yuina_swimsuit": {
+    "expectedUnit": "30G",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/shirakawa_yuina_swimsuit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/544116",
+    "imageStatus": "verified"
+  },
+  "date_akari_base": {
+    "expectedUnit": "31D",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/date_akari_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/540932",
+    "imageStatus": "verified"
+  },
+  "oshima_ichiko_bride": {
+    "expectedUnit": "31E",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/oshima_ichiko_bride.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/537846",
+    "imageStatus": "verified"
+  },
+  "satsuki_mari_bride": {
+    "expectedUnit": "31C",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/satsuki_mari_bride.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/537845",
+    "imageStatus": "verified"
+  },
+  "vritika_balakrishnan_base": {
+    "expectedUnit": "31X",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/vritika_balakrishnan_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/532629",
+    "imageStatus": "verified"
+  },
+  "charlotta_base": {
+    "expectedUnit": "31X",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/charlotta_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/532628",
+    "imageStatus": "verified"
+  },
+  "mizuhara_aina_base": {
+    "expectedUnit": "31D",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/mizuhara_aina_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/528630",
+    "imageStatus": "verified"
+  },
+  "ogasawara_hisame_maid": {
+    "expectedUnit": "30G",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/ogasawara_hisame_maid.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/528628",
+    "imageStatus": "verified"
+  },
+  "aoi_erika_maid": {
+    "expectedUnit": "31B",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/aoi_erika_maid.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/526137",
+    "imageStatus": "verified"
+  },
+  "byakko_queen": {
+    "expectedUnit": "31B",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/byakko_queen.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/526136",
+    "imageStatus": "verified"
+  },
+  "kura_satomi_young_landlady": {
+    "expectedUnit": "30G",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/kura_satomi_young_landlady.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/525187",
+    "imageStatus": "verified"
+  },
+  "aikawa_megumi_miko": {
+    "expectedUnit": "31A",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/aikawa_megumi_miko.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/525186",
+    "imageStatus": "verified"
+  },
+  "satsuki_mari_assassin": {
+    "expectedUnit": "31C",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/satsuki_mari_assassin.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/521565",
+    "imageStatus": "verified"
+  },
+  "kanzaki_adelheid_ice_flower": {
+    "expectedUnit": "31C",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/kanzaki_adelheid_ice_flower.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/521564",
+    "imageStatus": "verified"
+  },
+  "mikoto_fubuki_base": {
+    "expectedUnit": "31D",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/mikoto_fubuki_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/519394",
+    "imageStatus": "verified"
+  },
+  "sugawara_chie_pure_heart": {
+    "expectedUnit": "30G",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/sugawara_chie_pure_heart.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/519393",
+    "imageStatus": "verified"
+  },
+  "oshima_yotsuba_base": {
+    "expectedUnit": "31E",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/oshima_yotsuba_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/517814",
+    "imageStatus": "verified"
+  },
+  "oshima_muua_base": {
+    "expectedUnit": "31E",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/oshima_muua_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/517815",
+    "imageStatus": "verified"
+  },
+  "ogasawara_hisame_cat_ears": {
+    "expectedUnit": "30G",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/ogasawara_hisame_cat_ears.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/573789",
+    "imageStatus": "verified"
+  },
+  "ogasawara_hisame_initial": {
+    "expectedUnit": "30G",
+    "expectedElements": ["빙", "무"],
+    "expectedImageUrl": "/images/styles/ogasawara_hisame_initial.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/454542",
+    "imageStatus": "verified"
+  },
+  "izumi_yuki_suit": {
+    "expectedUnit": "31A",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/izumi_yuki_suit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/511323",
+    "imageStatus": "verified"
+  },
+  "kayamori_ruka_suit": {
+    "expectedUnit": "31A",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/kayamori_ruka_suit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/511322",
+    "imageStatus": "verified"
+  },
+  "maria_de_angelis_base": {
+    "expectedUnit": "31X",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/maria_de_angelis_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425690",
+    "imageStatus": "verified"
+  },
+  "ri_yunfa_base": {
+    "expectedUnit": "31X",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/ri_yunfa_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/508650",
+    "imageStatus": "verified"
+  },
+  "sakuraba_seira_new_year": {
+    "expectedUnit": "31C",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/sakuraba_seira_new_year.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/506308",
+    "imageStatus": "verified"
+  },
+  "kunimi_tama_new_year": {
+    "expectedUnit": "31A",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/kunimi_tama_new_year.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/506307",
+    "imageStatus": "verified"
+  },
+  "kurosawa_maki_base": {
+    "expectedUnit": "31F",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/kurosawa_maki_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425684",
+    "imageStatus": "verified"
+  },
+  "natsume_inori_base": {
+    "expectedUnit": "31F",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/natsume_inori_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426263",
+    "imageStatus": "verified"
+  },
+  "oshima_minori_base": {
+    "expectedUnit": "31E",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/oshima_minori_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425675",
+    "imageStatus": "verified"
+  },
+  "oshima_niina_base": {
+    "expectedUnit": "31E",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/oshima_niina_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/493458",
+    "imageStatus": "verified"
+  },
+  "higuchi_seika_exploration": {
+    "expectedUnit": "31B",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/higuchi_seika_exploration.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/491018",
+    "imageStatus": "verified"
+  },
+  "hiiragi_kozue_finale": {
+    "expectedUnit": "31B",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/hiiragi_kozue_finale.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/491017",
+    "imageStatus": "verified"
+  },
+  "murofushi_risa_base": {
+    "expectedUnit": "31D",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/murofushi_risa_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/487221",
+    "imageStatus": "verified"
+  },
+  "ishii_iroha_base": {
+    "expectedUnit": "31D",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/ishii_iroha_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/487220",
+    "imageStatus": "verified"
+  },
+  "shirakawa_yuina_infernal": {
+    "expectedUnit": "30G",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/shirakawa_yuina_infernal.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426384",
+    "imageStatus": "verified"
+  },
+  "kiryu_miya_base": {
+    "expectedUnit": "30G",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/kiryu_miya_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425694",
+    "imageStatus": "verified"
+  },
+  "matsuoka_chiroru_base": {
+    "expectedUnit": "31F",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/matsuoka_chiroru_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/481192",
+    "imageStatus": "verified"
+  },
+  "hanamura_shiki_base": {
+    "expectedUnit": "31F",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/hanamura_shiki_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425682",
+    "imageStatus": "verified"
+  },
+  "eileen_redmain_base": {
+    "expectedUnit": "31X",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/eileen_redmain_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425688",
+    "imageStatus": "verified"
+  },
+  "carol_reaper_base": {
+    "expectedUnit": "31X",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/carol_reaper_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426384",
+    "imageStatus": "verified"
+  },
+  "minase_sumomo_swimsuit": {
+    "expectedUnit": "31B",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/minase_sumomo_swimsuit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/469575",
+    "imageStatus": "verified"
+  },
+  "tojo_tsukasa_swimsuit": {
+    "expectedUnit": "31A",
+    "expectedElements": ["화", "무"],
+    "expectedImageUrl": "/images/styles/tojo_tsukasa_swimsuit.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/469574",
+    "imageStatus": "verified"
+  },
+  "izumi_yuki_yukata": {
+    "expectedUnit": "31A",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/izumi_yuki_yukata.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/466844",
+    "imageStatus": "verified"
+  },
+  "aoi_erika_base": {
+    "expectedUnit": "31B",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/aoi_erika_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425654",
+    "imageStatus": "verified"
+  },
+  "oshima_isuzu_base": {
+    "expectedUnit": "31E",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/oshima_isuzu_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425672",
+    "imageStatus": "verified"
+  },
+  "kanzaki_adelheid_base": {
+    "expectedUnit": "31C",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/kanzaki_adelheid_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/464170",
+    "imageStatus": "verified"
+  },
+  "oshima_ichiko_base": {
+    "expectedUnit": "31E",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/oshima_ichiko_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/464170",
+    "imageStatus": "verified"
+  },
+  "hiiragi_kozue_base": {
+    "expectedUnit": "31B",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/hiiragi_kozue_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425659",
+    "imageStatus": "verified"
+  },
+  "yanagi_mion_base": {
+    "expectedUnit": "31F",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/yanagi_mion_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/457127",
+    "imageStatus": "verified"
+  },
+  "maruyama_kanata_base": {
+    "expectedUnit": "31F",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/maruyama_kanata_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/457125",
+    "imageStatus": "verified"
+  },
+  "kura_satomi_base": {
+    "expectedUnit": "30G",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/kura_satomi_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425697",
+    "imageStatus": "verified"
+  },
+  "shirakawa_yuina_base": {
+    "expectedUnit": "30G",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/shirakawa_yuina_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425683",
+    "imageStatus": "verified"
+  },
+  "nikaido_misato_base": {
+    "expectedUnit": "31D",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/nikaido_misato_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425667",
+    "imageStatus": "verified"
+  },
+  "minase_sumomo_base": {
+    "expectedUnit": "31B",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/minase_sumomo_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/425657",
+    "imageStatus": "verified"
+  },
+  "minase_ichigo_base": {
+    "expectedUnit": "31B",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/minase_ichigo_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/442485",
+    "imageStatus": "verified"
+  },
+  "tsukishiro_monaka_base": {
+    "expectedUnit": "30G",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/tsukishiro_monaka_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/440935",
+    "imageStatus": "verified"
+  },
+  "yamawaki_base": {
+    "expectedUnit": "31C",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/yamawaki_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426384",
     "imageStatus": "verified"
   },
   "charlotta_eternal_feelings": {
@@ -410,6 +1334,97 @@
     "expectedElements": ["빙"],
     "expectedImageUrl": "/images/styles/shirakawa_yuina_unison_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/621315",
+    "imageStatus": "verified"
+  },
+  "satsuki_mari_base": {
+    "expectedUnit": "31C",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/satsuki_mari_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/438518",
+    "imageStatus": "verified"
+  },
+  "kayamori_ruka_base": {
+    "expectedUnit": "31A",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/kayamori_ruka_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426190",
+    "imageStatus": "verified"
+  },
+  "izumi_yuki_base": {
+    "expectedUnit": "31A",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/izumi_yuki_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426192",
+    "imageStatus": "verified"
+  },
+  "aikawa_megumi_base": {
+    "expectedUnit": "31A",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/aikawa_megumi_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426195",
+    "imageStatus": "verified"
+  },
+  "tojo_tsukasa_base": {
+    "expectedUnit": "31A",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/tojo_tsukasa_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426197",
+    "imageStatus": "verified"
+  },
+  "asakura_karen_base": {
+    "expectedUnit": "31A",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/asakura_karen_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426199",
+    "imageStatus": "verified"
+  },
+  "kunimi_tama_base": {
+    "expectedUnit": "31A",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/kunimi_tama_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426202",
+    "imageStatus": "verified"
+  },
+  "higuchi_seika_base": {
+    "expectedUnit": "31B",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/higuchi_seika_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426210",
+    "imageStatus": "verified"
+  },
+  "byakko_base": {
+    "expectedUnit": "31B",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/byakko_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426226",
+    "imageStatus": "verified"
+  },
+  "sakuraba_seira_base": {
+    "expectedUnit": "31C",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/sakuraba_seira_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426230",
+    "imageStatus": "verified"
+  },
+  "tenne_miko_base": {
+    "expectedUnit": "31C",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/tenne_miko_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426232",
+    "imageStatus": "verified"
+  },
+  "bungo_yayoi_base": {
+    "expectedUnit": "31C",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/bungo_yayoi_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426236",
+    "imageStatus": "verified"
+  },
+  "sugawara_chie_base": {
+    "expectedUnit": "30G",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/sugawara_chie_base.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426280",
     "imageStatus": "verified"
   }
 }

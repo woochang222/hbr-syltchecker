@@ -12,8 +12,7 @@
     "element": "빙",
     "metaTags": [],
     "elements": [
-      "빙",
-      "뇌"
+      "빙"
     ]
   },
   {
@@ -607,10 +606,10 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31C",
-    "element": "암",
+    "element": "무",
     "metaTags": [],
     "elements": [
-      "암"
+      "무"
     ]
   },
   {
@@ -655,7 +654,7 @@
     "isLimited": false,
     "isUniform": false,
     "unit": "31B",
-    "element": "화",
+    "element": "빙",
     "metaTags": [],
     "elements": [
       "빙"
@@ -1945,7 +1944,7 @@
   {
     "id": "natsume_inori_butterfly",
     "character_name": "나츠메 이노리",
-    "style_name": "나비",
+    "style_name": "접아(호접지몽)",
     "nicknames": [],
     "image_url": "/images/styles/natsume_inori_butterfly.webp",
     "isResonance": false,
