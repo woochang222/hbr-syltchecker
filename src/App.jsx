@@ -14,14 +14,18 @@ import {
 import { matchesOwnershipRange, normalizeOwnershipRange } from './utils/ownershipRange'
 import { sortStylesByOfficialOrder } from './utils/styleOrder'
 import { getStyleElements, hasStyleElement } from './utils/styleElements'
+import {
+  isPlainObject,
+  readJsonStorage,
+  readStringStorage
+} from './utils/localStorageState'
 
 function App() {
   const [styles] = useState(() => sortStylesByOfficialOrder(stylesData))
   const [metaTeams] = useState(metaTeamsData)
   
   const [ownedStyles, setOwnedStyles] = useState(() => {
-    const saved = localStorage.getItem('hbr_owned_styles')
-    return saved ? JSON.parse(saved) : {}
+    return readJsonStorage(localStorage, 'hbr_owned_styles', {}, isPlainObject)
   })
   
   const [filters, setFilters] = useState(() => createDefaultFilters())
@@ -30,12 +34,15 @@ function App() {
   const [activeMetaTeam, setActiveMetaTeam] = useState(null)
   
   const [viewMode, setViewMode] = useState(() => {
-    const saved = localStorage.getItem('hbr_view_mode')
-    return saved || 'dim'
+    return readStringStorage(localStorage, 'hbr_view_mode', 'dim', ['dim', 'hide'])
   })
   const [highlightLatest, setHighlightLatest] = useState(() => {
-    const saved = localStorage.getItem('hbr_highlight_latest')
-    return saved ? JSON.parse(saved) : DEFAULT_HIGHLIGHT_LATEST
+    return readJsonStorage(
+      localStorage,
+      'hbr_highlight_latest',
+      DEFAULT_HIGHLIGHT_LATEST,
+      value => typeof value === 'boolean'
+    )
   })
   const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false)
 
