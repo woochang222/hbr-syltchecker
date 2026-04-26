@@ -8,6 +8,8 @@
 
 **Tech Stack:** React 19/Vite app, Node ESM, `node:test`, local JSON files, PowerShell commands.
 
+**Status:** Completed and pushed. The implemented report has since been tightened to fail on any warning section, and current verification has `npm test`, `npm run lint`, `npm run build`, and `npm run validate:data-report` passing with no warnings.
+
 ---
 
 ## File Structure
@@ -24,7 +26,7 @@
 - Create: `src/data/styleManifest.test.js`
 - Create: `src/data/style_manifest.json`
 
-- [ ] **Step 1: Write the failing manifest tests**
+- [x] **Step 1: Write the failing manifest tests**
 
 Create `src/data/styleManifest.test.js`:
 
@@ -108,7 +110,7 @@ describe('style manifest', () => {
 })
 ```
 
-- [ ] **Step 2: Run tests to verify the missing manifest fails**
+- [x] **Step 2: Run tests to verify the missing manifest fails**
 
 Run:
 
@@ -118,7 +120,7 @@ npm test
 
 Expected: FAIL with `Cannot find module ... src\data\style_manifest.json`.
 
-- [ ] **Step 3: Add the initial manifest**
+- [x] **Step 3: Add the initial manifest**
 
 Create `src/data/style_manifest.json`:
 
@@ -169,7 +171,7 @@ Create `src/data/style_manifest.json`:
 }
 ```
 
-- [ ] **Step 4: Run tests to verify manifest strict validation passes**
+- [x] **Step 4: Run tests to verify manifest strict validation passes**
 
 Run:
 
@@ -179,7 +181,7 @@ npm test
 
 Expected: PASS for all tests, including the new `style manifest` suite.
 
-- [ ] **Step 5: Commit Task 1**
+- [x] **Step 5: Commit Task 1**
 
 Run:
 
@@ -193,7 +195,7 @@ git commit -m "test: add style manifest validation"
 **Files:**
 - Modify: `src/data/dataIntegrity.test.js`
 
-- [ ] **Step 1: Write the failing expectation**
+- [x] **Step 1: Write the failing expectation**
 
 In `src/data/dataIntegrity.test.js`, replace the image file scan inside `has no missing or unreferenced style image files` with:
 
@@ -202,7 +204,7 @@ In `src/data/dataIntegrity.test.js`, replace the image file scan inside `has no 
       .filter(file => file.endsWith('.webp') || file.endsWith('.png'))
 ```
 
-- [ ] **Step 2: Run tests to verify current PNG coverage behavior**
+- [x] **Step 2: Run tests to verify current PNG coverage behavior**
 
 Run:
 
@@ -212,7 +214,7 @@ npm test
 
 Expected: PASS if all existing `.png` files are referenced. If this fails, the output lists unreferenced PNG files that must either be referenced by `styles.json` or removed before continuing.
 
-- [ ] **Step 3: Commit Task 2**
+- [x] **Step 3: Commit Task 2**
 
 Run:
 
@@ -227,7 +229,7 @@ git commit -m "test: validate png style images"
 - Create: `scripts/validate-data-report.js`
 - Modify: `package.json`
 
-- [ ] **Step 1: Write the report script**
+- [x] **Step 1: Write the report script**
 
 Create `scripts/validate-data-report.js`:
 
@@ -293,7 +295,7 @@ printSection('Manifest entries missing styles.json rows', warnings.missingManife
 printSection('Manifest entries missing local images', warnings.missingManifestImages)
 ```
 
-- [ ] **Step 2: Add the npm script**
+- [x] **Step 2: Add the npm script**
 
 Modify `package.json` scripts to include:
 
@@ -314,7 +316,7 @@ The scripts block should become:
 }
 ```
 
-- [ ] **Step 3: Run the warning report**
+- [x] **Step 3: Run the warning report**
 
 Run:
 
@@ -324,7 +326,7 @@ npm run validate:data-report
 
 Expected: exit code `0`. The report prints warning sections; it may list many styles missing manifest entries because adoption is gradual.
 
-- [ ] **Step 4: Commit Task 3**
+- [x] **Step 4: Commit Task 3**
 
 Run:
 
@@ -338,7 +340,7 @@ git commit -m "feat: add data validation warning report"
 **Files:**
 - Modify only files from Tasks 1-3 if verification finds a concrete issue.
 
-- [ ] **Step 1: Run full verification**
+- [x] **Step 1: Run full verification**
 
 Run:
 
@@ -355,7 +357,7 @@ Expected:
 - `npm run build`: Vite build exits `0`.
 - `npm run validate:data-report`: exits `0` and prints advisory warnings.
 
-- [ ] **Step 2: Check git status**
+- [x] **Step 2: Check git status**
 
 Run:
 
@@ -365,7 +367,7 @@ git status --short --branch
 
 Expected: `main` may be ahead of `origin/main`; there should be no unstaged source changes.
 
-- [ ] **Step 3: Commit any verification fixes**
+- [x] **Step 3: Commit any verification fixes**
 
 If Step 1 required fixes, commit only those fixes:
 

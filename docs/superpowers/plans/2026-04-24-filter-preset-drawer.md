@@ -8,6 +8,8 @@
 
 **Tech Stack:** React 19, Vite, vanilla CSS, local JSON data, `node:test` for helper tests, existing `npm run lint` and `npm run build`.
 
+**Status:** Implementation and automated verification steps are completed and pushed. Browser verification remains as a manual follow-up because it was not re-run during the documentation cleanup pass.
+
 ---
 
 ## File Structure
@@ -27,7 +29,7 @@
 - Create: `src/utils/filterSummary.test.js`
 - Modify: `package.json`
 
-- [ ] **Step 1: Add the failing unit tests**
+- [x] **Step 1: Add the failing unit tests**
 
 Create `src/utils/filterSummary.test.js`:
 
@@ -92,7 +94,7 @@ describe('countVisibleStyles', () => {
 })
 ```
 
-- [ ] **Step 2: Add the test script**
+- [x] **Step 2: Add the test script**
 
 Modify `package.json` so `scripts` contains:
 
@@ -106,7 +108,7 @@ Modify `package.json` so `scripts` contains:
 }
 ```
 
-- [ ] **Step 3: Run the tests and verify they fail**
+- [x] **Step 3: Run the tests and verify they fail**
 
 Run:
 
@@ -116,7 +118,7 @@ npm test
 
 Expected: FAIL with a module-not-found or named-export error for `./filterSummary.js`.
 
-- [ ] **Step 4: Implement the helper**
+- [x] **Step 4: Implement the helper**
 
 Create `src/utils/filterSummary.js`:
 
@@ -170,7 +172,7 @@ export const countVisibleStyles = (styles) => {
 }
 ```
 
-- [ ] **Step 5: Run the helper tests and commit**
+- [x] **Step 5: Run the helper tests and commit**
 
 Run:
 
@@ -194,7 +196,7 @@ git commit -m "test: add filter summary helper"
 - Create: `src/components/FilterSummary.jsx`
 - Modify: `src/App.jsx`
 
-- [ ] **Step 1: Create the summary component**
+- [x] **Step 1: Create the summary component**
 
 Create `src/components/FilterSummary.jsx`:
 
@@ -219,7 +221,7 @@ const FilterSummary = ({ labels }) => {
 export default FilterSummary
 ```
 
-- [ ] **Step 2: Wire the summary and drawer state in `App.jsx`**
+- [x] **Step 2: Wire the summary and drawer state in `App.jsx`**
 
 Modify the imports at the top of `src/App.jsx`:
 
@@ -269,7 +271,7 @@ const filterSummaryLabels = buildFilterSummary({
 })
 ```
 
-- [ ] **Step 3: Replace the header search block and old inline panel render**
+- [x] **Step 3: Replace the header search block and old inline panel render**
 
 In `src/App.jsx`, keep `<h1>헤번레 스타일 체커</h1>`, then replace the existing search-only block and the old standalone `<FilterPanel ... />` with:
 
@@ -330,11 +332,11 @@ After the stats dashboard section and before `<main className="style-list">`, re
 )}
 ```
 
-- [ ] **Step 4: Prevent overlay clicks from reaching cards**
+- [x] **Step 4: Prevent overlay clicks from reaching cards**
 
 This is completed in Task 3 by stopping propagation inside `FilterPanel`. After Task 3, verify that clicking the overlay background closes the drawer and clicking inside the drawer does not close it.
 
-- [ ] **Step 5: Run checks and commit**
+- [x] **Step 5: Run checks and commit**
 
 Run:
 
@@ -357,7 +359,7 @@ git commit -m "feat: add filter summary drawer state"
 **Files:**
 - Modify: `src/components/FilterPanel.jsx`
 
-- [ ] **Step 1: Replace `FilterPanel.jsx` with drawer-aware markup**
+- [x] **Step 1: Replace `FilterPanel.jsx` with drawer-aware markup**
 
 Replace the full contents of `src/components/FilterPanel.jsx` with:
 
@@ -476,7 +478,7 @@ const FilterPanel = ({
 export default FilterPanel
 ```
 
-- [ ] **Step 2: Run checks and commit**
+- [x] **Step 2: Run checks and commit**
 
 Run:
 
@@ -499,7 +501,7 @@ git commit -m "feat: convert filters to drawer panel"
 **Files:**
 - Modify: `src/styles/main.css`
 
-- [ ] **Step 1: Replace search and filter CSS with drawer layout CSS**
+- [x] **Step 1: Replace search and filter CSS with drawer layout CSS**
 
 In `src/styles/main.css`, replace the existing `.search-bar` block through `.clear-search:hover`, and replace the existing `.filter-panel` through `.view-mode-toggle input` filter section with this CSS:
 
@@ -735,7 +737,7 @@ In `src/styles/main.css`, replace the existing `.search-bar` block through `.cle
 }
 ```
 
-- [ ] **Step 2: Replace the mobile media block**
+- [x] **Step 2: Replace the mobile media block**
 
 Replace the current `@media (max-width: 600px)` block with:
 
@@ -781,7 +783,7 @@ Replace the current `@media (max-width: 600px)` block with:
 }
 ```
 
-- [ ] **Step 3: Run checks and commit**
+- [x] **Step 3: Run checks and commit**
 
 Run:
 

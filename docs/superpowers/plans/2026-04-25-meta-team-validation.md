@@ -8,6 +8,8 @@
 
 **Tech Stack:** React 19/Vite app, Node ESM, `node:test`, local JSON data, existing `npm test`, `npm run lint`, `npm run build`, and `npm run validate:data-report`.
 
+**Status:** Completed and pushed. Current manifests are fully verified, `npm run validate:data-report` reports no warning sections, and `npm run validate:source-urls` passes when run with network access.
+
 ---
 
 ## File Structure
@@ -21,7 +23,7 @@
 **Files:**
 - Modify: `src/data/metaTeams.test.js`
 
-- [ ] **Step 1: Add failing strict structure tests**
+- [x] **Step 1: Add failing strict structure tests**
 
 In `src/data/metaTeams.test.js`, after the existing `stylesById` constant, add:
 
@@ -84,7 +86,7 @@ Then add these tests inside `describe('meta teams', () => { ... })`:
   })
 ```
 
-- [ ] **Step 2: Run tests**
+- [x] **Step 2: Run tests**
 
 Run:
 
@@ -94,7 +96,7 @@ npm test
 
 Expected: PASS if all current presets already satisfy strict structure and element coverage.
 
-- [ ] **Step 3: Commit Task 1**
+- [x] **Step 3: Commit Task 1**
 
 Run:
 
@@ -108,7 +110,7 @@ git commit -m "test: strengthen meta team validation"
 **Files:**
 - Create: `src/data/meta_team_manifest.json`
 
-- [ ] **Step 1: Create the manifest**
+- [x] **Step 1: Create the manifest**
 
 Create `src/data/meta_team_manifest.json`:
 
@@ -195,7 +197,7 @@ Create `src/data/meta_team_manifest.json`:
 }
 ```
 
-- [ ] **Step 2: Run tests**
+- [x] **Step 2: Run tests**
 
 Run:
 
@@ -205,7 +207,7 @@ npm test
 
 Expected: PASS. The manifest is advisory and is not loaded by `npm test` in this task.
 
-- [ ] **Step 3: Commit Task 2**
+- [x] **Step 3: Commit Task 2**
 
 Run:
 
@@ -219,7 +221,7 @@ git commit -m "chore: add meta team review manifest"
 **Files:**
 - Modify: `scripts/validate-data-report.js`
 
-- [ ] **Step 1: Load meta team data and manifest**
+- [x] **Step 1: Load meta team data and manifest**
 
 At the top of `scripts/validate-data-report.js`, after the existing `manifest` load, add:
 
@@ -235,7 +237,7 @@ const metaTeamIds = new Set(metaTeams.map(team => team.id))
 const metaTeamManifestIds = new Set(Object.keys(metaTeamManifest))
 ```
 
-- [ ] **Step 2: Add warning calculations**
+- [x] **Step 2: Add warning calculations**
 
 Inside the `warnings` object, after `missingManifestImages`, add these properties:
 
@@ -273,7 +275,7 @@ Because this adds properties after the previous last property, ensure the previo
     .map(([styleId, entry]) => ({ id: styleId, image_url: entry.expectedImageUrl })),
 ```
 
-- [ ] **Step 3: Print meta team warning sections**
+- [x] **Step 3: Print meta team warning sections**
 
 At the end of `scripts/validate-data-report.js`, after `printSection('Manifest entries missing local images', warnings.missingManifestImages)`, add:
 
@@ -286,7 +288,7 @@ printSection('Meta team expectedStyles mismatches', warnings.metaTeamManifestMis
 printSection('Meta team manifest entries missing meta_teams.json rows', warnings.missingMetaTeamRows)
 ```
 
-- [ ] **Step 4: Run report**
+- [x] **Step 4: Run report**
 
 Run:
 
@@ -303,7 +305,7 @@ Expected:
 - `Meta team manifests not verified` lists all six current meta teams.
 - `Meta team expectedStyles mismatches` is `None`.
 
-- [ ] **Step 5: Run tests and commit Task 3**
+- [x] **Step 5: Run tests and commit Task 3**
 
 Run:
 
@@ -323,7 +325,7 @@ Expected:
 **Files:**
 - Modify only files touched in Tasks 1-3 if verification reveals a concrete issue.
 
-- [ ] **Step 1: Run full verification**
+- [x] **Step 1: Run full verification**
 
 Run:
 
@@ -340,7 +342,7 @@ Expected:
 - `npm run build`: Vite build exits `0`.
 - `npm run validate:data-report`: exits `0` and includes the meta team warning sections.
 
-- [ ] **Step 2: Check git status**
+- [x] **Step 2: Check git status**
 
 Run:
 
@@ -350,7 +352,7 @@ git status --short --branch
 
 Expected: no unstaged source changes.
 
-- [ ] **Step 3: Commit any verification fixes**
+- [x] **Step 3: Commit any verification fixes**
 
 If Step 1 required fixes, commit only those fixes:
 
