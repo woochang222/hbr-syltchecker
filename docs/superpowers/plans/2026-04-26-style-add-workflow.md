@@ -4,7 +4,7 @@
 
 **Goal:** Add a repeatable CLI workflow that validates one style draft and updates `styles.json` plus `style_manifest.json` together.
 
-**Architecture:** Put pure validation and merge behavior in `scripts/styleDraftWorkflow.js`, covered by `node:test`. Keep `scripts/add-style.js` as a thin file-IO wrapper that loads the draft/current data, refuses invalid drafts before writing, then writes both JSON files with stable formatting.
+**Architecture:** Put validation, merge behavior, formatting, and safe paired writes in `scripts/styleDraftWorkflow.js`, covered by `node:test`. Keep `scripts/add-style.js` as a thin wrapper that loads the draft/current data, refuses invalid drafts before writing, then writes both JSON files through temp files and rollback backups.
 
 **Tech Stack:** Node ESM, `node:test`, local JSON files, npm scripts, existing source URL validation helper.
 
@@ -44,11 +44,11 @@ const validStyle = {
   unit: '31A',
   element: '화',
   elements: ['화'],
-  tier: 0,
   image_url: '/images/styles/sample_character_new_style.webp',
   isLimited: false,
   isResonance: false,
-  isLatest: false,
+  isUniform: false,
+  metaTags: [],
   nicknames: []
 }
 
@@ -259,6 +259,12 @@ const addRequiredBooleanError = (errors, object, fieldName, label) => {
   }
 }
 
+const addOptionalBooleanError = (errors, object, fieldName, label) => {
+  if (object[fieldName] !== undefined && typeof object[fieldName] !== 'boolean') {
+    errors.push(`${label}.${fieldName} must be a boolean when present`)
+  }
+}
+
 const toPublicImagePath = imageUrl => {
   return `public${imageUrl}`
 }
@@ -295,16 +301,19 @@ export const validateStyleDraft = ({
   addRequiredStringError(errors, style, 'image_url', 'style')
   addRequiredBooleanError(errors, style, 'isLimited', 'style')
   addRequiredBooleanError(errors, style, 'isResonance', 'style')
-  addRequiredBooleanError(errors, style, 'isLatest', 'style')
-
-  if (!Number.isInteger(style.tier)) {
-    errors.push('style.tier must be an integer')
-  }
+  addRequiredBooleanError(errors, style, 'isUniform', 'style')
+  addOptionalBooleanError(errors, style, 'isLatest', 'style')
 
   if (!Array.isArray(style.elements) || style.elements.length === 0) {
     errors.push('style.elements must be a non-empty array')
   } else if (style.elements.some(element => typeof element !== 'string' || element.trim() === '')) {
     errors.push('style.elements must contain only non-empty strings')
+  }
+
+  if (!Array.isArray(style.metaTags)) {
+    errors.push('style.metaTags must be an array')
+  } else if (style.metaTags.some(metaTag => typeof metaTag !== 'string')) {
+    errors.push('style.metaTags must contain only strings')
   }
 
   if (!Array.isArray(style.nicknames)) {
@@ -413,12 +422,12 @@ git commit -m "feat: add style draft workflow helpers"
 Create `scripts/add-style.js`:
 
 ```js
-import { existsSync, writeFileSync } from 'node:fs'
+import { existsSync } from 'node:fs'
 import {
   applyStyleDraft,
-  formatJson,
   readJsonFile,
-  validateStyleDraft
+  validateStyleDraft,
+  writeJsonFilesSafely
 } from './styleDraftWorkflow.js'
 
 const draftPath = process.argv[2]
@@ -455,8 +464,12 @@ if (!draftPath) {
       process.exitCode = 1
     } else {
       const updated = applyStyleDraft({ draft, styles, manifest })
-      writeFileSync(stylesPath, formatJson(updated.styles))
-      writeFileSync(manifestPath, formatJson(updated.manifest))
+      writeJsonFilesSafely({
+        files: [
+          { path: stylesPath, data: updated.styles },
+          { path: manifestPath, data: updated.manifest }
+        ]
+      })
 
       console.log(`Added style ${draft.style.id}`)
       console.log('Updated src/data/styles.json')
@@ -482,11 +495,11 @@ Create `scripts/style-draft.example.json`:
     "unit": "31A",
     "element": "화",
     "elements": ["화"],
-    "tier": 0,
     "image_url": "/images/styles/sample_character_new_style.webp",
     "isLimited": false,
     "isResonance": false,
-    "isLatest": false,
+    "isUniform": false,
+    "metaTags": [],
     "nicknames": []
   },
   "manifest": {

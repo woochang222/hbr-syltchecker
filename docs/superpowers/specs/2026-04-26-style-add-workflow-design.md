@@ -58,11 +58,11 @@ The draft file contains one `style` object and one `manifest` object:
     "unit": "31A",
     "element": "화",
     "elements": ["화"],
-    "tier": 0,
     "image_url": "/images/styles/sample_character_new_style.webp",
     "isLimited": false,
     "isResonance": false,
-    "isLatest": false,
+    "isUniform": false,
+    "metaTags": [],
     "nicknames": []
   },
   "manifest": {
@@ -89,6 +89,9 @@ The command fails without writing files when:
 - The referenced image file does not exist under `public/`.
 - `style.element` does not equal `style.elements[0]`.
 - `style.elements` is empty.
+- `style.isUniform` is missing or is not a boolean.
+- `style.metaTags` is missing or contains non-string values.
+- `style.isLatest` is present and is not a boolean.
 - `manifest.expectedUnit` does not equal `style.unit`.
 - `manifest.expectedElements` does not equal `style.elements`.
 - `manifest.expectedImageUrl` does not equal `style.image_url`.
@@ -101,16 +104,17 @@ The first version requires `imageStatus: "verified"` because `npm run validate:d
 
 Add reusable helper functions in `scripts/styleDraftWorkflow.js`:
 - `readJsonFile(path)`: reads and parses JSON with useful error messages.
-- `validateStyleDraft({ draft, styles, manifest, publicRoot })`: returns a list of validation errors.
+- `validateStyleDraft({ draft, styles, manifest, imageExists })`: returns a list of validation errors.
 - `applyStyleDraft({ draft, styles, manifest })`: returns updated in-memory data.
 - `formatJson(data)`: serializes JSON using two-space indentation and a trailing newline.
+- `writeJsonFilesSafely({ files })`: serializes both JSON payloads, writes both temp files, then replaces both targets with backup/rollback behavior.
 
 Add a CLI wrapper in `scripts/add-style.js`:
 - Parses the draft path from `process.argv`.
 - Loads `styles.json` and `style_manifest.json`.
 - Calls the helper validation.
 - Prints grouped validation errors and exits nonzero if invalid.
-- Writes both JSON files only after all validation passes.
+- Writes both JSON files only after all validation passes, using temp files and rollback backups so a later replacement failure restores earlier targets.
 - Prints the added style id and the files updated.
 
 The helper module keeps most behavior testable without spawning a child process. The CLI remains thin and focused on file IO.
@@ -135,7 +139,7 @@ Modify:
 4. If validation fails, no files are written.
 5. If validation passes, the style is appended to `styles.json`.
 6. The manifest entry is added to `style_manifest.json` under `style.id`.
-7. Both files are written with stable JSON formatting.
+7. Both files are serialized, written to temp files, and then replaced with rollback backups.
 
 ## Error Handling
 
@@ -158,6 +162,8 @@ Unit tests should cover:
 - Manifest/style field mismatch fails.
 - Invalid source URL fails.
 - Non-verified image status fails.
+- Missing `isUniform`, missing or invalid `metaTags`, and invalid optional `isLatest` fail.
+- Paired JSON writes restore both targets when a later replacement fails.
 - Formatting keeps two-space JSON and a trailing newline.
 
 Integration-level verification after implementation:

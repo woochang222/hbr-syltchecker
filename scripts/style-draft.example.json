@@ -6,11 +6,11 @@
     "unit": "31A",
     "element": "화",
     "elements": ["화"],
-    "tier": 0,
     "image_url": "/images/styles/sample_character_new_style.webp",
     "isLimited": false,
     "isResonance": false,
-    "isLatest": false,
+    "isUniform": false,
+    "metaTags": [],
     "nicknames": []
   },
   "manifest": {

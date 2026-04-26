@@ -7,9 +7,9 @@
 ## 🚀 주요 기능
 
 - **SS/레조넌스 집중**: 활용도가 높은 주요 스타일 위주로 관리합니다.
-- **필터 드로어**: 필터 버튼으로 원소, 부대, 티어, 메타 조합 조건을 한 번에 조정할 수 있습니다.
+- **필터 드로어**: 필터 버튼으로 원소, 부대, 메타 조합 조건을 한 번에 조정할 수 있습니다.
 - **메타 조합 프리셋**: 무, 화, 빙, 뇌, 광, 암 속성별 추천 조합을 빠르게 적용할 수 있습니다.
-- **다중 필터링**: 원소, 부대, 티어, 검색어, 보유 단계 조건으로 스타일을 필터링할 수 있습니다.
+- **다중 필터링**: 원소, 부대, 검색어, 보유 단계 조건으로 스타일을 필터링할 수 있습니다.
 - **필터 요약 표시**: 현재 적용된 프리셋과 필터 조건, 결과 수를 요약해서 보여줍니다.
 - **보유 현황 저장**: 브라우저의 `LocalStorage`를 사용하여 사용자의 보유 체크 현황과 필터 설정(Dim/Hide)을 자동으로 저장합니다.
 - **시각적 효과**:
@@ -49,7 +49,7 @@ npm run validate:source-urls
 1. 스타일 이미지를 `public/images/styles/`에 먼저 추가합니다.
 2. `scripts/style-draft.example.json`을 참고해 새 draft JSON 파일을 만듭니다.
    - draft는 최상위에 `style`과 `manifest` 객체를 가집니다.
-   - `style`은 `styles.json`과 같은 필드를 사용하며, `isLimited`, `isResonance`, `isLatest`는 camelCase로 작성합니다.
+   - `style`은 `styles.json`과 같은 필드를 사용하며, `isLimited`, `isResonance`, `isUniform`, `metaTags`는 camelCase로 작성합니다. `isLatest`는 최신 스타일에만 필요한 선택 필드입니다.
    - `manifest`는 `expectedUnit`, `expectedElements`, `expectedImageUrl`, `sourceUrl`, `imageStatus`를 camelCase로 작성합니다.
 3. 아래 명령으로 `src/data/styles.json`과 `src/data/style_manifest.json`을 함께 갱신합니다.
 
@@ -69,7 +69,7 @@ npm run validate:data-report
 
 ## 📂 데이터 구조
 
-- `src/data/styles.json`: 캐릭터 및 스타일의 상세 정보 (원소, 부대, 티어 등)
+- `src/data/styles.json`: 캐릭터 및 스타일의 상세 정보 (원소, 부대, 메타 태그 등)
 - `src/data/meta_teams.json`: 현재 유행하는 메타 조합 정보
 - `src/data/style_manifest.json`: 스타일별 검증 기대값, 출처 URL, 이미지 검증 상태
 - `src/data/meta_team_manifest.json`: 메타 조합별 기대 스타일 목록, 출처 URL, 검토 상태

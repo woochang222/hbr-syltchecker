@@ -1,9 +1,9 @@
-import { existsSync, writeFileSync } from 'node:fs'
+import { existsSync } from 'node:fs'
 import {
   applyStyleDraft,
-  formatJson,
   readJsonFile,
-  validateStyleDraft
+  validateStyleDraft,
+  writeJsonFilesSafely
 } from './styleDraftWorkflow.js'
 
 const draftPath = process.argv[2]
@@ -40,8 +40,12 @@ if (!draftPath) {
       process.exitCode = 1
     } else {
       const updated = applyStyleDraft({ draft, styles, manifest })
-      writeFileSync(stylesPath, formatJson(updated.styles))
-      writeFileSync(manifestPath, formatJson(updated.manifest))
+      writeJsonFilesSafely({
+        files: [
+          { path: stylesPath, data: updated.styles },
+          { path: manifestPath, data: updated.manifest }
+        ]
+      })
 
       console.log(`Added style ${draft.style.id}`)
       console.log('Updated src/data/styles.json')

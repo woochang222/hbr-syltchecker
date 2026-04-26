@@ -1,9 +1,22 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
 import {
+  existsSync,
+  mkdtempSync,
+  readFileSync,
+  readdirSync,
+  renameSync,
+  rmSync,
+  unlinkSync,
+  writeFileSync
+} from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
+import {
   applyStyleDraft,
   formatJson,
-  validateStyleDraft
+  validateStyleDraft,
+  writeJsonFilesSafely
 } from './styleDraftWorkflow.js'
 
 const validStyle = {
@@ -13,11 +26,11 @@ const validStyle = {
   unit: '31A',
   element: '화',
   elements: ['화'],
-  tier: 0,
   image_url: '/images/styles/sample_character_new_style.webp',
   isLimited: false,
   isResonance: false,
-  isLatest: false,
+  isUniform: false,
+  metaTags: [],
   nicknames: []
 }
 
@@ -70,6 +83,61 @@ describe('validateStyleDraft', () => {
       }),
       []
     )
+  })
+
+  it('accepts optional isLatest when it is a boolean', () => {
+    assert.deepEqual(
+      validateStyleDraft({
+        draft: createDraft({
+          style: {
+            isLatest: true
+          }
+        }),
+        styles: existingStyles,
+        manifest: existingManifest,
+        imageExists: imagePath => existingImages.has(imagePath)
+      }),
+      []
+    )
+  })
+
+  it('rejects missing isUniform and missing metaTags', () => {
+    const styleWithoutRequiredFields = { ...validStyle }
+    delete styleWithoutRequiredFields.isUniform
+    delete styleWithoutRequiredFields.metaTags
+    const errors = validateStyleDraft({
+      draft: {
+        style: styleWithoutRequiredFields,
+        manifest: validManifestEntry
+      },
+      styles: existingStyles,
+      manifest: existingManifest,
+      imageExists: imagePath => existingImages.has(imagePath)
+    })
+
+    assert.deepEqual(errors, [
+      'style.isUniform must be a boolean',
+      'style.metaTags must be an array'
+    ])
+  })
+
+  it('rejects non-string metaTags and non-boolean isLatest when present', () => {
+    const errors = validateStyleDraft({
+      draft: createDraft({
+        style: {
+          metaTags: ['화', 31],
+          isLatest: 'false'
+        }
+      }),
+      styles: existingStyles,
+      manifest: existingManifest,
+      imageExists: imagePath => existingImages.has(imagePath)
+    })
+
+    assert.deepEqual(errors, [
+      'style.isLatest must be a boolean when present',
+      'style.metaTags must contain only strings'
+    ])
   })
 
   it('rejects duplicate ids in styles and manifest', () => {
@@ -166,5 +234,58 @@ describe('applyStyleDraft', () => {
 describe('formatJson', () => {
   it('uses two-space JSON and a trailing newline', () => {
     assert.equal(formatJson({ alpha: true }), '{\n  "alpha": true\n}\n')
+  })
+})
+
+describe('writeJsonFilesSafely', () => {
+  it('restores both target files when a later replacement fails', () => {
+    const tempDir = mkdtempSync(join(tmpdir(), 'style-draft-write-'))
+    const stylesPath = join(tempDir, 'styles.json')
+    const manifestPath = join(tempDir, 'style_manifest.json')
+
+    writeFileSync(stylesPath, 'original styles\n')
+    writeFileSync(manifestPath, 'original manifest\n')
+
+    let failedReplacement = false
+    const fsOps = {
+      exists: existsSync,
+      writeFile: writeFileSync,
+      rename: (from, to) => {
+        if (
+          !failedReplacement &&
+          String(from).includes('.tmp') &&
+          to === manifestPath
+        ) {
+          failedReplacement = true
+          throw new Error('simulated manifest replacement failure')
+        }
+
+        renameSync(from, to)
+      },
+      remove: unlinkSync
+    }
+
+    try {
+      assert.throws(
+        () => writeJsonFilesSafely({
+          files: [
+            { path: stylesPath, data: [{ id: 'new_style' }] },
+            { path: manifestPath, data: { new_style: { imageStatus: 'verified' } } }
+          ],
+          fsOps,
+          tempSuffix: 'rollback-test'
+        }),
+        /simulated manifest replacement failure/
+      )
+
+      assert.equal(readFileSync(stylesPath, 'utf8'), 'original styles\n')
+      assert.equal(readFileSync(manifestPath, 'utf8'), 'original manifest\n')
+      assert.deepEqual(readdirSync(tempDir).sort(), [
+        'style_manifest.json',
+        'styles.json'
+      ])
+    } finally {
+      rmSync(tempDir, { recursive: true, force: true })
+    }
   })
 })

@@ -1,4 +1,12 @@
-import { readFileSync } from 'node:fs'
+import {
+  existsSync,
+  readFileSync,
+  renameSync,
+  unlinkSync,
+  writeFileSync
+} from 'node:fs'
+import { basename, dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 const GAME8_SOURCE_URL_PATTERN = /^https:\/\/game8\.jp\/heavenburnsred\/\d+$/
 const STYLE_IMAGE_PREFIX = '/images/styles/'
@@ -24,6 +32,12 @@ const addRequiredStringError = (errors, object, fieldName, label) => {
 const addRequiredBooleanError = (errors, object, fieldName, label) => {
   if (typeof object[fieldName] !== 'boolean') {
     errors.push(`${label}.${fieldName} must be a boolean`)
+  }
+}
+
+const addOptionalBooleanError = (errors, object, fieldName, label) => {
+  if (object[fieldName] !== undefined && typeof object[fieldName] !== 'boolean') {
+    errors.push(`${label}.${fieldName} must be a boolean when present`)
   }
 }
 
@@ -63,16 +77,19 @@ export const validateStyleDraft = ({
   addRequiredStringError(errors, style, 'image_url', 'style')
   addRequiredBooleanError(errors, style, 'isLimited', 'style')
   addRequiredBooleanError(errors, style, 'isResonance', 'style')
-  addRequiredBooleanError(errors, style, 'isLatest', 'style')
-
-  if (!Number.isInteger(style.tier)) {
-    errors.push('style.tier must be an integer')
-  }
+  addRequiredBooleanError(errors, style, 'isUniform', 'style')
+  addOptionalBooleanError(errors, style, 'isLatest', 'style')
 
   if (!Array.isArray(style.elements) || style.elements.length === 0) {
     errors.push('style.elements must be a non-empty array')
   } else if (style.elements.some(element => typeof element !== 'string' || element.trim() === '')) {
     errors.push('style.elements must contain only non-empty strings')
+  }
+
+  if (!Array.isArray(style.metaTags)) {
+    errors.push('style.metaTags must be an array')
+  } else if (style.metaTags.some(metaTag => typeof metaTag !== 'string')) {
+    errors.push('style.metaTags must contain only strings')
   }
 
   if (!Array.isArray(style.nicknames)) {
@@ -138,3 +155,96 @@ export const applyStyleDraft = ({ draft, styles, manifest }) => ({
 })
 
 export const formatJson = data => `${JSON.stringify(data, null, 2)}\n`
+
+const defaultFsOps = {
+  exists: existsSync,
+  writeFile: writeFileSync,
+  rename: renameSync,
+  remove: unlinkSync
+}
+
+const toFileSystemPath = filePath => {
+  return filePath instanceof URL ? fileURLToPath(filePath) : filePath
+}
+
+const removeIfExists = (fsOps, filePath) => {
+  if (fsOps.exists(filePath)) {
+    fsOps.remove(filePath)
+  }
+}
+
+const createPreparedFile = ({ path, data }, tempSuffix, index) => {
+  const targetPath = toFileSystemPath(path)
+  const targetName = basename(targetPath)
+  const targetDir = dirname(targetPath)
+
+  return {
+    targetPath,
+    tempPath: join(targetDir, `.${targetName}.${tempSuffix}.${index}.tmp`),
+    backupPath: join(targetDir, `.${targetName}.${tempSuffix}.${index}.bak`),
+    contents: formatJson(data),
+    backupCreated: false,
+    replaced: false
+  }
+}
+
+const rollbackPreparedFiles = (preparedFiles, fsOps) => {
+  for (const preparedFile of preparedFiles.toReversed()) {
+    if (preparedFile.replaced) {
+      removeIfExists(fsOps, preparedFile.targetPath)
+    }
+
+    if (preparedFile.backupCreated && fsOps.exists(preparedFile.backupPath)) {
+      fsOps.rename(preparedFile.backupPath, preparedFile.targetPath)
+    }
+  }
+}
+
+export const writeJsonFilesSafely = ({
+  files,
+  fsOps = defaultFsOps,
+  tempSuffix = `${process.pid}-${Date.now()}`
+}) => {
+  const preparedFiles = files.map((file, index) => {
+    return createPreparedFile(file, tempSuffix, index)
+  })
+
+  try {
+    for (const preparedFile of preparedFiles) {
+      fsOps.writeFile(preparedFile.tempPath, preparedFile.contents)
+    }
+  } catch (error) {
+    for (const preparedFile of preparedFiles) {
+      removeIfExists(fsOps, preparedFile.tempPath)
+    }
+
+    throw error
+  }
+
+  let replacementsCompleted = false
+
+  try {
+    for (const preparedFile of preparedFiles) {
+      if (fsOps.exists(preparedFile.targetPath)) {
+        fsOps.rename(preparedFile.targetPath, preparedFile.backupPath)
+        preparedFile.backupCreated = true
+      }
+
+      fsOps.rename(preparedFile.tempPath, preparedFile.targetPath)
+      preparedFile.replaced = true
+    }
+
+    replacementsCompleted = true
+  } catch (error) {
+    rollbackPreparedFiles(preparedFiles, fsOps)
+    throw error
+  } finally {
+    for (const preparedFile of preparedFiles) {
+      removeIfExists(fsOps, preparedFile.tempPath)
+
+      if (replacementsCompleted) {
+        removeIfExists(fsOps, preparedFile.backupPath)
+      }
+    }
+  }
+}
