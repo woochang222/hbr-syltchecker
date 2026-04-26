@@ -214,6 +214,15 @@ describe('style manifest', () => {
     assert.deepEqual(missingStyleIds, [])
   })
 
+  it('covers every style in the manifest', () => {
+    const manifestIds = new Set(Object.keys(manifest))
+    const missingManifestIds = styles
+      .map(style => style.id)
+      .filter(styleId => !manifestIds.has(styleId))
+
+    assert.deepEqual(missingManifestIds, [])
+  })
+
   it('covers manually reviewed renamed styles in the manifest', () => {
     const missingManifestIds = manuallyReviewedStyleIds
       .filter(styleId => !manifest[styleId])
