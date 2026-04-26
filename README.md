@@ -44,6 +44,29 @@ npm run validate:data-report
 npm run validate:source-urls
 ```
 
+## ➕ 스타일 추가 워크플로우
+
+1. 스타일 이미지를 `public/images/styles/`에 먼저 추가합니다.
+2. `scripts/style-draft.example.json`을 참고해 새 draft JSON 파일을 만듭니다.
+   - draft는 최상위에 `style`과 `manifest` 객체를 가집니다.
+   - `style`은 `styles.json`과 같은 필드를 사용하며, `isLimited`, `isResonance`, `isLatest`는 camelCase로 작성합니다.
+   - `manifest`는 `expectedUnit`, `expectedElements`, `expectedImageUrl`, `sourceUrl`, `imageStatus`를 camelCase로 작성합니다.
+3. 아래 명령으로 `src/data/styles.json`과 `src/data/style_manifest.json`을 함께 갱신합니다.
+
+```powershell
+npm run add:style -- path/to/style-draft.json
+```
+
+4. 추가 후 검증을 실행합니다.
+
+```powershell
+npm test
+npm run lint
+npm run validate:data-report
+```
+
+`npm run add:style`은 중복 스타일 ID, 이미지 파일 존재 여부, 스타일과 manifest 필드 일치, Game8 출처 URL 형식, `imageStatus: "verified"`를 확인한 뒤에만 파일을 수정합니다.
+
 ## 📂 데이터 구조
 
 - `src/data/styles.json`: 캐릭터 및 스타일의 상세 정보 (원소, 부대, 티어 등)
