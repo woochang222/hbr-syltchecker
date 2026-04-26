@@ -8,6 +8,7 @@
     "build": "vite build",
     "test": "node --test \"src/**/*.test.js\" \"scripts/**/*.test.js\"",
     "lint": "eslint .",
+    "add:style": "node scripts/add-style.js",
     "validate:data-report": "node scripts/validate-data-report.js",
     "validate:source-urls": "node scripts/validate-source-urls.js",
     "preview": "vite preview"

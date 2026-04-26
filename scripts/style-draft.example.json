@@ -1,0 +1,23 @@
+{
+  "style": {
+    "id": "sample_character_new_style",
+    "character_name": "샘플 캐릭터",
+    "style_name": "샘플 스타일",
+    "unit": "31A",
+    "element": "화",
+    "elements": ["화"],
+    "tier": 0,
+    "image_url": "/images/styles/sample_character_new_style.webp",
+    "isLimited": false,
+    "isResonance": false,
+    "isLatest": false,
+    "nicknames": []
+  },
+  "manifest": {
+    "expectedUnit": "31A",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/sample_character_new_style.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/426190",
+    "imageStatus": "verified"
+  }
+}
