@@ -21,7 +21,7 @@
 **Files:**
 - Create: `src/utils/localStorageState.test.js`
 
-- [ ] **Step 1: Write failing tests**
+- [x] **Step 1: Write failing tests**
 
 Create `src/utils/localStorageState.test.js`:
 
@@ -130,7 +130,7 @@ describe('readStringStorage', () => {
 })
 ```
 
-- [ ] **Step 2: Run tests to verify missing module failure**
+- [x] **Step 2: Run tests to verify missing module failure**
 
 Run:
 
@@ -140,7 +140,7 @@ npm test
 
 Expected: FAIL with module-not-found for `./localStorageState.js`.
 
-- [ ] **Step 3: Commit failing tests**
+- [x] **Step 3: Commit failing tests**
 
 Run:
 
@@ -154,7 +154,7 @@ git commit -m "test: add local storage state expectations"
 **Files:**
 - Create: `src/utils/localStorageState.js`
 
-- [ ] **Step 1: Implement helpers**
+- [x] **Step 1: Implement helpers**
 
 Create `src/utils/localStorageState.js`:
 
@@ -220,7 +220,7 @@ export const readStringStorage = (storage, key, fallback, allowedValues) => {
 }
 ```
 
-- [ ] **Step 2: Run tests**
+- [x] **Step 2: Run tests**
 
 Run:
 
@@ -230,7 +230,7 @@ npm test
 
 Expected: PASS, including `localStorageState` tests.
 
-- [ ] **Step 3: Run lint**
+- [x] **Step 3: Run lint**
 
 Run:
 
@@ -240,7 +240,7 @@ npm run lint
 
 Expected: PASS.
 
-- [ ] **Step 4: Commit helpers**
+- [x] **Step 4: Commit helpers**
 
 Run:
 
@@ -254,7 +254,7 @@ git commit -m "feat: add safe local storage readers"
 **Files:**
 - Modify: `src/App.jsx`
 
-- [ ] **Step 1: Update imports**
+- [x] **Step 1: Update imports**
 
 In `src/App.jsx`, add:
 
@@ -266,7 +266,7 @@ import {
 } from './utils/localStorageState'
 ```
 
-- [ ] **Step 2: Replace localStorage state initializers**
+- [x] **Step 2: Replace localStorage state initializers**
 
 Replace the current `ownedStyles`, `viewMode`, and `highlightLatest` initializers with:
 
@@ -293,7 +293,7 @@ Replace the current `ownedStyles`, `viewMode`, and `highlightLatest` initializer
   })
 ```
 
-- [ ] **Step 3: Run verification**
+- [x] **Step 3: Run verification**
 
 Run:
 
@@ -306,7 +306,7 @@ npm run validate:data-report
 
 Expected: all commands pass.
 
-- [ ] **Step 4: Commit app integration**
+- [x] **Step 4: Commit app integration**
 
 Run:
 
@@ -320,7 +320,7 @@ git commit -m "fix: recover from invalid local storage state"
 **Files:**
 - Modify only Task 1-3 files if verification finds a concrete issue.
 
-- [ ] **Step 1: Run full verification**
+- [x] **Step 1: Run full verification**
 
 Run:
 
@@ -334,7 +334,7 @@ git diff --check
 
 Expected: all commands exit `0`.
 
-- [ ] **Step 2: Check git status**
+- [x] **Step 2: Check git status**
 
 Run:
 
