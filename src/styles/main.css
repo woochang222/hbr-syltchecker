@@ -204,6 +204,46 @@ header h1 {
   color: #ddd;
 }
 
+.ownership-sticky-summary {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin: 0 0 18px;
+  padding: 8px 0;
+  background: rgba(18, 18, 18, 0.94);
+  backdrop-filter: blur(10px);
+}
+
+.ownership-sticky-summary-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+}
+
+.ownership-summary-chip {
+  border: 1px solid #444;
+  background: #2a2a2a;
+  color: #ddd;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.ownership-summary-chip.primary {
+  border-color: #f1c40f;
+  background: #f1c40f;
+  color: #111;
+  font-weight: 900;
+}
+
+.ownership-summary-chip.rate {
+  color: #ff80ab;
+}
+
 /* Card Styles */
 .style-list {
   display: grid;
@@ -699,6 +739,28 @@ header h1 {
   .filter-panel {
     width: min(420px, calc(100vw - 20px));
     padding: 16px;
+  }
+
+  .ownership-sticky-summary {
+    margin-bottom: 12px;
+    padding: 6px 0;
+  }
+
+  .ownership-sticky-summary-inner {
+    justify-content: flex-start;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .ownership-sticky-summary-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ownership-summary-chip {
+    flex: 0 0 auto;
+    padding: 5px 8px;
+    font-size: 12px;
   }
 
   .element-stats {
