@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import stylesData from './data/styles.json'
 import metaTeamsData from './data/meta_teams.json'
 import FilterPanel from './components/FilterPanel'
 import FilterSummary from './components/FilterSummary'
 import OwnershipStickySummary from './components/OwnershipStickySummary'
+import OwnedStatusDownloadBoard from './components/OwnedStatusDownloadBoard'
 import StyleCard from './components/StyleCard'
 import { ELEMENTS } from './data/elements'
 import { buildFilterSummary, countMatchingStyles, getRenderableStyles } from './utils/filterSummary'
@@ -20,6 +21,8 @@ import {
   readJsonStorage,
   readStringStorage
 } from './utils/localStorageState'
+import { buildOwnedStatusFilename } from './utils/ownedStatusExport'
+import { downloadElementAsPng } from './utils/domImageDownload'
 
 function App() {
   const [styles] = useState(() => sortStylesByOfficialOrder(stylesData))
@@ -46,6 +49,10 @@ function App() {
     )
   })
   const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false)
+  const exportBoardRef = useRef(null)
+  const [isDownloadingOwnedStatus, setIsDownloadingOwnedStatus] = useState(false)
+  const [ownedStatusDownloadMessage, setOwnedStatusDownloadMessage] = useState('')
+  const [ownedStatusExportDate, setOwnedStatusExportDate] = useState(() => new Date())
 
   useEffect(() => {
     localStorage.setItem('hbr_owned_styles', JSON.stringify(ownedStyles))
@@ -123,6 +130,28 @@ function App() {
     setFilters(nextState.filters)
     setSearchTerm(nextState.searchTerm)
     setActiveMetaTeam(nextState.activeMetaTeam)
+  }
+
+  const handleDownloadOwnedStatus = async () => {
+    if (!exportBoardRef.current || isDownloadingOwnedStatus) return
+
+    setIsDownloadingOwnedStatus(true)
+    setOwnedStatusDownloadMessage('')
+
+    try {
+      const exportDate = new Date()
+      setOwnedStatusExportDate(exportDate)
+      await new Promise(resolve => requestAnimationFrame(resolve))
+      await downloadElementAsPng(
+        exportBoardRef.current,
+        buildOwnedStatusFilename(exportDate)
+      )
+      setOwnedStatusDownloadMessage('보유현황 PNG를 생성했습니다')
+    } catch {
+      setOwnedStatusDownloadMessage('이미지 생성에 실패했습니다')
+    } finally {
+      setIsDownloadingOwnedStatus(false)
+    }
   }
 
   const selectedTeamStyles = activeMetaTeam 
@@ -218,6 +247,23 @@ function App() {
               <div className="progress-fill" style={{ width: `${ownershipRate}%` }}></div>
             </div>
             <span className="count">{totalOwned} / {totalStyles}</span>
+            <button
+              type="button"
+              className="owned-status-download-button"
+              onClick={handleDownloadOwnedStatus}
+              disabled={isDownloadingOwnedStatus}
+            >
+              {isDownloadingOwnedStatus ? 'PNG 생성 중...' : '보유현황 PNG'}
+            </button>
+            {ownedStatusDownloadMessage && (
+              <span
+                className="owned-status-download-message"
+                role="status"
+                aria-live="polite"
+              >
+                {ownedStatusDownloadMessage}
+              </span>
+            )}
           </div>
         </div>
         <div className="element-stats">
@@ -236,6 +282,19 @@ function App() {
         ownershipRate={ownershipRate}
         visibleStyleCount={visibleStyleCount}
       />
+
+      <div className="owned-status-export-host" aria-hidden="true">
+        <div ref={exportBoardRef}>
+          <OwnedStatusDownloadBoard
+            styles={styles}
+            ownedStyles={ownedStyles}
+            totalOwned={totalOwned}
+            totalStyles={totalStyles}
+            ownershipRate={ownershipRate}
+            generatedAt={ownedStatusExportDate}
+          />
+        </div>
+      </div>
 
       {isFilterDrawerOpen && (
         <div
