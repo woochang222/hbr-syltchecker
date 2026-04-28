@@ -193,6 +193,13 @@ header h1 {
   filter: brightness(1.08);
 }
 
+.owned-status-download-button.secondary {
+  margin-top: 8px;
+  border-color: #666;
+  background: #333;
+  box-shadow: none;
+}
+
 .owned-status-download-button:disabled {
   cursor: wait;
   opacity: 0.65;

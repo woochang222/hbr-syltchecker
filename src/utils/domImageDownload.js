@@ -1,4 +1,4 @@
-import { toPng } from 'html-to-image'
+import { toBlob, toPng } from 'html-to-image'
 
 const DEFAULT_IMAGE_TIMEOUT_MS = 10000
 
@@ -37,6 +37,37 @@ export const downloadDataUrl = (dataUrl, filename) => {
   link.remove()
 }
 
+export const createElementPngBlob = async (element) => {
+  await waitForImages(element)
+  const blob = await toBlob(element, {
+    cacheBust: true,
+    pixelRatio: 2,
+    backgroundColor: '#121212'
+  })
+
+  if (!blob) {
+    throw new Error('Failed to create PNG blob.')
+  }
+
+  return blob
+}
+
+export const copyBlobToClipboard = async (
+  blob,
+  {
+    clipboard = globalThis.navigator?.clipboard,
+    ClipboardItemCtor = globalThis.ClipboardItem
+  } = {}
+) => {
+  if (!clipboard?.write || !ClipboardItemCtor) {
+    throw new Error('Clipboard image copy is not supported.')
+  }
+
+  await clipboard.write([
+    new ClipboardItemCtor({ 'image/png': blob })
+  ])
+}
+
 export const downloadElementAsPng = async (element, filename) => {
   await waitForImages(element)
   const dataUrl = await toPng(element, {
@@ -45,4 +76,9 @@ export const downloadElementAsPng = async (element, filename) => {
     backgroundColor: '#121212'
   })
   downloadDataUrl(dataUrl, filename)
+}
+
+export const copyElementAsPng = async (element) => {
+  const blob = await createElementPngBlob(element)
+  await copyBlobToClipboard(blob)
 }

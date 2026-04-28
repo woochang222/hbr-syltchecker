@@ -22,7 +22,7 @@ import {
   readStringStorage
 } from './utils/localStorageState'
 import { buildOwnedStatusFilename } from './utils/ownedStatusExport'
-import { downloadElementAsPng } from './utils/domImageDownload'
+import { copyElementAsPng, downloadElementAsPng } from './utils/domImageDownload'
 
 function App() {
   const [styles] = useState(() => sortStylesByOfficialOrder(stylesData))
@@ -51,6 +51,7 @@ function App() {
   const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false)
   const exportBoardRef = useRef(null)
   const [isDownloadingOwnedStatus, setIsDownloadingOwnedStatus] = useState(false)
+  const [isCopyingOwnedStatus, setIsCopyingOwnedStatus] = useState(false)
   const [ownedStatusDownloadMessage, setOwnedStatusDownloadMessage] = useState('')
   const [ownedStatusExportDate, setOwnedStatusExportDate] = useState(() => new Date())
 
@@ -133,7 +134,7 @@ function App() {
   }
 
   const handleDownloadOwnedStatus = async () => {
-    if (!exportBoardRef.current || isDownloadingOwnedStatus) return
+    if (!exportBoardRef.current || isDownloadingOwnedStatus || isCopyingOwnedStatus) return
 
     setIsDownloadingOwnedStatus(true)
     setOwnedStatusDownloadMessage('')
@@ -151,6 +152,25 @@ function App() {
       setOwnedStatusDownloadMessage('이미지 생성에 실패했습니다')
     } finally {
       setIsDownloadingOwnedStatus(false)
+    }
+  }
+
+  const handleCopyOwnedStatus = async () => {
+    if (!exportBoardRef.current || isDownloadingOwnedStatus || isCopyingOwnedStatus) return
+
+    setIsCopyingOwnedStatus(true)
+    setOwnedStatusDownloadMessage('')
+
+    try {
+      const exportDate = new Date()
+      setOwnedStatusExportDate(exportDate)
+      await new Promise(resolve => requestAnimationFrame(resolve))
+      await copyElementAsPng(exportBoardRef.current)
+      setOwnedStatusDownloadMessage('보유현황 PNG를 클립보드에 복사했습니다')
+    } catch {
+      setOwnedStatusDownloadMessage('이 브라우저에서는 클립보드 복사를 지원하지 않습니다')
+    } finally {
+      setIsCopyingOwnedStatus(false)
     }
   }
 
@@ -251,9 +271,17 @@ function App() {
               type="button"
               className="owned-status-download-button"
               onClick={handleDownloadOwnedStatus}
-              disabled={isDownloadingOwnedStatus}
+              disabled={isDownloadingOwnedStatus || isCopyingOwnedStatus}
             >
               {isDownloadingOwnedStatus ? 'PNG 생성 중...' : '보유현황 PNG'}
+            </button>
+            <button
+              type="button"
+              className="owned-status-download-button secondary"
+              onClick={handleCopyOwnedStatus}
+              disabled={isDownloadingOwnedStatus || isCopyingOwnedStatus}
+            >
+              {isCopyingOwnedStatus ? '복사 중...' : '클립보드 복사'}
             </button>
             {ownedStatusDownloadMessage && (
               <span
