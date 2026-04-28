@@ -3,6 +3,7 @@ import stylesData from './data/styles.json'
 import metaTeamsData from './data/meta_teams.json'
 import FilterPanel from './components/FilterPanel'
 import FilterSummary from './components/FilterSummary'
+import OwnershipStickySummary from './components/OwnershipStickySummary'
 import StyleCard from './components/StyleCard'
 import { ELEMENTS } from './data/elements'
 import { buildFilterSummary, countMatchingStyles, getRenderableStyles } from './utils/filterSummary'
@@ -228,6 +229,13 @@ function App() {
           ))}
         </div>
       </section>
+
+      <OwnershipStickySummary
+        totalOwned={totalOwned}
+        totalStyles={totalStyles}
+        ownershipRate={ownershipRate}
+        visibleStyleCount={visibleStyleCount}
+      />
 
       {isFilterDrawerOpen && (
         <div
