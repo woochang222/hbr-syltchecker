@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "node --test \"src/**/*.test.js\" \"scripts/**/*.test.js\"",
+    "test": "node scripts/runTests.js",
     "lint": "eslint .",
     "add:style": "node scripts/add-style.js",
     "validate:data-report": "node scripts/validate-data-report.js",

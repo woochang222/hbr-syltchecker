@@ -1,0 +1,62 @@
+import { readdir } from 'node:fs/promises'
+import { spawnSync } from 'node:child_process'
+import path from 'node:path'
+import { fileURLToPath, pathToFileURL } from 'node:url'
+
+const TEST_ROOTS = ['scripts', 'src']
+
+const toSlashPath = filePath => filePath.split(path.sep).join('/')
+
+const walkTestFiles = async (rootDir, currentDir, files) => {
+  const entries = await readdir(currentDir, { withFileTypes: true })
+
+  for (const entry of entries) {
+    const entryPath = path.join(currentDir, entry.name)
+
+    if (entry.isDirectory()) {
+      await walkTestFiles(rootDir, entryPath, files)
+      continue
+    }
+
+    if (entry.isFile() && entry.name.endsWith('.test.js')) {
+      files.push(toSlashPath(path.relative(rootDir, entryPath)))
+    }
+  }
+}
+
+export const collectTestFiles = async (rootUrl = new URL('../', import.meta.url)) => {
+  const rootDir = fileURLToPath(rootUrl)
+  const files = []
+
+  for (const testRoot of TEST_ROOTS) {
+    await walkTestFiles(rootDir, path.join(rootDir, testRoot), files)
+  }
+
+  return files.sort()
+}
+
+export const runTests = async () => {
+  const files = await collectTestFiles()
+
+  if (files.length === 0) {
+    console.error('No test files found.')
+    return 1
+  }
+
+  const result = spawnSync(
+    process.execPath,
+    ['--test', '--test-isolation=none', ...files],
+    { stdio: 'inherit' }
+  )
+
+  if (result.error) {
+    console.error(result.error.message)
+    return 1
+  }
+
+  return result.status ?? 1
+}
+
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  process.exitCode = await runTests()
+}
