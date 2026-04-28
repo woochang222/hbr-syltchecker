@@ -73,7 +73,8 @@ describe('groupStylesForOwnedStatusExport', () => {
                   styleName: '잔향의 카디널',
                   imageUrl: '/images/styles/ruka_base.webp',
                   ownedCount: 4,
-                  isOwned: true
+                  isOwned: true,
+                  hasBaseLimitBreakBoost: false
                 },
                 {
                   id: 'ruka_suit',
@@ -81,7 +82,8 @@ describe('groupStylesForOwnedStatusExport', () => {
                   styleName: '수트',
                   imageUrl: 'images/styles/ruka_suit.webp',
                   ownedCount: 0,
-                  isOwned: true
+                  isOwned: true,
+                  hasBaseLimitBreakBoost: false
                 }
               ]
             },
@@ -96,7 +98,8 @@ describe('groupStylesForOwnedStatusExport', () => {
                   styleName: '잔광',
                   imageUrl: '/images/styles/yuki_base.webp',
                   ownedCount: undefined,
-                  isOwned: false
+                  isOwned: false,
+                  hasBaseLimitBreakBoost: false
                 }
               ]
             }
@@ -118,13 +121,44 @@ describe('groupStylesForOwnedStatusExport', () => {
                   styleName: '별의 바다',
                   imageUrl: '/images/styles/seira_base.webp',
                   ownedCount: 2,
-                  isOwned: true
+                  isOwned: true,
+                  hasBaseLimitBreakBoost: false
                 }
               ]
             }
           ]
         }
       ]
+    )
+  })
+
+  it('marks four-break styles when the same character base style is four-break', () => {
+    const [unit] = groupStylesForOwnedStatusExport(
+      [
+        {
+          id: 'ruka_base',
+          unit: '31A',
+          character_name: '카야모리 루카',
+          style_name: '기본',
+          image_url: '/images/styles/ruka_base.webp'
+        },
+        {
+          id: 'ruka_ss',
+          unit: '31A',
+          character_name: '카야모리 루카',
+          style_name: 'SS 스타일',
+          image_url: '/images/styles/ruka_ss.webp'
+        }
+      ],
+      {
+        ruka_base: 4,
+        ruka_ss: 4
+      }
+    )
+
+    assert.deepEqual(
+      unit.characters[0].styles.map(style => style.hasBaseLimitBreakBoost),
+      [true, true]
     )
   })
 })

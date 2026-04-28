@@ -1,6 +1,14 @@
 import React from 'react';
 
-const StyleCard = ({ style, ownedCount, onToggleOwned, isDimmed, isMeta, highlightLatest }) => {
+const StyleCard = ({
+  style,
+  ownedCount,
+  onToggleOwned,
+  isDimmed,
+  isMeta,
+  highlightLatest,
+  hasBaseLimitBreakBoost
+}) => {
   const {
     id,
     character_name,
@@ -15,7 +23,7 @@ const StyleCard = ({ style, ownedCount, onToggleOwned, isDimmed, isMeta, highlig
 
   return (
     <div 
-      className={`style-card ${isOwned ? `count-${ownedCount} owned` : 'not-owned'} ${isDimmed ? 'dimmed' : ''} ${isUniform ? 'uniform' : ''} ${isMeta ? 'meta-highlight' : ''} ${isLatestHighlighted ? 'latest-highlight' : ''}`}
+      className={`style-card ${isOwned ? `count-${ownedCount} owned` : 'not-owned'} ${isDimmed ? 'dimmed' : ''} ${isUniform ? 'uniform' : ''} ${isMeta ? 'meta-highlight' : ''} ${isLatestHighlighted ? 'latest-highlight' : ''} ${hasBaseLimitBreakBoost ? 'base-boosted' : ''}`}
       onClick={() => onToggleOwned(id)}
     >
       <div className="card-inner">

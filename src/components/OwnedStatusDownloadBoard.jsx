@@ -9,7 +9,7 @@ const OwnedStatusTile = ({ style }) => {
   const imageUrl = getExportImageUrl(style.imageUrl, import.meta.env.BASE_URL)
 
   return (
-    <div className={`owned-export-tile ${style.isOwned ? `owned count-${style.ownedCount}` : 'not-owned'}`}>
+    <div className={`owned-export-tile ${style.isOwned ? `owned count-${style.ownedCount}` : 'not-owned'} ${style.hasBaseLimitBreakBoost ? 'base-boosted' : ''}`}>
       {imageUrl ? (
         <img src={imageUrl} alt="" className="owned-export-image" />
       ) : (

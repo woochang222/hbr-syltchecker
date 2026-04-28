@@ -1,3 +1,8 @@
+import {
+  buildBaseStyleOwnershipByCharacter,
+  hasBaseStyleLimitBreakBoost
+} from './baseStyleBoost.js'
+
 const toDateParts = date => {
   const year = date.getFullYear()
   const month = String(date.getMonth() + 1).padStart(2, '0')
@@ -24,16 +29,22 @@ export const getExportImageUrl = (imageUrl, baseUrl) => {
   return `${normalizedBase}${normalizedImage}`
 }
 
-const createExportStyle = (style, ownedCount) => ({
+const createExportStyle = (style, ownedCount, baseOwnershipByCharacter) => ({
   id: style.id,
   characterName: style.character_name,
   styleName: style.style_name,
   imageUrl: style.image_url,
   ownedCount,
-  isOwned: isOwnedStyle(ownedCount)
+  isOwned: isOwnedStyle(ownedCount),
+  hasBaseLimitBreakBoost: hasBaseStyleLimitBreakBoost(
+    style,
+    ownedCount,
+    baseOwnershipByCharacter
+  )
 })
 
 export const groupStylesForOwnedStatusExport = (styles, ownedStyles) => {
+  const baseOwnershipByCharacter = buildBaseStyleOwnershipByCharacter(styles, ownedStyles)
   const units = []
   const unitsByName = new Map()
 
@@ -68,7 +79,7 @@ export const groupStylesForOwnedStatusExport = (styles, ownedStyles) => {
 
     const characterGroup = unitRecord.charactersByName.get(style.character_name)
     const ownedCount = ownedStyles[style.id]
-    const exportStyle = createExportStyle(style, ownedCount)
+    const exportStyle = createExportStyle(style, ownedCount, baseOwnershipByCharacter)
 
     unitGroup.total += 1
     characterGroup.total += 1

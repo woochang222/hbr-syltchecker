@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useMemo, useRef } from 'react'
 import stylesData from './data/styles.json'
 import metaTeamsData from './data/meta_teams.json'
 import FilterPanel from './components/FilterPanel'
@@ -16,6 +16,10 @@ import {
 import { matchesOwnershipRange, normalizeOwnershipRange } from './utils/ownershipRange'
 import { sortStylesByOfficialOrder } from './utils/styleOrder'
 import { getStyleElements, hasStyleElement } from './utils/styleElements'
+import {
+  buildBaseStyleOwnershipByCharacter,
+  hasBaseStyleLimitBreakBoost
+} from './utils/baseStyleBoost'
 import {
   isPlainObject,
   readJsonStorage,
@@ -177,6 +181,10 @@ function App() {
   const selectedTeamStyles = activeMetaTeam 
     ? metaTeams.find(t => t.id === activeMetaTeam)?.styles || []
     : []
+  const baseOwnershipByCharacter = useMemo(
+    () => buildBaseStyleOwnershipByCharacter(styles, ownedStyles),
+    [styles, ownedStyles]
+  )
 
   const filteredStyles = styles.map(style => {
     const matchElement = hasStyleElement(style, filters.elements)
@@ -196,7 +204,12 @@ function App() {
       isDimmed: isFilteredOut && viewMode === 'dim',
       isHidden: isFilteredOut && viewMode === 'hide',
       isMetaHighlight: selectedTeamStyles.includes(style.id),
-      ownedCount: ownedStyles[style.id] // Now can be undefined, 0, 1, 2, 3, or 4
+      ownedCount: ownedStyles[style.id], // Now can be undefined, 0, 1, 2, 3, or 4
+      hasBaseLimitBreakBoost: hasBaseStyleLimitBreakBoost(
+        style,
+        ownedStyles[style.id],
+        baseOwnershipByCharacter
+      )
     }
   })
 
@@ -361,6 +374,7 @@ function App() {
             isDimmed={style.isDimmed}
             isMeta={style.isMetaHighlight}
             highlightLatest={highlightLatest}
+            hasBaseLimitBreakBoost={style.hasBaseLimitBreakBoost}
           />
         ))}
       </main>
