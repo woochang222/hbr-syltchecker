@@ -4,6 +4,7 @@ import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
 const TEST_ROOTS = ['scripts', 'src']
+const TEST_ISOLATION_FLAG = '--test-isolation'
 
 const toSlashPath = filePath => filePath.split(path.sep).join('/')
 
@@ -35,6 +36,23 @@ export const collectTestFiles = async (rootUrl = new URL('../', import.meta.url)
   return files.sort()
 }
 
+export const supportsTestIsolation = () => {
+  return process.allowedNodeEnvironmentFlags.has(TEST_ISOLATION_FLAG)
+}
+
+export const buildNodeTestArgs = (
+  files,
+  { supportsTestIsolation: canDisableTestIsolation = supportsTestIsolation() } = {}
+) => {
+  const args = ['--test']
+
+  if (canDisableTestIsolation) {
+    args.push('--test-isolation=none')
+  }
+
+  return [...args, ...files]
+}
+
 export const runTests = async () => {
   const files = await collectTestFiles()
 
@@ -45,7 +63,7 @@ export const runTests = async () => {
 
   const result = spawnSync(
     process.execPath,
-    ['--test', '--test-isolation=none', ...files],
+    buildNodeTestArgs(files),
     { stdio: 'inherit' }
   )
 
@@ -57,6 +75,6 @@ export const runTests = async () => {
   return result.status ?? 1
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   process.exitCode = await runTests()
 }
