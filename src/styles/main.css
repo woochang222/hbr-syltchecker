@@ -1007,6 +1007,19 @@ header h1 {
     0 0 12px rgba(255, 79, 216, 0.82);
 }
 
+.owned-export-tile.has-daphne {
+  box-shadow:
+    0 0 0 1px rgba(143, 215, 255, 0.65),
+    0 0 10px rgba(123, 220, 255, 0.35);
+}
+
+.owned-export-tile.owned.count-4.base-boosted.has-daphne {
+  box-shadow:
+    0 0 0 2px rgba(255, 214, 64, 0.92),
+    0 0 12px rgba(255, 79, 216, 0.82),
+    0 0 18px rgba(123, 220, 255, 0.5);
+}
+
 .owned-export-image,
 .owned-export-image-placeholder {
   display: block;
@@ -1020,6 +1033,29 @@ header h1 {
 
 .owned-export-image-placeholder {
   background: linear-gradient(135deg, #303030, #202020);
+}
+
+.owned-export-daphne-badge {
+  position: absolute;
+  left: 50%;
+  bottom: 3px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(143, 215, 255, 0.95);
+  border-radius: 50%;
+  background: rgba(10, 18, 24, 0.9);
+  box-shadow: 0 0 8px rgba(123, 220, 255, 0.45);
+  transform: translateX(-50%);
+}
+
+.owned-export-daphne-badge img {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
 }
 
 .owned-export-count-badge {

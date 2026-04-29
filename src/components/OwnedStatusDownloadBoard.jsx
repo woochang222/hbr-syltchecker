@@ -4,16 +4,27 @@ import {
   getExportImageUrl,
   groupStylesForOwnedStatusExport
 } from '../utils/ownedStatusExport'
+import {
+  buildOwnedStatusSummaryLabels,
+  buildOwnedStatusTileClassName
+} from '../utils/ownedStatusExportPresentation'
+
+const DAPHNE_ICON_URL = `${import.meta.env.BASE_URL}images/ui/daphne.png`
 
 const OwnedStatusTile = ({ style }) => {
   const imageUrl = getExportImageUrl(style.imageUrl, import.meta.env.BASE_URL)
 
   return (
-    <div className={`owned-export-tile ${style.isOwned ? `owned count-${style.ownedCount}` : 'not-owned'} ${style.hasBaseLimitBreakBoost ? 'base-boosted' : ''}`}>
+    <div className={buildOwnedStatusTileClassName(style)}>
       {imageUrl ? (
         <img src={imageUrl} alt="" className="owned-export-image" />
       ) : (
         <div className="owned-export-image-placeholder" />
+      )}
+      {style.hasDaphne && (
+        <span className="owned-export-daphne-badge" aria-label="다프네 적용">
+          <img src={DAPHNE_ICON_URL} alt="" />
+        </span>
       )}
       {style.isOwned && (
         <span className="owned-export-count-badge">{style.ownedCount}</span>
@@ -25,12 +36,20 @@ const OwnedStatusTile = ({ style }) => {
 const OwnedStatusDownloadBoard = ({
   styles,
   ownedStyles,
+  daphneStyles,
   totalOwned,
   totalStyles,
   ownershipRate,
+  daphneCount,
   generatedAt
 }) => {
-  const units = groupStylesForOwnedStatusExport(styles, ownedStyles)
+  const units = groupStylesForOwnedStatusExport(styles, ownedStyles, daphneStyles)
+  const summaryLabels = buildOwnedStatusSummaryLabels({
+    totalOwned,
+    totalStyles,
+    ownershipRate,
+    daphneCount
+  })
 
   return (
     <div className="owned-status-export-board">
@@ -40,8 +59,9 @@ const OwnedStatusDownloadBoard = ({
           <p>{formatExportDate(generatedAt)} 생성</p>
         </div>
         <div className="owned-export-summary">
-          <span>보유 {totalOwned} / {totalStyles}</span>
-          <span>{ownershipRate}%</span>
+          {summaryLabels.map(label => (
+            <span key={label}>{label}</span>
+          ))}
         </div>
       </header>
 
