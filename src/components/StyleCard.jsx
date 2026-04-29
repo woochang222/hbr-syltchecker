@@ -16,6 +16,7 @@ const StyleCard = ({
 }) => {
   const longPressTimerRef = useRef(null);
   const suppressClickRef = useRef(false);
+  const suppressContextMenuRef = useRef(false);
 
   const {
     id,
@@ -47,6 +48,11 @@ const StyleCard = ({
 
   const handleContextMenu = (event) => {
     event.preventDefault();
+    if (suppressContextMenuRef.current) {
+      suppressContextMenuRef.current = false;
+      return;
+    }
+
     onToggleDaphne(id);
   };
 
@@ -60,6 +66,7 @@ const StyleCard = ({
     longPressTimerRef.current = setTimeout(() => {
       onToggleDaphne(id);
       suppressClickRef.current = true;
+      suppressContextMenuRef.current = true;
       longPressTimerRef.current = null;
     }, LONG_PRESS_MS);
   };
