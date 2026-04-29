@@ -1,3 +1,4 @@
+import { DAPHNE_STATUS_APPLIED, DAPHNE_STATUS_UNAPPLIED } from './daphneStyles.js'
 import { buildOwnershipRangeLabel } from './ownershipRange.js'
 
 const formatSelection = (items, singularLabel) => {
@@ -10,6 +11,14 @@ const formatTierSelection = (tiers) => {
   if (tiers.length === 0) return null
   if (tiers.length === 1) return `T${tiers[0]}`
   return `티어 ${tiers.length}개`
+}
+
+const formatDaphneSelection = (daphneStatuses = []) => {
+  const wantsApplied = daphneStatuses.includes(DAPHNE_STATUS_APPLIED)
+  const wantsUnapplied = daphneStatuses.includes(DAPHNE_STATUS_UNAPPLIED)
+
+  if (wantsApplied === wantsUnapplied) return null
+  return wantsApplied ? '다프네 적용' : '다프네 미적용'
 }
 
 export const buildFilterSummary = ({
@@ -30,11 +39,13 @@ export const buildFilterSummary = ({
   const unitLabel = formatSelection(filters.units, '부대')
   const tierLabel = formatTierSelection(filters.tiers)
   const ownershipLabel = buildOwnershipRangeLabel(filters.ownershipRange)
+  const daphneLabel = formatDaphneSelection(filters.daphneStatuses)
 
   if (elementLabel) labels.push(elementLabel)
   if (unitLabel) labels.push(unitLabel)
   if (tierLabel) labels.push(tierLabel)
   if (ownershipLabel) labels.push(ownershipLabel)
+  if (daphneLabel) labels.push(daphneLabel)
 
   if (labels.length === 0) {
     labels.push('전체 스타일')

@@ -4,7 +4,8 @@ export const DEFAULT_FILTERS = {
   elements: [],
   units: [],
   tiers: [],
-  ownershipRange: DEFAULT_OWNERSHIP_RANGE
+  ownershipRange: DEFAULT_OWNERSHIP_RANGE,
+  daphneStatuses: []
 }
 
 export const DEFAULT_HIGHLIGHT_LATEST = true
@@ -13,7 +14,8 @@ export const createDefaultFilters = () => ({
   elements: [],
   units: [],
   tiers: [],
-  ownershipRange: [...DEFAULT_OWNERSHIP_RANGE]
+  ownershipRange: [...DEFAULT_OWNERSHIP_RANGE],
+  daphneStatuses: []
 })
 
 export const resetFilterState = () => ({

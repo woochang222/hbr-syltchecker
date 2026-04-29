@@ -1,5 +1,6 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
+import { DAPHNE_STATUS_APPLIED, DAPHNE_STATUS_UNAPPLIED } from './daphneStyles.js'
 import { buildFilterSummary, countMatchingStyles, getRenderableStyles } from './filterSummary.js'
 
 describe('buildFilterSummary', () => {
@@ -42,6 +43,57 @@ describe('buildFilterSummary', () => {
     })
 
     assert.deepEqual(result, ['선택한 조합', '흐림 모드', '결과 0개'])
+  })
+
+  it('shows a Daphne applied label when only applied status is selected', () => {
+    const result = buildFilterSummary({
+      filters: {
+        elements: [],
+        units: [],
+        tiers: [],
+        daphneStatuses: [DAPHNE_STATUS_APPLIED]
+      },
+      activeMetaTeam: null,
+      metaTeams,
+      viewMode: 'dim',
+      visibleCount: 12
+    })
+
+    assert.deepEqual(result, ['다프네 적용', '흐림 모드', '결과 12개'])
+  })
+
+  it('shows a Daphne unapplied label when only unapplied status is selected', () => {
+    const result = buildFilterSummary({
+      filters: {
+        elements: [],
+        units: [],
+        tiers: [],
+        daphneStatuses: [DAPHNE_STATUS_UNAPPLIED]
+      },
+      activeMetaTeam: null,
+      metaTeams,
+      viewMode: 'dim',
+      visibleCount: 108
+    })
+
+    assert.deepEqual(result, ['다프네 미적용', '흐림 모드', '결과 108개'])
+  })
+
+  it('omits the Daphne label when both Daphne statuses are selected', () => {
+    const result = buildFilterSummary({
+      filters: {
+        elements: [],
+        units: [],
+        tiers: [],
+        daphneStatuses: [DAPHNE_STATUS_APPLIED, DAPHNE_STATUS_UNAPPLIED]
+      },
+      activeMetaTeam: null,
+      metaTeams,
+      viewMode: 'dim',
+      visibleCount: 120
+    })
+
+    assert.deepEqual(result, ['전체 스타일', '흐림 모드', '결과 120개'])
   })
 })
 

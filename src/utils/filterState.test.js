@@ -11,6 +11,7 @@ describe('filter state defaults', () => {
     const result = resetFilterState()
 
     assert.deepEqual(result.filters, DEFAULT_FILTERS)
+    assert.deepEqual(result.filters.daphneStatuses, [])
     assert.equal(result.searchTerm, '')
     assert.equal(result.activeMetaTeam, null)
   })
