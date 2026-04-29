@@ -424,6 +424,30 @@ header h1 {
   box-shadow: 0 2px 8px rgba(0, 212, 255, 0.35);
 }
 
+.daphne-badge {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(143, 215, 255, 0.95);
+  border-radius: 50%;
+  background: rgba(10, 18, 24, 0.9);
+  box-shadow: 0 0 12px rgba(123, 220, 255, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.daphne-badge img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
 .badge.resonance { background: linear-gradient(45deg, #f1c40f, #f39c12); color: #000; }
 .badge.limited { background: linear-gradient(45deg, #ff4081, #c2185b); color: #fff; }
 
