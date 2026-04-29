@@ -3,7 +3,7 @@ export const formatOwnershipSummary = ({
   totalStyles,
   ownershipRate,
   visibleStyleCount,
-  daphneCount
+  daphneCount = 0
 }) => ({
   ownershipLabel: `보유 ${totalOwned} / ${totalStyles}`,
   rateLabel: `${ownershipRate}%`,

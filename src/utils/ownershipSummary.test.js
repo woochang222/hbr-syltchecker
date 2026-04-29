@@ -38,4 +38,21 @@ describe('formatOwnershipSummary', () => {
       }
     )
   })
+
+  it('defaults omitted Daphne count to zero', () => {
+    assert.deepEqual(
+      formatOwnershipSummary({
+        totalOwned: 3,
+        totalStyles: 10,
+        ownershipRate: 30,
+        visibleStyleCount: 8
+      }),
+      {
+        ownershipLabel: '보유 3 / 10',
+        rateLabel: '30%',
+        visibleLabel: '표시 8',
+        daphneLabel: '다프네 0'
+      }
+    )
+  })
 })

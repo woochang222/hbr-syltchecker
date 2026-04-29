@@ -172,6 +172,28 @@ describe('groupStylesForOwnedStatusExport', () => {
       [true, true]
     )
   })
+
+  it('defaults omitted Daphne styles to false for exported styles', () => {
+    const [unit] = groupStylesForOwnedStatusExport(
+      [
+        {
+          id: 'ruka_base',
+          unit: '31A',
+          character_name: '카야모리 루카',
+          style_name: '기본',
+          image_url: '/images/styles/ruka_base.webp'
+        }
+      ],
+      {
+        ruka_base: 4
+      }
+    )
+
+    assert.deepEqual(
+      unit.characters[0].styles.map(style => style.hasDaphne),
+      [false]
+    )
+  })
 })
 
 describe('formatExportDate', () => {
