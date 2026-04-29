@@ -436,7 +436,7 @@ header h1 {
 .daphne-badge {
   position: absolute;
   left: 50%;
-  bottom: 34px;
+  bottom: 6px;
   transform: translateX(-50%);
   width: 30px;
   height: 30px;
