@@ -2,6 +2,7 @@ import {
   buildBaseStyleOwnershipByCharacter,
   hasBaseStyleLimitBreakBoost
 } from './baseStyleBoost.js'
+import { hasDaphneStyle } from './daphneStyles.js'
 
 const toDateParts = date => {
   const year = date.getFullYear()
@@ -29,13 +30,14 @@ export const getExportImageUrl = (imageUrl, baseUrl) => {
   return `${normalizedBase}${normalizedImage}`
 }
 
-const createExportStyle = (style, ownedCount, baseOwnershipByCharacter) => ({
+const createExportStyle = (style, ownedCount, baseOwnershipByCharacter, daphneStyles) => ({
   id: style.id,
   characterName: style.character_name,
   styleName: style.style_name,
   imageUrl: style.image_url,
   ownedCount,
   isOwned: isOwnedStyle(ownedCount),
+  hasDaphne: hasDaphneStyle(daphneStyles, style.id),
   hasBaseLimitBreakBoost: hasBaseStyleLimitBreakBoost(
     style,
     ownedCount,
@@ -43,7 +45,7 @@ const createExportStyle = (style, ownedCount, baseOwnershipByCharacter) => ({
   )
 })
 
-export const groupStylesForOwnedStatusExport = (styles, ownedStyles) => {
+export const groupStylesForOwnedStatusExport = (styles, ownedStyles, daphneStyles = {}) => {
   const baseOwnershipByCharacter = buildBaseStyleOwnershipByCharacter(styles, ownedStyles)
   const units = []
   const unitsByName = new Map()
@@ -79,7 +81,12 @@ export const groupStylesForOwnedStatusExport = (styles, ownedStyles) => {
 
     const characterGroup = unitRecord.charactersByName.get(style.character_name)
     const ownedCount = ownedStyles[style.id]
-    const exportStyle = createExportStyle(style, ownedCount, baseOwnershipByCharacter)
+    const exportStyle = createExportStyle(
+      style,
+      ownedCount,
+      baseOwnershipByCharacter,
+      daphneStyles
+    )
 
     unitGroup.total += 1
     characterGroup.total += 1

@@ -51,11 +51,17 @@ describe('isOwnedStyle', () => {
 describe('groupStylesForOwnedStatusExport', () => {
   it('groups styles by unit and then character while preserving order', () => {
     assert.deepEqual(
-      groupStylesForOwnedStatusExport(styles, {
-        ruka_base: 4,
-        ruka_suit: 0,
-        seira_base: 2
-      }),
+      groupStylesForOwnedStatusExport(
+        styles,
+        {
+          ruka_base: 4,
+          ruka_suit: 0,
+          seira_base: 2
+        },
+        {
+          ruka_suit: true
+        }
+      ),
       [
         {
           unit: '31A',
@@ -74,6 +80,7 @@ describe('groupStylesForOwnedStatusExport', () => {
                   imageUrl: '/images/styles/ruka_base.webp',
                   ownedCount: 4,
                   isOwned: true,
+                  hasDaphne: false,
                   hasBaseLimitBreakBoost: false
                 },
                 {
@@ -83,6 +90,7 @@ describe('groupStylesForOwnedStatusExport', () => {
                   imageUrl: 'images/styles/ruka_suit.webp',
                   ownedCount: 0,
                   isOwned: true,
+                  hasDaphne: true,
                   hasBaseLimitBreakBoost: false
                 }
               ]
@@ -99,6 +107,7 @@ describe('groupStylesForOwnedStatusExport', () => {
                   imageUrl: '/images/styles/yuki_base.webp',
                   ownedCount: undefined,
                   isOwned: false,
+                  hasDaphne: false,
                   hasBaseLimitBreakBoost: false
                 }
               ]
@@ -122,6 +131,7 @@ describe('groupStylesForOwnedStatusExport', () => {
                   imageUrl: '/images/styles/seira_base.webp',
                   ownedCount: 2,
                   isOwned: true,
+                  hasDaphne: false,
                   hasBaseLimitBreakBoost: false
                 }
               ]
@@ -153,7 +163,8 @@ describe('groupStylesForOwnedStatusExport', () => {
       {
         ruka_base: 4,
         ruka_ss: 4
-      }
+      },
+      {}
     )
 
     assert.deepEqual(
