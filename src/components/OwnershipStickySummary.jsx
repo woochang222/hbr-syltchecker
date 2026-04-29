@@ -5,17 +5,20 @@ const OwnershipStickySummary = ({
   totalOwned,
   totalStyles,
   ownershipRate,
-  visibleStyleCount
+  visibleStyleCount,
+  daphneCount
 }) => {
   const {
     ownershipLabel,
     rateLabel,
-    visibleLabel
+    visibleLabel,
+    daphneLabel
   } = formatOwnershipSummary({
     totalOwned,
     totalStyles,
     ownershipRate,
-    visibleStyleCount
+    visibleStyleCount,
+    daphneCount
   })
 
   return (
@@ -23,6 +26,7 @@ const OwnershipStickySummary = ({
       <div className="ownership-sticky-summary-inner">
         <span className="ownership-summary-chip primary">{ownershipLabel}</span>
         <span className="ownership-summary-chip rate">{rateLabel}</span>
+        <span className="ownership-summary-chip daphne">{daphneLabel}</span>
         <span className="ownership-summary-chip">{visibleLabel}</span>
       </div>
     </section>

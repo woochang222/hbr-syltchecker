@@ -281,6 +281,15 @@ header h1 {
   color: #ff80ab;
 }
 
+.ownership-summary-chip.daphne {
+  border-color: #7bdcff;
+  color: #aee9ff;
+}
+
+.stat-item .count.daphne-count {
+  color: #aee9ff;
+}
+
 /* Card Styles */
 .style-list {
   display: grid;

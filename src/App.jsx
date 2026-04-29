@@ -25,6 +25,13 @@ import {
   readJsonStorage,
   readStringStorage
 } from './utils/localStorageState'
+import {
+  countDaphneStyles,
+  hasDaphneStyle,
+  matchesDaphneStatus,
+  normalizeDaphneStyles,
+  toggleDaphneStyle
+} from './utils/daphneStyles'
 import { buildOwnedStatusFilename } from './utils/ownedStatusExport'
 import { copyElementAsPng, downloadElementAsPng } from './utils/domImageDownload'
 
@@ -34,6 +41,14 @@ function App() {
   
   const [ownedStyles, setOwnedStyles] = useState(() => {
     return readJsonStorage(localStorage, 'hbr_owned_styles', {}, isPlainObject)
+  })
+
+  const [daphneStyles, setDaphneStyles] = useState(() => {
+    return normalizeDaphneStyles(
+      readJsonStorage(localStorage, 'hbr_daphne_styles', {}, value => {
+        return value !== null && typeof value === 'object' && !Array.isArray(value)
+      })
+    )
   })
   
   const [filters, setFilters] = useState(() => createDefaultFilters())
@@ -62,6 +77,10 @@ function App() {
   useEffect(() => {
     localStorage.setItem('hbr_owned_styles', JSON.stringify(ownedStyles))
   }, [ownedStyles])
+
+  useEffect(() => {
+    localStorage.setItem('hbr_daphne_styles', JSON.stringify(daphneStyles))
+  }, [daphneStyles])
 
   useEffect(() => {
     localStorage.setItem('hbr_view_mode', viewMode)
@@ -99,6 +118,10 @@ function App() {
       
       return next
     })
+  }
+
+  const handleToggleDaphne = (id) => {
+    setDaphneStyles(prev => toggleDaphneStyle(prev, id))
   }
 
   const handleFilterChange = (type, value) => {
@@ -191,12 +214,14 @@ function App() {
     const matchUnit = filters.units.length === 0 || filters.units.includes(style.unit)
     const matchTier = filters.tiers.length === 0 || filters.tiers.includes(style.tier)
     const matchOwnership = matchesOwnershipRange(ownedStyles[style.id], filters.ownershipRange)
+    const hasDaphne = hasDaphneStyle(daphneStyles, style.id)
+    const matchDaphne = matchesDaphneStatus(hasDaphne, filters.daphneStatuses)
     const matchSearch = searchTerm === '' || 
       style.character_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       style.style_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (style.nicknames && style.nicknames.some(n => n.toLowerCase().includes(searchTerm.toLowerCase())))
     
-    const isFilteredOut = !matchElement || !matchUnit || !matchTier || !matchOwnership || !matchSearch
+    const isFilteredOut = !matchElement || !matchUnit || !matchTier || !matchOwnership || !matchSearch || !matchDaphne
 
     return {
       ...style,
@@ -205,6 +230,7 @@ function App() {
       isHidden: isFilteredOut && viewMode === 'hide',
       isMetaHighlight: selectedTeamStyles.includes(style.id),
       ownedCount: ownedStyles[style.id], // Now can be undefined, 0, 1, 2, 3, or 4
+      hasDaphne,
       hasBaseLimitBreakBoost: hasBaseStyleLimitBreakBoost(
         style,
         ownedStyles[style.id],
@@ -225,6 +251,7 @@ function App() {
 
   const totalStyles = styles.length
   const totalOwned = Object.keys(ownedStyles).length
+  const daphneCount = countDaphneStyles(daphneStyles)
   const ownershipRate = totalStyles > 0 ? Math.round((totalOwned / totalStyles) * 100) : 0
 
   const elementStats = ELEMENTS.map(el => {
@@ -280,6 +307,7 @@ function App() {
               <div className="progress-fill" style={{ width: `${ownershipRate}%` }}></div>
             </div>
             <span className="count">{totalOwned} / {totalStyles}</span>
+            <span className="count daphne-count">다프네 {daphneCount} / {totalStyles}</span>
             <button
               type="button"
               className="owned-status-download-button"
@@ -322,6 +350,7 @@ function App() {
         totalStyles={totalStyles}
         ownershipRate={ownershipRate}
         visibleStyleCount={visibleStyleCount}
+        daphneCount={daphneCount}
       />
 
       <div className="owned-status-export-host" aria-hidden="true">
@@ -329,9 +358,11 @@ function App() {
           <OwnedStatusDownloadBoard
             styles={styles}
             ownedStyles={ownedStyles}
+            daphneStyles={daphneStyles}
             totalOwned={totalOwned}
             totalStyles={totalStyles}
             ownershipRate={ownershipRate}
+            daphneCount={daphneCount}
             generatedAt={ownedStatusExportDate}
           />
         </div>
@@ -371,10 +402,12 @@ function App() {
             style={style}
             ownedCount={style.ownedCount}
             onToggleOwned={handleToggleOwned}
+            onToggleDaphne={handleToggleDaphne}
             isDimmed={style.isDimmed}
             isMeta={style.isMetaHighlight}
             highlightLatest={highlightLatest}
             hasBaseLimitBreakBoost={style.hasBaseLimitBreakBoost}
+            hasDaphne={style.hasDaphne}
           />
         ))}
       </main>

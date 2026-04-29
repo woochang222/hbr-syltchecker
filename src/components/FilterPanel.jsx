@@ -2,6 +2,10 @@ import React from 'react'
 import { ELEMENTS } from '../data/elements'
 import { FILTER_UNITS } from '../data/units'
 import { OWNERSHIP_RANGE_LABELS } from '../utils/ownershipRange'
+import {
+  DAPHNE_STATUS_APPLIED,
+  DAPHNE_STATUS_UNAPPLIED
+} from '../utils/daphneStyles'
 
 const FilterPanel = ({
   filters,
@@ -147,6 +151,26 @@ const FilterPanel = ({
           {OWNERSHIP_RANGE_LABELS.map(label => (
             <span key={label}>{label}</span>
           ))}
+        </div>
+      </div>
+
+      <div className="filter-group">
+        <h3>다프네</h3>
+        <div className="filter-buttons">
+          <button
+            type="button"
+            className={filters.daphneStatuses.includes(DAPHNE_STATUS_APPLIED) ? 'active' : ''}
+            onClick={() => onFilterChange('daphneStatuses', DAPHNE_STATUS_APPLIED)}
+          >
+            적용
+          </button>
+          <button
+            type="button"
+            className={filters.daphneStatuses.includes(DAPHNE_STATUS_UNAPPLIED) ? 'active' : ''}
+            onClick={() => onFilterChange('daphneStatuses', DAPHNE_STATUS_UNAPPLIED)}
+          >
+            미적용
+          </button>
         </div>
       </div>
 
