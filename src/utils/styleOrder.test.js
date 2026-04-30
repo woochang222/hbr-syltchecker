@@ -34,15 +34,30 @@ describe('sortStylesByOfficialOrder', () => {
     )
   })
 
-  it('keeps style order stable within the same character', () => {
+  it('puts base styles first and sorts the same character by release date', () => {
     const input = [
-      { id: 'second', character_name: '카야모리 루카', style_name: '두번째', unit: '31A' },
-      { id: 'first', character_name: '카야모리 루카', style_name: '첫번째', unit: '31A' }
+      { id: 'latest', character_name: '카야모리 루카', style_name: '최신', unit: '31A', releaseDate: '2024-03-01' },
+      { id: 'base', character_name: '카야모리 루카', style_name: '기본', unit: '31A', releaseDate: '2022-02-10' },
+      { id: 'oldest', character_name: '카야모리 루카', style_name: '초기 SS', unit: '31A', releaseDate: '2022-03-01' }
     ]
 
     assert.deepEqual(
       sortStylesByOfficialOrder(input).map(style => style.id),
-      ['second', 'first']
+      ['base', 'oldest', 'latest']
+    )
+  })
+
+  it('uses source order as newest-first release order when release dates are missing', () => {
+    const input = [
+      { id: 'latest', character_name: '카야모리 루카', style_name: '최신', unit: '31A' },
+      { id: 'middle', character_name: '카야모리 루카', style_name: '중간', unit: '31A' },
+      { id: 'base', character_name: '카야모리 루카', style_name: '기본', unit: '31A' },
+      { id: 'oldest', character_name: '카야모리 루카', style_name: '초기 SS', unit: '31A' }
+    ]
+
+    assert.deepEqual(
+      sortStylesByOfficialOrder(input).map(style => style.id),
+      ['base', 'oldest', 'middle', 'latest']
     )
   })
 })

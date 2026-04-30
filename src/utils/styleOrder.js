@@ -1,3 +1,5 @@
+import { isBaseStyle } from './baseStyleBoost.js'
+
 export const OFFICIAL_UNIT_ORDER = [
   '31A',
   '31B',
@@ -74,6 +76,13 @@ const characterOrder = new Map(OFFICIAL_CHARACTER_ORDER.map((character, index) =
 
 const fallbackOrder = 9999
 
+const getReleaseDateTime = style => {
+  if (!style.releaseDate) return null
+
+  const dateTime = Date.parse(style.releaseDate)
+  return Number.isNaN(dateTime) ? null : dateTime
+}
+
 export const sortStylesByOfficialOrder = (styles) => {
   return styles
     .map((style, index) => ({ style, index }))
@@ -86,7 +95,17 @@ export const sortStylesByOfficialOrder = (styles) => {
         (characterOrder.get(right.style.character_name) ?? fallbackOrder)
       if (characterDiff !== 0) return characterDiff
 
-      return left.index - right.index
+      const baseDiff = Number(isBaseStyle(right.style)) - Number(isBaseStyle(left.style))
+      if (baseDiff !== 0) return baseDiff
+
+      const leftReleaseDate = getReleaseDateTime(left.style)
+      const rightReleaseDate = getReleaseDateTime(right.style)
+      if (leftReleaseDate !== null && rightReleaseDate !== null) {
+        const releaseDateDiff = leftReleaseDate - rightReleaseDate
+        if (releaseDateDiff !== 0) return releaseDateDiff
+      }
+
+      return right.index - left.index
     })
     .map(({ style }) => style)
 }
