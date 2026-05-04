@@ -2198,6 +2198,29 @@
     ]
   },
   {
+    "id": "byakko_white_fang_res",
+    "character_name": "뱌코",
+    "style_name": "전장의 하얀 송곳니 (레조넌스)",
+    "nicknames": [
+      "하얀 송곳니"
+    ],
+    "image_url": "/images/styles/byakko_white_fang_res.webp",
+    "isResonance": true,
+    "isLimited": false,
+    "isUniform": false,
+    "unit": "31B",
+    "element": "암",
+    "metaTags": [
+      "블라스터",
+      "버퍼",
+      "디버퍼"
+    ],
+    "elements": [
+      "암"
+    ],
+    "isLatest": true
+  },
+  {
     "id": "kura_satomi_young_landlady",
     "character_name": "쿠라 사토미",
     "style_name": "젊은 여주인",

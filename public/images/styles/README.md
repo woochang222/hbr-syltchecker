@@ -165,6 +165,7 @@
 - ogasawara_hisame_maid: /images/styles/ogasawara_hisame_maid.webp
 - aoi_erika_maid: /images/styles/aoi_erika_maid.webp
 - byakko_queen: /images/styles/byakko_queen.webp
+- byakko_white_fang_res: /images/styles/byakko_white_fang_res.webp
 - kura_satomi_young_landlady: /images/styles/kura_satomi_young_landlady.webp
 - aikawa_megumi_miko: /images/styles/aikawa_megumi_miko.webp
 - satsuki_mari_assassin: /images/styles/satsuki_mari_assassin.webp

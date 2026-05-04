@@ -6,6 +6,19 @@ const styles = JSON.parse(readFileSync(new URL('./styles.json', import.meta.url)
 const styleMap = new Map(styles.map(style => [style.id, style]))
 
 describe('new resonance styles', () => {
+  it('adds Byakko with dark element and verified local image', () => {
+    const style = styleMap.get('byakko_white_fang_res')
+
+    assert.equal(style?.character_name, '뱌코')
+    assert.equal(style?.style_name, '전장의 하얀 송곳니 (레조넌스)')
+    assert.equal(style?.unit, '31B')
+    assert.equal(style?.element, '암')
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/byakko_white_fang_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/byakko_white_fang_res.webp', import.meta.url)), true)
+  })
+
   it('adds Natsume Inori with ice element and composited icon image', () => {
     const style = styleMap.get('natsume_inori_hanakage_res')
 

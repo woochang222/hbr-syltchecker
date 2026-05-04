@@ -671,6 +671,13 @@
     "sourceUrl": "https://game8.jp/heavenburnsred/526136",
     "imageStatus": "verified"
   },
+  "byakko_white_fang_res": {
+    "expectedUnit": "31B",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/byakko_white_fang_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/783178",
+    "imageStatus": "verified"
+  },
   "kura_satomi_young_landlady": {
     "expectedUnit": "30G",
     "expectedElements": ["암"],
