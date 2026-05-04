@@ -6,6 +6,14 @@ const styles = JSON.parse(readFileSync(new URL('./styles.json', import.meta.url)
 const styleMap = new Map(styles.map(style => [style.id, style]))
 
 describe('new resonance styles', () => {
+  it('marks only the newest released style as latest', () => {
+    const latestStyleIds = styles
+      .filter(style => style.isLatest)
+      .map(style => style.id)
+
+    assert.deepEqual(latestStyleIds, ['byakko_white_fang_res'])
+  })
+
   it('adds Byakko with dark element and verified local image', () => {
     const style = styleMap.get('byakko_white_fang_res')
 
@@ -27,7 +35,7 @@ describe('new resonance styles', () => {
     assert.equal(style?.unit, '31F')
     assert.equal(style?.element, '빙')
     assert.equal(style?.isResonance, true)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/natsume_inori_hanakage_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/natsume_inori_hanakage_res.webp', import.meta.url)), true)
   })
@@ -40,7 +48,7 @@ describe('new resonance styles', () => {
     assert.equal(style?.unit, '31F')
     assert.equal(style?.element, '뇌')
     assert.equal(style?.isResonance, true)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/kurosawa_maki_empress_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/kurosawa_maki_empress_res.webp', import.meta.url)), true)
   })
