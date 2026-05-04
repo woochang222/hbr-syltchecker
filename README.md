@@ -50,6 +50,7 @@ npm run validate:source-urls
 2. `scripts/style-draft.example.json`을 참고해 새 draft JSON 파일을 만듭니다.
    - draft는 최상위에 `style`과 `manifest` 객체를 가집니다.
    - `style`은 `styles.json`과 같은 필드를 사용하며, `isLimited`, `isResonance`, `isUniform`, `metaTags`는 camelCase로 작성합니다. `isLatest`는 최신 스타일에만 필요한 선택 필드입니다.
+   - 새 draft에 `isLatest: true`를 넣으면 기존 최신 스타일의 `isLatest`는 자동으로 제거됩니다.
    - `manifest`는 `expectedUnit`, `expectedElements`, `expectedImageUrl`, `sourceUrl`, `imageStatus`를 camelCase로 작성합니다.
 3. 아래 명령으로 `src/data/styles.json`과 `src/data/style_manifest.json`을 함께 갱신합니다.
 

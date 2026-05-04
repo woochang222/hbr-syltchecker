@@ -229,6 +229,62 @@ describe('applyStyleDraft', () => {
     assert.equal(existingStyles.length, 1)
     assert.equal(existingManifest.sample_character_new_style, undefined)
   })
+
+  it('removes previous latest markers when the added draft is latest', () => {
+    const result = applyStyleDraft({
+      draft: createDraft({
+        style: {
+          isLatest: true
+        }
+      }),
+      styles: [
+        {
+          ...validStyle,
+          id: 'previous_latest_style',
+          image_url: '/images/styles/previous_latest_style.webp',
+          isLatest: true
+        },
+        {
+          ...validStyle,
+          id: 'older_style',
+          image_url: '/images/styles/older_style.webp'
+        }
+      ],
+      manifest: existingManifest
+    })
+
+    assert.deepEqual(
+      result.styles.map(style => ({ id: style.id, isLatest: style.isLatest })),
+      [
+        { id: 'previous_latest_style', isLatest: undefined },
+        { id: 'older_style', isLatest: undefined },
+        { id: 'sample_character_new_style', isLatest: true }
+      ]
+    )
+  })
+
+  it('keeps previous latest markers when the added draft is not latest', () => {
+    const result = applyStyleDraft({
+      draft: createDraft(),
+      styles: [
+        {
+          ...validStyle,
+          id: 'previous_latest_style',
+          image_url: '/images/styles/previous_latest_style.webp',
+          isLatest: true
+        }
+      ],
+      manifest: existingManifest
+    })
+
+    assert.deepEqual(
+      result.styles.map(style => ({ id: style.id, isLatest: style.isLatest })),
+      [
+        { id: 'previous_latest_style', isLatest: true },
+        { id: 'sample_character_new_style', isLatest: undefined }
+      ]
+    )
+  })
 })
 
 describe('formatJson', () => {

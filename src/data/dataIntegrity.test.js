@@ -12,6 +12,14 @@ describe('style data integrity', () => {
     assert.deepEqual(duplicateIds, [])
   })
 
+  it('uses at most one latest style marker', () => {
+    const latestStyleIds = styles
+      .filter(style => style.isLatest)
+      .map(style => style.id)
+
+    assert.equal(latestStyleIds.length <= 1, true, `Latest style ids: ${latestStyleIds.join(', ')}`)
+  })
+
   it('uses one local image file per style entry', () => {
     const imageUrls = styles.map(style => style.image_url)
     const duplicateImageUrls = imageUrls.filter((url, index) => imageUrls.indexOf(url) !== index)

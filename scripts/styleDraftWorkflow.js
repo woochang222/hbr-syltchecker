@@ -143,9 +143,14 @@ export const validateStyleDraft = ({
   return errors
 }
 
+const removeLatestMarker = style => {
+  const { isLatest: _isLatest, ...styleWithoutLatest } = style
+  return styleWithoutLatest
+}
+
 export const applyStyleDraft = ({ draft, styles, manifest }) => ({
   styles: [
-    ...styles,
+    ...(draft.style.isLatest === true ? styles.map(removeLatestMarker) : styles),
     draft.style
   ],
   manifest: {
