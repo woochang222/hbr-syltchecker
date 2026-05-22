@@ -70,7 +70,8 @@ export const OFFICIAL_CHARACTER_ORDER = [
   '요시오카 유이',
   '나나세 나나미',
   '테즈카 사키',
-  '퀸'
+  '퀸',
+  '모나'
 ]
 
 const unitOrder = new Map(OFFICIAL_UNIT_ORDER.map((unit, index) => [unit, index]))

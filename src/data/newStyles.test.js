@@ -27,6 +27,19 @@ describe('new resonance styles', () => {
     assert.equal(existsSync(new URL('../../public/images/styles/queen_persona_res.webp', import.meta.url)), true)
   })
 
+  it('adds Mona as the PERSONA5R event SS style with a verified local image', () => {
+    const style = styleMap.get('mona_morgana')
+
+    assert.equal(style?.character_name, '모나')
+    assert.equal(style?.style_name, '여명의 마술사')
+    assert.equal(style?.unit, 'PERSONA5R')
+    assert.equal(style?.element, '암')
+    assert.equal(style?.isResonance, false)
+    assert.equal(style?.isLatest, undefined)
+    assert.equal(style?.image_url, '/images/styles/mona_morgana.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/mona_morgana.webp', import.meta.url)), true)
+  })
+
   it('adds Tojo Tsukasa persona with fire element and verified local image', () => {
     const style = styleMap.get('tojo_tsukasa_persona_res')
 

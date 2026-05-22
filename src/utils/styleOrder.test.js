@@ -13,6 +13,7 @@ describe('sortStylesByOfficialOrder', () => {
       { id: 'carol', character_name: '캐롤 리퍼', style_name: '기본', unit: '31X' },
       { id: 'nanami', character_name: '나나세 나나미', style_name: '기본', unit: '사령부' },
       { id: 'queen', character_name: '퀸', style_name: '혜안의 여교황', unit: 'PERSONA5R' },
+      { id: 'mona', character_name: '모나', style_name: '여명의 마술사', unit: 'PERSONA5R' },
       { id: 'aoi', character_name: '아오이 에리카', style_name: '기본', unit: '31B' },
       { id: 'yamawaki', character_name: '야마와키 본 이바르', style_name: '기본', unit: '31C' },
       { id: 'misato', character_name: '니카이도 미사토', style_name: '기본', unit: '31D' }
@@ -31,7 +32,8 @@ describe('sortStylesByOfficialOrder', () => {
         'carol',
         'kanade',
         'nanami',
-        'queen'
+        'queen',
+        'mona'
       ]
     )
   })

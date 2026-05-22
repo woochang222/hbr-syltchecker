@@ -39,6 +39,25 @@
     ]
   },
   {
+    "id": "mona_morgana",
+    "character_name": "모나",
+    "style_name": "여명의 마술사",
+    "nicknames": [
+      "모르가나",
+      "P5R"
+    ],
+    "image_url": "/images/styles/mona_morgana.webp",
+    "isResonance": false,
+    "isLimited": true,
+    "isUniform": false,
+    "unit": "PERSONA5R",
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ]
+  },
+  {
     "id": "irie_miyuki_faraway_eden",
     "character_name": "이리에 미유키",
     "style_name": "Faraway Eden",

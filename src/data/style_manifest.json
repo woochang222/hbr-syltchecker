@@ -13,6 +13,13 @@
     "sourceUrl": "https://game8.jp/heavenburnsred/784342",
     "imageStatus": "verified"
   },
+  "mona_morgana": {
+    "expectedUnit": "PERSONA5R",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/mona_morgana.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/784343",
+    "imageStatus": "verified"
+  },
   "nakamura_yuri_rain_fire": {
     "expectedUnit": "AB",
     "expectedElements": ["화"],

@@ -223,7 +223,8 @@ describe('style data integrity', () => {
       ['요시오카 유이', 'AB'],
       ['이와사와 마사미', 'AB'],
       ['타치바나 카나데', 'AB'],
-      ['퀸', 'PERSONA5R']
+      ['퀸', 'PERSONA5R'],
+      ['모나', 'PERSONA5R']
     ])
 
     const mismatches = styles
@@ -671,6 +672,7 @@ describe('style data integrity', () => {
       ['izumi_yuki_unison_res', { element: '암', elements: ['암', '화'] }],
       ['kayamori_ruka_unison_res', { element: '암', elements: ['암', '화'] }],
       ['queen_persona_res', { element: '무', elements: ['무'] }],
+      ['mona_morgana', { element: '암', elements: ['암'] }],
       ['tojo_tsukasa_persona_res', { element: '화', elements: ['화'] }]
     ])
 
