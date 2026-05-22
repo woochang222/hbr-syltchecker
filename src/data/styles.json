@@ -1,5 +1,44 @@
 [
   {
+    "id": "tojo_tsukasa_persona_res",
+    "character_name": "토죠 츠카사",
+    "style_name": "격정의 팜 파탈 (레조넌스)",
+    "nicknames": [
+      "페르소나",
+      "P5R"
+    ],
+    "image_url": "/images/styles/tojo_tsukasa_persona_res.webp",
+    "isResonance": true,
+    "isLimited": true,
+    "isUniform": false,
+    "unit": "31A",
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ],
+    "isLatest": true
+  },
+  {
+    "id": "queen_persona_res",
+    "character_name": "퀸",
+    "style_name": "혜안의 여교황 (레조넌스)",
+    "nicknames": [
+      "신지마 마코토",
+      "P5R"
+    ],
+    "image_url": "/images/styles/queen_persona_res.webp",
+    "isResonance": true,
+    "isLimited": true,
+    "isUniform": false,
+    "unit": "PERSONA5R",
+    "element": "무",
+    "metaTags": [],
+    "elements": [
+      "무"
+    ]
+  },
+  {
     "id": "irie_miyuki_faraway_eden",
     "character_name": "이리에 미유키",
     "style_name": "Faraway Eden",
@@ -2215,8 +2254,7 @@
     ],
     "elements": [
       "암"
-    ],
-    "isLatest": true
+    ]
   },
   {
     "id": "kura_satomi_young_landlady",

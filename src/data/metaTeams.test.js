@@ -86,4 +86,20 @@ describe('meta teams', () => {
 
     assert.deepEqual(teamsWithoutElementStyle, [])
   })
+
+  it('updates the fire meta team with Tojo Tsukasa persona from the latest Game8 review', () => {
+    const fireMeta = metaTeams.find(team => team.id === 'fire_meta')
+
+    assert.deepEqual(
+      fireMeta?.styles,
+      [
+        'kayamori_ruka_unison_res',
+        'nikaido_misato_white_suit_res',
+        'tojo_tsukasa_persona_res',
+        'shirakawa_yuina_admiral_res',
+        'izumi_yuki_unison_res',
+        'ogasawara_hisame_bunny_res'
+      ]
+    )
+  })
 })

@@ -1,4 +1,18 @@
 {
+  "tojo_tsukasa_persona_res": {
+    "expectedUnit": "31A",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/tojo_tsukasa_persona_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/784346",
+    "imageStatus": "verified"
+  },
+  "queen_persona_res": {
+    "expectedUnit": "PERSONA5R",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/queen_persona_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/784342",
+    "imageStatus": "verified"
+  },
   "nakamura_yuri_rain_fire": {
     "expectedUnit": "AB",
     "expectedElements": ["화"],

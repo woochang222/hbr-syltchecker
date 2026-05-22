@@ -11,7 +11,34 @@ describe('new resonance styles', () => {
       .filter(style => style.isLatest)
       .map(style => style.id)
 
-    assert.deepEqual(latestStyleIds, ['byakko_white_fang_res'])
+    assert.deepEqual(latestStyleIds, ['tojo_tsukasa_persona_res'])
+  })
+
+  it('adds Queen with PERSONA5R unit and verified local image', () => {
+    const style = styleMap.get('queen_persona_res')
+
+    assert.equal(style?.character_name, '퀸')
+    assert.equal(style?.style_name, '혜안의 여교황 (레조넌스)')
+    assert.equal(style?.unit, 'PERSONA5R')
+    assert.equal(style?.element, '무')
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLatest, undefined)
+    assert.equal(style?.image_url, '/images/styles/queen_persona_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/queen_persona_res.webp', import.meta.url)), true)
+  })
+
+  it('adds Tojo Tsukasa persona with fire element and verified local image', () => {
+    const style = styleMap.get('tojo_tsukasa_persona_res')
+
+    assert.equal(style?.character_name, '토죠 츠카사')
+    assert.equal(style?.style_name, '격정의 팜 파탈 (레조넌스)')
+    assert.equal(style?.unit, '31A')
+    assert.equal(style?.element, '화')
+    assert.deepEqual(style?.elements, ['화'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/tojo_tsukasa_persona_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/tojo_tsukasa_persona_res.webp', import.meta.url)), true)
   })
 
   it('adds Byakko with dark element and verified local image', () => {
@@ -22,7 +49,7 @@ describe('new resonance styles', () => {
     assert.equal(style?.unit, '31B')
     assert.equal(style?.element, '암')
     assert.equal(style?.isResonance, true)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/byakko_white_fang_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/byakko_white_fang_res.webp', import.meta.url)), true)
   })

@@ -222,7 +222,8 @@ describe('style data integrity', () => {
       ['이리에 미유키', 'AB'],
       ['요시오카 유이', 'AB'],
       ['이와사와 마사미', 'AB'],
-      ['타치바나 카나데', 'AB']
+      ['타치바나 카나데', 'AB'],
+      ['퀸', 'PERSONA5R']
     ])
 
     const mismatches = styles
@@ -668,7 +669,9 @@ describe('style data integrity', () => {
       ['asakura_karen_free', { element: '화', elements: ['화', '빙'] }],
       ['aikawa_megumi_unison_res', { element: '빙', elements: ['빙', '뇌'] }],
       ['izumi_yuki_unison_res', { element: '암', elements: ['암', '화'] }],
-      ['kayamori_ruka_unison_res', { element: '암', elements: ['암', '화'] }]
+      ['kayamori_ruka_unison_res', { element: '암', elements: ['암', '화'] }],
+      ['queen_persona_res', { element: '무', elements: ['무'] }],
+      ['tojo_tsukasa_persona_res', { element: '화', elements: ['화'] }]
     ])
 
     const mismatches = [...expectedElementsByStyle].flatMap(([styleId, expected]) => {
