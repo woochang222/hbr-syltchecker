@@ -11,7 +11,7 @@ export const OFFICIAL_UNIT_ORDER = [
   '31X',
   'AB',
   '사령부',
-  'PERSONA5R'
+  'P5R'
 ]
 
 export const OFFICIAL_CHARACTER_ORDER = [

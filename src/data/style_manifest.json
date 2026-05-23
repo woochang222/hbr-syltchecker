@@ -7,14 +7,14 @@
     "imageStatus": "verified"
   },
   "queen_persona_res": {
-    "expectedUnit": "PERSONA5R",
+    "expectedUnit": "P5R",
     "expectedElements": ["무"],
     "expectedImageUrl": "/images/styles/queen_persona_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/784342",
     "imageStatus": "verified"
   },
   "mona_morgana": {
-    "expectedUnit": "PERSONA5R",
+    "expectedUnit": "P5R",
     "expectedElements": ["암"],
     "expectedImageUrl": "/images/styles/mona_morgana.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/784343",

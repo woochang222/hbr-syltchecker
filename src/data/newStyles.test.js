@@ -14,12 +14,12 @@ describe('new resonance styles', () => {
     assert.deepEqual(latestStyleIds, ['tojo_tsukasa_persona_res'])
   })
 
-  it('adds Queen with PERSONA5R unit and verified local image', () => {
+  it('adds Queen with P5R unit and verified local image', () => {
     const style = styleMap.get('queen_persona_res')
 
     assert.equal(style?.character_name, '퀸')
     assert.equal(style?.style_name, '혜안의 여교황 (레조넌스)')
-    assert.equal(style?.unit, 'PERSONA5R')
+    assert.equal(style?.unit, 'P5R')
     assert.equal(style?.element, '무')
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLatest, undefined)
@@ -27,12 +27,12 @@ describe('new resonance styles', () => {
     assert.equal(existsSync(new URL('../../public/images/styles/queen_persona_res.webp', import.meta.url)), true)
   })
 
-  it('adds Mona as the PERSONA5R event SS style with a verified local image', () => {
+  it('adds Mona as the P5R event SS style with a verified local image', () => {
     const style = styleMap.get('mona_morgana')
 
     assert.equal(style?.character_name, '모나')
     assert.equal(style?.style_name, '여명의 마술사')
-    assert.equal(style?.unit, 'PERSONA5R')
+    assert.equal(style?.unit, 'P5R')
     assert.equal(style?.element, '암')
     assert.equal(style?.isResonance, false)
     assert.equal(style?.isLatest, undefined)

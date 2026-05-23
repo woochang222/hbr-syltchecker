@@ -223,8 +223,8 @@ describe('style data integrity', () => {
       ['요시오카 유이', 'AB'],
       ['이와사와 마사미', 'AB'],
       ['타치바나 카나데', 'AB'],
-      ['퀸', 'PERSONA5R'],
-      ['모나', 'PERSONA5R']
+      ['퀸', 'P5R'],
+      ['모나', 'P5R']
     ])
 
     const mismatches = styles
