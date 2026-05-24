@@ -30,10 +30,10 @@ describe('sortStylesByOfficialOrder', () => {
         'ichiko',
         'maki',
         'carol',
-        'kanade',
         'nanami',
-        'queen',
-        'mona'
+        'kanade',
+        'mona',
+        'queen'
       ]
     )
   })
@@ -62,6 +62,65 @@ describe('sortStylesByOfficialOrder', () => {
     assert.deepEqual(
       sortStylesByOfficialOrder(input).map(style => style.id),
       ['base', 'oldest', 'middle', 'latest']
+    )
+  })
+
+  it('sorts known styles by the hbr.quest character card order', () => {
+    const input = [
+      { id: 'ruka-diva', character_name: '카야모리 루카', style_name: '가희', unit: '31A' },
+      { id: 'ruka-throne', character_name: '카야모리 루카', style_name: '유니온 (레조넌스)', unit: '31A' },
+      { id: 'byakko-dark', character_name: '뱌코', style_name: '전장의 하얀 송곳니 (레조넌스)', unit: '31B' },
+      { id: 'byakko-thunder', character_name: '뱌코', style_name: '여왕', unit: '31B' },
+      { id: 'yamawaki-free', character_name: '야마와키 본 이바르', style_name: '론리니스', unit: '31C' },
+      { id: 'yamawaki-thunder', character_name: '야마와키 본 이바르', style_name: '원피스', unit: '31C' },
+      { id: 'yamawaki-demon-king', character_name: '야마와키 본 이바르', style_name: '유니온 (레조넌스)', unit: '31C' },
+      { id: 'hisame-thunder', character_name: '오가사와라 히사메', style_name: '희구와 갈앙', unit: '30G' },
+      { id: 'hisame-dark', character_name: '오가사와라 히사메', style_name: '메이드', unit: '30G' },
+      { id: 'carol-steak', character_name: '캐롤 리퍼', style_name: '요리사', unit: '31X' },
+      { id: 'carol-white-suit', character_name: '캐롤 리퍼', style_name: '화이트 슈트 (레조넌스)', unit: '31X' }
+    ]
+
+    assert.deepEqual(
+      sortStylesByOfficialOrder(input).map(style => style.id),
+      [
+        'ruka-throne',
+        'ruka-diva',
+        'byakko-thunder',
+        'byakko-dark',
+        'yamawaki-thunder',
+        'yamawaki-demon-king',
+        'yamawaki-free',
+        'hisame-dark',
+        'hisame-thunder',
+        'carol-white-suit',
+        'carol-steak'
+      ]
+    )
+  })
+
+  it('puts command styles between 31X and collaboration styles', () => {
+    const input = [
+      { id: 'persona', character_name: '퀸', style_name: '혜안의 여교황 (레조넌스)', unit: 'P5R' },
+      { id: 'angel-beats', character_name: '나카무라 유리', style_name: 'rain_fire', unit: 'AB' },
+      { id: 'command', character_name: '나나세 나나미', style_name: '기본 (레조넌스)', unit: '사령부' },
+      { id: 'thirty-one-x', character_name: '캐롤 리퍼', style_name: '기본', unit: '31X' }
+    ]
+
+    assert.deepEqual(
+      sortStylesByOfficialOrder(input).map(style => style.id),
+      ['thirty-one-x', 'command', 'angel-beats', 'persona']
+    )
+  })
+
+  it('sorts P5R characters with Mona before Queen', () => {
+    const input = [
+      { id: 'queen', character_name: '퀸', style_name: '혜안의 여교황 (레조넌스)', unit: 'P5R' },
+      { id: 'mona', character_name: '모나', style_name: '여명의 마술사', unit: 'P5R' }
+    ]
+
+    assert.deepEqual(
+      sortStylesByOfficialOrder(input).map(style => style.id),
+      ['mona', 'queen']
     )
   })
 })

@@ -9,8 +9,8 @@ export const OFFICIAL_UNIT_ORDER = [
   '31E',
   '31F',
   '31X',
-  'AB',
   '사령부',
+  'AB',
   'P5R'
 ]
 
@@ -70,12 +70,54 @@ export const OFFICIAL_CHARACTER_ORDER = [
   '요시오카 유이',
   '나나세 나나미',
   '테즈카 사키',
-  '퀸',
-  '모나'
+  '모나',
+  '퀸'
 ]
 
 const unitOrder = new Map(OFFICIAL_UNIT_ORDER.map((unit, index) => [unit, index]))
 const characterOrder = new Map(OFFICIAL_CHARACTER_ORDER.map((character, index) => [character, index]))
+
+const HBR_QUEST_STYLE_ORDER = {
+  '카야모리 루카': [
+    '섬광의 서킷 버스트',
+    '잔향의 카디널',
+    '슈트',
+    '유니온 (레조넌스)',
+    '가희',
+    '파와푸로 (레조넌스)',
+    '어드미럴 (레조넌스)'
+  ],
+  '뱌코': [
+    '여왕',
+    '전장의 하얀 송곳니 (레조넌스)'
+  ],
+  '야마와키 본 이바르': [
+    'Holy Knight',
+    '원피스',
+    '화이트 슈트 (레조넌스)',
+    '유니온 (레조넌스)',
+    '론리니스'
+  ],
+  '오가사와라 히사메': [
+    '몽롱한 달밤의 불릿',
+    '메이드',
+    '희구와 갈앙',
+    '가넷',
+    '바니 (레조넌스)'
+  ],
+  '캐롤 리퍼': [
+    '카니발',
+    '화이트 슈트 (레조넌스)',
+    '요리사'
+  ]
+}
+
+const styleOrderByCharacter = new Map(
+  Object.entries(HBR_QUEST_STYLE_ORDER).map(([character, styles]) => [
+    character,
+    new Map(styles.map((styleName, index) => [styleName, index]))
+  ])
+)
 
 const fallbackOrder = 9999
 
@@ -84,6 +126,10 @@ const getReleaseDateTime = style => {
 
   const dateTime = Date.parse(style.releaseDate)
   return Number.isNaN(dateTime) ? null : dateTime
+}
+
+const getKnownStyleOrder = style => {
+  return styleOrderByCharacter.get(style.character_name)?.get(style.style_name) ?? null
 }
 
 export const sortStylesByOfficialOrder = (styles) => {
@@ -100,6 +146,13 @@ export const sortStylesByOfficialOrder = (styles) => {
 
       const baseDiff = Number(isBaseStyle(right.style)) - Number(isBaseStyle(left.style))
       if (baseDiff !== 0) return baseDiff
+
+      const leftKnownStyleOrder = getKnownStyleOrder(left.style)
+      const rightKnownStyleOrder = getKnownStyleOrder(right.style)
+      if (leftKnownStyleOrder !== null && rightKnownStyleOrder !== null) {
+        const styleOrderDiff = leftKnownStyleOrder - rightKnownStyleOrder
+        if (styleOrderDiff !== 0) return styleOrderDiff
+      }
 
       const leftReleaseDate = getReleaseDateTime(left.style)
       const rightReleaseDate = getReleaseDateTime(right.style)
