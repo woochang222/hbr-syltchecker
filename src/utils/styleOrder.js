@@ -1,5 +1,8 @@
 import { isBaseStyle } from './baseStyleBoost.js'
 
+export const STYLE_ORDER_HBR_QUEST = 'hbrQuest'
+export const STYLE_ORDER_RELEASE = 'release'
+
 export const OFFICIAL_UNIT_ORDER = [
   '31A',
   '31B',
@@ -132,7 +135,26 @@ const getKnownStyleOrder = style => {
   return styleOrderByCharacter.get(style.character_name)?.get(style.style_name) ?? null
 }
 
-export const sortStylesByOfficialOrder = (styles) => {
+const compareKnownStyleOrder = (leftStyle, rightStyle) => {
+  const leftKnownStyleOrder = getKnownStyleOrder(leftStyle)
+  const rightKnownStyleOrder = getKnownStyleOrder(rightStyle)
+  if (leftKnownStyleOrder === null || rightKnownStyleOrder === null) return 0
+
+  return leftKnownStyleOrder - rightKnownStyleOrder
+}
+
+const compareReleaseDate = (leftStyle, rightStyle) => {
+  const leftReleaseDate = getReleaseDateTime(leftStyle)
+  const rightReleaseDate = getReleaseDateTime(rightStyle)
+  if (leftReleaseDate === null || rightReleaseDate === null) return 0
+
+  return leftReleaseDate - rightReleaseDate
+}
+
+export const sortStylesByOfficialOrder = (
+  styles,
+  { styleOrderMode = STYLE_ORDER_HBR_QUEST } = {}
+) => {
   return styles
     .map((style, index) => ({ style, index }))
     .sort((left, right) => {
@@ -147,17 +169,17 @@ export const sortStylesByOfficialOrder = (styles) => {
       const baseDiff = Number(isBaseStyle(right.style)) - Number(isBaseStyle(left.style))
       if (baseDiff !== 0) return baseDiff
 
-      const leftKnownStyleOrder = getKnownStyleOrder(left.style)
-      const rightKnownStyleOrder = getKnownStyleOrder(right.style)
-      if (leftKnownStyleOrder !== null && rightKnownStyleOrder !== null) {
-        const styleOrderDiff = leftKnownStyleOrder - rightKnownStyleOrder
-        if (styleOrderDiff !== 0) return styleOrderDiff
-      }
+      if (styleOrderMode === STYLE_ORDER_RELEASE) {
+        const releaseDateDiff = compareReleaseDate(left.style, right.style)
+        if (releaseDateDiff !== 0) return releaseDateDiff
 
-      const leftReleaseDate = getReleaseDateTime(left.style)
-      const rightReleaseDate = getReleaseDateTime(right.style)
-      if (leftReleaseDate !== null && rightReleaseDate !== null) {
-        const releaseDateDiff = leftReleaseDate - rightReleaseDate
+        const styleOrderDiff = compareKnownStyleOrder(left.style, right.style)
+        if (styleOrderDiff !== 0) return styleOrderDiff
+      } else {
+        const styleOrderDiff = compareKnownStyleOrder(left.style, right.style)
+        if (styleOrderDiff !== 0) return styleOrderDiff
+
+        const releaseDateDiff = compareReleaseDate(left.style, right.style)
         if (releaseDateDiff !== 0) return releaseDateDiff
       }
 

@@ -1,5 +1,6 @@
 import { DAPHNE_STATUS_APPLIED, DAPHNE_STATUS_UNAPPLIED } from './daphneStyles.js'
 import { buildOwnershipRangeLabel } from './ownershipRange.js'
+import { STYLE_ORDER_RELEASE } from './styleOrder.js'
 
 const formatSelection = (items, singularLabel) => {
   if (items.length === 0) return null
@@ -26,6 +27,7 @@ export const buildFilterSummary = ({
   activeMetaTeam,
   metaTeams,
   viewMode,
+  styleOrderMode,
   visibleCount
 }) => {
   const activeTeam = metaTeams.find(team => team.id === activeMetaTeam)
@@ -49,6 +51,10 @@ export const buildFilterSummary = ({
 
   if (labels.length === 0) {
     labels.push('전체 스타일')
+  }
+
+  if (styleOrderMode === STYLE_ORDER_RELEASE) {
+    labels.push('발매순')
   }
 
   labels.push(viewMode === 'hide' ? '숨김 모드' : '흐림 모드')

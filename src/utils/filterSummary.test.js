@@ -95,6 +95,19 @@ describe('buildFilterSummary', () => {
 
     assert.deepEqual(result, ['전체 스타일', '흐림 모드', '결과 120개'])
   })
+
+  it('shows when style release order mode is active', () => {
+    const result = buildFilterSummary({
+      filters: { elements: [], units: [], tiers: [] },
+      activeMetaTeam: null,
+      metaTeams,
+      viewMode: 'dim',
+      styleOrderMode: 'release',
+      visibleCount: 120
+    })
+
+    assert.deepEqual(result, ['전체 스타일', '발매순', '흐림 모드', '결과 120개'])
+  })
 })
 
 describe('countMatchingStyles', () => {

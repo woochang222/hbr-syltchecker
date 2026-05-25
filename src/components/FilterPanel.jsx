@@ -18,6 +18,8 @@ const FilterPanel = ({
   onOwnershipRangeChange,
   highlightLatest,
   onToggleHighlightLatest,
+  isReleaseOrderEnabled,
+  onToggleStyleOrderMode,
   onResetFilters,
   onClose
 }) => {
@@ -193,6 +195,17 @@ const FilterPanel = ({
             onChange={onToggleHighlightLatest}
           />
           최신 발매 스타일 돋보이기
+        </label>
+      </div>
+
+      <div className="view-mode-toggle">
+        <label>
+          <input
+            type="checkbox"
+            checked={isReleaseOrderEnabled}
+            onChange={onToggleStyleOrderMode}
+          />
+          스타일 발매순으로 보기
         </label>
       </div>
     </aside>

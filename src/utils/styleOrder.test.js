@@ -1,6 +1,10 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
-import { sortStylesByOfficialOrder } from './styleOrder.js'
+import {
+  STYLE_ORDER_HBR_QUEST,
+  STYLE_ORDER_RELEASE,
+  sortStylesByOfficialOrder
+} from './styleOrder.js'
 
 describe('sortStylesByOfficialOrder', () => {
   it('sorts units and characters by the official fankit order', () => {
@@ -121,6 +125,56 @@ describe('sortStylesByOfficialOrder', () => {
     assert.deepEqual(
       sortStylesByOfficialOrder(input).map(style => style.id),
       ['mona', 'queen']
+    )
+  })
+
+  it('keeps the hbr.quest style order by default', () => {
+    const input = [
+      { id: 'ruka-diva', character_name: '카야모리 루카', style_name: '가희', unit: '31A' },
+      { id: 'ruka-throne', character_name: '카야모리 루카', style_name: '유니온 (레조넌스)', unit: '31A' }
+    ]
+
+    assert.deepEqual(
+      sortStylesByOfficialOrder(input, { styleOrderMode: STYLE_ORDER_HBR_QUEST }).map(style => style.id),
+      ['ruka-throne', 'ruka-diva']
+    )
+  })
+
+  it('can sort styles within each character by release order', () => {
+    const input = [
+      { id: 'ruka-diva', character_name: '카야모리 루카', style_name: '가희', unit: '31A', releaseDate: '2024-12-13' },
+      { id: 'ruka-throne', character_name: '카야모리 루카', style_name: '유니온 (레조넌스)', unit: '31A', releaseDate: '2024-02-23' },
+      { id: 'ruka-cardinal', character_name: '카야모리 루카', style_name: '잔향의 카디널', unit: '31A', releaseDate: '2022-10-14' }
+    ]
+
+    assert.deepEqual(
+      sortStylesByOfficialOrder(input, { styleOrderMode: STYLE_ORDER_RELEASE }).map(style => style.id),
+      ['ruka-cardinal', 'ruka-throne', 'ruka-diva']
+    )
+  })
+
+  it('keeps unit and character order when release sorting is enabled', () => {
+    const input = [
+      { id: 'byakko-old', character_name: '뱌코', style_name: '여왕', unit: '31B', releaseDate: '2023-01-01' },
+      { id: 'ruka-new', character_name: '카야모리 루카', style_name: '가희', unit: '31A', releaseDate: '2024-12-13' }
+    ]
+
+    assert.deepEqual(
+      sortStylesByOfficialOrder(input, { styleOrderMode: STYLE_ORDER_RELEASE }).map(style => style.id),
+      ['ruka-new', 'byakko-old']
+    )
+  })
+
+  it('uses hbr.quest order as release fallback when release dates are missing', () => {
+    const input = [
+      { id: 'yamawaki-free', character_name: '야마와키 본 이바르', style_name: '론리니스', unit: '31C' },
+      { id: 'yamawaki-thunder', character_name: '야마와키 본 이바르', style_name: '원피스', unit: '31C' },
+      { id: 'yamawaki-demon-king', character_name: '야마와키 본 이바르', style_name: '유니온 (레조넌스)', unit: '31C' }
+    ]
+
+    assert.deepEqual(
+      sortStylesByOfficialOrder(input, { styleOrderMode: STYLE_ORDER_RELEASE }).map(style => style.id),
+      ['yamawaki-thunder', 'yamawaki-demon-king', 'yamawaki-free']
     )
   })
 })

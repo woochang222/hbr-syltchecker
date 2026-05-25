@@ -14,7 +14,11 @@ import {
   resetFilterState
 } from './utils/filterState'
 import { matchesOwnershipRange, normalizeOwnershipRange } from './utils/ownershipRange'
-import { sortStylesByOfficialOrder } from './utils/styleOrder'
+import {
+  STYLE_ORDER_HBR_QUEST,
+  STYLE_ORDER_RELEASE,
+  sortStylesByOfficialOrder
+} from './utils/styleOrder'
 import { getStyleElements, hasStyleElement } from './utils/styleElements'
 import {
   buildBaseStyleOwnershipByCharacter,
@@ -36,7 +40,6 @@ import { buildOwnedStatusFilename } from './utils/ownedStatusExport'
 import { copyElementAsPng, downloadElementAsPng } from './utils/domImageDownload'
 
 function App() {
-  const [styles] = useState(() => sortStylesByOfficialOrder(stylesData))
   const [metaTeams] = useState(metaTeamsData)
   
   const [ownedStyles, setOwnedStyles] = useState(() => {
@@ -67,6 +70,14 @@ function App() {
       value => typeof value === 'boolean'
     )
   })
+  const [styleOrderMode, setStyleOrderMode] = useState(() => {
+    return readStringStorage(
+      localStorage,
+      'hbr_style_order_mode',
+      STYLE_ORDER_HBR_QUEST,
+      [STYLE_ORDER_HBR_QUEST, STYLE_ORDER_RELEASE]
+    )
+  })
   const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false)
   const exportBoardRef = useRef(null)
   const [isDownloadingOwnedStatus, setIsDownloadingOwnedStatus] = useState(false)
@@ -89,6 +100,10 @@ function App() {
   useEffect(() => {
     localStorage.setItem('hbr_highlight_latest', JSON.stringify(highlightLatest))
   }, [highlightLatest])
+
+  useEffect(() => {
+    localStorage.setItem('hbr_style_order_mode', styleOrderMode)
+  }, [styleOrderMode])
 
   useEffect(() => {
     if (!isFilterDrawerOpen) return
@@ -153,6 +168,12 @@ function App() {
     setHighlightLatest(prev => !prev)
   }
 
+  const handleToggleStyleOrderMode = () => {
+    setStyleOrderMode(prev => (
+      prev === STYLE_ORDER_RELEASE ? STYLE_ORDER_HBR_QUEST : STYLE_ORDER_RELEASE
+    ))
+  }
+
   const handleResetFilters = () => {
     const nextState = resetFilterState()
     setFilters(nextState.filters)
@@ -204,6 +225,10 @@ function App() {
   const selectedTeamStyles = activeMetaTeam 
     ? metaTeams.find(t => t.id === activeMetaTeam)?.styles || []
     : []
+  const styles = useMemo(
+    () => sortStylesByOfficialOrder(stylesData, { styleOrderMode }),
+    [styleOrderMode]
+  )
   const baseOwnershipByCharacter = useMemo(
     () => buildBaseStyleOwnershipByCharacter(styles, ownedStyles),
     [styles, ownedStyles]
@@ -245,6 +270,7 @@ function App() {
     activeMetaTeam,
     metaTeams,
     viewMode,
+    styleOrderMode,
     visibleCount: visibleStyleCount
   })
   const renderableStyles = getRenderableStyles(filteredStyles, viewMode)
@@ -388,6 +414,8 @@ function App() {
               onOwnershipRangeChange={handleOwnershipRangeChange}
               highlightLatest={highlightLatest}
               onToggleHighlightLatest={handleToggleHighlightLatest}
+              isReleaseOrderEnabled={styleOrderMode === STYLE_ORDER_RELEASE}
+              onToggleStyleOrderMode={handleToggleStyleOrderMode}
               onResetFilters={handleResetFilters}
               onClose={() => setIsFilterDrawerOpen(false)}
             />
