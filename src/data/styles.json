@@ -1,5 +1,45 @@
 [
   {
+    "id": "kayamori_ruka_joker_res",
+    "character_name": "카야모리 루카",
+    "style_name": "TAKE YOUR HEART (레조넌스)",
+    "nicknames": [
+      "조커",
+      "P5R"
+    ],
+    "image_url": "/images/styles/kayamori_ruka_joker_res.webp",
+    "isResonance": true,
+    "isLimited": true,
+    "isUniform": false,
+    "unit": "31A",
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ],
+    "isLatest": true
+  },
+  {
+    "id": "violet_faith_res",
+    "character_name": "바이올렛",
+    "style_name": "흔들림 없는 신념 (레조넌스)",
+    "nicknames": [
+      "요시자와 카스미",
+      "P5R"
+    ],
+    "image_url": "/images/styles/violet_faith_res.webp",
+    "isResonance": true,
+    "isLimited": true,
+    "isUniform": false,
+    "unit": "P5R",
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ],
+    "isLatest": true
+  },
+  {
     "id": "tojo_tsukasa_persona_res",
     "character_name": "토죠 츠카사",
     "style_name": "격정의 팜 파탈 (레조넌스)",
@@ -16,8 +56,7 @@
     "metaTags": [],
     "elements": [
       "화"
-    ],
-    "isLatest": true
+    ]
   },
   {
     "id": "queen_persona_res",

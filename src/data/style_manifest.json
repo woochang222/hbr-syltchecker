@@ -1,4 +1,18 @@
 {
+  "kayamori_ruka_joker_res": {
+    "expectedUnit": "31A",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/kayamori_ruka_joker_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/787646",
+    "imageStatus": "verified"
+  },
+  "violet_faith_res": {
+    "expectedUnit": "P5R",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/violet_faith_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/784344",
+    "imageStatus": "verified"
+  },
   "tojo_tsukasa_persona_res": {
     "expectedUnit": "31A",
     "expectedElements": ["화"],

@@ -5,13 +5,84 @@ import { existsSync, readFileSync } from 'node:fs'
 const styles = JSON.parse(readFileSync(new URL('./styles.json', import.meta.url), 'utf8'))
 const styleMap = new Map(styles.map(style => [style.id, style]))
 
+const readWebpDimensions = imageUrl => {
+  const bytes = readFileSync(new URL(`../../public${imageUrl}`, import.meta.url))
+  const type = bytes.toString('ascii', 12, 16)
+
+  if (type === 'VP8X') {
+    return {
+      width: 1 + bytes.readUIntLE(24, 3),
+      height: 1 + bytes.readUIntLE(27, 3)
+    }
+  }
+
+  if (type === 'VP8 ') {
+    return {
+      width: bytes.readUInt16LE(26) & 0x3fff,
+      height: bytes.readUInt16LE(28) & 0x3fff
+    }
+  }
+
+  if (type === 'VP8L') {
+    const bits = bytes.readUInt32LE(21)
+    return {
+      width: (bits & 0x3fff) + 1,
+      height: ((bits >> 14) & 0x3fff) + 1
+    }
+  }
+
+  throw new Error(`Unsupported WebP type: ${type}`)
+}
+
+const assertSquareStyleImage = style => {
+  const { width, height } = readWebpDimensions(style.image_url)
+
+  assert.equal(width, height)
+  assert.equal(width >= 250 && width <= 500, true)
+}
+
 describe('new resonance styles', () => {
   it('marks only the newest released style as latest', () => {
     const latestStyleIds = styles
       .filter(style => style.isLatest)
       .map(style => style.id)
 
-    assert.deepEqual(latestStyleIds, ['tojo_tsukasa_persona_res'])
+    assert.deepEqual(latestStyleIds, [
+      'kayamori_ruka_joker_res',
+      'violet_faith_res'
+    ])
+  })
+
+  it('adds Kayamori Ruka Joker with dark element and verified local image', () => {
+    const style = styleMap.get('kayamori_ruka_joker_res')
+
+    assert.equal(style?.character_name, '카야모리 루카')
+    assert.equal(style?.style_name, 'TAKE YOUR HEART (레조넌스)')
+    assert.equal(style?.unit, '31A')
+    assert.equal(style?.element, '암')
+    assert.deepEqual(style?.elements, ['암'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, true)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/kayamori_ruka_joker_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/kayamori_ruka_joker_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
+  })
+
+  it('adds Violet with light element and verified local image', () => {
+    const style = styleMap.get('violet_faith_res')
+
+    assert.equal(style?.character_name, '바이올렛')
+    assert.equal(style?.style_name, '흔들림 없는 신념 (레조넌스)')
+    assert.equal(style?.unit, 'P5R')
+    assert.equal(style?.element, '광')
+    assert.deepEqual(style?.elements, ['광'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, true)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/violet_faith_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/violet_faith_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
   })
 
   it('adds Queen with P5R unit and verified local image', () => {
@@ -49,7 +120,7 @@ describe('new resonance styles', () => {
     assert.equal(style?.element, '화')
     assert.deepEqual(style?.elements, ['화'])
     assert.equal(style?.isResonance, true)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/tojo_tsukasa_persona_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/tojo_tsukasa_persona_res.webp', import.meta.url)), true)
   })

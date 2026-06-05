@@ -12,12 +12,18 @@ describe('style data integrity', () => {
     assert.deepEqual(duplicateIds, [])
   })
 
-  it('uses at most one latest style marker', () => {
+  it('uses latest style markers only as the first contiguous release group', () => {
     const latestStyleIds = styles
       .filter(style => style.isLatest)
       .map(style => style.id)
+    const firstNonLatestIndex = styles.findIndex(style => !style.isLatest)
+    const nonContiguousLatestStyleIds = styles
+      .slice(firstNonLatestIndex)
+      .filter(style => style.isLatest)
+      .map(style => style.id)
 
-    assert.equal(latestStyleIds.length <= 1, true, `Latest style ids: ${latestStyleIds.join(', ')}`)
+    assert.equal(latestStyleIds.length >= 1, true)
+    assert.deepEqual(nonContiguousLatestStyleIds, [])
   })
 
   it('uses one local image file per style entry', () => {
