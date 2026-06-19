@@ -1,5 +1,45 @@
 [
   {
+    "id": "charlotta_princess_res",
+    "character_name": "샬로타 스코폽스카야",
+    "style_name": "이국의 프린쳇사 (레조넌스)",
+    "nicknames": [
+      "샬로",
+      "이국"
+    ],
+    "image_url": "/images/styles/charlotta_princess_res.webp",
+    "isResonance": true,
+    "isLimited": false,
+    "isUniform": false,
+    "unit": "31X",
+    "element": "화",
+    "metaTags": [],
+    "elements": [
+      "화"
+    ],
+    "isLatest": true
+  },
+  {
+    "id": "ri_yunfa_haochi",
+    "character_name": "리 잉시아",
+    "style_name": "하오츠♪ 포만감의 도원향",
+    "nicknames": [
+      "요리인",
+      "포만감의 도원향"
+    ],
+    "image_url": "/images/styles/ri_yunfa_haochi.webp",
+    "isResonance": false,
+    "isLimited": false,
+    "isUniform": false,
+    "unit": "31X",
+    "element": "암",
+    "metaTags": [],
+    "elements": [
+      "암"
+    ],
+    "isLatest": true
+  },
+  {
     "id": "kayamori_ruka_joker_res",
     "character_name": "카야모리 루카",
     "style_name": "TAKE YOUR HEART (레조넌스)",
@@ -16,8 +56,7 @@
     "metaTags": [],
     "elements": [
       "암"
-    ],
-    "isLatest": true
+    ]
   },
   {
     "id": "violet_faith_res",
@@ -36,8 +75,7 @@
     "metaTags": [],
     "elements": [
       "광"
-    ],
-    "isLatest": true
+    ]
   },
   {
     "id": "tojo_tsukasa_persona_res",

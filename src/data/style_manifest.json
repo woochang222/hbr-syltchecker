@@ -1,4 +1,18 @@
 {
+  "charlotta_princess_res": {
+    "expectedUnit": "31X",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/charlotta_princess_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/793215",
+    "imageStatus": "verified"
+  },
+  "ri_yunfa_haochi": {
+    "expectedUnit": "31X",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/ri_yunfa_haochi.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/793216",
+    "imageStatus": "verified"
+  },
   "kayamori_ruka_joker_res": {
     "expectedUnit": "31A",
     "expectedElements": ["암"],

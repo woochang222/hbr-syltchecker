@@ -48,9 +48,41 @@ describe('new resonance styles', () => {
       .map(style => style.id)
 
     assert.deepEqual(latestStyleIds, [
-      'kayamori_ruka_joker_res',
-      'violet_faith_res'
+      'charlotta_princess_res',
+      'ri_yunfa_haochi'
     ])
+  })
+
+  it('adds Charlotta princess resonance with fire element and verified local image', () => {
+    const style = styleMap.get('charlotta_princess_res')
+
+    assert.equal(style?.character_name, '샬로타 스코폽스카야')
+    assert.equal(style?.style_name, '이국의 프린쳇사 (레조넌스)')
+    assert.equal(style?.unit, '31X')
+    assert.equal(style?.element, '화')
+    assert.deepEqual(style?.elements, ['화'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/charlotta_princess_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/charlotta_princess_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
+  })
+
+  it('adds Ri Yunfa Haochi with dark element and verified local image', () => {
+    const style = styleMap.get('ri_yunfa_haochi')
+
+    assert.equal(style?.character_name, '리 잉시아')
+    assert.equal(style?.style_name, '하오츠♪ 포만감의 도원향')
+    assert.equal(style?.unit, '31X')
+    assert.equal(style?.element, '암')
+    assert.deepEqual(style?.elements, ['암'])
+    assert.equal(style?.isResonance, false)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/ri_yunfa_haochi.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/ri_yunfa_haochi.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
   })
 
   it('adds Kayamori Ruka Joker with dark element and verified local image', () => {
@@ -63,7 +95,7 @@ describe('new resonance styles', () => {
     assert.deepEqual(style?.elements, ['암'])
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, true)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/kayamori_ruka_joker_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/kayamori_ruka_joker_res.webp', import.meta.url)), true)
     assertSquareStyleImage(style)
@@ -79,7 +111,7 @@ describe('new resonance styles', () => {
     assert.deepEqual(style?.elements, ['광'])
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, true)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/violet_faith_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/violet_faith_res.webp', import.meta.url)), true)
     assertSquareStyleImage(style)
