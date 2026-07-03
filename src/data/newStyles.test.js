@@ -54,7 +54,7 @@ describe('new resonance styles', () => {
     const style = styleMap.get('hanamura_shiki_evening_fireworks_res')
 
     assert.equal(style?.character_name, '하나무라 시키')
-    assert.equal(style?.style_name, '밤 불꽃의 녹턴 (레조넌스)')
+    assert.equal(style?.style_name, '저녁 불꽃놀이의 녹턴 (레조넌스)')
     assert.equal(style?.unit, '31F')
     assert.equal(style?.element, '빙')
     assert.deepEqual(style?.elements, ['빙'])
