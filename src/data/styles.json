@@ -1,5 +1,25 @@
 [
   {
+    "id": "hanamura_shiki_evening_fireworks_res",
+    "character_name": "하나무라 시키",
+    "style_name": "밤 불꽃의 녹턴 (레조넌스)",
+    "nicknames": [
+      "요이하나비",
+      "유카타"
+    ],
+    "image_url": "/images/styles/hanamura_shiki_evening_fireworks_res.webp",
+    "isResonance": true,
+    "isLimited": false,
+    "isUniform": false,
+    "unit": "31F",
+    "element": "빙",
+    "metaTags": [],
+    "elements": [
+      "빙"
+    ],
+    "isLatest": true
+  },
+  {
     "id": "charlotta_princess_res",
     "character_name": "샬로타 스코폽스카야",
     "style_name": "이국의 프린쳇사 (레조넌스)",
@@ -16,8 +36,7 @@
     "metaTags": [],
     "elements": [
       "화"
-    ],
-    "isLatest": true
+    ]
   },
   {
     "id": "ri_yunfa_haochi",
@@ -36,8 +55,7 @@
     "metaTags": [],
     "elements": [
       "암"
-    ],
-    "isLatest": true
+    ]
   },
   {
     "id": "kayamori_ruka_joker_res",

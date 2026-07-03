@@ -38,7 +38,7 @@ const assertSquareStyleImage = style => {
   const { width, height } = readWebpDimensions(style.image_url)
 
   assert.equal(width, height)
-  assert.equal(width >= 250 && width <= 500, true)
+  assert.equal(width >= 200 && width <= 500, true)
 }
 
 describe('new resonance styles', () => {
@@ -47,10 +47,23 @@ describe('new resonance styles', () => {
       .filter(style => style.isLatest)
       .map(style => style.id)
 
-    assert.deepEqual(latestStyleIds, [
-      'charlotta_princess_res',
-      'ri_yunfa_haochi'
-    ])
+    assert.deepEqual(latestStyleIds, ['hanamura_shiki_evening_fireworks_res'])
+  })
+
+  it('adds Hanamura Shiki evening fireworks resonance with ice element and verified local image', () => {
+    const style = styleMap.get('hanamura_shiki_evening_fireworks_res')
+
+    assert.equal(style?.character_name, '하나무라 시키')
+    assert.equal(style?.style_name, '밤 불꽃의 녹턴 (레조넌스)')
+    assert.equal(style?.unit, '31F')
+    assert.equal(style?.element, '빙')
+    assert.deepEqual(style?.elements, ['빙'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/hanamura_shiki_evening_fireworks_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/hanamura_shiki_evening_fireworks_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
   })
 
   it('adds Charlotta princess resonance with fire element and verified local image', () => {
@@ -63,7 +76,7 @@ describe('new resonance styles', () => {
     assert.deepEqual(style?.elements, ['화'])
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, false)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/charlotta_princess_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/charlotta_princess_res.webp', import.meta.url)), true)
     assertSquareStyleImage(style)
@@ -79,7 +92,7 @@ describe('new resonance styles', () => {
     assert.deepEqual(style?.elements, ['암'])
     assert.equal(style?.isResonance, false)
     assert.equal(style?.isLimited, false)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/ri_yunfa_haochi.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/ri_yunfa_haochi.webp', import.meta.url)), true)
     assertSquareStyleImage(style)

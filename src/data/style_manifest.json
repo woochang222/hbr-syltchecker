@@ -1,4 +1,11 @@
 {
+  "hanamura_shiki_evening_fireworks_res": {
+    "expectedUnit": "31F",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/hanamura_shiki_evening_fireworks_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/794994",
+    "imageStatus": "verified"
+  },
   "charlotta_princess_res": {
     "expectedUnit": "31X",
     "expectedElements": ["화"],
