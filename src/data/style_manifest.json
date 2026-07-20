@@ -1,4 +1,18 @@
 {
+  "oshima_ichiko_admiral_res": {
+    "expectedUnit": "31E",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/oshima_ichiko_admiral_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/797590",
+    "imageStatus": "verified"
+  },
+  "oshima_yotsuba_summer_float_res": {
+    "expectedUnit": "31E",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/oshima_yotsuba_summer_float_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/797591",
+    "imageStatus": "verified"
+  },
   "hanamura_shiki_evening_fireworks_res": {
     "expectedUnit": "31F",
     "expectedElements": ["빙"],

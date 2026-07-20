@@ -47,7 +47,42 @@ describe('new resonance styles', () => {
       .filter(style => style.isLatest)
       .map(style => style.id)
 
-    assert.deepEqual(latestStyleIds, ['hanamura_shiki_evening_fireworks_res'])
+    assert.deepEqual(latestStyleIds, [
+      'oshima_ichiko_admiral_res',
+      'oshima_yotsuba_summer_float_res'
+    ])
+  })
+
+  it('adds Oshima Ichiko admiral resonance with light element and verified local image', () => {
+    const style = styleMap.get('oshima_ichiko_admiral_res')
+
+    assert.equal(style?.character_name, '오오시마 이치코')
+    assert.equal(style?.style_name, '해변의 마드무아젤 (레조넌스)')
+    assert.equal(style?.unit, '31E')
+    assert.equal(style?.element, '광')
+    assert.deepEqual(style?.elements, ['광'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/oshima_ichiko_admiral_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/oshima_ichiko_admiral_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
+  })
+
+  it('adds Oshima Yotsuba summer float resonance with light element and verified local image', () => {
+    const style = styleMap.get('oshima_yotsuba_summer_float_res')
+
+    assert.equal(style?.character_name, '오오시마 요츠하')
+    assert.equal(style?.style_name, '느긋한 여름의 플로트 (레조넌스)')
+    assert.equal(style?.unit, '31E')
+    assert.equal(style?.element, '광')
+    assert.deepEqual(style?.elements, ['광'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/oshima_yotsuba_summer_float_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/oshima_yotsuba_summer_float_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
   })
 
   it('adds Hanamura Shiki evening fireworks resonance with ice element and verified local image', () => {
@@ -60,7 +95,7 @@ describe('new resonance styles', () => {
     assert.deepEqual(style?.elements, ['빙'])
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, false)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/hanamura_shiki_evening_fireworks_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/hanamura_shiki_evening_fireworks_res.webp', import.meta.url)), true)
     assertSquareStyleImage(style)

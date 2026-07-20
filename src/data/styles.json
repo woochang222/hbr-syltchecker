@@ -1,5 +1,47 @@
 [
   {
+    "id": "oshima_ichiko_admiral_res",
+    "character_name": "오오시마 이치코",
+    "style_name": "해변의 마드무아젤 (레조넌스)",
+    "nicknames": [
+      "이치코",
+      "아드미럴",
+      "수영복"
+    ],
+    "image_url": "/images/styles/oshima_ichiko_admiral_res.webp",
+    "isResonance": true,
+    "isLimited": false,
+    "isUniform": false,
+    "unit": "31E",
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ],
+    "isLatest": true
+  },
+  {
+    "id": "oshima_yotsuba_summer_float_res",
+    "character_name": "오오시마 요츠하",
+    "style_name": "느긋한 여름의 플로트 (레조넌스)",
+    "nicknames": [
+      "요츠하",
+      "수영복",
+      "플로트"
+    ],
+    "image_url": "/images/styles/oshima_yotsuba_summer_float_res.webp",
+    "isResonance": true,
+    "isLimited": false,
+    "isUniform": false,
+    "unit": "31E",
+    "element": "광",
+    "metaTags": [],
+    "elements": [
+      "광"
+    ],
+    "isLatest": true
+  },
+  {
     "id": "hanamura_shiki_evening_fireworks_res",
     "character_name": "하나무라 시키",
     "style_name": "저녁 불꽃놀이의 녹턴 (레조넌스)",
@@ -16,8 +58,7 @@
     "metaTags": [],
     "elements": [
       "빙"
-    ],
-    "isLatest": true
+    ]
   },
   {
     "id": "charlotta_princess_res",
