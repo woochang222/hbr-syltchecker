@@ -15,6 +15,7 @@ describe('sortStylesByOfficialOrder', () => {
       { id: 'yuina', character_name: '시라카와 유이나', style_name: '기본', unit: '30G' },
       { id: 'ichiko', character_name: '오오시마 이치코', style_name: '기본', unit: '31E' },
       { id: 'carol', character_name: '캐롤 리퍼', style_name: '기본', unit: '31X' },
+      { id: 'hikari', character_name: '나루세 히카리', style_name: '침착한 사냥꾼 (레조넌스)', unit: '19A' },
       { id: 'nanami', character_name: '나나세 나나미', style_name: '기본', unit: '사령부' },
       { id: 'queen', character_name: '퀸', style_name: '혜안의 여교황', unit: 'P5R' },
       { id: 'mona', character_name: '모나', style_name: '여명의 마술사', unit: 'P5R' },
@@ -34,6 +35,7 @@ describe('sortStylesByOfficialOrder', () => {
         'ichiko',
         'maki',
         'carol',
+        'hikari',
         'nanami',
         'kanade',
         'mona',
@@ -102,17 +104,18 @@ describe('sortStylesByOfficialOrder', () => {
     )
   })
 
-  it('puts command styles between 31X and collaboration styles', () => {
+  it('puts 19A and command styles between 31X and collaboration styles', () => {
     const input = [
       { id: 'persona', character_name: '퀸', style_name: '혜안의 여교황 (레조넌스)', unit: 'P5R' },
       { id: 'angel-beats', character_name: '나카무라 유리', style_name: 'rain_fire', unit: 'AB' },
       { id: 'command', character_name: '나나세 나나미', style_name: '기본 (레조넌스)', unit: '사령부' },
+      { id: 'nineteen-a', character_name: '나루세 히카리', style_name: '침착한 사냥꾼 (레조넌스)', unit: '19A' },
       { id: 'thirty-one-x', character_name: '캐롤 리퍼', style_name: '기본', unit: '31X' }
     ]
 
     assert.deepEqual(
       sortStylesByOfficialOrder(input).map(style => style.id),
-      ['thirty-one-x', 'command', 'angel-beats', 'persona']
+      ['thirty-one-x', 'nineteen-a', 'command', 'angel-beats', 'persona']
     )
   })
 

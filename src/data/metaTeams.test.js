@@ -19,7 +19,7 @@ const expectedMetaTeams = [
 
 describe('element labels', () => {
   it('uses one-character element labels in filter order', () => {
-    assert.deepEqual(ELEMENTS, ['무', '화', '빙', '뇌', '광', '암'])
+    assert.deepEqual(ELEMENTS, ['무', '화', '빙', '뇌', '광', '암', '허'])
   })
 })
 

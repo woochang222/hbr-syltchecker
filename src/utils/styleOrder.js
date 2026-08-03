@@ -12,6 +12,7 @@ export const OFFICIAL_UNIT_ORDER = [
   '31E',
   '31F',
   '31X',
+  '19A',
   '사령부',
   'AB',
   'P5R'
@@ -66,6 +67,7 @@ export const OFFICIAL_CHARACTER_ORDER = [
   '브리티카 발라크리슈난',
   '마리아 데 안젤리스',
   '샬로타 스코폽스카야',
+  '나루세 히카리',
   '나카무라 유리',
   '타치바나 카나데',
   '이리에 미유키',

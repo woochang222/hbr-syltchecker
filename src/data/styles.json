@@ -1,5 +1,26 @@
 [
   {
+    "id": "naruse_hikari_hunter_res",
+    "character_name": "나루세 히카리",
+    "style_name": "침착한 사냥꾼 (레조넌스)",
+    "nicknames": [
+      "히카리",
+      "사냥꾼",
+      "허"
+    ],
+    "image_url": "/images/styles/naruse_hikari_hunter_res.webp",
+    "isResonance": true,
+    "isLimited": true,
+    "isUniform": false,
+    "unit": "19A",
+    "element": "허",
+    "metaTags": [],
+    "elements": [
+      "허"
+    ],
+    "isLatest": true
+  },
+  {
     "id": "oshima_ichiko_admiral_res",
     "character_name": "오오시마 이치코",
     "style_name": "해변의 마드무아젤 (레조넌스)",
@@ -17,8 +38,7 @@
     "metaTags": [],
     "elements": [
       "광"
-    ],
-    "isLatest": true
+    ]
   },
   {
     "id": "oshima_yotsuba_summer_float_res",
@@ -38,8 +58,7 @@
     "metaTags": [],
     "elements": [
       "광"
-    ],
-    "isLatest": true
+    ]
   },
   {
     "id": "hanamura_shiki_evening_fireworks_res",

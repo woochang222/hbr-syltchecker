@@ -1,4 +1,11 @@
 {
+  "naruse_hikari_hunter_res": {
+    "expectedUnit": "19A",
+    "expectedElements": ["허"],
+    "expectedImageUrl": "/images/styles/naruse_hikari_hunter_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/803495",
+    "imageStatus": "verified"
+  },
   "oshima_ichiko_admiral_res": {
     "expectedUnit": "31E",
     "expectedElements": ["광"],
