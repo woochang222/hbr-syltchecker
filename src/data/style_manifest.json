@@ -1510,5 +1510,12 @@
     "expectedImageUrl": "/images/styles/sugawara_chie_base.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/426280",
     "imageStatus": "verified"
+  },
+  "minase_ichigo_unison_res": {
+    "expectedUnit": "31B",
+    "expectedElements": ["빙", "암"],
+    "expectedImageUrl": "/images/styles/minase_ichigo_unison_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/803496",
+    "imageStatus": "verified"
   }
 }

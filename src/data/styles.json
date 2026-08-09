@@ -1,5 +1,23 @@
 [
   {
+    "id": "minase_ichigo_unison_res",
+    "character_name": "미나세 이치고",
+    "style_name": "쌍성의 발키리 (레조넌스)",
+    "unit": "31B",
+    "element": "빙",
+    "elements": [
+      "빙",
+      "암"
+    ],
+    "image_url": "/images/styles/minase_ichigo_unison_res.webp",
+    "isLimited": true,
+    "isResonance": true,
+    "isUniform": false,
+    "isLatest": true,
+    "metaTags": [],
+    "nicknames": []
+  },
+  {
     "id": "naruse_hikari_hunter_res",
     "character_name": "나루세 히카리",
     "style_name": "침착한 사냥꾼 (레조넌스)",
@@ -17,8 +35,7 @@
     "metaTags": [],
     "elements": [
       "허"
-    ],
-    "isLatest": true
+    ]
   },
   {
     "id": "oshima_ichiko_admiral_res",

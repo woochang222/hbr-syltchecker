@@ -47,7 +47,23 @@ describe('new resonance styles', () => {
       .filter(style => style.isLatest)
       .map(style => style.id)
 
-    assert.deepEqual(latestStyleIds, ['naruse_hikari_hunter_res'])
+    assert.deepEqual(latestStyleIds, ['minase_ichigo_unison_res'])
+  })
+
+  it('adds Minase Ichigo Valkyrie resonance with ice and dark elements and verified local image', () => {
+    const style = styleMap.get('minase_ichigo_unison_res')
+
+    assert.equal(style?.character_name, '미나세 이치고')
+    assert.equal(style?.style_name, '쌍성의 발키리 (레조넌스)')
+    assert.equal(style?.unit, '31B')
+    assert.equal(style?.element, '빙')
+    assert.deepEqual(style?.elements, ['빙', '암'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, true)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/minase_ichigo_unison_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/minase_ichigo_unison_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
   })
 
   it('adds Naruse Hikari hunter resonance with void element and verified local image', () => {
@@ -60,7 +76,7 @@ describe('new resonance styles', () => {
     assert.deepEqual(style?.elements, ['허'])
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, true)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/naruse_hikari_hunter_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/naruse_hikari_hunter_res.webp', import.meta.url)), true)
     assertSquareStyleImage(style)
