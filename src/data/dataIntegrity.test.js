@@ -120,6 +120,7 @@ describe('style data integrity', () => {
     assert.deepEqual(
       chieStyles.map(style => ({ id: style.id, unit: style.unit })),
       [
+        { id: 'sugawara_chie_summer_night_butterfly_res', unit: '30G' },
         { id: 'sugawara_chie_ferity', unit: '30G' },
         { id: 'sugawara_chie_stoic', unit: '30G' },
         { id: 'sugawara_chie_pure_heart', unit: '30G' },

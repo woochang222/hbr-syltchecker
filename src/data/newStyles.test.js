@@ -47,7 +47,42 @@ describe('new resonance styles', () => {
       .filter(style => style.isLatest)
       .map(style => style.id)
 
-    assert.deepEqual(latestStyleIds, ['minase_ichigo_unison_res'])
+    assert.deepEqual(latestStyleIds, [
+      'bungo_yayoi_summer_vacation_res',
+      'sugawara_chie_summer_night_butterfly_res'
+    ])
+  })
+
+  it('adds Bungo Yayoi summer vacation resonance with thunder element and verified local image', () => {
+    const style = styleMap.get('bungo_yayoi_summer_vacation_res')
+
+    assert.equal(style?.character_name, '분고 야요이')
+    assert.equal(style?.style_name, '여름 방학을 정복합니다요! (레조넌스)')
+    assert.equal(style?.unit, '31C')
+    assert.equal(style?.element, '뇌')
+    assert.deepEqual(style?.elements, ['뇌'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/bungo_yayoi_summer_vacation_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/bungo_yayoi_summer_vacation_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
+  })
+
+  it('adds Sugawara Chie summer night butterfly resonance with fire element and verified local image', () => {
+    const style = styleMap.get('sugawara_chie_summer_night_butterfly_res')
+
+    assert.equal(style?.character_name, '스가와라 치에')
+    assert.equal(style?.style_name, '서머 나이트 버터플라이 (레조넌스)')
+    assert.equal(style?.unit, '30G')
+    assert.equal(style?.element, '화')
+    assert.deepEqual(style?.elements, ['화'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/sugawara_chie_summer_night_butterfly_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/sugawara_chie_summer_night_butterfly_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
   })
 
   it('adds Minase Ichigo Valkyrie resonance with ice and dark elements and verified local image', () => {
@@ -60,7 +95,7 @@ describe('new resonance styles', () => {
     assert.deepEqual(style?.elements, ['빙', '암'])
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, true)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/minase_ichigo_unison_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/minase_ichigo_unison_res.webp', import.meta.url)), true)
     assertSquareStyleImage(style)

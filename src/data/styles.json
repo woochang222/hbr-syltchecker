@@ -1,5 +1,47 @@
 [
   {
+    "id": "bungo_yayoi_summer_vacation_res",
+    "character_name": "분고 야요이",
+    "style_name": "여름 방학을 정복합니다요! (레조넌스)",
+    "unit": "31C",
+    "element": "뇌",
+    "elements": [
+      "뇌"
+    ],
+    "image_url": "/images/styles/bungo_yayoi_summer_vacation_res.webp",
+    "isLimited": false,
+    "isResonance": true,
+    "isUniform": false,
+    "isLatest": true,
+    "metaTags": [],
+    "nicknames": [
+      "분고",
+      "야요이",
+      "수영복"
+    ]
+  },
+  {
+    "id": "sugawara_chie_summer_night_butterfly_res",
+    "character_name": "스가와라 치에",
+    "style_name": "서머 나이트 버터플라이 (레조넌스)",
+    "unit": "30G",
+    "element": "화",
+    "elements": [
+      "화"
+    ],
+    "image_url": "/images/styles/sugawara_chie_summer_night_butterfly_res.webp",
+    "isLimited": false,
+    "isResonance": true,
+    "isUniform": false,
+    "isLatest": true,
+    "metaTags": [],
+    "nicknames": [
+      "스가와라",
+      "치에",
+      "수영복"
+    ]
+  },
+  {
     "id": "minase_ichigo_unison_res",
     "character_name": "미나세 이치고",
     "style_name": "쌍성의 발키리 (레조넌스)",
@@ -13,7 +55,6 @@
     "isLimited": true,
     "isResonance": true,
     "isUniform": false,
-    "isLatest": true,
     "metaTags": [],
     "nicknames": []
   },

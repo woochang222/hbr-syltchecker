@@ -1517,5 +1517,19 @@
     "expectedImageUrl": "/images/styles/minase_ichigo_unison_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/803496",
     "imageStatus": "verified"
+  },
+  "bungo_yayoi_summer_vacation_res": {
+    "expectedUnit": "31C",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/bungo_yayoi_summer_vacation_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/810826",
+    "imageStatus": "verified"
+  },
+  "sugawara_chie_summer_night_butterfly_res": {
+    "expectedUnit": "30G",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/sugawara_chie_summer_night_butterfly_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/810832",
+    "imageStatus": "verified"
   }
 }
