@@ -48,9 +48,41 @@ describe('new resonance styles', () => {
       .map(style => style.id)
 
     assert.deepEqual(latestStyleIds, [
-      'bungo_yayoi_summer_vacation_res',
-      'sugawara_chie_summer_night_butterfly_res'
+      'oshima_muua_swim_all_out_res',
+      'eileen_redmain_spot_of_tea_res'
     ])
+  })
+
+  it('adds Eileen Redmain Spot of Tea resonance with neutral element and verified local image', () => {
+    const style = styleMap.get('eileen_redmain_spot_of_tea_res')
+
+    assert.equal(style?.character_name, '아이린 레드메인')
+    assert.equal(style?.style_name, 'Spot of Tea (레조넌스)')
+    assert.equal(style?.unit, '31X')
+    assert.equal(style?.element, '무')
+    assert.deepEqual(style?.elements, ['무'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/eileen_redmain_spot_of_tea_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/eileen_redmain_spot_of_tea_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
+  })
+
+  it('adds Oshima Muua swim all out resonance with light element and verified local image', () => {
+    const style = styleMap.get('oshima_muua_swim_all_out_res')
+
+    assert.equal(style?.character_name, '오오시마 무우아')
+    assert.equal(style?.style_name, '스윔 올아웃 (레조넌스)')
+    assert.equal(style?.unit, '31E')
+    assert.equal(style?.element, '광')
+    assert.deepEqual(style?.elements, ['광'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, '/images/styles/oshima_muua_swim_all_out_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/oshima_muua_swim_all_out_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
   })
 
   it('adds Bungo Yayoi summer vacation resonance with thunder element and verified local image', () => {
@@ -63,7 +95,7 @@ describe('new resonance styles', () => {
     assert.deepEqual(style?.elements, ['뇌'])
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, false)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/bungo_yayoi_summer_vacation_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/bungo_yayoi_summer_vacation_res.webp', import.meta.url)), true)
     assertSquareStyleImage(style)
@@ -79,7 +111,7 @@ describe('new resonance styles', () => {
     assert.deepEqual(style?.elements, ['화'])
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, false)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/sugawara_chie_summer_night_butterfly_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/sugawara_chie_summer_night_butterfly_res.webp', import.meta.url)), true)
     assertSquareStyleImage(style)

@@ -1531,5 +1531,19 @@
     "expectedImageUrl": "/images/styles/sugawara_chie_summer_night_butterfly_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/810832",
     "imageStatus": "verified"
+  },
+  "eileen_redmain_spot_of_tea_res": {
+    "expectedUnit": "31X",
+    "expectedElements": ["무"],
+    "expectedImageUrl": "/images/styles/eileen_redmain_spot_of_tea_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/813776",
+    "imageStatus": "verified"
+  },
+  "oshima_muua_swim_all_out_res": {
+    "expectedUnit": "31E",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/oshima_muua_swim_all_out_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/813761",
+    "imageStatus": "verified"
   }
 }
