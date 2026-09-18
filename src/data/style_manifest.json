@@ -1545,5 +1545,19 @@
     "expectedImageUrl": "/images/styles/oshima_muua_swim_all_out_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/813761",
     "imageStatus": "verified"
+  },
+  "mikoto_fubuki_broken_night_muse_res": {
+    "expectedUnit": "31D",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/mikoto_fubuki_broken_night_muse_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/816687",
+    "imageStatus": "verified"
+  },
+  "murofushi_risa_healing_lap_pillow_res": {
+    "expectedUnit": "31D",
+    "expectedElements": ["뇌"],
+    "expectedImageUrl": "/images/styles/murofushi_risa_healing_lap_pillow_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/816689",
+    "imageStatus": "verified"
   }
 }

@@ -48,9 +48,45 @@ describe('new resonance styles', () => {
       .map(style => style.id)
 
     assert.deepEqual(latestStyleIds, [
-      'oshima_muua_swim_all_out_res',
-      'eileen_redmain_spot_of_tea_res'
+      'mikoto_fubuki_broken_night_muse_res',
+      'murofushi_risa_healing_lap_pillow_res'
     ])
+  })
+
+  it('adds Mikoto Fubuki broken night muse resonance with fire element and verified local image', () => {
+    const style = styleMap.get('mikoto_fubuki_broken_night_muse_res')
+
+    assert.equal(style?.character_name, '미코토 후부키')
+    assert.equal(style?.style_name, '밤의 망가진 뮤즈 (레조넌스)')
+    assert.equal(style?.unit, '31D')
+    assert.equal(style?.element, '화')
+    assert.deepEqual(style?.elements, ['화'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isUniform, false)
+    assert.equal(style?.isLatest, true)
+    assert.deepEqual(style?.nicknames, ['미코토', '후부키', '뮤즈'])
+    assert.equal(style?.image_url, '/images/styles/mikoto_fubuki_broken_night_muse_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/mikoto_fubuki_broken_night_muse_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
+  })
+
+  it('adds Murofushi Risa healing lap pillow resonance with thunder element and verified local image', () => {
+    const style = styleMap.get('murofushi_risa_healing_lap_pillow_res')
+
+    assert.equal(style?.character_name, '무로후시 리사')
+    assert.equal(style?.style_name, '힐링 랩 필로 (레조넌스)')
+    assert.equal(style?.unit, '31D')
+    assert.equal(style?.element, '뇌')
+    assert.deepEqual(style?.elements, ['뇌'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isUniform, false)
+    assert.equal(style?.isLatest, true)
+    assert.deepEqual(style?.nicknames, ['무로후시', '리사', '랩 필로'])
+    assert.equal(style?.image_url, '/images/styles/murofushi_risa_healing_lap_pillow_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/murofushi_risa_healing_lap_pillow_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
   })
 
   it('adds Eileen Redmain Spot of Tea resonance with neutral element and verified local image', () => {
@@ -63,7 +99,7 @@ describe('new resonance styles', () => {
     assert.deepEqual(style?.elements, ['무'])
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, false)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/eileen_redmain_spot_of_tea_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/eileen_redmain_spot_of_tea_res.webp', import.meta.url)), true)
     assertSquareStyleImage(style)
@@ -79,7 +115,7 @@ describe('new resonance styles', () => {
     assert.deepEqual(style?.elements, ['광'])
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, false)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, '/images/styles/oshima_muua_swim_all_out_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/oshima_muua_swim_all_out_res.webp', import.meta.url)), true)
     assertSquareStyleImage(style)

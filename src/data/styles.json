@@ -1,5 +1,47 @@
 [
   {
+    "id": "mikoto_fubuki_broken_night_muse_res",
+    "character_name": "미코토 후부키",
+    "style_name": "밤의 망가진 뮤즈 (레조넌스)",
+    "unit": "31D",
+    "element": "화",
+    "elements": [
+      "화"
+    ],
+    "image_url": "/images/styles/mikoto_fubuki_broken_night_muse_res.webp",
+    "isLimited": false,
+    "isResonance": true,
+    "isUniform": false,
+    "isLatest": true,
+    "metaTags": [],
+    "nicknames": [
+      "미코토",
+      "후부키",
+      "뮤즈"
+    ]
+  },
+  {
+    "id": "murofushi_risa_healing_lap_pillow_res",
+    "character_name": "무로후시 리사",
+    "style_name": "힐링 랩 필로 (레조넌스)",
+    "unit": "31D",
+    "element": "뇌",
+    "elements": [
+      "뇌"
+    ],
+    "image_url": "/images/styles/murofushi_risa_healing_lap_pillow_res.webp",
+    "isLimited": false,
+    "isResonance": true,
+    "isUniform": false,
+    "isLatest": true,
+    "metaTags": [],
+    "nicknames": [
+      "무로후시",
+      "리사",
+      "랩 필로"
+    ]
+  },
+  {
     "id": "oshima_muua_swim_all_out_res",
     "character_name": "오오시마 무우아",
     "style_name": "스윔 올아웃 (레조넌스)",
@@ -12,7 +54,6 @@
     "isLimited": false,
     "isResonance": true,
     "isUniform": false,
-    "isLatest": true,
     "metaTags": [],
     "nicknames": [
       "오오시마",
@@ -33,7 +74,6 @@
     "isLimited": false,
     "isResonance": true,
     "isUniform": false,
-    "isLatest": true,
     "metaTags": [],
     "nicknames": [
       "아이린",
