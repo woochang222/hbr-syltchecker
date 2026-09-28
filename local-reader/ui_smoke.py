@@ -13,6 +13,10 @@ def main():
     app = ReaderApp(root)
     try:
         root.update()
+        assert app.logo_image.width() == 36
+        assert str(app.logo_label.cget('image'))
+        assert app.window_icon.width() > 0
+        assert app.paths[2].joinpath('app.ico').is_file()
         style_id = 'kayamori_ruka_base'
         preview_path = Path(__file__).parent / 'build/crops.png'
         crop = read_image(preview_path)[0:122, 300:600] if preview_path.exists() else np.zeros((122, 300, 3), np.uint8)

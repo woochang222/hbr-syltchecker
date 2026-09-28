@@ -41,6 +41,12 @@ class ReaderApp:
         root.geometry('1180x780')
         root.minsize(960, 650)
         self.paths = resource_paths(use_cache=True)
+        with Image.open(self.paths[2] / 'app.png') as icon:
+            self.window_icon = ImageTk.PhotoImage(icon, master=root)
+            self.logo_image = ImageTk.PhotoImage(icon.resize((36, 36), Image.Resampling.LANCZOS), master=root)
+        root.iconphoto(True, self.window_icon)
+        if sys.platform == 'win32':
+            root.iconbitmap(str(self.paths[2] / 'app.ico'))
         self.styles = json.loads(self.paths[0].read_text(encoding='utf-8'))['styles']
         self.by_id = {style['id']: style for style in self.styles}
         self.labels = {style['id']: f"{style['character_name']} / {style['style_name']}" for style in self.styles}
@@ -74,6 +80,11 @@ class ReaderApp:
         style.configure('Treeview', rowheight=28)
         outer = ttk.Frame(self.root, padding=16)
         outer.pack(fill='both', expand=True)
+        heading = ttk.Frame(outer)
+        heading.pack(fill='x', pady=(0, 12))
+        self.logo_label = ttk.Label(heading, image=self.logo_image)
+        self.logo_label.pack(side='left', padx=(0, 8))
+        ttk.Label(heading, text='헤번레 스타일 읽기', font=('맑은 고딕', 12, 'bold')).pack(side='left')
         toolbar = ttk.Frame(outer)
         toolbar.pack(fill='x', pady=(0, 12))
         self.controls = []
@@ -399,6 +410,9 @@ class ReaderApp:
 
 
 def main():
+    if sys.platform == 'win32':
+        import ctypes
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('HBR.StyleReader')
     if len(sys.argv) >= 3 and sys.argv[1] == '--self-test':
         import json
         report = {}

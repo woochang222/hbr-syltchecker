@@ -4,7 +4,7 @@
 
 ## 실행
 
-배포 폴더의 `HBRStyleReader.exe`를 실행하세요. `_internal` 폴더를 포함한 전체 폴더가 필요합니다. Python 설치는 필요 없습니다.
+배포 폴더의 `HBRStyleReader-Daphne.exe`를 실행하세요. `_internal` 폴더를 포함한 전체 폴더가 필요합니다. Python 설치는 필요 없습니다.
 
 소스에서 실행할 때는 Python 3.11 이상과 Tkinter가 필요합니다. 처음에 `powershell -ExecutionPolicy Bypass -File setup.ps1`로 의존성을 설치한 다음 `start-reader.cmd`를 실행합니다. 최초 설치에는 인터넷이 필요합니다.
 
