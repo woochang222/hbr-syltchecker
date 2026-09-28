@@ -14,17 +14,23 @@ from PIL import Image, ImageGrab, ImageTk
 
 from engine import Recognizer
 from export import payload_text
+from updater import load_active, update_data, UpdateCancelled
 
 
 SITE_URL = 'https://woochang222.github.io/hbr-syltchecker/'
 
 
-def resource_paths():
+def resource_paths(use_cache=False):
     if getattr(sys, 'frozen', False):
         root = Path(sys._MEIPASS)
-        return root / 'catalog/styles.json', root / 'public', root / 'assets'
-    root = Path(__file__).resolve().parent
-    return root.parent / 'src/data/styles.json', root.parent / 'public', root / 'assets'
+        assets = root / 'assets'
+    else:
+        root = Path(__file__).resolve().parent.parent
+        assets = root / 'local-reader/assets'
+    catalog = root / 'local-reader/reference-data/catalog.json'
+    if use_cache:
+        catalog, root = load_active(catalog, root)
+    return catalog, root, assets
 
 
 class ReaderApp:
@@ -34,8 +40,8 @@ class ReaderApp:
         root.title('헤번레 스타일 읽기')
         root.geometry('1180x780')
         root.minsize(960, 650)
-        self.paths = resource_paths()
-        self.styles = json.loads(self.paths[0].read_text(encoding='utf-8'))
+        self.paths = resource_paths(use_cache=True)
+        self.styles = json.loads(self.paths[0].read_text(encoding='utf-8'))['styles']
         self.by_id = {style['id']: style for style in self.styles}
         self.labels = {style['id']: f"{style['character_name']} / {style['style_name']}" for style in self.styles}
         self.ids_by_label = {label: key for key, label in self.labels.items()}
@@ -120,7 +126,7 @@ class ReaderApp:
 
         footer = ttk.Frame(outer)
         footer.pack(fill='x', pady=(14, 0))
-        for label, command in [('확인한 결과 복사', self.copy), ('JSON 저장', self.save)]:
+        for label, command in [('확인한 결과 복사', self.copy), ('JSON 저장', self.save), ('스타일 자료 업데이트', self.update_catalog)]:
             button = ttk.Button(footer, text=label, command=command)
             button.pack(side='left', padx=(0, 6))
             self.controls.append(button)
@@ -206,6 +212,28 @@ class ReaderApp:
                     self.status.set('분석 중지됨.' if self.cancelled.is_set() else '분석 완료. 반영할 결과를 확인하세요.')
                     if value:
                         messagebox.showwarning('분석하지 못한 사진', '\n\n'.join(value))
+                elif kind == 'updated':
+                    import json
+                    self.paths = (value['catalog'], value['root'], self.paths[2])
+                    self.styles = json.loads(self.paths[0].read_text(encoding='utf-8'))['styles']
+                    self.by_id = {style['id']: style for style in self.styles}
+                    self.labels = {style['id']: f"{style['character_name']} / {style['style_name']}" for style in self.styles}
+                    if len(set(self.labels.values())) != len(self.labels):
+                        self.labels = {key: f'{label} [{key}]' for key, label in self.labels.items()}
+                    self.ids_by_label = {label: key for key, label in self.labels.items()}
+                    self.recognizer = None
+                    for index, row in enumerate(self.rows):
+                        if row.style_id not in self.by_id:
+                            row.style_id, row.reviewed = '', False
+                        self.refresh_row(index)
+                    self.update_summary()
+                    if self.selected is not None:
+                        self.select()
+                    self.set_busy(False)
+                    self.status.set(f"자료 {value['count']}개 준비 완료 · 새 다운로드 {value['downloaded']}개 · 기존 자료 재사용 {value['reused']}개")
+                elif kind == 'update-error':
+                    self.set_busy(False)
+                    self.status.set(value)
         except queue.Empty:
             pass
         self.root.after(100, self.poll)
@@ -245,7 +273,28 @@ class ReaderApp:
         query = self.search_value.get().strip().casefold()
         candidates = [key for key, _ in self.rows[self.selected].candidates] if self.selected is not None else []
         ids = candidates + [key for key in self.labels if key not in candidates]
-        self.style_combo['values'] = [self.labels[key] for key in ids if query in self.labels[key].casefold()]
+        self.style_combo['values'] = [self.labels[key] for key in ids if key in self.labels and query in self.labels[key].casefold()]
+
+    def update_catalog(self):
+        if self.busy:
+            return
+        self.cancelled.clear()
+        self.set_busy(True)
+        self.status.set('GitHub의 최신 스타일 자료를 확인하고 있습니다.')
+
+        def work():
+            try:
+                bundled_catalog, bundled_root, _ = resource_paths()
+                result = update_data(bundled_catalog, bundled_root,
+                                     progress=lambda value: self.events.put(('status', value)),
+                                     cancelled=self.cancelled.is_set)
+                self.events.put(('updated', result))
+            except UpdateCancelled as error:
+                self.events.put(('update-error', str(error)))
+            except Exception as error:
+                self.events.put(('update-error', f'업데이트하지 못했습니다. 기존 자료를 유지합니다. ({error})'))
+
+        threading.Thread(target=work, daemon=True).start()
 
     def confirm(self):
         if self.selected is None or self.busy:

@@ -78,7 +78,8 @@ class Result:
 
 class Recognizer:
     def __init__(self, catalog_path, image_root, assets):
-        self.styles = json.loads(Path(catalog_path).read_text(encoding='utf-8'))
+        catalog = json.loads(Path(catalog_path).read_text(encoding='utf-8'))
+        self.styles = catalog['styles'] if isinstance(catalog, dict) else catalog
         self.assets = Path(assets)
         self.sift = cv2.SIFT_create(nfeatures=500, contrastThreshold=.025)
         self.matcher = cv2.BFMatcher()
@@ -93,9 +94,11 @@ class Recognizer:
             if not path.is_file():
                 continue
             image = read_image(path)
-            image = cv2.resize(image, (240, 240))
-            mask = np.full((240, 240), 255, np.uint8)
-            mask[:48] = 0
+            game_card = style.get('reference_kind') == 'game-select'
+            image = cv2.resize(image, (300, 122) if game_card else (240, 240))
+            mask = np.full(image.shape[:2], 255, np.uint8)
+            if not game_card:
+                mask[:48] = 0
             kp, desc = self.sift.detectAndCompute(cv2.cvtColor(image, cv2.COLOR_BGR2GRAY), mask)
             if desc is not None:
                 self.references.append((style['id'], kp, desc))

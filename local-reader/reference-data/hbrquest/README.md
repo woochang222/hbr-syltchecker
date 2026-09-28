@@ -20,4 +20,4 @@ Existing valid files are reused and newly listed SS/SSR styles are downloaded. T
 
 Game artwork belongs to its respective rights holders. The source database and CDN are third-party services, not an official guaranteed API.
 
-2026-09-28: downloaded and validated 223 unique SS/SSR references (2.92 MiB), with no failed files. All files decoded and matched their recorded SHA-256. This collection is not yet wired into the recognition engine or existing executable; the game style IDs must first be mapped to the checker's local IDs.
+2026-09-28: downloaded and validated 223 unique SS/SSR references (2.92 MiB), with no failed files. All files decoded and matched their recorded SHA-256. The recognition engine now uses these cards through `../style-map.json` and `../catalog.json`. The updater fetches the published catalog from this repository; it does not query the third-party source during recognition.

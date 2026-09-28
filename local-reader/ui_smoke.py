@@ -42,7 +42,18 @@ def main():
         assert app.tree.winfo_width() >= 400
         app.exclude()
         assert not row.reviewed
+        app.set_busy(True)
+        app.recognizer = object()
+        app.events.put(('updated', {'catalog': app.paths[0], 'root': app.paths[1], 'downloaded': 0,
+                                   'reused': len(app.styles), 'count': len(app.styles)}))
+        app.poll()
+        assert not app.busy and app.recognizer is None and row.style_id in app.by_id
+        app.set_busy(True)
+        app.events.put(('update-error', 'Offline: previous data kept'))
+        app.poll()
+        assert not app.busy and app.status.get() == 'Offline: previous data kept'
         print('UI selection, edit, confirm, export, search, exclude: PASS')
+        print('UI update success/error event handling: PASS')
     finally:
         root.destroy()
         app.temp.cleanup()
