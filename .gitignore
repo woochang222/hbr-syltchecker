@@ -13,6 +13,10 @@ dist-ssr
 *.local
 .worktrees/
 .superpowers/
+local-reader/.venv/
+local-reader/build/
+local-reader/dist/
+__pycache__/
 
 # Editor directories and files
 .vscode/*

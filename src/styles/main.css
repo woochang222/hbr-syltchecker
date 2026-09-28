@@ -1076,6 +1076,36 @@ header h1 {
   line-height: 1;
 }
 
+.recognition-import {
+  margin: 16px 0;
+  padding: 12px 0;
+  border-block: 1px solid #777;
+}
+.recognition-import summary { cursor: pointer; font-weight: 600; }
+.recognition-import label { display: block; margin-top: 12px; }
+.recognition-import textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 120px;
+  margin: 8px 0;
+  padding: 10px;
+  resize: vertical;
+  background: #171717;
+  color: #fff;
+  border: 1px solid #888;
+  border-radius: 4px;
+}
+.recognition-preview { max-height: 320px; overflow: auto; margin-top: 12px; }
+.recognition-preview table { width: 100%; border-collapse: collapse; }
+.recognition-preview th, .recognition-preview td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #777;
+  overflow-wrap: anywhere;
+}
+.recognition-import button:disabled { opacity: .5; cursor: default; }
+
 /* Responsive */
 @media (max-width: 600px) {
   .style-list {

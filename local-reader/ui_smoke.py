@@ -1,0 +1,52 @@
+"""Exercise native widgets without changing the user's clipboard or opening a browser."""
+from pathlib import Path
+import json
+import tkinter as tk
+from unittest.mock import patch
+import numpy as np
+from app import ReaderApp
+from engine import Result, read_image
+
+
+def main():
+    root = tk.Tk()
+    app = ReaderApp(root)
+    try:
+        root.update()
+        style_id = 'kayamori_ruka_base'
+        preview_path = Path(__file__).parent / 'build/crops.png'
+        crop = read_image(preview_path)[0:122, 300:600] if preview_path.exists() else np.zeros((122, 300, 3), np.uint8)
+        row = Result('sample.jpg', crop, [(style_id, 38)], style_id, 2, False, False, 38, .99)
+        app.rows.append(row)
+        app.refresh_row(0)
+        app.tree.selection_set('0')
+        root.update()
+        assert app.selected == 0
+        app.count_value.set('0')
+        app.daphne_value.set('미확인')
+        app.confirm()
+        assert row.reviewed and row.limit_break == 0 and row.daphne is None
+        captured = []
+        with patch.object(root, 'clipboard_clear'), patch.object(root, 'clipboard_append', side_effect=captured.append):
+            app.copy()
+        payload = json.loads(captured[0])
+        assert payload['styles'] == [{'id': style_id, 'limitBreak': 0}]
+        build = Path(__file__).parent / 'build'
+        build.mkdir(exist_ok=True)
+        (build / 'smoke-payload.json').write_text(captured[0], encoding='utf-8')
+        app.search_value.set('카야모리')
+        app.filter_styles()
+        assert all('카야모리' in value for value in app.style_combo['values'])
+        root.update()
+        assert app.preview.winfo_width() >= 390
+        assert app.tree.winfo_width() >= 400
+        app.exclude()
+        assert not row.reviewed
+        print('UI selection, edit, confirm, export, search, exclude: PASS')
+    finally:
+        root.destroy()
+        app.temp.cleanup()
+
+
+if __name__ == '__main__':
+    main()

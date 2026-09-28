@@ -6,6 +6,8 @@ import FilterSummary from './components/FilterSummary'
 import OwnershipStickySummary from './components/OwnershipStickySummary'
 import OwnedStatusDownloadBoard from './components/OwnedStatusDownloadBoard'
 import StyleCard from './components/StyleCard'
+import RecognitionImport from './components/RecognitionImport'
+import { mergeRecognitionImport } from './utils/recognitionImport'
 import { ELEMENTS } from './data/elements'
 import { buildFilterSummary, countMatchingStyles, getRenderableStyles } from './utils/filterSummary'
 import {
@@ -370,6 +372,17 @@ function App() {
           ))}
         </div>
       </section>
+
+      <RecognitionImport
+        styles={styles}
+        ownedStyles={ownedStyles}
+        daphneStyles={daphneStyles}
+        onApply={rows => {
+          const next = mergeRecognitionImport(rows, ownedStyles, daphneStyles)
+          setOwnedStyles(next.ownedStyles)
+          setDaphneStyles(next.daphneStyles)
+        }}
+      />
 
       <OwnershipStickySummary
         totalOwned={totalOwned}
