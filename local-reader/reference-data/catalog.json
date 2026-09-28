@@ -1,0 +1,2013 @@
+{
+  "format": "hbr-reader-catalog",
+  "version": 1,
+  "styles": [
+    {
+      "id": "mikoto_fubuki_broken_night_muse_res",
+      "character_name": "미코토 후부키",
+      "style_name": "밤의 망가진 뮤즈 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/FMikotoRitual_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "7900db53d63c9cd19aaf14373bbbcec00bf275e17dc626ea66994e8d7811a267",
+      "source_id": 1005305
+    },
+    {
+      "id": "murofushi_risa_healing_lap_pillow_res",
+      "character_name": "무로후시 리사",
+      "style_name": "힐링 랩 필로 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/RMurohushiNurturer_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "cc71b9511584b614388c8300c634b5eea5a7b4a0f3539b2d5074c565df9db9b2",
+      "source_id": 1005408
+    },
+    {
+      "id": "oshima_muua_swim_all_out_res",
+      "character_name": "오오시마 무우아",
+      "style_name": "스윔 올아웃 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MuOhshimaSwim2026_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "c7ce97ae437d1a4f3a907e3a55215ae62c7bcfc8acaa3485bb508f84b602451d",
+      "source_id": 1006607
+    },
+    {
+      "id": "eileen_redmain_spot_of_tea_res",
+      "character_name": "아이린 레드메인",
+      "style_name": "Spot of Tea (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IRedmayneKitchen_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "dd5321bf5cdcb63a8e616e822950463d0047d4d75d35dc3b0a920f818f57cc39",
+      "source_id": 1008308
+    },
+    {
+      "id": "bungo_yayoi_summer_vacation_res",
+      "character_name": "분고 야요이",
+      "style_name": "여름 방학을 정복합니다요! (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YBungoSwim2026_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "bf8b7014e95f547297ee1b0c210e74b97cd091b915f5598165b70b9cfe5bc6a7",
+      "source_id": 1003408
+    },
+    {
+      "id": "sugawara_chie_summer_night_butterfly_res",
+      "character_name": "스가와라 치에",
+      "style_name": "서머 나이트 버터플라이 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CSugaharaSwim2026_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "794bc93fad208a1b5047f47cf5aad2ae725b85b9e334feb843b00f307a0afaa8",
+      "source_id": 1004409
+    },
+    {
+      "id": "minase_ichigo_unison_res",
+      "character_name": "미나세 이치고",
+      "style_name": "쌍성의 발키리 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IMinaseValkyrie_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "fb5ad9c354c5d7322218cf7a69b08df5cf47092b5e85bee74ef36c652b9a6416",
+      "source_id": 1002208
+    },
+    {
+      "id": "naruse_hikari_hunter_res",
+      "character_name": "나루세 히카리",
+      "style_name": "침착한 사냥꾼 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/HNaruseDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "93dade86111fb3ae76177aab0d2c7f7735c0a3453293bc4decd8c5afbd2bb3c9",
+      "source_id": 1009203
+    },
+    {
+      "id": "oshima_ichiko_admiral_res",
+      "character_name": "오오시마 이치코",
+      "style_name": "해변의 마드무아젤 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IcOhshimaSwim2026_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "30e458aff4102762b1f0657e1b4da037d94ae694360cc070cf9fb3ebb9778836",
+      "source_id": 1006107
+    },
+    {
+      "id": "oshima_yotsuba_summer_float_res",
+      "character_name": "오오시마 요츠하",
+      "style_name": "느긋한 여름의 플로트 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YoOhshimaSwim2026_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "8efe6ff7a33c04dbd97e7a1e1ac61bbe9451b4cb8c0d524d308f3735202e6872",
+      "source_id": 1006407
+    },
+    {
+      "id": "hanamura_shiki_evening_fireworks_res",
+      "character_name": "하나무라 시키",
+      "style_name": "저녁 불꽃놀이의 녹턴 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SHanamuraYukata2026_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "f30ce77bff09d5f53f02b2ea1570af0906480f893e49ec37c200140293d34581",
+      "source_id": 1007306
+    },
+    {
+      "id": "charlotta_princess_res",
+      "character_name": "샬로타 스코폽스카야",
+      "style_name": "이국의 프린쳇사 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CSkopovskayaGraceful_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "4fa6058db86ee1587e8939725138c9461d5f49359283511441992a6040124626",
+      "source_id": 1008608
+    },
+    {
+      "id": "ri_yunfa_haochi",
+      "character_name": "리 잉시아",
+      "style_name": "하오츠♪ 포만감의 도원향",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/LShanhuaKitchen_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "89aab9707e2b0f9a43d6850dfa8d8bed55a9edf970e93a22bd4067640e1c9905",
+      "source_id": 1008208
+    },
+    {
+      "id": "kayamori_ruka_joker_res",
+      "character_name": "카야모리 루카",
+      "style_name": "TAKE YOUR HEART (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/RKayamoriTarot_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "9f9db4a4c8521f56dc9b5ffc380a40a594ec93470f4a399db09f9e91f25d4a07",
+      "source_id": 1001112
+    },
+    {
+      "id": "violet_faith_res",
+      "character_name": "바이올렛",
+      "style_name": "흔들림 없는 신념 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/EmaDDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "717730a6a09ea1553543bb3bc70b5ed026b032ccf6a60e865d4391e41ef1cd53",
+      "source_id": 1021303
+    },
+    {
+      "id": "tojo_tsukasa_persona_res",
+      "character_name": "토죠 츠카사",
+      "style_name": "격정의 팜 파탈 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/TTojoTarot_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "29e91d96d8cac58ffd3da55e64f125cb352740f6763c4740c5b7f99717bb7c4d",
+      "source_id": 1001409
+    },
+    {
+      "id": "queen_persona_res",
+      "character_name": "퀸",
+      "style_name": "혜안의 여교황 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/EmaCDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "5f0f6ff02669dffc4314e2b0ea6b74bad584ce5b6c49d3d50f656617ae2df788",
+      "source_id": 1021203
+    },
+    {
+      "id": "mona_morgana",
+      "character_name": "모나",
+      "style_name": "여명의 마술사",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/EmaBDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "72feafefd2210306a4730e6da85f4be2013d60960e64495959dae142a41861bd",
+      "source_id": 1021102
+    },
+    {
+      "id": "irie_miyuki_faraway_eden",
+      "character_name": "이리에 미유키",
+      "style_name": "Faraway Eden",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AliceCDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "53257a5a4969cd8c15662fe2e768edcb71a43840ff203a1416dd1965d4d5d258",
+      "source_id": 1020303
+    },
+    {
+      "id": "natsume_inori_hanakage_res",
+      "character_name": "나츠메 이노리",
+      "style_name": "화영 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/INatsumeSwordDancer_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "5bfb058af2c82ee9b69647cb3c21c104a00c8dac47cb499a5c819caf59af25cc",
+      "source_id": 1007506
+    },
+    {
+      "id": "kurosawa_maki_empress_res",
+      "character_name": "쿠로사와 마키",
+      "style_name": "여제 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MKurosawaMatriarch_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "bd3ecd88a7f05d8b0fbace8985f2fde20cad8be09ed99afe81c8e336a1b345a5",
+      "source_id": 1007606
+    },
+    {
+      "id": "nikaido_misato_admiral_res",
+      "character_name": "니카이도 미사토",
+      "style_name": "어드미럴 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MNikaidoCheer_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "c444149e1ad717e348f8fadead02a7613a4f05127d6c4dce18cfe57ff33aa3fa",
+      "source_id": 1005107
+    },
+    {
+      "id": "date_akari_sports_day_res",
+      "character_name": "다테 아카리",
+      "style_name": "운동회 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/ADateRunner_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "b4612b35a42052845ccdab1533b074e1f0b38aeaf19a65af8eaf4a3ccde63515",
+      "source_id": 1005506
+    },
+    {
+      "id": "ogasawara_hisame_bunny_res",
+      "character_name": "오가사와라 히사메",
+      "style_name": "바니 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/HOgasawaraEaster_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "07ae6de7e3eb5da5bc22e7071af1320fa582da6d40dc214622d4e22b2c392d27",
+      "source_id": 1004509
+    },
+    {
+      "id": "aikawa_megumi_unison_res",
+      "character_name": "아이카와 메구미",
+      "style_name": "유니온 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MAikawaSession_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "86c87378c56cb6e0712e08e4befd84104177227c329b78fd2615e9addf9218f6",
+      "source_id": 1001309
+    },
+    {
+      "id": "tezuka_saki_base_res",
+      "character_name": "테즈카 사키",
+      "style_name": "기본 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/STezukaSoldier_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "e9c5729ecefa9d944ca3e51f9b290ce67f940978a0371cb3232fc7e8cdcf2ea9",
+      "source_id": 1010103
+    },
+    {
+      "id": "nanase_nanami_admiral_res",
+      "character_name": "나나세 나나미",
+      "style_name": "어드미럴 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/NNanasePure_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "12119d588e30552c9d1918383e7a02e8cb5b8b4acb78bb0395fd9991e8c53ba0",
+      "source_id": 1010204
+    },
+    {
+      "id": "aoi_erika_white_suit_res",
+      "character_name": "아오이 에리카",
+      "style_name": "화이트 슈트 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/EAoiWhiteSuit_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "020d63bb4a82ef02556a5ee96bb823e939658c24ba62579ce71b3750b365f152",
+      "source_id": 1002109
+    },
+    {
+      "id": "shirakawa_yuina_admiral_res",
+      "character_name": "시라카와 유이나",
+      "style_name": "어드미럴 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YShirakawaArmor_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "8de6447a47e18cc4178cde23e01d462a796fd7c6fe7baa89d7b029f5279e5c68",
+      "source_id": 1004110
+    },
+    {
+      "id": "kayamori_ruka_admiral_res",
+      "character_name": "카야모리 루카",
+      "style_name": "어드미럴 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/RKayamoriWhiteSuit_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ce149bb3d09b665ce0c4e1a7452c217b8b8f7c94cb154ef9b90c8f5834853fef",
+      "source_id": 1001111
+    },
+    {
+      "id": "kanzaki_adelheid_servant_res",
+      "character_name": "칸자키 아델하이드",
+      "style_name": "servant (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AKanzakiEvil_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "1e028ff0ee84fb8a8e367c82b314d3c6ec7196d951e15d5b08c4da141beae5b7",
+      "source_id": 1003507
+    },
+    {
+      "id": "maruyama_kanata_regalia_res",
+      "character_name": "마루야마 카나타",
+      "style_name": "레갈리아 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/KMaruyamaCommander_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "006629827912fc1520f256396cfd8472171ec5936ca4611788dc9983dde92331",
+      "source_id": 1007207
+    },
+    {
+      "id": "yamawaki_unison_res",
+      "character_name": "야마와키 본 이바르",
+      "style_name": "유니온 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/BIYamawakiEvil_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "91ffd44909c3acc5f1bc8d21e62ba0aaa0cd5cd30ff1b605644291476aa55585",
+      "source_id": 1003108
+    },
+    {
+      "id": "oshima_minori_midnight_res",
+      "character_name": "오오시마 미노리",
+      "style_name": "미드나이트 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MiOhshimaMocktail_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "1e54c9471324bd8fcec15899ba5c226ec569e8215c44028b1c86bce027da9fc0",
+      "source_id": 1006306
+    },
+    {
+      "id": "kunimi_tama_halloween_res",
+      "character_name": "쿠니미 타마",
+      "style_name": "할로윈 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/TKunimiAutumn2025_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "add59f8d2e2ade496b743ae9879bc70c793f80a728ed8c7ab71af109bec99638",
+      "source_id": 1001710
+    },
+    {
+      "id": "minase_ichigo_pawapuro_res",
+      "character_name": "미나세 이치고",
+      "style_name": "파와푸로 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IMinaseHR_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "6eb1b6f29ddddaaab054e0eafdf040e66f51413847b8c0e6e266a430f1019f32",
+      "source_id": 1002207
+    },
+    {
+      "id": "kayamori_ruka_pawapuro_res",
+      "character_name": "카야모리 루카",
+      "style_name": "파와푸로 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/RKayamoriHR_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "81698d9b950bb6eb5ce86544cbac80c29f373aabb3d07bd012831c55b24a07a3",
+      "source_id": 1001110
+    },
+    {
+      "id": "carol_reaper_white_suit_res",
+      "character_name": "캐롤 리퍼",
+      "style_name": "화이트 슈트 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CReaperWhiteSuit_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "3276d34a0e0b6a88e73223d00adf3644403bb8230f73e99a1c93995f01892902",
+      "source_id": 1008106
+    },
+    {
+      "id": "mizuhara_aina_swimsuit_res",
+      "character_name": "미즈하라 아이나",
+      "style_name": "수영복 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AMizuharaSwim2025_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "4bbae1b9d2ce7e233bab83eaf8a5d383214d113e019c3ddfa86c56a24062dbaf",
+      "source_id": 1005607
+    },
+    {
+      "id": "asakura_karen_unison_res",
+      "character_name": "아사쿠라 카렌",
+      "style_name": "유니온 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/KAsakuraTwins_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "82320cb4aa37eab9425b925f50c6fc834e4dc407c87d51f12e977ae61feefaf5",
+      "source_id": 1001509
+    },
+    {
+      "id": "kiryu_miya_swimsuit_res",
+      "character_name": "키류 미야",
+      "style_name": "수영복 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MKiryuSwim2025_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "703e1238d2446bc3dfef7869900d8363c872bc22a958e975e4388ea9ad3a7d6a",
+      "source_id": 1004307
+    },
+    {
+      "id": "kura_satomi_swimsuit_res",
+      "character_name": "쿠라 사토미",
+      "style_name": "수영복 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SKuraSwim2025_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ba07164427aa95948b6c07c30e1f08683185ba2abfa6f2e7fed730ea6fb46293",
+      "source_id": 1004606
+    },
+    {
+      "id": "aoi_erika_swimsuit_res",
+      "character_name": "아오이 에리카",
+      "style_name": "수영복 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/EAoiSwim2025_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "fe1157e106cec9adc2949ab23b48098639a556d84924d60c3190a085a62477e1",
+      "source_id": 1002108
+    },
+    {
+      "id": "yanagi_mion_admiral_res",
+      "character_name": "야나기 미온",
+      "style_name": "어드미럴 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MYanagiWhiteSuit_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ac2c51572e55273662dc0a524421676d239c9d49860fdda75db757f025a7d820",
+      "source_id": 1007106
+    },
+    {
+      "id": "bungo_yayoi_unison_res",
+      "character_name": "분고 야요이",
+      "style_name": "유니온 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YBungoEvil_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "608e3f6af3f6de867b4b6c3713363fa1422244c3d3333ea6e6ca040310d841ce",
+      "source_id": 1003406
+    },
+    {
+      "id": "oshima_ichiko_white_suit_res",
+      "character_name": "오오시마 이치코",
+      "style_name": "화이트 슈트 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IcOhshimaWhiteSuit_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "758f18a07fe93047e1ba36d4293429e0814f538d3e5c5413072a5a4b6adbd41b",
+      "source_id": 1006106
+    },
+    {
+      "id": "yamawaki_white_suit_res",
+      "character_name": "야마와키 본 이바르",
+      "style_name": "화이트 슈트 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/BIYamawakiWhiteSuit_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "dd2585344c188d626fbbaf0b1bf11f4136be19c8c48b39186c4c8be8b28fdc84",
+      "source_id": 1003107
+    },
+    {
+      "id": "nanase_nanami_base_res",
+      "character_name": "나나세 나나미",
+      "style_name": "기본 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/NNanaseRider_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "cc26a615e2f742e717b32231e620f0caa8140be42beb46faf222f53dd5314ba3",
+      "source_id": 1010203
+    },
+    {
+      "id": "shirakawa_yuina_white_suit_res",
+      "character_name": "시라카와 유이나",
+      "style_name": "화이트 슈트 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YShirakawaWhiteSuit_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "5084500a16e4b3c7af508fbc6adf5f021b3d0d52667edb7f53d4a759c415490a",
+      "source_id": 1004108
+    },
+    {
+      "id": "nikaido_misato_white_suit_res",
+      "character_name": "니카이도 미사토",
+      "style_name": "화이트 슈트 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MNikaidoWhiteSuit_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "f50a36f98da690aaad89da9db3043a4e4938ef25f5b84bf9fb6671feab5b9272",
+      "source_id": 1005106
+    },
+    {
+      "id": "izumi_yuki_unison_res",
+      "character_name": "이즈미 유키",
+      "style_name": "유니온 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YIzumiCombat2023_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "053dc1eb9cd6ebf85acc015a1b60bad810cb1999ad6dfe1b73d98b69e934d7f8",
+      "source_id": 1001209
+    },
+    {
+      "id": "shirakawa_yuina_unison_res",
+      "character_name": "시라카와 유이나",
+      "style_name": "유니온 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YShirakawaSocial_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "17f0dd1511e95f9d8918723ede30179f6d20c70cfcb8fe9e8faf7eb30390127b",
+      "source_id": 1004107
+    },
+    {
+      "id": "kayamori_ruka_unison_res",
+      "character_name": "카야모리 루카",
+      "style_name": "유니온 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/RKayamoriCombat2023_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "7220091cffed0a1bb5c54022824f452aab144227df021a4bfb3b6bc7c2f7fc4f",
+      "source_id": 1001108
+    },
+    {
+      "id": "maria_de_angelis_chef",
+      "character_name": "마리아 데 안젤리스",
+      "style_name": "요리사",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MdAngelisKitchen_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "0587158a1e58e78946247fb6d4d1b1391a437e9e6e65508724e8653284dbced8",
+      "source_id": 1008507
+    },
+    {
+      "id": "carol_reaper_chef",
+      "character_name": "캐롤 리퍼",
+      "style_name": "요리사",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CReaperKitchen_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "bf4b941b7f165f2a127fb4805012d2467377ae7837bf4cc906fd058eaaafeb32",
+      "source_id": 1008107
+    },
+    {
+      "id": "yamawaki_loneliness",
+      "character_name": "야마와키 본 이바르",
+      "style_name": "론리니스",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/BIYamawakiEvil_R3a_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ec4473e6d34f73d31e65f980136d964fd1f94393821a02bb0dce006f6c38fd49",
+      "source_id": 1003109
+    },
+    {
+      "id": "eileen_redmain_foggy_city",
+      "character_name": "아이린 레드메인",
+      "style_name": "안개 낀 도시",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IRedmayneSteam_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "5af43b0fdd04226c07b2653c3d6954b79df0598c187d6304245bab7d261763d6",
+      "source_id": 1008307
+    },
+    {
+      "id": "oshima_isuzu_night_talk",
+      "character_name": "오오시마 이스즈",
+      "style_name": "밤의 이야기",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IrOhshimaNightlife_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ea1040a55f5c45cb34af63e0d278f0a6933cb5ca523e02f1b8eb0fa99e63f7ad",
+      "source_id": 1006506
+    },
+    {
+      "id": "minase_sumomo_halloween",
+      "character_name": "미나세 스모모",
+      "style_name": "할로윈",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SMinaseAutumn2025_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "24e1f936bd5805e037145a6a697da769b2a4e8dfbed567f7519ff4f789f17bdd",
+      "source_id": 1002307
+    },
+    {
+      "id": "charlotta_chef",
+      "character_name": "샬로타 스코폽스카야",
+      "style_name": "요리사",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CSkopovskayaKitchen_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "444c89a07a8d339d6ad9fac361c87320c52631fbb654e59d38582b48a6dee7df",
+      "source_id": 1008607
+    },
+    {
+      "id": "vritika_balakrishnan_chef",
+      "character_name": "브리티카 발라크리슈난",
+      "style_name": "요리사",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/VBalakrishnanKitchen_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "23a1bb7f233bbdc0bcf97edec3ad066b55cbe88a92bb381b04dc86909b389135",
+      "source_id": 1008406
+    },
+    {
+      "id": "satsuki_mari_servant",
+      "character_name": "사츠키 마리",
+      "style_name": "servant",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MSatsukiEvil_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "93fa0b989a9d1ff500f812bbb4f263becec3f1630f0e31fc402d34fbabbef672",
+      "source_id": 1003607
+    },
+    {
+      "id": "oshima_muua_summer_clothes",
+      "character_name": "오오시마 무우아",
+      "style_name": "하복",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MuOhshimaPrivate_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "9673af4870928fee5e5f765b590dbf8fe2e1c509aea8ea9c017b90b6bd5561ff",
+      "source_id": 1006606
+    },
+    {
+      "id": "oshima_niina_summer_clothes",
+      "character_name": "오오시마 니이나",
+      "style_name": "하복",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/NiOhshimaPrivate_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "9d08c58e5d2d9f5e5d34600cec98008b73035a8d89a1ae4e79d9efd2609b6768",
+      "source_id": 1006206
+    },
+    {
+      "id": "higuchi_seika_swimsuit",
+      "character_name": "히구치 세이카",
+      "style_name": "수영복",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SHiguchiSwim2025_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "52f7ecc176eb9ac15143dc503bfb122e8bce72be7f77ee1af7af4837e973cbb0",
+      "source_id": 1002407
+    },
+    {
+      "id": "hiiragi_kozue_swimsuit",
+      "character_name": "히이라기 코즈에",
+      "style_name": "수영복",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/KHiiragiSwim2025_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "29369ce5459826dc42006a3b9f24f2b5d41be2551f551866ee2f87da82508104",
+      "source_id": 1002506
+    },
+    {
+      "id": "ri_yunfa_bride",
+      "character_name": "리 잉시아",
+      "style_name": "신부",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/LShanhuaBride_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "454598c2ce53c56e6b5cd160ee0019a8702b9cda3385afa29e856eda17754e4f",
+      "source_id": 1008207
+    },
+    {
+      "id": "ishii_iroha_bride",
+      "character_name": "이시이 이로하",
+      "style_name": "신부",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IIshiiBride_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "6b96cde74699e733813b32bda1dbf2d2da18ff4d0b261f56120df67f7c8e6a42",
+      "source_id": 1005206
+    },
+    {
+      "id": "matsuoka_chiroru_heroic",
+      "character_name": "마츠오카 치로루",
+      "style_name": "히로익",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CMatsuokaActor_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "7f263973ab75f52a4e129d12f78ee6aabd0b553b50d433fa870df5006a7364bf",
+      "source_id": 1007405
+    },
+    {
+      "id": "oshima_yotsuba_yukata",
+      "character_name": "오오시마 요츠하",
+      "style_name": "유카타",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YoOhshimaYukata2025_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "e620c7f928033f37ed6470a14327d6ca76f18fb3db7f6d8abd3173f65b58b9df",
+      "source_id": 1006405
+    },
+    {
+      "id": "sakuraba_seira_servant",
+      "character_name": "사쿠라바 세이라",
+      "style_name": "servant",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SSakurabaEvil_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "b60e4203f171700d114b578b08ccd0aac8c12b477adcf16f942459b20383225d",
+      "source_id": 1003207
+    },
+    {
+      "id": "tenne_miko_servant",
+      "character_name": "텐네 미코",
+      "style_name": "servant",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MTenneEvil_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "5c7ea57db13e2c0e450c8fab31c49438e623518842401450a774c022954c1d2f",
+      "source_id": 1003306
+    },
+    {
+      "id": "eileen_redmain_breeze",
+      "character_name": "아이린 레드메인",
+      "style_name": "산들바람",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IRedmayneIdyllic_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "711d6c1a64b7e628d476752f9e891321a911b2267f30cab9fb530c8e987dc858",
+      "source_id": 1008305
+    },
+    {
+      "id": "maria_de_angelis_elegante",
+      "character_name": "마리아 데 안젤리스",
+      "style_name": "엘레간테",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MdAngelisMafia_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ff7e954c622e2778570508bf01e3ac9659e4b54dee74214a5db65707dc38e2b8",
+      "source_id": 1008505
+    },
+    {
+      "id": "tsukishiro_monaka_spring_blizzard",
+      "character_name": "츠키시로 모나카",
+      "style_name": "봄보라",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MTsukishiroWarrior_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "4d95ced115bd0a867a85df58e99cf7cfb7027d9a80f4016e529bd0d9785a580b",
+      "source_id": 1004205
+    },
+    {
+      "id": "sugawara_chie_ferity",
+      "character_name": "스가와라 치에",
+      "style_name": "페리티",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CSugaharaBeast_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "d7e55430d6e8509113d8c45829c53b4086f9653470e80b24ff9aa2608c1b95d3",
+      "source_id": 1004407
+    },
+    {
+      "id": "asakura_karen_free",
+      "character_name": "아사쿠라 카렌",
+      "style_name": "배포",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/KAsakuraDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "9e8765435756e839fe827e4342a3278f4fd5fb19311f84d5f44be6615a992258",
+      "source_id": 1001508
+    },
+    {
+      "id": "tojo_tsukasa_sorrow",
+      "character_name": "토죠 츠카사",
+      "style_name": "애정",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/TTojoMourning_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "92b2119c269eb8fcc0586b5498e5b2f01fdfd986a6deb48bf5d761ad735417b0",
+      "source_id": 1001408
+    },
+    {
+      "id": "date_akari_new_year",
+      "character_name": "다테 아카리",
+      "style_name": "신년",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/ADateFurisode2025_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ba86eef160417cda11b50beaf1540341f9cda1577d3efea4e0869ee7899baa52",
+      "source_id": 1005505
+    },
+    {
+      "id": "murofushi_risa_new_year",
+      "character_name": "무로후시 리사",
+      "style_name": "신년",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/RMurohushiMaiden_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "e97a530f5ecfc29885127fe1344ab960524dbfe5c55ce5df9d4c884cfa7cd2e0",
+      "source_id": 1005407
+    },
+    {
+      "id": "yoshioka_yui_base",
+      "character_name": "요시오카 유이",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CathyBDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "d47b1b0462ab182edde23c1d0f35988b4b6bcc7dc6263b5ba36b049e87e24cf4",
+      "source_id": 1020603
+    },
+    {
+      "id": "iwasawa_masami_base",
+      "character_name": "이와사와 마사미",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CathyCDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ed199beab38e1450ba50215db1968d75450cc36012b2722b951f1567ac45f788",
+      "source_id": 1020703
+    },
+    {
+      "id": "kayamori_ruka_diva",
+      "character_name": "카야모리 루카",
+      "style_name": "가희",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/RKayamoriDiva_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "335f79993ca26ebadce805966c9f60b50cc4dd792925edbd273d73d6898fe7d2",
+      "source_id": 1001109
+    },
+    {
+      "id": "hanamura_shiki_resplendent",
+      "character_name": "하나무라 시키",
+      "style_name": "재요",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SHanamuraConductor_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "c86e8f1caf3c1a5eaa210ddbc3a78d5f61ed14073b9bbcaacf08eb3823ed97f7",
+      "source_id": 1007304
+    },
+    {
+      "id": "mikoto_fubuki_santa",
+      "character_name": "미코토 후부키",
+      "style_name": "산타",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/FMikotoXmas2024_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "df0bc174275aa825fb8fbb7b32300e3580379d5c669dd0049f48c5bd660f11a4",
+      "source_id": 1005304
+    },
+    {
+      "id": "ishii_iroha_overflow",
+      "character_name": "이시이 이로하",
+      "style_name": "오버플로",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IIshiiCasual_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "e7bb83961bdd90b0f4c8796ed580aab67426eae7b9bb9f9999761a4cc9840854",
+      "source_id": 1005205
+    },
+    {
+      "id": "mizuhara_aina_deep_sea",
+      "character_name": "미즈하라 아이나",
+      "style_name": "심해",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AMizuharaJellyfish_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "843f40f926855b47dbb1eee64f1e79cf5237145238dba211941aae5724573d08",
+      "source_id": 1005606
+    },
+    {
+      "id": "aoi_erika_admiral",
+      "character_name": "아오이 에리카",
+      "style_name": "어드미럴",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/EAoiMilitary_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "4b903f8f22279d588dd79f3ecb982911886ae9de48134823249cbbe297b66061",
+      "source_id": 1002107
+    },
+    {
+      "id": "higuchi_seika_catharsis",
+      "character_name": "히구치 세이카",
+      "style_name": "카타르시스",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SHiguchiDoctor_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "7aef5316b45eb8220954a513575b3e33552782349f62e0ee71fc91e1eb431468",
+      "source_id": 1002406
+    },
+    {
+      "id": "minase_sumomo_compassion",
+      "character_name": "미나세 스모모",
+      "style_name": "compassion",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SMinaseDoll_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ad883247ea7c9b3c191a097b27882b5f8e1b8bed6a3ba7205aaf92d12211db73",
+      "source_id": 1002306
+    },
+    {
+      "id": "minase_ichigo_cold_beauty",
+      "character_name": "미나세 이치고",
+      "style_name": "냉염",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IMinaseAssassin_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "3f6ca7bc7e0e4764a2e5a6bb2a2c979a3c366b6db49c0305547c330d2733b0ba",
+      "source_id": 1002205
+    },
+    {
+      "id": "carol_reaper_carnival",
+      "character_name": "캐롤 리퍼",
+      "style_name": "카니발",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CReaperDate_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "e8269242e3a4d10212bcac07ff9d828523e513aa081bc1540e213a9241713290",
+      "source_id": 1008105
+    },
+    {
+      "id": "oshima_isuzu_magician",
+      "character_name": "오오시마 이스즈",
+      "style_name": "매지션",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IrOhshimaShowTime_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "8f0a207b0336607973c47f2cac53692c7c59871f1e419a2baecddb3feccc685b",
+      "source_id": 1006505
+    },
+    {
+      "id": "oshima_minori_yukata",
+      "character_name": "오오시마 미노리",
+      "style_name": "유카타",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MiOhshimaYukata2024_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "c868905e58ce3712249939778b3e410464834be836578638ab2f0c68f9f9c4e1",
+      "source_id": 1006304
+    },
+    {
+      "id": "ogasawara_hisame_garnet",
+      "character_name": "오가사와라 히사메",
+      "style_name": "가넷",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/HOgasawaraHighSchoolLife_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "9cd23f3cde58032a0dced0b83cc96d4e8b9d6f422c10a109e4d6b9e75a80fc5c",
+      "source_id": 1004507
+    },
+    {
+      "id": "natsume_inori_lapis_lazuli",
+      "character_name": "나츠메 이노리",
+      "style_name": "라피스 라줄리",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/INatsumeNeat_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "42f444deebc59dfa812f215fcec59f63880fc93237a57de9806e3093aaed0cd2",
+      "source_id": 1007505
+    },
+    {
+      "id": "matsuoka_chiroru_secret",
+      "character_name": "마츠오카 치로루",
+      "style_name": "비밀",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CMatsuokaCasual_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "cfca96c8518b874e44845fc500492b283eca8edd846f8bf9ced5ccfbce5f0337",
+      "source_id": 1007404
+    },
+    {
+      "id": "kurosawa_maki_soushisouai",
+      "character_name": "쿠로사와 마키",
+      "style_name": "조사조애",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MKurosawaCasual_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "a5446e241947f5c4fe4126ea7fc3b4c021a60c1bfee029c13d319844fe542fd6",
+      "source_id": 1007604
+    },
+    {
+      "id": "asakura_karen_swimsuit",
+      "character_name": "아사쿠라 카렌",
+      "style_name": "수영복",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/KarenSwim2024_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "f7dd0e7a04d5a3567241e9a956a8e3dd1ffca4c080fea21d6bbfd5bc63050962",
+      "source_id": 1001507
+    },
+    {
+      "id": "aikawa_megumi_swimsuit",
+      "character_name": "아이카와 메구미",
+      "style_name": "수영복",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MAikawaSwim2024_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "a801d66d76f65bfdcad0baab842fc61a8cc15bf9b948aac9b82870535545c9f3",
+      "source_id": 1001308
+    },
+    {
+      "id": "satsuki_mari_swimsuit",
+      "character_name": "사츠키 마리",
+      "style_name": "수영복",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MSatsukiSwim2024_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "cbce3c6cc124409cb44d337625431b1f222a435f1cca20fc7bf8e9d9df810a77",
+      "source_id": 1003606
+    },
+    {
+      "id": "kanzaki_adelheid_swimsuit",
+      "character_name": "칸자키 아델하이드",
+      "style_name": "수영복",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AKanzakiSwim2024_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "8c417d1e4e1638f6668f2905b9cb5b90049d0bd415ec776a993feda82a40706e",
+      "source_id": 1003506
+    },
+    {
+      "id": "charlotta_bride",
+      "character_name": "샬로타 스코폽스카야",
+      "style_name": "신부",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CSkopovskayaBride_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "fb17388c134fa5bdd6fd5c84cb2bc111c44c2c47b47867f17d1e65cc3bda95ef",
+      "source_id": 1008605
+    },
+    {
+      "id": "sakuraba_seira_bride",
+      "character_name": "사쿠라바 세이라",
+      "style_name": "신부",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SSakurabaBride_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "adff5007065ee992cd1528c3e65d5a197d28b5cc2c467de67056f838eca8db81",
+      "source_id": 1003206
+    },
+    {
+      "id": "vritika_balakrishnan_dancer",
+      "character_name": "브리티카 발라크리슈난",
+      "style_name": "무희",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/VBalakrishnanTradition_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "6153f4d938a59560cbc983f90e17218d02191b6a692c008418e4a2fce3c00728",
+      "source_id": 1008405
+    },
+    {
+      "id": "eileen_redmain_moonlight",
+      "character_name": "아이린 레드메인",
+      "style_name": "월하",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IRedmaynePhantom_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "97e8737ebe42996c5327e1db92d3d0836a770a1e9f487135ef6b0926d03176ef",
+      "source_id": 1008304
+    },
+    {
+      "id": "maruyama_kanata_bloom",
+      "character_name": "마루야마 카나타",
+      "style_name": "블룸",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/KMaruyamaPanda_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "a4de9355beb561b0d5056dbd57205f45096a0188b4ebc311422652b59ee6a7f4",
+      "source_id": 1007205
+    },
+    {
+      "id": "mizuhara_aina_pirate",
+      "character_name": "미즈하라 아이나",
+      "style_name": "해적",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AMizuharaPirates_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "8680a24d3cdb2d4513c1c252d0aab332e2774f10098777c5f8b2e3f438385059",
+      "source_id": 1005605
+    },
+    {
+      "id": "kiryu_miya_dream_fire",
+      "character_name": "키류 미야",
+      "style_name": "꿈의 불꽃",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MKiryuCerulean_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "e03194e7face6e860f9865d1e221b6c9ba009f4aa46b7c4882066a5c158a0256",
+      "source_id": 1004305
+    },
+    {
+      "id": "sugawara_chie_stoic",
+      "character_name": "스가와라 치에",
+      "style_name": "스토익",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CSugaharaExcellency_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "137afc6f9afffa349779541f2902068b971543c32cfa71fef74e22caa88a272f",
+      "source_id": 1004406
+    },
+    {
+      "id": "ri_yunfa_spring_evening",
+      "character_name": "리 잉시아",
+      "style_name": "춘소",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/LShanhuaSuspicious_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "350edeb34a33ef68d1b0d8d2ef0d3fafeac20f77e95284d80eb2a51e90c2ba3c",
+      "source_id": 1008205
+    },
+    {
+      "id": "tojo_tsukasa_bunny",
+      "character_name": "토죠 츠카사",
+      "style_name": "바니",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/TTojoRabbit_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "308839cc7c020f09a6021aecbc4e6a8608ccb478ef20cd25c7b5194909859a4e",
+      "source_id": 1001406
+    },
+    {
+      "id": "hiiragi_kozue_waitress",
+      "character_name": "히이라기 코즈에",
+      "style_name": "웨이트리스",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/KHiiragiWaitress_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "5da1bc3976904bf308a84ca70e09dd789eabbfc0b025ab5858ce7183f97aa458",
+      "source_id": 1002505
+    },
+    {
+      "id": "tenne_miko_supreme",
+      "character_name": "텐네 미코",
+      "style_name": "지고",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MTenneWizard_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "53ad9e18c3003695c1898c870a68cc8dd7437679f521fb28222ca4470affee14",
+      "source_id": 1003305
+    },
+    {
+      "id": "bungo_yayoi_hanami",
+      "character_name": "분고 야요이",
+      "style_name": "꽃구경",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YBungoDango_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ea7a28c1ec439174bdd94f815e712ad924bbcda75975bd3cba963e68a19a527b",
+      "source_id": 1003405
+    },
+    {
+      "id": "yamawaki_one_piece",
+      "character_name": "야마와키 본 이바르",
+      "style_name": "원피스",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/BIYamawakiDaydream_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "0900fc2b27f156ea26871b5640100afd767286a992fd58f2c7f96bf1f936a366",
+      "source_id": 1003106
+    },
+    {
+      "id": "izumi_yuki_ruby",
+      "character_name": "이즈미 유키",
+      "style_name": "홍옥",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YIzumiSnowWhite_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "9a5e930d7f3219608e31bd4ae232feae5e81748ea3acc48023a75a098cd9153d",
+      "source_id": 1001208
+    },
+    {
+      "id": "tachibana_kanade_earth_angel",
+      "character_name": "타치바나 카나데",
+      "style_name": "Earth Angel",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AliceADefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ec1cc80f5e40dd586a02b28910003f077baeb171f559e4493bae5452b460fccd",
+      "source_id": 1020103
+    },
+    {
+      "id": "tachibana_kanade_soaring_sword",
+      "character_name": "타치바나 카나데",
+      "style_name": "천상의 검",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AliceAOnePiece_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "1c850424bac6db5277bd7ce7f2eb04d6721eaa94ad9e0a1e6b4c89479ff6bb7c",
+      "source_id": 1020104
+    },
+    {
+      "id": "nakamura_yuri_extraordinary",
+      "character_name": "나카무라 유리",
+      "style_name": "비일상",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AliceBBlazerUniform_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "8445d288a5455cbc2b63738ae2c173bc93ee3bb3525c503402f225c2fe171d83",
+      "source_id": 1020204
+    },
+    {
+      "id": "oshima_muua_new_year",
+      "character_name": "오오시마 무우아",
+      "style_name": "신년",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MuOhshimaFurisode2024_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "cb8ad960b05ec297b6d6199834c13070b8a7b9a5846239ca9a59a10e99cb55f6",
+      "source_id": 1006605
+    },
+    {
+      "id": "oshima_yotsuba_new_year",
+      "character_name": "오오시마 요츠하",
+      "style_name": "신년",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YoOhshimaSheep_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "4a86126f8c442c3ba60411204f58daa965d085ace9892b337ee73dd149846139",
+      "source_id": 1006404
+    },
+    {
+      "id": "minase_ichigo_idol",
+      "character_name": "미나세 이치고",
+      "style_name": "아이돌",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IMinaseNewYear2024_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "11fb92390641351ecc1c2682beb1cbe89b8a7b2f6b20d62aacb3315dcb1eddea",
+      "source_id": 1002204
+    },
+    {
+      "id": "aoi_erika_idol",
+      "character_name": "아오이 에리카",
+      "style_name": "아이돌",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/EAoiNewYear2024_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "fe9294be03a6f5e03dee35cfe2390c4513f2c39b644634e3a8e41ea0cace737e",
+      "source_id": 1002105
+    },
+    {
+      "id": "aikawa_megumi_suit",
+      "character_name": "아이카와 메구미",
+      "style_name": "슈트",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MAikawaSuite_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "becb3cb257ad91cc2d60350a690556be7eca28e915a9a067f500fca7bded617a",
+      "source_id": 1001307
+    },
+    {
+      "id": "kunimi_tama_suit",
+      "character_name": "쿠니미 타마",
+      "style_name": "슈트",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/TKunimiSuite_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "660598d366a81e3363e11887e66fca461e1051c8514d8bdd40c222efc64a7098",
+      "source_id": 1001708
+    },
+    {
+      "id": "nikaido_misato_santa",
+      "character_name": "니카이도 미사토",
+      "style_name": "산타",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MNikaidoXmas2023_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "4a1eda19aa680ab1deefd3f10eeda95ac0b72f1c5abf575a72bb36d94174602c",
+      "source_id": 1005104
+    },
+    {
+      "id": "date_akari_santa",
+      "character_name": "다테 아카리",
+      "style_name": "산타",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/ADateXmas2023_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "b2dfcec12189b52b9315721cbcba51ddd4c3f6988e490033467cf72a6e6449ee",
+      "source_id": 1005504
+    },
+    {
+      "id": "maria_de_angelis_fleeting_encounter",
+      "character_name": "마리아 데 안젤리스",
+      "style_name": "찰나의 해후",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MdAngelisKnights_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "c33a336676c046f66c656620a22c024fe32c7a8626323761ee2abbda8f2b787f",
+      "source_id": 1008504
+    },
+    {
+      "id": "charlotta_eternal_feelings",
+      "character_name": "샬로타 스코폽스카야",
+      "style_name": "영원한 마음",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CSkopovskayaVampire_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "02b350d47bad0a2c6cdb3cfdc5068d83f7fab7023a3b3dcfbfe1de0fbc7e8c86",
+      "source_id": 1008604
+    },
+    {
+      "id": "tsukishiro_monaka_cover",
+      "character_name": "츠키시로 모나카",
+      "style_name": "엄폐된 시간",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MTsukishiroRugged_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "01f190c2a1fea88f17c9573418a59ec0a223fd9c3c8ba43505d728ff256e6757",
+      "source_id": 1004204
+    },
+    {
+      "id": "nakamura_yuri_rain_fire",
+      "character_name": "나카무라 유리",
+      "style_name": "rain_fire",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AliceBDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "39868ea4ecd695233703ef3447b2b9537d75d332962e45da555d49e42b96a056",
+      "source_id": 1020203
+    },
+    {
+      "id": "ri_yunfa_celestial_nymph",
+      "character_name": "리 잉시아",
+      "style_name": "선녀",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/LShanhuaNoble_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "c7032d6130b86fae7d688f3da2adc88eba0eba4f7f53cfc7a758b8cb81524db5",
+      "source_id": 1008204
+    },
+    {
+      "id": "kanzaki_adelheid_girl",
+      "character_name": "칸자키 아델하이드",
+      "style_name": "소녀",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AKanzakiDirndl_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "e38c142de783008d3380765efea16c7bda9d45d495d1d1527231cfd1972c2596",
+      "source_id": 1003505
+    },
+    {
+      "id": "oshima_isuzu_yukata",
+      "character_name": "오오시마 이스즈",
+      "style_name": "유카타",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IrOhshimaYukata2023_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "db16d2ca01cd9a502c6ae44196815df3e23d637c2f68f4f4456dfa006fad3f4f",
+      "source_id": 1006504
+    },
+    {
+      "id": "oshima_niina_yukata",
+      "character_name": "오오시마 니이나",
+      "style_name": "유카타",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/NiOhshimaYukata2023_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "dce4f725627aebc7d6ec867e8e1bd5620ffc904c4372d4377710420c4f8e8e81",
+      "source_id": 1006205
+    },
+    {
+      "id": "izumi_yuki_dress",
+      "character_name": "이즈미 유키",
+      "style_name": "드레스",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YIzumiBeauty_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "f5fed5e720a189f9026dafb59a7d82dea58c0f48311084be575b05abb223ee07",
+      "source_id": 1001207
+    },
+    {
+      "id": "kiryu_miya_houraku",
+      "character_name": "키류 미야",
+      "style_name": "호라쿠",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MKiryuGothic_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "d0fa40493f1fe0aa07fe98bd8a30904d8c1537141b5dc3050f1c42697fe3b759",
+      "source_id": 1004304
+    },
+    {
+      "id": "yanagi_mion_night_breeze",
+      "character_name": "야나기 미온",
+      "style_name": "밤바람",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MYanagiPunk_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "fb5dd08b555ce9e0df00181131cf68082538dfe765641bb705ea9affdad462e2",
+      "source_id": 1007104
+    },
+    {
+      "id": "natsume_inori_butterfly",
+      "character_name": "나츠메 이노리",
+      "style_name": "접아(호접지몽)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/INatsumeButterfly_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "eb62f6ec51532f8f839e71ea8b8dfefaf9c6e178b4d473d1290f4e9d77e4931b",
+      "source_id": 1007504
+    },
+    {
+      "id": "asakura_karen_suit",
+      "character_name": "아사쿠라 카렌",
+      "style_name": "슈트",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/KarenSuite_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "45867a4fc58d4e811effcca01700a6c94bab7145e42c15c86a54edffc09be07b",
+      "source_id": 1001505
+    },
+    {
+      "id": "tojo_tsukasa_suit",
+      "character_name": "토죠 츠카사",
+      "style_name": "슈트",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/TTojoSuite_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "41a369ab77b0e333c6ec2455cd66e092a8ab5f6ad029d6a55f41a922af6bf469",
+      "source_id": 1001405
+    },
+    {
+      "id": "shirakawa_yuina_swimsuit",
+      "character_name": "시라카와 유이나",
+      "style_name": "수영복",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YShirakawaSwim2023_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "1d28cb505d1712aa465bb2bec2615cbb80f1ceda5af769c8f569b59af2b01969",
+      "source_id": 1004106
+    },
+    {
+      "id": "kunimi_tama_swimsuit",
+      "character_name": "쿠니미 타마",
+      "style_name": "수영복",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/TKunimiSwim2023_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "1f291db39d1946d87545b4375702c2a707b06ee9733c5ef441abd7f45f975529",
+      "source_id": 1001707
+    },
+    {
+      "id": "date_akari_base",
+      "character_name": "다테 아카리",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/ADateDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "46efde8cf151030db6cb90d3c74a3fc6cf217dbd1eb9f7cad465a6a2395f078d",
+      "source_id": 1005503
+    },
+    {
+      "id": "tenne_miko_magical_cat",
+      "character_name": "텐네 미코",
+      "style_name": "매지컬냥",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MTenneAnimal_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "dcd7ffeca15192363e19f509a847e0f22c5489180f870345ab9a25e366a974ec",
+      "source_id": 1003304
+    },
+    {
+      "id": "murofushi_risa_smile_technical_exchange",
+      "character_name": "무로후시 리사",
+      "style_name": "잠입, 미소로 기술 교류회",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/RMurohushiRace_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "936440203e9a1a5a6b977ad403c6216d4205313bd3610aee586e8c44abb3957f",
+      "source_id": 1005405
+    },
+    {
+      "id": "oshima_ichiko_bride",
+      "character_name": "오오시마 이치코",
+      "style_name": "신부",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IcOhshimaBride_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "fbb0b8492a59d2bcffaa4a64c2fb2ce6f867968b843ee7c3f26e62f7414f8a94",
+      "source_id": 1006104
+    },
+    {
+      "id": "satsuki_mari_bride",
+      "character_name": "사츠키 마리",
+      "style_name": "신부",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MSatsukiBride_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "15bf99ce3931bd874c39c2d8a52e6bd38782fab5f05bb9c9841e4eed5d77a46b",
+      "source_id": 1003605
+    },
+    {
+      "id": "vritika_balakrishnan_base",
+      "character_name": "브리티카 발라크리슈난",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/VBalakrishnanDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "bb7fd2b061a1211b7d2ead3b6b92900cde8618c17668c3067778c4a44c87515d",
+      "source_id": 1008403
+    },
+    {
+      "id": "charlotta_base",
+      "character_name": "샬로타 스코폽스카야",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CSkopovskayaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "47f32aa0ec7a6d8b06673a38b741c088a5d2c560bf8146af5ca5e19357262234",
+      "source_id": 1008603
+    },
+    {
+      "id": "mizuhara_aina_base",
+      "character_name": "미즈하라 아이나",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AMizuharaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "7abe815b174d89043f33059b2b8f23e9c6d27b778a089e3d278a3b6a458d9f17",
+      "source_id": 1005603
+    },
+    {
+      "id": "ogasawara_hisame_maid",
+      "character_name": "오가사와라 히사메",
+      "style_name": "메이드",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/HOgasawaraCutieMaid_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "450aa8d3a76fd69a253d4cd6349d622197b5b127bada9a29943b8ceb3413a26b",
+      "source_id": 1004504
+    },
+    {
+      "id": "aoi_erika_maid",
+      "character_name": "아오이 에리카",
+      "style_name": "메이드",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/EAoiWaitress_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "dc1ca46d171401e6410df228811d1775882aa9da0cc5937fdd8022e9fe5e05e7",
+      "source_id": 1002104
+    },
+    {
+      "id": "byakko_queen",
+      "character_name": "뱌코",
+      "style_name": "여왕",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/ByakkoBeast_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "fc3e7a7a5eb85e839deb56301b48aeb14599ffda410daaef12c6c7d31ea5771f",
+      "source_id": 1002604
+    },
+    {
+      "id": "byakko_white_fang_res",
+      "character_name": "뱌코",
+      "style_name": "전장의 하얀 송곳니 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/ByakkoMilitary_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "d5ef5a286fc064b45548f52c5d612364eaa02975e97e1bd0a1179823447383d3",
+      "source_id": 1002606
+    },
+    {
+      "id": "kura_satomi_young_landlady",
+      "character_name": "쿠라 사토미",
+      "style_name": "젊은 여주인",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SKuraLandlady_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "23c5fb58112c7a69bea34986be8c6d015b93a82f0854fef8fe84048054c73d11",
+      "source_id": 1004605
+    },
+    {
+      "id": "aikawa_megumi_miko",
+      "character_name": "아이카와 메구미",
+      "style_name": "무녀",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MAikawaMaiden_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "fcfb65fff96ee66d0d0224c856abe88e0b75b5dc3c0a760ee01ca45cc9426ea7",
+      "source_id": 1001306
+    },
+    {
+      "id": "satsuki_mari_assassin",
+      "character_name": "사츠키 마리",
+      "style_name": "어쌔신",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MSatsukiAgent_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "c71ec5860b857f28f38f4d5cc10fa3d1ad0e3a3344b0115e832e43457d65d3aa",
+      "source_id": 1003604
+    },
+    {
+      "id": "kanzaki_adelheid_ice_flower",
+      "character_name": "칸자키 아델하이드",
+      "style_name": "빙화",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AKanzakiAgent_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "62435a4375f3fb4a8e8cb93817c465dba543d3a624d1c94883dc7b5c1b37abb1",
+      "source_id": 1003504
+    },
+    {
+      "id": "mikoto_fubuki_base",
+      "character_name": "미코토 후부키",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/FMikotoDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "f9eb57e9f8e25c5b0dd1bec6b7b14b575781bb2f92e81d9f3457227cf782c5a3",
+      "source_id": 1005303
+    },
+    {
+      "id": "sugawara_chie_pure_heart",
+      "character_name": "스가와라 치에",
+      "style_name": "순심",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CSugaharaPurity_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "344d90d3f0ab04dc337fd4c3ad6d177ee19a3ef9492cfbac8e2406f4047d3163",
+      "source_id": 1004404
+    },
+    {
+      "id": "oshima_yotsuba_base",
+      "character_name": "오오시마 요츠하",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YoOhshimaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "a60b5adc125ab1f9c8fe58d55ef813010fce0010ae5db38e83a65f35b3416581",
+      "source_id": 1006403
+    },
+    {
+      "id": "oshima_muua_base",
+      "character_name": "오오시마 무우아",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MuOhshimaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "8f8fb0eef31372d93655e29503c18052a8ae7ab3302a8f060fa58041455370bd",
+      "source_id": 1006603
+    },
+    {
+      "id": "ogasawara_hisame_cat_ears",
+      "character_name": "오가사와라 히사메",
+      "style_name": "희구와 갈앙",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/HOgasawaraNightdress_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "09e1efb672611fe04272f58f869f01e93bd5c47f6f343abc00e9b89fa0df5223",
+      "source_id": 1004505
+    },
+    {
+      "id": "ogasawara_hisame_initial",
+      "character_name": "오가사와라 히사메",
+      "style_name": "몽롱한 달밤의 불릿",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/HOgasawaraDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "c7d09e79e7ccf81ee18e543e4425f124d4ef29d847e374a1770d082b505f185a",
+      "source_id": 1004503
+    },
+    {
+      "id": "izumi_yuki_suit",
+      "character_name": "이즈미 유키",
+      "style_name": "슈트",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YIzumiAnniv2023_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "378bca688f9566c46a06bc1cf4aaf3f849d6dfb0bbb75160a0efb33d8fcf642b",
+      "source_id": 1001205
+    },
+    {
+      "id": "kayamori_ruka_suit",
+      "character_name": "카야모리 루카",
+      "style_name": "슈트",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/RKayamoriAnniv2023_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "5b13443fb1554cee0a9c5d267bfb3948960112596ff5fc3b4679793682aed52a",
+      "source_id": 1001107
+    },
+    {
+      "id": "maria_de_angelis_base",
+      "character_name": "마리아 데 안젤리스",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MdAngelisDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "15759cba655ac27f0de0865b41f0cb6e45136a8b9ea5826ea0945647bdcd1044",
+      "source_id": 1008503
+    },
+    {
+      "id": "ri_yunfa_base",
+      "character_name": "리 잉시아",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/LShanhuaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "928adb069811f950136b524b4b1f1e485556aa3ca95c5f94df4efbab48ee7464",
+      "source_id": 1008203
+    },
+    {
+      "id": "sakuraba_seira_new_year",
+      "character_name": "사쿠라바 세이라",
+      "style_name": "신년",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SSakurabaNewYear2023_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "cbac73e0be4993fd15704308e092f07572c058b86d8e8627b0758f186fdd5931",
+      "source_id": 1003204
+    },
+    {
+      "id": "kunimi_tama_new_year",
+      "character_name": "쿠니미 타마",
+      "style_name": "신년",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/TKunimiNewYear2023_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ac8e2a83f1a5bc19806e80f334f15d2784582ca4d63f326e0e8e31e94be0b623",
+      "source_id": 1001706
+    },
+    {
+      "id": "bungo_yayoi_happy_legion",
+      "character_name": "분고 야요이",
+      "style_name": "Happy Legion",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YBungoXmas2022_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "1f7b76a9de66c65a8fdf4ee72d33a37626554e271b1ca69296a455bf7cde6f77",
+      "source_id": 1003404
+    },
+    {
+      "id": "yamawaki_holy_knight",
+      "character_name": "야마와키 본 이바르",
+      "style_name": "Holy Knight",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/BIYamawakiXmas2022_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "4626c577e0d9ff1636a939666ec136d2f19b4e5bebd528cb51add08d60d5f1ac",
+      "source_id": 1003104
+    },
+    {
+      "id": "kurosawa_maki_base",
+      "character_name": "쿠로사와 마키",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MKurosawaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "dbf677521865fee23c4be6d2fcefe28bb3aeeebb92b3a0706da26a15c355409d",
+      "source_id": 1007603
+    },
+    {
+      "id": "natsume_inori_base",
+      "character_name": "나츠메 이노리",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/INatsumeDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "876163a41c52c3a143cb8b2c826e3fd66cf4450fdc8865dc2eeb9a61a9029576",
+      "source_id": 1007503
+    },
+    {
+      "id": "oshima_minori_base",
+      "character_name": "오오시마 미노리",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MiOhshimaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "1078b3114a5da091647f1a1eba3f9ab4ca4cce8b2258c5ff17defb48c0ea0a18",
+      "source_id": 1006303
+    },
+    {
+      "id": "oshima_niina_base",
+      "character_name": "오오시마 니이나",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/NiOhshimaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "45c5aba107eeda4d2f9aa7e3fbea863071d0f8a70d5c610aa3000a4012fdae9c",
+      "source_id": 1006203
+    },
+    {
+      "id": "higuchi_seika_exploration",
+      "character_name": "히구치 세이카",
+      "style_name": "탐구",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SHiguchiGrace_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "9ce08f342ed381fb34b74bea5c467071bf9f763ad6f843c07f1cad5999b2a8c3",
+      "source_id": 1002404
+    },
+    {
+      "id": "hiiragi_kozue_finale",
+      "character_name": "히이라기 코즈에",
+      "style_name": "종극",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/KHiiragiBloody_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "af9b507927eaa4a3ae4e6a7dccf2fa54f1ae4162e602103146228323ca9c92c5",
+      "source_id": 1002504
+    },
+    {
+      "id": "murofushi_risa_base",
+      "character_name": "무로후시 리사",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/RMurohushiDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "725b54fe6b61b35e5c753ed980f3b72ea9bae8737d6f66980e2a8351df71ada9",
+      "source_id": 1005403
+    },
+    {
+      "id": "ishii_iroha_base",
+      "character_name": "이시이 이로하",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IIshiiDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "8e0821e3a0b08090f20b3b6f7d5804ca4a28786c96bd54397fb3bdb64c23fb20",
+      "source_id": 1005203
+    },
+    {
+      "id": "shirakawa_yuina_infernal",
+      "character_name": "시라카와 유이나",
+      "style_name": "인페르날",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YShirakawaBloom_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "b46c6f9a84d9a62f9a38d8982c89d7788e76e3f2ffb0ca7376b25ac67216656b",
+      "source_id": 1004104
+    },
+    {
+      "id": "kiryu_miya_base",
+      "character_name": "키류 미야",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MKiryuDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "e3274f0ece77c373c46326f94521f7c8e5290f6b79ca1718a77e072b943f39d0",
+      "source_id": 1004303
+    },
+    {
+      "id": "matsuoka_chiroru_base",
+      "character_name": "마츠오카 치로루",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CMatsuokaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "a301f6e5fd727f7278fd0e48a626cd0a59e3c3199da4be91d0ce9da856a92b54",
+      "source_id": 1007403
+    },
+    {
+      "id": "hanamura_shiki_base",
+      "character_name": "하나무라 시키",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SHanamuraDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "74679af88e92dc61038fa8493c65a7325d3ea455dd9d8b98c379688d4b45ad7b",
+      "source_id": 1007303
+    },
+    {
+      "id": "eileen_redmain_base",
+      "character_name": "아이린 레드메인",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IRedmayneDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "c294a4d3ef2b11471eba6fbe63a84ee3039a1fa1d8f8addfd3428fd676a73f31",
+      "source_id": 1008303
+    },
+    {
+      "id": "carol_reaper_base",
+      "character_name": "캐롤 리퍼",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CReaperDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "2889b2d069246aeb16d43739302e9ce2437db1808c1e870d589722721d504613",
+      "source_id": 1008103
+    },
+    {
+      "id": "minase_sumomo_swimsuit",
+      "character_name": "미나세 스모모",
+      "style_name": "수영복",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SMinaseSwim2022_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "74e41053c285abb6284dc1020268e196e27afb6537c3274fef5842b2be887944",
+      "source_id": 1002304
+    },
+    {
+      "id": "tojo_tsukasa_swimsuit",
+      "character_name": "토죠 츠카사",
+      "style_name": "수영복",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/TTojoSwim2022_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "245db654f8841255b4c8f29bdd047246b8b4e5ac0456625f5c0d316362c2545b",
+      "source_id": 1001404
+    },
+    {
+      "id": "izumi_yuki_yukata",
+      "character_name": "이즈미 유키",
+      "style_name": "유카타",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YIzumiYukata2022_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "90f052e3802ecf584288a59b4ddf6afba22e73af3c17ff0f30fd20fd7d02258f",
+      "source_id": 1001204
+    },
+    {
+      "id": "aoi_erika_base",
+      "character_name": "아오이 에리카",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/EAoiDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "bea2b43dbe15e8624f3e6168ef8bbc4bd6c277ee01182be511a180ef02dd027f",
+      "source_id": 1002103
+    },
+    {
+      "id": "oshima_isuzu_base",
+      "character_name": "오오시마 이스즈",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IrOhshimaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "e743c81f96e6abe52a3fbec63fd74cae5638ebcfe2725662149af7416b89647a",
+      "source_id": 1006503
+    },
+    {
+      "id": "kanzaki_adelheid_base",
+      "character_name": "칸자키 아델하이드",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/AKanzakiDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "5008586d88f2fa0ffbdf86d975e40b9c90b2bcff103b4b03957738a5bb98bd42",
+      "source_id": 1003503
+    },
+    {
+      "id": "oshima_ichiko_base",
+      "character_name": "오오시마 이치코",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IcOhshimaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "af43f0bf1a66031d27f5b2012b9c22086861f9501cd18ae3650f02ed45580e8b",
+      "source_id": 1006103
+    },
+    {
+      "id": "hiiragi_kozue_base",
+      "character_name": "히이라기 코즈에",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/KHiiragiDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "a1c28ade32a000c187c4eb341ee9a2f5e5b86422734e8e1a05bd871a2e5a466c",
+      "source_id": 1002503
+    },
+    {
+      "id": "asakura_karen_scarlet_rebellion",
+      "character_name": "아사쿠라 카렌",
+      "style_name": "스칼렛 리벨리온",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/KarenRedWolf_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ebbe9206c7f8ab62cb391bf2b1683303c5407dd022b575984a39c3129534d1f2",
+      "source_id": 1001504
+    },
+    {
+      "id": "yanagi_mion_base",
+      "character_name": "야나기 미온",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MYanagiDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "91c0e960e108b5603f4ce6d121c8b74bc8f9c0518423abe20ddf124523969967",
+      "source_id": 1007103
+    },
+    {
+      "id": "maruyama_kanata_base",
+      "character_name": "마루야마 카나타",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/KMaruyamaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "1c5e92850f4625d0f50a40dd5b1e4ecaa6d5846973554446c0f2773ae5c10523",
+      "source_id": 1007203
+    },
+    {
+      "id": "kura_satomi_base",
+      "character_name": "쿠라 사토미",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SKuraDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "a4b246c29b17e2a547e0e6e476ffc31f7b07c16756be03a3032c489d8d97a94a",
+      "source_id": 1004603
+    },
+    {
+      "id": "kayamori_ruka_cardinal_echo",
+      "character_name": "카야모리 루카",
+      "style_name": "잔향의 카디널",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/RKayamoriGothic_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "371cc40fdd96fb92348f43221a884dd0e2b7d0ea45fb4e29b4b7a485ec4a57c5",
+      "source_id": 1001105
+    },
+    {
+      "id": "shirakawa_yuina_base",
+      "character_name": "시라카와 유이나",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YShirakawaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "ed6790f01098870a6856fd0a07c7b5dfac5bf9223b474450afd57e12e10bb66c",
+      "source_id": 1004103
+    },
+    {
+      "id": "nikaido_misato_base",
+      "character_name": "니카이도 미사토",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MNikaidoDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "b3c32c18aa2cb0a6d0e92db406c104136f2dcfb8c1fba8477c859d61430bd86c",
+      "source_id": 1005103
+    },
+    {
+      "id": "kunimi_tama_magical_elemental",
+      "character_name": "쿠니미 타마",
+      "style_name": "마법의 나라의 엘리멘탈",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/TKunimiMagical_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "c2f6e0bd04c6a3916fe913e241762680b816f3279b71d344cc30bbb1dc327b3b",
+      "source_id": 1001705
+    },
+    {
+      "id": "minase_sumomo_base",
+      "character_name": "미나세 스모모",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SMinaseDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "7bd2c1d1f7cd4248fcad4a62616c7b2e9899cdb44e74e7f55fbeca78426b0f30",
+      "source_id": 1002303
+    },
+    {
+      "id": "minase_ichigo_base",
+      "character_name": "미나세 이치고",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/IMinaseDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "86075d9ce3094da54efa130773277c510aa6ae2f141fe860b69c155df09d9b8f",
+      "source_id": 1002203
+    },
+    {
+      "id": "tsukishiro_monaka_base",
+      "character_name": "츠키시로 모나카",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MTsukishiroDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "7d86239d29fc284c9a9161b686c7af3a95a85b7d31fc6352f02773a62801421b",
+      "source_id": 1004203
+    },
+    {
+      "id": "aikawa_megumi_one_night_dream",
+      "character_name": "아이카와 메구미",
+      "style_name": "하룻밤의 꿈",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MAikawaPrecious_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "7e214b1844e08a56e5d00f648e8fb65bcdf4d2c21964158c627d38e7b3e5feb6",
+      "source_id": 1001305
+    },
+    {
+      "id": "yamawaki_base",
+      "character_name": "야마와키 본 이바르",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/BIYamawakiDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "b68716c4a0951fb02c176626c0c869c3a743d864b1dd8aa4202961d402696f80",
+      "source_id": 1003103
+    },
+    {
+      "id": "satsuki_mari_base",
+      "character_name": "사츠키 마리",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MSatsukiDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "d143f2d7b6b72f7800b15a1b6e2a3a5008c7a9aeccdfd46ea23c8a3685e59bc5",
+      "source_id": 1003603
+    },
+    {
+      "id": "kayamori_ruka_circuit_burst",
+      "character_name": "카야모리 루카",
+      "style_name": "섬광의 서킷 버스트",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/RKayamoriDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "4087ec27d9d1a0d20866705f418127988b84c7bb2ff952e68cee047323d79ff8",
+      "source_id": 1001103
+    },
+    {
+      "id": "kayamori_ruka_base",
+      "character_name": "카야모리 루카",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/RKayamoriDefault_R3a_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "1e7b429f792e4d5f8d64bd200777f0929ba82191057315f5c10450f9aa089c73",
+      "source_id": 1001104
+    },
+    {
+      "id": "izumi_yuki_base",
+      "character_name": "이즈미 유키",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YIzumiDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "c6599c67ae425d8e5a7483785b612e68794df34676a98f4d9dc85295820f942c",
+      "source_id": 1001203
+    },
+    {
+      "id": "aikawa_megumi_base",
+      "character_name": "아이카와 메구미",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MAikawaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "9f65e1f9efb0823c5dbe1e77cd2002abef9a77785eee8d0ffc737159a81b0936",
+      "source_id": 1001303
+    },
+    {
+      "id": "tojo_tsukasa_base",
+      "character_name": "토죠 츠카사",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/TTojoDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "bc4488c42e52deb0cbc52b1853de55db3f4c22d7272bb43d39f835e8655189fd",
+      "source_id": 1001403
+    },
+    {
+      "id": "asakura_karen_base",
+      "character_name": "아사쿠라 카렌",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/KarenDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "4490debe1ca1530cdb003d0e7d995705e9e71d96c104b8c02b609047ae1f57d4",
+      "source_id": 1001503
+    },
+    {
+      "id": "kunimi_tama_base",
+      "character_name": "쿠니미 타마",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/TKunimiDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "b9ed21a304b929d0017c6d5e2b3f56c958af42116f3b9f414847974e4e87ec31",
+      "source_id": 1001703
+    },
+    {
+      "id": "higuchi_seika_base",
+      "character_name": "히구치 세이카",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SHiguchiDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "72989e1ccc1eb3ef181ad162857ddffd1556c4961ea6544b5def5c1c2eb33c0c",
+      "source_id": 1002403
+    },
+    {
+      "id": "byakko_base",
+      "character_name": "뱌코",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/ByakkoDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "50e5ddb7b1c64849a94ca8fb012034014327666aba7b2e0531e48342dcaf1134",
+      "source_id": 1002603
+    },
+    {
+      "id": "sakuraba_seira_base",
+      "character_name": "사쿠라바 세이라",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/SSakurabaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "3bb02388a0864d01246a38f09f6b6027c5e9b17faa09af1bbf33e1a7ce863906",
+      "source_id": 1003203
+    },
+    {
+      "id": "tenne_miko_base",
+      "character_name": "텐네 미코",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/MTenneDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "b5897f1b9ab973a1811a7c2cb5260ed3b18937f83d72c961320ebe359cb56b0d",
+      "source_id": 1003303
+    },
+    {
+      "id": "bungo_yayoi_base",
+      "character_name": "분고 야요이",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YBungoDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "c12ac0fcb34d05359ee03ac25bde1de8fb90bcf725b2bd49dad2c27f8a2c089e",
+      "source_id": 1003403
+    },
+    {
+      "id": "sugawara_chie_base",
+      "character_name": "스가와라 치에",
+      "style_name": "기본",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/CSugaharaDefault_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "f468687e28b9460f5e5c504949702633705446813673f6279ea67b125689f5b4",
+      "source_id": 1004403
+    }
+  ]
+}
