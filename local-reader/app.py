@@ -55,6 +55,8 @@ class ReaderApp:
             self.labels = {key: f'{label} [{key}]' for key, label in self.labels.items()}
             self.ids_by_label = {label: key for key, label in self.labels.items()}
         self.rows = []
+        self.duplicates_skipped = 0
+        self.duplicates_different = 0
         self.events = queue.Queue()
         self.cancelled = threading.Event()
         self.busy = False
@@ -182,6 +184,8 @@ class ReaderApp:
             return
         self.cancelled.clear()
         self.set_busy(True)
+        self.duplicates_skipped = 0
+        self.duplicates_different = 0
         self.status.set('스타일 인식 자료를 준비하고 있습니다.')
 
         def work():
@@ -205,6 +209,24 @@ class ReaderApp:
 
         threading.Thread(target=work, daemon=True).start()
 
+    def add_results(self, incoming):
+        skipped = different = 0
+        for row in incoming:
+            matches = [old for old in self.rows if row.style_id and old.style_id == row.style_id]
+            confirmed = next((old for old in matches if old.reviewed), None)
+            if confirmed is not None:
+                skipped += 1
+                if any(getattr(row, key) is not None and getattr(row, key) != getattr(confirmed, key)
+                       for key in ('limit_break', 'daphne')):
+                    different += 1
+                continue
+            if any((old.limit_break, old.daphne) == (row.limit_break, row.daphne) for old in matches):
+                skipped += 1
+                continue
+            self.rows.append(row)
+            self.refresh_row(len(self.rows) - 1)
+        return skipped, different
+
     def poll(self):
         try:
             while True:
@@ -212,15 +234,19 @@ class ReaderApp:
                 if kind == 'status':
                     self.status.set(value)
                 elif kind == 'rows':
-                    for row in value:
-                        self.rows.append(row)
-                        self.refresh_row(len(self.rows) - 1)
+                    skipped, different = self.add_results(value)
+                    self.duplicates_skipped += skipped
+                    self.duplicates_different += different
                     self.update_summary()
                     if self.selected is None and self.rows:
                         self.tree.selection_set('0')
                 elif kind == 'done':
                     self.set_busy(False)
                     self.status.set('분석 중지됨.' if self.cancelled.is_set() else '분석 완료. 반영할 결과를 확인하세요.')
+                    if self.duplicates_skipped:
+                        self.status.set(f'{self.status.get()} 중복 {self.duplicates_skipped}개 건너뜀.')
+                    if self.duplicates_different:
+                        self.status.set(f'{self.status.get()} 확인값과 다른 결과 {self.duplicates_different}개: 기존 확인값 유지. 변경하려면 기존 항목을 수정하세요.')
                     if value:
                         messagebox.showwarning('분석하지 못한 사진', '\n\n'.join(value))
                 elif kind == 'updated':

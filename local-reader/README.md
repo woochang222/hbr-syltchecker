@@ -4,7 +4,7 @@
 
 ## 실행
 
-[Windows ZIP 다운로드 (v0.1.0)](https://github.com/woochang222/hbr-syltchecker/releases/download/reader-v0.1.0/HBRStyleReader-Windows.zip) · [그림으로 보는 사용 설명서](https://github.com/woochang222/hbr-syltchecker/blob/main/docs/reader-guide/게시글.md)
+[Windows ZIP 다운로드 (v0.1.1)](https://github.com/woochang222/hbr-syltchecker/releases/download/reader-v0.1.1/HBRStyleReader-Windows.zip) · [그림으로 보는 사용 설명서](https://github.com/woochang222/hbr-syltchecker/blob/main/docs/reader-guide/게시글.md)
 
 배포 폴더의 `HBRStyleReader-Daphne.exe`를 실행하세요. `_internal` 폴더를 포함한 전체 폴더가 필요합니다. Python 설치는 필요 없습니다.
 
@@ -32,6 +32,7 @@
 - 스타일 후보가 불확실하면 자동 선택하지 않습니다. 숫자나 아이콘 판독이 불확실하면 미확인으로 남깁니다.
 - 확인하지 않은 행은 복사하지 않습니다. 중복 스타일의 돌파/다프네 값이 충돌하면 복사를 차단하므로 해당 행을 수정하거나 반영에서 제외하세요.
 - 여러 장의 사진을 병합하지만 사진에 없는 스타일은 미보유로 바꾸지 않습니다.
+- 사진 추가 시 이미 확인 완료된 스타일은 다시 추가하지 않고 기존 확인값을 유지합니다. 새 사진의 값이 다르면 완료 메시지에 표시하므로 변경하려면 기존 항목을 수정하세요. 미확인 항목도 스타일과 돌파·다프네 값이 모두 같으면 중복을 건너뜁니다. 스타일을 식별하지 못했거나 미확인 상태의 값이 서로 다르면 개별 검토를 위해 유지합니다.
 - 사진은 서버에 보내거나 프로그램 폴더에 복사하지 않습니다. 클립보드 이미지는 실행 중 임시 폴더에 저장하며 종료 시 정리됩니다.
 - 제공받은 모바일 목록 사진을 기준으로 개발했습니다. PC 실제 스크린샷과 다른 UI 배율, 언어, 낮은 화질은 추가 검증이 필요합니다. 현재 목록은 반복되는 카드가 최소 3열, 2행 이상 보여야 합니다.
 - 스타일 그림은 hbr.style에서 사용하는 게임 목록용 가로 카드 223개를 사용합니다. 게임 ID와 웹 스타일 ID는 `reference-data/style-map.json`으로 연결합니다. 게시된 신스타일 자료는 업데이트 버튼으로 받을 수 있습니다.

@@ -30,6 +30,13 @@ def main():
         app.daphne_value.set('미확인')
         app.confirm()
         assert row.reviewed and row.limit_break == 0 and row.daphne is None
+        duplicate = Result('duplicate.jpg', crop, [(style_id, 38)], style_id, 4, True, False, 38, .99)
+        app.events.put(('rows', [duplicate]))
+        app.events.put(('done', []))
+        app.poll()
+        assert len(app.rows) == len(app.tree.get_children()) == 1
+        assert row.reviewed and row.limit_break == 0 and row.daphne is None
+        assert '중복 1개' in app.status.get() and '다른 결과 1개' in app.status.get()
         captured = []
         with patch.object(root, 'clipboard_clear'), patch.object(root, 'clipboard_append', side_effect=captured.append):
             app.copy()
