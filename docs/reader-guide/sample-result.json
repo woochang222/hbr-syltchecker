@@ -1,0 +1,26 @@
+{
+  "format": "hbr-style-recognition",
+  "version": 1,
+  "styles": [
+    {
+      "id": "kayamori_ruka_circuit_burst",
+      "limitBreak": 4,
+      "daphne": false
+    },
+    {
+      "id": "kayamori_ruka_base",
+      "limitBreak": 2,
+      "daphne": false
+    },
+    {
+      "id": "kayamori_ruka_cardinal_echo",
+      "limitBreak": 2,
+      "daphne": false
+    },
+    {
+      "id": "kayamori_ruka_suit",
+      "limitBreak": 0,
+      "daphne": false
+    }
+  ]
+}

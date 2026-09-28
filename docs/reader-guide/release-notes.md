@@ -10,6 +10,8 @@ Windows용 로컬 스타일 인식 프로그램입니다. 스타일 목록 스�
 
 ## 사용 순서
 
+[스크린샷이 포함된 사용 설명서](https://github.com/woochang222/hbr-syltchecker/blob/main/docs/reader-guide/게시글.md)
+
 사진 추가 → 인식 결과 확인 및 수정 → 확인하고 다음 → 확인한 결과 복사 → [스타일 체커](https://woochang222.github.io/hbr-syltchecker/)의 인식 결과 가져오기에 붙여넣기 → 변경 내용 확인 → 이 브라우저에 반영.
 
 ## 참고

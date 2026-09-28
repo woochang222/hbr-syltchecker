@@ -4,6 +4,8 @@
 
 ## 실행
 
+[Windows ZIP 다운로드 (v0.1.0)](https://github.com/woochang222/hbr-syltchecker/releases/download/reader-v0.1.0/HBRStyleReader-Windows.zip) · [그림으로 보는 사용 설명서](https://github.com/woochang222/hbr-syltchecker/blob/main/docs/reader-guide/게시글.md)
+
 배포 폴더의 `HBRStyleReader-Daphne.exe`를 실행하세요. `_internal` 폴더를 포함한 전체 폴더가 필요합니다. Python 설치는 필요 없습니다.
 
 소스에서 실행할 때는 Python 3.11 이상과 Tkinter가 필요합니다. 처음에 `powershell -ExecutionPolicy Bypass -File setup.ps1`로 의존성을 설치한 다음 `start-reader.cmd`를 실행합니다. 최초 설치에는 인터넷이 필요합니다.
