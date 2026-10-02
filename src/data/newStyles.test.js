@@ -1,12 +1,29 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
 import { existsSync, readFileSync } from 'node:fs'
+import { isBaseStyle } from '../utils/baseStyleBoost.js'
 
 const styles = JSON.parse(readFileSync(new URL('./styles.json', import.meta.url), 'utf8'))
 const styleMap = new Map(styles.map(style => [style.id, style]))
+const sourceManifest = JSON.parse(readFileSync(
+  new URL('../../local-reader/reference-data/hbrquest/manifest.json', import.meta.url),
+  'utf8'
+))
+const sourceIdByStyleId = JSON.parse(readFileSync(
+  new URL('../../local-reader/reference-data/style-map.json', import.meta.url),
+  'utf8'
+))
 
-const readWebpDimensions = imageUrl => {
+const readStyleImageDimensions = imageUrl => {
   const bytes = readFileSync(new URL(`../../public${imageUrl}`, import.meta.url))
+
+  if (bytes.subarray(1, 4).toString('ascii') === 'PNG') {
+    return {
+      width: bytes.readUInt32BE(16),
+      height: bytes.readUInt32BE(20)
+    }
+  }
+
   const type = bytes.toString('ascii', 12, 16)
 
   if (type === 'VP8X') {
@@ -35,13 +52,45 @@ const readWebpDimensions = imageUrl => {
 }
 
 const assertSquareStyleImage = style => {
-  const { width, height } = readWebpDimensions(style.image_url)
+  const { width, height } = readStyleImageDimensions(style.image_url)
 
   assert.equal(width, height)
   assert.equal(width >= 200 && width <= 500, true)
 }
 
 describe('new resonance styles', () => {
+  it('marks every Angel Beats collaboration SS style as limited resonance', () => {
+    const expected = new Map([
+      ['tachibana_kanade_earth_angel', 'Earth Angel (레조넌스)'],
+      ['tachibana_kanade_soaring_sword', '천상의 검 (레조넌스)'],
+      ['nakamura_yuri_rain_fire', 'Rain Fire (레조넌스)'],
+      ['nakamura_yuri_extraordinary', '비일상 (레조넌스)'],
+      ['irie_miyuki_faraway_eden', 'Faraway Eden (레조넌스)'],
+      ['yoshioka_yui_base', 'Stir Soul Song (레조넌스)'],
+      ['iwasawa_masami_base', 'Dreamlike Days (레조넌스)'],
+    ])
+    const officialSourceIds = new Set(sourceManifest.entries
+      .filter(entry => entry.team === 'Angel Beats' && entry.tier === 'SSR')
+      .map(entry => entry.source_id))
+    const mappedStyleIds = new Set(Object.entries(sourceIdByStyleId)
+      .filter(([, sourceId]) => officialSourceIds.has(sourceId))
+      .map(([styleId]) => styleId))
+
+    assert.deepEqual(mappedStyleIds, new Set(expected.keys()))
+
+    for (const [id, styleName] of expected) {
+      const style = styleMap.get(id)
+
+      assert.equal(style?.style_name, styleName, `${id} style name`)
+      assert.equal(style?.isResonance, true, `${id} resonance flag`)
+      assert.equal(style?.isLimited, true, `${id} limited flag`)
+      assertSquareStyleImage(style)
+    }
+
+    assert.equal(isBaseStyle(styleMap.get('yoshioka_yui_base')), true)
+    assert.equal(isBaseStyle(styleMap.get('iwasawa_masami_base')), true)
+  })
+
   it('marks only the newest released style as latest', () => {
     const latestStyleIds = styles
       .filter(style => style.isLatest)

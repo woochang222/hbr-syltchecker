@@ -273,7 +273,7 @@ describe('style data integrity', () => {
       [
         {
           id: 'irie_miyuki_faraway_eden',
-          style_name: 'Faraway Eden',
+          style_name: 'Faraway Eden (레조넌스)',
           image_url: '/images/styles/irie_miyuki_faraway_eden.png',
           unit: 'AB',
           element: '빙'
@@ -312,14 +312,14 @@ describe('style data integrity', () => {
         kanade: [
           {
             id: 'tachibana_kanade_earth_angel',
-            style_name: 'Earth Angel',
+            style_name: 'Earth Angel (레조넌스)',
             image_url: '/images/styles/tachibana_kanade_earth_angel.png',
             unit: 'AB',
             element: '광'
           },
           {
             id: 'tachibana_kanade_soaring_sword',
-            style_name: '천상의 검',
+            style_name: '천상의 검 (레조넌스)',
             image_url: '/images/styles/tachibana_kanade_soaring_sword.webp',
             unit: 'AB',
             element: '빙'
@@ -343,7 +343,7 @@ describe('style data integrity', () => {
       },
       {
         character_name: '나카무라 유리',
-        style_name: 'rain_fire',
+        style_name: 'Rain Fire (레조넌스)',
         image_url: '/images/styles/nakamura_yuri_rain_fire.png',
         unit: 'AB',
         element: '화',
