@@ -97,9 +97,26 @@ describe('new resonance styles', () => {
       .map(style => style.id)
 
     assert.deepEqual(latestStyleIds, [
-      'mikoto_fubuki_broken_night_muse_res',
-      'murofushi_risa_healing_lap_pillow_res'
+      'izumi_yuki_fleur_enchantee_res'
     ])
+  })
+
+  it('adds Izumi Yuki Fleur Enchantee resonance with ice element and verified local image', () => {
+    const style = styleMap.get('izumi_yuki_fleur_enchantee_res')
+
+    assert.equal(style?.character_name, '이즈미 유키')
+    assert.equal(style?.style_name, '플뢰르 앙샹떼 (레조넌스)')
+    assert.equal(style?.unit, '31A')
+    assert.equal(style?.element, '빙')
+    assert.deepEqual(style?.elements, ['빙'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isUniform, false)
+    assert.equal(style?.isLatest, true)
+    assert.deepEqual(style?.nicknames, ['이즈미', '유키', '할로윈'])
+    assert.equal(style?.image_url, '/images/styles/izumi_yuki_fleur_enchantee_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/izumi_yuki_fleur_enchantee_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
   })
 
   it('adds Mikoto Fubuki broken night muse resonance with fire element and verified local image', () => {
@@ -113,7 +130,7 @@ describe('new resonance styles', () => {
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, false)
     assert.equal(style?.isUniform, false)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.deepEqual(style?.nicknames, ['미코토', '후부키', '뮤즈'])
     assert.equal(style?.image_url, '/images/styles/mikoto_fubuki_broken_night_muse_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/mikoto_fubuki_broken_night_muse_res.webp', import.meta.url)), true)
@@ -131,7 +148,7 @@ describe('new resonance styles', () => {
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, false)
     assert.equal(style?.isUniform, false)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.deepEqual(style?.nicknames, ['무로후시', '리사', '랩 필로'])
     assert.equal(style?.image_url, '/images/styles/murofushi_risa_healing_lap_pillow_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/murofushi_risa_healing_lap_pillow_res.webp', import.meta.url)), true)

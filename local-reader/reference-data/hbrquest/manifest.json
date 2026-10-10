@@ -1,7 +1,7 @@
 {
   "format": "hbr-game-select-references",
   "version": 1,
-  "retrieved_at": "2026-10-02T10:54:12.782885+00:00",
+  "retrieved_at": "2026-10-10T02:12:00.491292+00:00",
   "catalog_url": "https://master.hbr.quest/v1/styles.json",
   "source_site": "https://hbr.style/",
   "entries": [
@@ -229,6 +229,21 @@
       "width": 356,
       "height": 144,
       "sha256": "053dc1eb9cd6ebf85acc015a1b60bad810cb1999ad6dfe1b73d98b69e934d7f8"
+    },
+    {
+      "source_id": 1001210,
+      "source_label": "YIzumi10",
+      "source_name": "フルール・アンシャンテ",
+      "character": "和泉 ユキ — Yuki Izumi — ユッキー Yukkii",
+      "character_label": "YIzumi",
+      "team": "31A",
+      "tier": "SSR",
+      "file": "cards/YIzumiAutumn2026_R3_Select.webp",
+      "url": "https://cdn.hbr.quest/webp/jp/card/YIzumiAutumn2026_R3_Select.webp",
+      "page_url": "https://hbr.quest/styles/yizumi10",
+      "width": 356,
+      "height": 144,
+      "sha256": "fda62b61c45e29587173337a479ae9993a89eca2fb3a4f674e19ffcbaad3771d"
     },
     {
       "source_id": 1001303,

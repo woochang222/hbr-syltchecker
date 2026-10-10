@@ -1559,5 +1559,12 @@
     "expectedImageUrl": "/images/styles/murofushi_risa_healing_lap_pillow_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/816689",
     "imageStatus": "verified"
+  },
+  "izumi_yuki_fleur_enchantee_res": {
+    "expectedUnit": "31A",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/izumi_yuki_fleur_enchantee_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/825787",
+    "imageStatus": "verified"
   }
 }

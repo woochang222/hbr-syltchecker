@@ -3,6 +3,15 @@
   "version": 1,
   "styles": [
     {
+      "id": "izumi_yuki_fleur_enchantee_res",
+      "character_name": "이즈미 유키",
+      "style_name": "플뢰르 앙샹떼 (레조넌스)",
+      "image_url": "/local-reader/reference-data/hbrquest/cards/YIzumiAutumn2026_R3_Select.webp",
+      "reference_kind": "game-select",
+      "sha256": "fda62b61c45e29587173337a479ae9993a89eca2fb3a4f674e19ffcbaad3771d",
+      "source_id": 1001210
+    },
+    {
       "id": "mikoto_fubuki_broken_night_muse_res",
       "character_name": "미코토 후부키",
       "style_name": "밤의 망가진 뮤즈 (레조넌스)",
