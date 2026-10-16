@@ -1,7 +1,7 @@
 {
   "format": "hbr-game-select-references",
   "version": 1,
-  "retrieved_at": "2026-10-10T02:12:00.491292+00:00",
+  "retrieved_at": "2026-10-16T02:45:04.346811+00:00",
   "catalog_url": "https://master.hbr.quest/v1/styles.json",
   "source_site": "https://hbr.style/",
   "entries": [
@@ -1431,6 +1431,21 @@
       "sha256": "93fa0b989a9d1ff500f812bbb4f263becec3f1630f0e31fc402d34fbabbef672"
     },
     {
+      "source_id": 1003609,
+      "source_label": "MSatsuki09",
+      "source_name": "戦慄のナースコール",
+      "character": "佐月 マリ — Mari Satsuki — マリー Marii",
+      "character_label": "MSatsuki",
+      "team": "31C",
+      "tier": "SSR",
+      "file": "cards/MSatsukiAutumn2026_R3_Select.webp",
+      "url": "https://cdn.hbr.quest/webp/jp/card/MSatsukiAutumn2026_R3_Select.webp",
+      "page_url": "https://hbr.quest/styles/msatsuki09",
+      "width": 356,
+      "height": 144,
+      "sha256": "fb6efb070882591ac10dba80d2b0e84f55b4bc58359c450ed2a088ea428eccb1"
+    },
+    {
       "source_id": 1004103,
       "source_label": "YShirakawa03",
       "source_name": "Awakening Iris",
@@ -1924,6 +1939,21 @@
       "width": 356,
       "height": 144,
       "sha256": "6b96cde74699e733813b32bda1dbf2d2da18ff4d0b261f56120df67f7c8e6a42"
+    },
+    {
+      "source_id": 1005207,
+      "source_label": "IIshii07",
+      "source_name": "禁忌のシンセサイズ",
+      "character": "石井 色葉 — Iroha Ishii — いろっち Irocchi",
+      "character_label": "IIshii",
+      "team": "31D",
+      "tier": "SSR",
+      "file": "cards/IIshiiAutumn2026_R3_Select.webp",
+      "url": "https://cdn.hbr.quest/webp/jp/card/IIshiiAutumn2026_R3_Select.webp",
+      "page_url": "https://hbr.quest/styles/iishii07",
+      "width": 356,
+      "height": 144,
+      "sha256": "d85ed8ee0ee55a4c407a77d57cb58d40e72af6ac121595f4e61c1e14fc8acdbb"
     },
     {
       "source_id": 1005303,

@@ -1566,5 +1566,19 @@
     "expectedImageUrl": "/images/styles/izumi_yuki_fleur_enchantee_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/825787",
     "imageStatus": "verified"
+  },
+  "ishii_iroha_forbidden_synthesize_res": {
+    "expectedUnit": "31D",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/ishii_iroha_forbidden_synthesize_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/832805",
+    "imageStatus": "verified"
+  },
+  "satsuki_mari_thrilling_nurse_call_res": {
+    "expectedUnit": "31C",
+    "expectedElements": ["광"],
+    "expectedImageUrl": "/images/styles/satsuki_mari_thrilling_nurse_call_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/832804",
+    "imageStatus": "verified"
   }
 }

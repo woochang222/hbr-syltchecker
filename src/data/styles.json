@@ -1,5 +1,47 @@
 [
   {
+    "id": "satsuki_mari_thrilling_nurse_call_res",
+    "character_name": "사츠키 마리",
+    "style_name": "전율의 너스 콜 (레조넌스)",
+    "unit": "31C",
+    "element": "광",
+    "elements": [
+      "광"
+    ],
+    "image_url": "/images/styles/satsuki_mari_thrilling_nurse_call_res.webp",
+    "isLimited": false,
+    "isResonance": true,
+    "isUniform": false,
+    "isLatest": true,
+    "metaTags": [],
+    "nicknames": [
+      "사츠키",
+      "마리",
+      "너스 콜"
+    ]
+  },
+  {
+    "id": "ishii_iroha_forbidden_synthesize_res",
+    "character_name": "이시이 이로하",
+    "style_name": "금기의 신시사이즈 (레조넌스)",
+    "unit": "31D",
+    "element": "암",
+    "elements": [
+      "암"
+    ],
+    "image_url": "/images/styles/ishii_iroha_forbidden_synthesize_res.webp",
+    "isLimited": false,
+    "isResonance": true,
+    "isUniform": false,
+    "isLatest": true,
+    "metaTags": [],
+    "nicknames": [
+      "이시이",
+      "이로하",
+      "신시사이즈"
+    ]
+  },
+  {
     "id": "izumi_yuki_fleur_enchantee_res",
     "character_name": "이즈미 유키",
     "style_name": "플뢰르 앙샹떼 (레조넌스)",
@@ -12,7 +54,6 @@
     "isLimited": false,
     "isResonance": true,
     "isUniform": false,
-    "isLatest": true,
     "metaTags": [],
     "nicknames": [
       "이즈미",

@@ -91,14 +91,51 @@ describe('new resonance styles', () => {
     assert.equal(isBaseStyle(styleMap.get('iwasawa_masami_base')), true)
   })
 
-  it('marks only the newest released style as latest', () => {
+  it('marks only the newest release group as latest', () => {
     const latestStyleIds = styles
       .filter(style => style.isLatest)
       .map(style => style.id)
 
     assert.deepEqual(latestStyleIds, [
-      'izumi_yuki_fleur_enchantee_res'
+      'satsuki_mari_thrilling_nurse_call_res',
+      'ishii_iroha_forbidden_synthesize_res'
     ])
+  })
+
+  it('adds Satsuki Mari thrilling nurse call resonance with light element and verified local image', () => {
+    const style = styleMap.get('satsuki_mari_thrilling_nurse_call_res')
+
+    assert.equal(style?.character_name, '사츠키 마리')
+    assert.equal(style?.style_name, '전율의 너스 콜 (레조넌스)')
+    assert.equal(style?.unit, '31C')
+    assert.equal(style?.element, '광')
+    assert.deepEqual(style?.elements, ['광'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isUniform, false)
+    assert.equal(style?.isLatest, true)
+    assert.deepEqual(style?.nicknames, ['사츠키', '마리', '너스 콜'])
+    assert.equal(style?.image_url, '/images/styles/satsuki_mari_thrilling_nurse_call_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/satsuki_mari_thrilling_nurse_call_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
+  })
+
+  it('adds Ishii Iroha forbidden synthesize resonance with dark element and verified local image', () => {
+    const style = styleMap.get('ishii_iroha_forbidden_synthesize_res')
+
+    assert.equal(style?.character_name, '이시이 이로하')
+    assert.equal(style?.style_name, '금기의 신시사이즈 (레조넌스)')
+    assert.equal(style?.unit, '31D')
+    assert.equal(style?.element, '암')
+    assert.deepEqual(style?.elements, ['암'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isUniform, false)
+    assert.equal(style?.isLatest, true)
+    assert.deepEqual(style?.nicknames, ['이시이', '이로하', '신시사이즈'])
+    assert.equal(style?.image_url, '/images/styles/ishii_iroha_forbidden_synthesize_res.webp')
+    assert.equal(existsSync(new URL('../../public/images/styles/ishii_iroha_forbidden_synthesize_res.webp', import.meta.url)), true)
+    assertSquareStyleImage(style)
   })
 
   it('adds Izumi Yuki Fleur Enchantee resonance with ice element and verified local image', () => {
@@ -112,7 +149,7 @@ describe('new resonance styles', () => {
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, false)
     assert.equal(style?.isUniform, false)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.deepEqual(style?.nicknames, ['이즈미', '유키', '할로윈'])
     assert.equal(style?.image_url, '/images/styles/izumi_yuki_fleur_enchantee_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/izumi_yuki_fleur_enchantee_res.webp', import.meta.url)), true)
