@@ -16,7 +16,7 @@ def main():
         missing = next((cache / 'blobs').glob('*.webp'))
         missing.unlink()
         second = update_data(catalog, Path(directory) / 'empty-bundle', cache=cache)
-        assert second['downloaded'] == 1 and second['reused'] == 223
+        assert second['downloaded'] == 1 and second['reused'] == 225
         third = update_data(catalog, root, cache=cache)
         assert third['downloaded'] == 0
         active, image_root = load_active(catalog, root, cache)
