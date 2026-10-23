@@ -1366,7 +1366,7 @@
   },
   "oshima_minori_midnight_res": {
     "expectedUnit": "31E",
-    "expectedElements": ["무"],
+    "expectedElements": ["광"],
     "expectedImageUrl": "/images/styles/oshima_minori_midnight_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/735061",
     "imageStatus": "verified"

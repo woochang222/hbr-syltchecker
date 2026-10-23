@@ -672,6 +672,7 @@ describe('style data integrity', () => {
 
   it('keeps manually inspected image elements aligned with card icons', () => {
     const expectedElementsByStyle = new Map([
+      ['oshima_minori_midnight_res', { element: '광', elements: ['광'] }],
       ['tenne_miko_servant', { element: '암', elements: ['암'] }],
       ['yanagi_mion_admiral_res', { element: '무', elements: ['무'] }],
       ['yamawaki_unison_res', { element: '암', elements: ['암'] }],
