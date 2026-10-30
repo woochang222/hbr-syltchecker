@@ -97,9 +97,30 @@ describe('new resonance styles', () => {
       .map(style => style.id)
 
     assert.deepEqual(latestStyleIds, [
-      'satsuki_mari_thrilling_nurse_call_res',
-      'ishii_iroha_forbidden_synthesize_res'
+      'asakura_karen_midnight_soul_harvest_res'
     ])
+  })
+
+  it('adds Karen midnight soul harvest with the reviewed dark resonance game card mapping', () => {
+    const id = 'asakura_karen_midnight_soul_harvest_res'
+    const style = styleMap.get(id)
+
+    assert.equal(style?.character_name, '아사쿠라 카렌')
+    assert.equal(style?.style_name, '한밤중의 소울 하베스트 (레조넌스)')
+    assert.equal(style?.unit, '31A')
+    assert.equal(style?.element, '암')
+    assert.deepEqual(style?.elements, ['암'])
+    assert.equal(style?.isResonance, true)
+    assert.equal(style?.isLimited, false)
+    assert.equal(style?.isUniform, false)
+    assert.equal(style?.isLatest, true)
+    assert.equal(style?.image_url, `/images/styles/${id}.webp`)
+    assertSquareStyleImage(style)
+    assert.equal(sourceIdByStyleId[id], 1001510)
+    const source = sourceManifest.entries.find(entry => entry.source_id === 1001510)
+    assert.equal(source?.character_label, 'KAsakura')
+    assert.equal(source?.tier, 'SSR')
+    assert.equal(source?.file, 'cards/KAsakuraAutumn2026_R3_Select.webp')
   })
 
   it('adds Satsuki Mari thrilling nurse call resonance with light element and verified local image', () => {
@@ -113,7 +134,7 @@ describe('new resonance styles', () => {
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, false)
     assert.equal(style?.isUniform, false)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.deepEqual(style?.nicknames, ['사츠키', '마리', '너스 콜'])
     assert.equal(style?.image_url, '/images/styles/satsuki_mari_thrilling_nurse_call_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/satsuki_mari_thrilling_nurse_call_res.webp', import.meta.url)), true)
@@ -131,7 +152,7 @@ describe('new resonance styles', () => {
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, false)
     assert.equal(style?.isUniform, false)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.deepEqual(style?.nicknames, ['이시이', '이로하', '신시사이즈'])
     assert.equal(style?.image_url, '/images/styles/ishii_iroha_forbidden_synthesize_res.webp')
     assert.equal(existsSync(new URL('../../public/images/styles/ishii_iroha_forbidden_synthesize_res.webp', import.meta.url)), true)

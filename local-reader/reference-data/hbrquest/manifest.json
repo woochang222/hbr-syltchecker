@@ -1,7 +1,7 @@
 {
   "format": "hbr-game-select-references",
   "version": 1,
-  "retrieved_at": "2026-10-16T02:45:04.346811+00:00",
+  "retrieved_at": "2026-10-30T02:34:14.041939+00:00",
   "catalog_url": "https://master.hbr.quest/v1/styles.json",
   "source_site": "https://hbr.style/",
   "entries": [
@@ -514,6 +514,21 @@
       "width": 356,
       "height": 144,
       "sha256": "82320cb4aa37eab9425b925f50c6fc834e4dc407c87d51f12e977ae61feefaf5"
+    },
+    {
+      "source_id": 1001510,
+      "source_label": "KAsakura10",
+      "source_name": "真夜中のソウル・ハーベスト",
+      "character": "朝倉 可憐 — Karen Asakura — かれりん Karerin",
+      "character_label": "KAsakura",
+      "team": "31A",
+      "tier": "SSR",
+      "file": "cards/KAsakuraAutumn2026_R3_Select.webp",
+      "url": "https://cdn.hbr.quest/webp/jp/card/KAsakuraAutumn2026_R3_Select.webp",
+      "page_url": "https://hbr.quest/styles/kasakura10",
+      "width": 356,
+      "height": 144,
+      "sha256": "375ec028ff21ea9553fb7f936f2965440c651125fd3bb5eb2b86e67569b39477"
     },
     {
       "source_id": 1001703,

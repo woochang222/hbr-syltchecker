@@ -1580,5 +1580,12 @@
     "expectedImageUrl": "/images/styles/satsuki_mari_thrilling_nurse_call_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/832804",
     "imageStatus": "verified"
+  },
+  "asakura_karen_midnight_soul_harvest_res": {
+    "expectedUnit": "31A",
+    "expectedElements": ["암"],
+    "expectedImageUrl": "/images/styles/asakura_karen_midnight_soul_harvest_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/839459",
+    "imageStatus": "verified"
   }
 }
