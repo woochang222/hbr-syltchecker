@@ -1587,5 +1587,19 @@
     "expectedImageUrl": "/images/styles/asakura_karen_midnight_soul_harvest_res.webp",
     "sourceUrl": "https://game8.jp/heavenburnsred/839459",
     "imageStatus": "verified"
+  },
+  "sakuraba_seira_blooming_photograph_res": {
+    "expectedUnit": "31C",
+    "expectedElements": ["화"],
+    "expectedImageUrl": "/images/styles/sakuraba_seira_blooming_photograph_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/841818",
+    "imageStatus": "verified"
+  },
+  "tenne_miko_fieldwork_res": {
+    "expectedUnit": "31C",
+    "expectedElements": ["빙"],
+    "expectedImageUrl": "/images/styles/tenne_miko_fieldwork_res.webp",
+    "sourceUrl": "https://game8.jp/heavenburnsred/841820",
+    "imageStatus": "verified"
   }
 }

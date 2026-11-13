@@ -1,5 +1,43 @@
 [
   {
+    "id": "sakuraba_seira_blooming_photograph_res",
+    "character_name": "사쿠라바 세이라",
+    "style_name": "꽃송이 휘날리는 포토그래프 (레조넌스)",
+    "unit": "31C",
+    "element": "화",
+    "elements": [
+      "화"
+    ],
+    "image_url": "/images/styles/sakuraba_seira_blooming_photograph_res.webp",
+    "isLimited": false,
+    "isResonance": true,
+    "isUniform": false,
+    "metaTags": [],
+    "nicknames": [
+      "세이라"
+    ],
+    "isLatest": true
+  },
+  {
+    "id": "tenne_miko_fieldwork_res",
+    "character_name": "텐네 미코",
+    "style_name": "동분서주 필드워크 (레조넌스)",
+    "unit": "31C",
+    "element": "빙",
+    "elements": [
+      "빙"
+    ],
+    "image_url": "/images/styles/tenne_miko_fieldwork_res.webp",
+    "isLimited": false,
+    "isResonance": true,
+    "isUniform": false,
+    "isLatest": true,
+    "metaTags": [],
+    "nicknames": [
+      "미코"
+    ]
+  },
+  {
     "id": "asakura_karen_midnight_soul_harvest_res",
     "character_name": "아사쿠라 카렌",
     "style_name": "한밤중의 소울 하베스트 (레조넌스)",
@@ -12,7 +50,6 @@
     "isLimited": false,
     "isResonance": true,
     "isUniform": false,
-    "isLatest": true,
     "metaTags": [],
     "nicknames": [
       "아사쿠라",

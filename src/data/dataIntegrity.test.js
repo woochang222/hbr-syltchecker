@@ -106,6 +106,7 @@ describe('style data integrity', () => {
     assert.deepEqual(
       seiraStyles.map(style => ({ id: style.id, unit: style.unit })),
       [
+        { id: 'sakuraba_seira_blooming_photograph_res', unit: '31C' },
         { id: 'sakuraba_seira_servant', unit: '31C' },
         { id: 'sakuraba_seira_bride', unit: '31C' },
         { id: 'sakuraba_seira_new_year', unit: '31C' },
@@ -141,6 +142,13 @@ describe('style data integrity', () => {
         unit: style.unit
       })),
       [
+        {
+          id: 'tenne_miko_fieldwork_res',
+          character_name: '텐네 미코',
+          style_name: '동분서주 필드워크 (레조넌스)',
+          image_url: '/images/styles/tenne_miko_fieldwork_res.webp',
+          unit: '31C'
+        },
         {
           id: 'tenne_miko_servant',
           character_name: '텐네 미코',

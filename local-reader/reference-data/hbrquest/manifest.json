@@ -1,7 +1,7 @@
 {
   "format": "hbr-game-select-references",
   "version": 1,
-  "retrieved_at": "2026-10-30T02:34:14.041939+00:00",
+  "retrieved_at": "2026-11-13T02:31:56.568638+00:00",
   "catalog_url": "https://master.hbr.quest/v1/styles.json",
   "source_site": "https://hbr.style/",
   "entries": [
@@ -1161,6 +1161,21 @@
       "sha256": "b60e4203f171700d114b578b08ccd0aac8c12b477adcf16f942459b20383225d"
     },
     {
+      "source_id": 1003208,
+      "source_label": "SSakuraba08",
+      "source_name": "花綻びのフォトグラフ",
+      "character": "桜庭 星羅 — Seira Sakuraba — さくちゃん SakuChan",
+      "character_label": "SSakuraba",
+      "team": "31C",
+      "tier": "SSR",
+      "file": "cards/SSakurabaElegant_R3_Select.webp",
+      "url": "https://cdn.hbr.quest/webp/jp/card/SSakurabaElegant_R3_Select.webp",
+      "page_url": "https://hbr.quest/styles/ssakuraba08",
+      "width": 356,
+      "height": 144,
+      "sha256": "7877a8ea1a1ee80c8a78473b2e893ec4cc8f3f1799e1a6f20f0bf3fbf07be1a3"
+    },
+    {
       "source_id": 1003303,
       "source_label": "MTenne03",
       "source_name": "エクスペリメンタルなキミ",
@@ -1219,6 +1234,21 @@
       "width": 356,
       "height": 144,
       "sha256": "5c7ea57db13e2c0e450c8fab31c49438e623518842401450a774c022954c1d2f"
+    },
+    {
+      "source_id": 1003308,
+      "source_label": "MTenne08",
+      "source_name": "東奔西走フィールドワーク",
+      "character": "天音 巫呼 — Miko Tenne — 天然ちゃん TennenChan",
+      "character_label": "MTenne",
+      "team": "31C",
+      "tier": "SSR",
+      "file": "cards/MTenneForest_R3_Select.webp",
+      "url": "https://cdn.hbr.quest/webp/jp/card/MTenneForest_R3_Select.webp",
+      "page_url": "https://hbr.quest/styles/mtenne08",
+      "width": 356,
+      "height": 144,
+      "sha256": "9743eb3dca7b3f8eeae19dc4e6cf2b2e0bfa9ec01cbd83b2dc947f81e1211787"
     },
     {
       "source_id": 1003403,

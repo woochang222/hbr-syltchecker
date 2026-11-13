@@ -97,7 +97,8 @@ describe('new resonance styles', () => {
       .map(style => style.id)
 
     assert.deepEqual(latestStyleIds, [
-      'asakura_karen_midnight_soul_harvest_res'
+      'sakuraba_seira_blooming_photograph_res',
+      'tenne_miko_fieldwork_res'
     ])
   })
 
@@ -113,7 +114,7 @@ describe('new resonance styles', () => {
     assert.equal(style?.isResonance, true)
     assert.equal(style?.isLimited, false)
     assert.equal(style?.isUniform, false)
-    assert.equal(style?.isLatest, true)
+    assert.equal(style?.isLatest, undefined)
     assert.equal(style?.image_url, `/images/styles/${id}.webp`)
     assertSquareStyleImage(style)
     assert.equal(sourceIdByStyleId[id], 1001510)
